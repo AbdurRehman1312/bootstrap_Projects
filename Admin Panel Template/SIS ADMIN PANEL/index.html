@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  ">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="primary-bg shadow border-end " id="sidebar-wrapper">
+            <div class="text-center primary-text bg-blue-color fs-4 fw-semibold text-uppercase border-bottom">
+                <img src="./assets/images/white-logo-sis.png" width="150" height="100" alt="">
+            </div>
+            <ul class="navbar-nav sidebar_list">
+                <li class="nav-item px-2 py-0 mt-1">
+                    <a href="index.html" class="text-decoration-none nav-link px-2 active">
+                        <span><i class="fas fa-tachometer-alt me-2"></i></span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item px-2 py-0 mt-1">
+                    <a class="text-decoration-none nav-link px-2 d-flex justify-content-between"
+                        data-bs-toggle="collapse" href="#collapseExample" onclick="toggleArrow()" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        <span><i class="fa-solid fa-users me-2 size"></i>All Profiles</span>
+                        <span id="myArrow1"><i class="fas fa-angle-right"></i></span>
+                    </a>
+                    <ul class="collapse navbar-nav pt-2" id="collapseExample">
+                        <li class="nav-item px-2 py-0">
+                            <a href="trade-offer-competitor.html"
+                                class="text-decoration-none text-capitalize nav-link px-2">
+                                <i class="fa-solid fa-person-chalkboard me-2 size"></i>Project Owner</a>
+                        </li>
+                        <li class="nav-item px-2 py-0">
+                            <a href="trade-audit.html" class="text-decoration-none nav-link px-2">
+                                <i class="fa-solid fa-user me-2 size"></i>Investor</a>
+                        </li>
+                        <li class="nav-item px-2 py-0">
+                            <a href="trade-chargeback.html" class="text-decoration-none nav-link px-2">
+                                <i
+                                    class="fa-solid fa-person-walking-arrow-loop-left me-2 size"></i>Incubator/Accelerator</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item px-2 py-0 mt-1">
+                    <a class="text-decoration-none nav-link px-2 d-flex justify-content-between"
+                        data-bs-toggle="collapse" href="#collapseSchedular" onclick="toggleArrow1()" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        <span><i class="fa-solid fa-clipboard-list me-2 size"></i>Overview of Projects</span>
+                        <span id="myArrow2"><i class="fas fa-angle-right"></i></span>
+                    </a>
+                    <ul class="collapse navbar-nav" id="collapseSchedular">
+                        <li class="nav-item px-2 py-0">
+                            <a href="employe.html" class="text-decoration-none nav-link px-2">
+                                <i class="fa-solid fa-file-shield me-2 size"></i>Campaign Submission</a>
+                        </li>
+                        <li class="nav-item px-2 py-0">
+                            <a href="employee-role.html" class="text-decoration-none nav-link px-2">
+                                <i class="fa-solid fa-gauge-high me-2 size"></i>Boost Campaign</a>
+                        </li>
+                        <li class="nav-item px-2 py-0">
+                            <a href="scheduler.html" class="text-decoration-none nav-link px-2">
+                                <i class="fa-solid fa-file-signature me-2 size"></i>E-Signature</a>
+                        </li>
+                        <li class="nav-item px-2 py-0">
+                            <a href="payroll.html" class="text-decoration-none nav-link px-2">
+                                <i class="fa-solid fa-money-bill-transfer me-2 size"></i>Funds Withdrawal</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item px-2 py-0 mt-1">
+                    <a class="text-decoration-none nav-link px-2 d-flex justify-content-between"
+                        data-bs-toggle="collapse" href="#collapseadmin" onclick="toggleArrow2()" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        <span><i class="fa-solid fa-credit-card me-2 size"></i>Investments</span>
+                        <span id="myArrow3"><i class="fas fa-angle-right"></i></span>
+                    </a>
+                    <ul class="collapse navbar-nav" id="collapseadmin">
+                        <li class="nav-item px-2 py-0">
+                            <a href="admin-user.html" class="text-decoration-none nav-link px-2"><i
+                                    class="fas fa-user me-2 size"></i>Debt and Equity</a>
+                        </li>
+                        <li class="nav-item px-2 py-0">
+                            <a href="transaction-history.html" class="text-decoration-none nav-link px-2">
+                                <i class="fa-solid fa-clock-rotate-left me-2 size"></i>Transaction History</a>
+                        </li>
+                        <li class="nav-item px-2 py-0">
+                            <a href="#" class="text-decoration-none nav-link px-2">
+                                <i class="fa-solid fa-wallet me-2 size"></i>Wallet</a>
+                        </li>
+                        <li class="nav-item px-2 py-0">
+                            <a href="#" class="text-decoration-none nav-link px-2">
+                                <i class="fa-solid fa-money-check-dollar me-2 size"></i>Payment Integration</a>
+                        </li>
+                        <li class="nav-item px-2 py-0">
+                            <a href="#" class="text-decoration-none nav-link px-2">
+                                <i class="fa-solid fa-file-invoice me-2 size"></i>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item px-2 py-0 mt-1">
+                    <a class="text-decoration-none nav-link px-2 d-flex justify-content-between"
+                        data-bs-toggle="collapse" href="#collapseanalytics" onclick="toggleArrow3()" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        <span><i class="fa-solid fa-user me-2 size"></i>Portfolio Management</span>
+                        <span id="myArrow4"><i class="fas fa-angle-right"></i></span>
+                    </a>
+                    <ul class="collapse navbar-nav pb-5 " id="collapseanalytics">
+                        <li class="nav-item px-2 py-0">
+                            <a href="payroll-analytics.html" class="text-decoration-none nav-link px-2">
+                                <i class="fa-regular fa-credit-card me-2 size"></i>Track investments</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <!-- navbar start from here -->
+            <header class="">
+                <nav class="bg-blue-color custom_nav">
+                    <div class="container-fluid mt-1">
+                        <div class="row g-2 align-items-center justify-content-between">
+                            <div class="col-4 col-sm-4 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                <div class="d-flex align-items-center text-white">
+                                    <i class="fas fa-sliders-h fs-4 me-3" style="color: #ffffff;" id="menu-toggle"></i>
+                                </div>
+                            </div>
+                            <div class="col-8 col-sm-8 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-end">
+                                <ul class="list-unstyled d-inline-flex mb-0 px-0 mx-0 custom_nav_list p-2">
+                                    <li class="dropdown">
+                                        <a class="nav-link me-4 fs-5" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="true">
+                                            <i class="fa-solid fa-bell" style="color: #ffffff;"></i>
+                                        </a>
+                                        <ul
+                                            class="dropdown-menu dropdown-menu-end bg-secondary-subtle shadow noti-ul my-2">
+                                            <a class="dropdown-item fs-6 text-center disabled fw-bold text-black-50"
+                                                href="#">Notifications</a>
+                                            <div class="dropdown-divider"></div>
+                                            <li class="dropdown-item border-bottom p-2">
+                                                <a href="#"
+                                                    class="text-decoration-none d-flex align-items-center py-2 mx-2 ">
+                                                    <img src="assets/images/dp-5.png" alt="" class="img-fluid  "
+                                                        width="50" height="50">
+                                                    <h5 class="text-wrap ms-3 fs-6 ">
+                                                        John Smith sent you an email</h5>
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-item border-bottom p-2">
+                                                <a href="#"
+                                                    class="text-decoration-none d-flex align-items-center py-2 mx-2 ">
+                                                    <img src="assets/images/dp-1.png" alt="" class="img-fluid  "
+                                                        width="50" height="50">
+                                                    <h5 class="text-wrap ms-3 fs-6 "> John
+                                                        Smith sent you an email</h5>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <div class="text-center py-2 ">
+                                                    <a href="" class="text-decoration-none"> View all</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <img src="assets/images/dp-1.png" alt="" class="img-fluid w-100">
+                                        </a>
+                                        <ul class="dropdown-menu noti-ul2 my-2">
+                                            <li class="dropdown-item m-auto ">
+                                                <a href="#" class="d-flex align-items-center text-decoration-none mx-2 ">
+                                                    <img src="assets/images/dp-1.png" alt="" class="img-fluid  "
+                                                        width="50" height="50">
+                                                    <div class="user-profile mt-3 mx-2">
+                                                        <span class="text-wrap fs-6">John Smith</span>
+                                                        <p class="text-muted">John786@gmail.com</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a href="#" class="text-decoration-none mx-3"><i class="fa-solid fa-circle-user me-2 size"></i>Account</a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a href="#" class="text-decoration-none mx-3"><i class="fa-solid fa-gear me-2 size"></i>Settings</a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a href="#" class="text-decoration-none mx-3"><i class="fa-solid fa-arrow-right-from-bracket me-2 size"></i>Log Out</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- navbar end here -->
+            <!-- <div class="container-fluid px-4">
+                <div class="row g-3 my-2">
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-6">
+                        <div class="card h-100 bg_orange p-3 rounded-3">
+                            <div class="card-body p-0">
+                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleSlidesOnly"
+                                            data-bs-slide-to="0" class="active" aria-current="true"
+                                            aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleSlidesOnly"
+                                            data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleSlidesOnly"
+                                            data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class=row>
+                                                <div class="col-12 col-sm-12">
+                                                    <h3 class="fs-5 mb-0 primary-text">Website Analytics</h3>
+                                                    <p class=" mb-0 fw-light primary-text">Total 28.5% Conversion Rate
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-8 col-sm-8">
+                                                    <h5 class="primary-text fw-semibold my-4">Traffic</h5>
+                                                    <div class="row mt-4">
+                                                        <div class="col-8 col-sm-8">
+                                                            <div class="row g-3">
+                                                                <div class="col-6 col-sm-6">
+                                                                    <div class="d-flex">
+                                                                        <span class="badge badge_orange_bg rounded-1">
+                                                                            <p class="fw-light text-white mb-0">1.5k</p>
+                                                                        </span>
+                                                                        <p class="mb-0 primary-text ps-2">Sessions</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6 col-sm-6">
+                                                                    <div class="d-flex">
+                                                                        <span class="badge badge_orange_bg rounded-1">
+                                                                            <p class="fw-light text-white mb-0">1.5k</p>
+                                                                        </span>
+                                                                        <p class="mb-0 primary-text ps-2 text-nowrap">
+                                                                            Page Views</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6 col-sm-6">
+                                                                    <div class="d-flex">
+                                                                        <span class="badge badge_orange_bg rounded-1">
+                                                                            <p class="fw-light text-white mb-0">1.5k</p>
+                                                                        </span>
+                                                                        <p class="mb-0 primary-text ps-2">Leads</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6 col-sm-6">
+                                                                    <div class="d-flex">
+                                                                        <span class="badge badge_orange_bg rounded-1">
+                                                                            <p class="fw-light text-white mb-0">1.5k</p>
+                                                                        </span>
+                                                                        <p class="mb-0 primary-text ps-2">Conversions
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 col-sm-4">
+                                                    <img src="assets/images/first-1.png" alt="" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="carousel-item">
+                                            <div class=row>
+                                                <div class="col-12 col-sm-12">
+                                                    <h3 class="fs-5 primary-text mb-0">Website Analytics</h3>
+                                                    <p class=" mb-0 primary-text fw-light">Total 28.5% Conversion Rate
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-8 col-sm-8">
+                                                    <h5 class="primary-text fw-semibold my-4">Spending</h5>
+                                                    <div class="row mt-4">
+                                                        <div class="col-8 col-sm-8">
+                                                            <div class="row g-3">
+                                                                <div class="col-6 col-sm-6">
+                                                                    <div class="d-flex">
+                                                                        <span class="badge badge_orange_bg rounded-1">
+                                                                            <p class="fw-light text-white mb-0">12h</p>
+                                                                        </span>
+                                                                        <p class="mb-0 primary-text ps-2">Spend</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6 col-sm-6">
+                                                                    <div class="d-flex">
+                                                                        <span class="badge badge_orange_bg rounded-1">
+                                                                            <p class="fw-light text-white mb-0">182</p>
+                                                                        </span>
+                                                                        <p class="mb-0 primary-text ps-2 text-nowrap">
+                                                                            Order size</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6 col-sm-6">
+                                                                    <div class="d-flex">
+                                                                        <span class="badge badge_orange_bg rounded-1">
+                                                                            <p class="fw-light text-white mb-0">127</p>
+                                                                        </span>
+                                                                        <p
+                                                                            class="mb-0 primary-text ps-2 text-capitalize">
+                                                                            order</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6 col-sm-6">
+                                                                    <div class="d-flex">
+                                                                        <span class="badge badge_orange_bg rounded-1">
+                                                                            <p class="fw-light text-white mb-0">23k</p>
+                                                                        </span>
+                                                                        <p
+                                                                            class="mb-0 primary-text ps-2 text-capitalize">
+                                                                            items</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 col-sm-4">
+                                                    <img src="assets/images/first-1.png" alt="" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div class=row>
+                                                <div class="col-12 col-sm-12">
+                                                    <h3 class="fs-5 primary-text mb-0">Website Analytics</h3>
+                                                    <p class=" mb-0 primary-text fw-light">Total 28.5% Conversion Rate
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-8 col-sm-8">
+                                                    <h5 class="primary-text fw-semibold my-4">Revenue Sources</h5>
+                                                    <div class="row mt-4">
+                                                        <div class="col-8 col-sm-8">
+                                                            <div class="row g-3">
+                                                                <div class="col-6 col-sm-6">
+                                                                    <div class="d-flex">
+                                                                        <span class="badge badge_orange_bg rounded-1">
+                                                                            <p class="fw-light text-white mb-0">268</p>
+                                                                        </span>
+                                                                        <p class="mb-0 primary-text ps-2">Sessions</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6 col-sm-6">
+                                                                    <div class="d-flex">
+                                                                        <span class="badge badge_orange_bg rounded-1">
+                                                                            <p class="fw-light text-white mb-0">1.5k</p>
+                                                                        </span>
+                                                                        <p class="mb-0 primary-text ps-2 text-nowrap">
+                                                                            Page Views</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6 col-sm-6">
+                                                                    <div class="d-flex">
+                                                                        <span class="badge badge_orange_bg rounded-1">
+                                                                            <p class="fw-light text-white mb-0">1.5k</p>
+                                                                        </span>
+                                                                        <p class="mb-0 primary-text ps-2">Leads</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-6 col-sm-6">
+                                                                    <div class="d-flex">
+                                                                        <span class="badge badge_orange_bg rounded-1">
+                                                                            <p class="fw-light text-white mb-0">1.5k</p>
+                                                                        </span>
+                                                                        <p class="mb-0 primary-text ps-2">Conversions
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 col-sm-4">
+                                                    <img src="assets/images/first-1.png" alt="" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+</body>
+
+</html>
