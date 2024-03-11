@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Dashboard</title>
+    <style>
+        #chart_div {
+            width: 100%;
+            height: 120px;
+        }
+
+        #donutchart {
+            width: 100%;
+            height: 330px;
+        }
+
+        #donutchart1 {
+            width: 100%;
+            height: 267px;
+        }
+    </style>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <div class="bg-white px-3  " id="sidebar-wrapper">
+            <div class="py-4 d-flex justify-content-center ">
+                <a href="">
+                    <img src="assets/images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="side-list px-3 height-fix-side scroll-leftsid">
+                <ul class="navbar-nav sidebar_list  ">
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex align-items-center  justify-content-between arrowdown-arr"
+                            data-bs-toggle="collapse" href="#collapseExample">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icon/Reports.png" class="img-fluid mx-2" width="20"
+                                        height="20">
+                                </span>
+                                <p class="m-0 text-white">
+                                    Home
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down text-white"></i></div>
+                        </a>
+                        <div class="collapse show" id="collapseExample">
+                            <ul class="position-relative list-unstyled  border-start mt-2 ps-2 ms-4">
+                                <li class="py-1 ">
+                                    <a href="" class="text-decoration-none fs-12 text-dark-gray  text-nowrap">
+                                        Planner
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="" class="text-decoration-none active  text-dark-gray fs-12 ">
+                                        My Dashboard
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12  ">
+                                        Pending Co-Signature
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12 ">
+                                        QA Center
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12  ">
+                                        HIS Export Manager
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12  ">
+                                        My Payroll Summary
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav sidebar_list mt-3 ">
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex align-items-center  justify-content-between arrowdown-arr"
+                            data-bs-toggle="collapse" href="#collapseExample1">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icon/Reports.png" class="img-fluid mx-2" width="20"
+                                        height="20">
+                                </span>
+                                <p class="m-0 text-white">
+                                    PATIENT
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down text-white"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseExample1">
+                            <ul class="position-relative list-unstyled border-start mt-2 ps-2 ms-4 ">
+                                <li class="">
+                                    <a href="" class="text-decoration-none fs-12 text-dark-gray  text-nowrap">
+                                        Patient Dashboard
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="" class="text-decoration-none   text-dark-gray fs-12 ">
+                                        Inquiries
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12  ">
+                                        Referrals
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12 ">
+                                        Patient Charts
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12  ">
+                                        Medication
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12  ">
+                                        My Payroll Summary
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="position-relative list-unstyled border-start mt-2 ps-2 ms-4 ">
+                                <li class="">
+                                    <a href="" class="text-decoration-none fs-12 text-dark-gray  text-nowrap">
+                                        eMAR
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none   text-dark-gray fs-12 ">
+                                        Allergy
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12  ">
+                                        Bereavement
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12 ">
+                                        Plan of Care
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="position-relative list-unstyled border-start mt-2 ps-2 ms-4 ">
+                                <li class="">
+                                    <a href="" class="text-decoration-none fs-12 text-dark-gray  text-nowrap">
+                                        Diagnosis
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none   text-dark-gray fs-12 ">
+                                        Frequency
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12  ">
+                                        Infectious Disease
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12 ">
+                                        Level of Care History
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="position-relative list-unstyled border-start mt-2 ps-2 ms-4 ">
+                                <li class=" ">
+                                    <a href="" class="text-decoration-none fs-12 text-dark-gray  text-nowrap">
+                                        Orders Manage
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none   text-dark-gray fs-12 ">
+                                        Consents
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12  ">
+                                        Benefits Periods Manager
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12 ">
+                                        Authorizations
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="position-relative list-unstyled border-start mt-2 ps-2 ms-4 ">
+                                <li class=" ">
+                                    <a href="" class="text-decoration-none fs-12 text-dark-gray  text-nowrap">
+                                        Non Covered Items
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none   text-dark-gray fs-12 ">
+                                        Non Covered Items
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12  ">
+                                        Vital Signs
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav sidebar_list  mt-3">
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex align-items-center  justify-content-between arrowdown-arr"
+                            data-bs-toggle="collapse" href="#collapseExample2">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icon/Reports.png" class="img-fluid mx-2" width="20"
+                                        height="20">
+                                </span>
+                                <p class="m-0 text-white">
+                                    SCHEDULE
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down text-white"></i></div>
+                        </a>
+                        <div class="collapse " id="collapseExample2">
+                            <ul class="position-relative list-unstyled  border-start mt-2 ps-2 ms-4">
+                                <li class="py-1 ">
+                                    <a href="" class="text-decoration-none fs-12 text-dark-gray  text-nowrap">
+                                        Planner
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="" class="text-decoration-none   text-dark-gray fs-12 ">
+                                        My Dashboard
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12  ">
+                                        Pending Co-Signature
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12 ">
+                                        QA Center
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav sidebar_list  mt-3">
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex align-items-center  justify-content-between arrowdown-arr"
+                            data-bs-toggle="collapse" href="#collapseExample3">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icon/Reports.png" class="img-fluid mx-2" width="20"
+                                        height="20">
+                                </span>
+                                <p class="m-0 text-white">
+                                    PEOPLE
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down text-white"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseExample3">
+                            <ul class="position-relative list-unstyled  border-start mt-2 ps-2 ms-4">
+                                <li class="py-1 ">
+                                    <a href="" class="text-decoration-none fs-12 text-dark-gray  text-nowrap">
+                                        Planner
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="" class="text-decoration-none   text-dark-gray fs-12 ">
+                                        My Dashboard
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12  ">
+                                        Pending Co-Signature
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12 ">
+                                        QA Center
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav sidebar_list  mt-3">
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex align-items-center  justify-content-between arrowdown-arr"
+                            data-bs-toggle="collapse" href="#collapseExample4">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icon/Reports.png" class="img-fluid mx-2" width="20"
+                                        height="20">
+                                </span>
+                                <p class="m-0 text-white">
+                                    BILLING
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down text-white"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseExample4">
+                            <ul class="position-relative list-unstyled  border-start mt-2 ps-2 ms-4">
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none fs-12 text-dark-gray  text-nowrap">
+                                        Planner
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="" class="text-decoration-none   text-dark-gray fs-12 ">
+                                        My Dashboard
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12  ">
+                                        Pending Co-Signature
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12 ">
+                                        QA Center
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav sidebar_list  mt-3">
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex align-items-center  justify-content-between arrowdown-arr"
+                            data-bs-toggle="collapse" href="#collapseExample5">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icon/Reports.png" class="img-fluid mx-2" width="20"
+                                        height="20">
+                                </span>
+                                <p class="m-0 text-white">
+                                    ADMIN
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down text-white"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseExample5">
+                            <ul class="position-relative list-unstyled  border-start mt-2 ps-2 ms-4">
+                                <li class="py-1 ">
+                                    <a href="" class="text-decoration-none fs-12 text-dark-gray  text-nowrap">
+                                        Planner
+                                    </a>
+                                </li>
+                                <li class=" py-1">
+                                    <a href="" class="text-decoration-none   text-dark-gray fs-12 ">
+                                        My Dashboard
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12  ">
+                                        Pending Co-Signature
+                                    </a>
+                                </li>
+                                <li class="py-1">
+                                    <a href="" class="text-decoration-none text-dark-gray fs-12 ">
+                                        QA Center
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav sidebar_list  mt-3">
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex align-items-center  justify-content-between arrowdown-arr"
+                            data-bs-toggle="collapse" href="#collapseExample6">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icon/Reports.png" class="img-fluid mx-2" width="20"
+                                        height="20">
+                                </span>
+                                <p class="m-0 text-white">
+                                    REPORT
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down text-white"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseExample6">
+                            <ul class="position-relative list-unstyled  border-start mt-2 ps-2 ms-4">
+                                <li class="py-1 ">
+                                    <a href="" class="text-decoration-none fs-12 text-dark-gray  text-nowrap">
+                                        Planner
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav sidebar_list  mt-3">
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex align-items-center  justify-content-between arrowdown-arr"
+                            data-bs-toggle="collapse" href="#collapseExample7">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icon/Reports.png" class="img-fluid mx-2" width="20"
+                                        height="20">
+                                </span>
+                                <p class="m-0 text-white">
+                                    HELP
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down text-white"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseExample7">
+                            <ul class="position-relative list-unstyled  border-start mt-2 ps-2 ms-4">
+                                <li class="py-1 ">
+                                    <a href="" class="text-decoration-none fs-12 text-dark-gray  text-nowrap">
+                                        Planner
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="page-content-wrapper">
+            <header>
+                <nav>
+                    <div class="container-fluid">
+                        <div class="row g-2 align-items-center justify-content-between  ">
+                            <div class="col-6 col-md-6 col-lg-8">
+                                <div class="input-group  mt-3">
+                                    <input type="text" class="form-control border  pad-14-20  fs-14 bg-transparent "
+                                        placeholder="Search for anything...">
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-2">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div>
+                                        <a href="">
+                                            <img src="assets/images/icon/notify.png" class="img-fluid" width="20px">
+                                        </a>
+                                    </div>
+                                    <!-- <div>
+                                        <a href="customer-complaint.html">
+                                            <img src="assets/images/icon/inboX.png" class="img-fluid" width="22px">
+                                        </a>
+                                    </div> -->
+                                    <button type="button" class="border-0 bg-transparent position-relative">
+                                        <img src="assets/images/icon/inboX.png" class="img-fluid" width="22px">
+                                        <span
+                                            class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                            <span class="visually-hidden">New alerts</span>
+                                        </span>
+                                    </button>
+                                    <div class="">
+                                        <button class="btn fw-semibold  p-0 border-0 d-flex align-items-center"
+                                            type="button">
+                                            <img src="assets/images/av-1.png" class="img-fluid rounded-5 " width="40px">
+                                            <span class="ps-1">
+                                                Kiran
+                                            </span>
+
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="container-fluid mb-4">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="row g-2 mt-1">
+                            <div class="col-lg-3">
+                                <div class="card border-0 bg-blue  rounded-4 ">
+                                    <div class="card-body d-flex align-items-start gap-3 p-4">
+                                        <div class="flex-shrink-0 bg-white rounded-5 ">
+                                            <img src="assets/images/blue.png" class="img-fluid" width="35px">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="text-1 fw-semibold text-white m-0 fs-13">Total Patients</p>
+                                            <h4 class=" fw-bold text-main m-0 ">2.3k</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card border-0 bg-blue rounded-4 ">
+                                    <div class="card-body d-flex align-items-start gap-3 p-4">
+                                        <div class="flex-shrink-0 bg-white rounded-5">
+                                            <img src="assets/images/blue.png" class="img-fluid  " width="35px">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="text-1 fw-semibold m-0 text-white  fs-13">Appointments</p>
+                                            <h4 class=" fw-bold m-0 text-main">2.3k</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card border-0 bg-blue rounded-4">
+                                    <div class="card-body d-flex align-items-start gap-3 p-4">
+                                        <div class="flex-shrink-0 bg-white rounded-5">
+                                            <img src="assets/images/blue.png" class="img-fluid  " width="35px">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="text-1 fw-semibold m-0 text-white  fs-13">Onsite Visits</p>
+                                            <h4 class=" fw-bold m-0 text-main">2.3k</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card border-0 bg-blue rounded-4 ">
+                                    <div class="card-body d-flex align-items-start gap-3 p-4">
+                                        <div class="flex-shrink-0 bg-white rounded-5">
+                                            <img src="assets/images/blue.png" class="img-fluid  " width="35px">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <p class="text-1 fw-semibold m-0 text-white fs-13">Onsite Visits</p>
+                                            <h4 class=" fw-bold m-0 text-main">2.3k</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card border-0 linear rounded-4 mt-3">
+                            <div class="card-body d-flex align-items-start gap-3 p-3">
+                                <div class="flex-shrink-0 d-flex mt-4 pt-2">
+                                    <h1 class="text-white ">27</h1>
+                                    <span>
+                                        <img src="assets/images/Ellipse.png" class="img-fluid " width="10px">
+                                    </span>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <span class="d-flex justify-content-end ">
+                                        <img src="assets/images/sun 1.png" class="img-fluid ">
+                                    </span>
+                                    <p class="text-1 fw-semibold text-white w-100 m-0 fs-13">Tuesday, 23 December </p>
+                                    <div class="d-flex align-items-center ">
+                                        <span>
+                                            <img src="assets/images/location.png" class="img-fluid">
+                                        </span>
+                                        <p class=" fw-semibold text-white ps-1 w-100 m-0 fs-13">Gonin Gora, Kad</p>
+                                    </div>
+                                    <!-- <h4 class=" fw-bold text-main m-0 ">2.3k</h4> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow mt-3 ">
+                            <div class="card-header border-0 bg-transparent ">
+                                <div class="d-flex align-items-center justify-content-between ">
+                                    <h5 class="text-black fw-semibold ">Patient’s Census</h5>
+                                    <div class="">
+                                        <select class="form-select pad-9-16 border-gray rounded-1 w-100">
+                                            <option>Month</option>
+                                            <option selected>Day</option>
+                                            <option>Year</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between  ">
+                                    <div class="d-flex ">
+                                        <span>
+                                            <img src="assets/images/Oval-blue.png" class="img-fluid">
+                                        </span>
+                                        <span>
+                                            <p class="fs-12 text-gray pt-1 ps-1">Admitted patients</p>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex ">
+                                        <span>
+                                            <img src="assets/images/Oval-orange.png" class="img-fluid">
+                                        </span>
+                                        <span>
+                                            <p class="fs-12 text-gray pt-1 ps-1">Discharge patients</p>
+                                        </span>
+                                    </div>
+                                    <div class="d-flex ">
+                                        <span>
+                                            <img src="assets/images/Oval-red.png" class="img-fluid">
+                                        </span>
+                                        <span>
+                                            <p class="fs-12 text-gray pt-1 ps-1">Deceased</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div id="columnchart_material"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card border-0 shadow mt-3 p-3">
+                            <div class="card border-0 bg-light-b  rounded-4 ">
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-end position-relative ">
+                                        <span class="per  px-3 rounded-1 fs-12 position-absolute ">51% <img
+                                                src="assets/images/per-green.png" class="img-fluid pb-1"
+                                                width="15px"></span>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-3 ">
+                                        <div class="flex-shrink-0 bg-white rounded-5 ">
+                                            <img src="assets/images/blue.png" class="img-fluid" width="35px">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h4 class=" fw-bold text-black  m-0 ">2k</h4>
+                                            <p class="text-1 fw-semibold text-muted m-0 fs-13">Total Patients</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card border-0 bg-light-b py-0 px-0 rounded-4 mt-3 ">
+                                <div class="card-body ">
+                                    <div class="d-flex justify-content-end position-relative  ">
+                                        <span class="per-red  px-2 rounded-1 position-absolute fs-12">51% <img
+                                                src="assets/images/per-red.png" class="img-fluid pb-1"
+                                                width="15px"></span>
+                                    </div>
+                                    <div class="d-flex align-items-start gap-3 ">
+                                        <div class="flex-shrink-0 bg-white rounded-5 ">
+                                            <img src="assets/images/blue.png" class="img-fluid" width="35px">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h4 class=" fw-bold text-black  m-0 ">300</h4>
+                                            <p class="text-1 fw-semibold text-muted m-0 fs-13">Old patients</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="chart_div"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card border-0 shadow mt-3" style="height: 328px;">
+                            <div
+                                class="card-header mt-4 bg-transparent border-0 d-flex align-items-center justify-content-between">
+                                <p class="current-date fs-14 m-0 fw-semibold"></p>
+                                <div class="icons d-flex fs-14 gap-2">
+                                    <span id="prev"><i class="fa-sharp fa-solid fa-chevron-left"></i></span>
+                                    <span id="next"><i class="fa-sharp fa-solid fa-chevron-right"></i></span>
+                                </div>
+                            </div>
+                            <div class="card-body calendar">
+                                <ul class="weeks fs-14 list-unstyled d-flex gap-5">
+                                    <li>Su</li>
+                                    <li>Mo</li>
+                                    <li>Tu</li>
+                                    <li>We</li>
+                                    <li>Th</li>
+                                    <li>Fr</li>
+                                    <li>Sa</li>
+                                </ul>
+                                <ul class="days fs-12 d-flex list-unstyled flex-wrap gap-3"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="card  border-0 shadow mt-3">
+                            <div class="row ">
+                                <div class="col-lg-6">
+                                    <div class="card border-0 ">
+                                        <div class="card-header border-0 bg-transparent ">
+                                            <div class="d-flex align-items-center justify-content-between ">
+                                                <h5 class="text-black fw-semibold ">Patient List</h5>
+                                                <div class="">
+                                                    <select class="form-select pad-9-16 border-gray rounded-1 w-100">
+                                                        <option>Month</option>
+                                                        <option selected>Day</option>
+                                                        <option>Year</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body ps-2">
+                                            <div class="d-flex justify-content-between align-items-center mb-0">
+                                                <div class="d-flex align-items-start gap-3 p-2">
+                                                    <div class="flex-shrink-0 d-flex justify-content-center align-items-center  bg-sec rounded-5 "
+                                                        style="width: 47px; height: 47px;">
+                                                        <p class="fs-16 fw-semibold  text-center mb-0">DJ</p>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <p class=" fw-semibold m-0 fs-18">Demi Joan</p>
+                                                        <p class="  text-1 m-0 fs-13">Report (Home checkup)</p>
+                                                    </div>
+                                                </div>
+                                                <div class=" ">
+                                                    <span class="text-1 bg-sec px-3 rounded-1 fs-12">9 : 50 AM </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center ">
+                                                <div class="d-flex align-items-start gap-3 p-2">
+                                                    <div class="flex-shrink-0 d-flex justify-content-center align-items-center    bg-light-pink rounded-5 "
+                                                        style="width: 47px; height: 47px;">
+                                                        <p class="fs-16  fw-semibold  text-center mb-0">SM</p>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <p class=" fw-semibold m-0 fs-18">Stacy Mitchell</p>
+                                                        <p class="  text-pink m-0 fs-13">Weekly Visit (Online checkup)
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="">
+                                                    <span class="text-pink bg-light-pink  px-3 rounded-1 fs-12 ">9 : 15
+                                                        AM </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center ">
+
+                                                <div class="d-flex align-items-start gap-3 p-2">
+                                                    <div class="flex-shrink-0 d-flex justify-content-center align-items-center  bg-light-blue rounded-5 "
+                                                        style="width: 47px; height: 47px;">
+                                                        <p class="fs-16 fw-semibold  text-center mb-0"> AD</p>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <p class=" fw-semibold m-0 fs-18">Amy Dunham</p>
+                                                        <p class="  text-light-blue m-0 fs-13">Routine Checkup
+                                                            (Hospital)</p>
+                                                    </div>
+                                                </div>
+                                                <div class=" ">
+                                                    <span class="text-light-blue bg-light-blue px-3 rounded-1 fs-12  ">9
+                                                        : 30 AM </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center ">
+                                                <div class="d-flex align-items-start gap-3 p-2">
+                                                    <div class="flex-shrink-0 d-flex justify-content-center align-items-center  bg-sec rounded-5 "
+                                                        style="width: 47px; height: 47px;">
+                                                        <p class="fs-16 fw-semibold  text-center mb-0">DJ</p>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <p class=" fw-semibold m-0 fs-18">Demi Joan</p>
+                                                        <p class="  text-1 m-0 fs-13">Report (Home checkup)</p>
+                                                    </div>
+                                                </div>
+                                                <div class=" ">
+                                                    <span class="text-1 bg-sec px-3 rounded-1 fs-12">9 : 50 AM </span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center ">
+                                                <div class="d-flex align-items-start gap-3 p-2">
+                                                    <div class="flex-shrink-0 d-flex justify-content-center align-items-center    bg-light-pink rounded-5 "
+                                                        style="width: 47px; height: 47px;">
+                                                        <p class="fs-16  fw-semibold  text-center mb-0">SM</p>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <p class=" fw-semibold m-0 fs-18">Susan Myers</p>
+                                                        <p class="  text-pink m-0 fs-13">Weekly Visit (Online checkup)
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="">
+                                                    <span class="text-pink bg-light-pink  px-3 rounded-1 fs-12 ">10 : 15
+                                                        AM </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card border-0 p-3">
+                                        <div class="card-header border-0 p-0 bg-transparent ">
+                                            <h5 class="text-black fw-semibold  pt-1">Consultation</h5>
+                                        </div>
+                                        <div class="card-body  border-blue ">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="d-flex align-items-start gap-3 p-2">
+                                                    <div class="flex-shrink-0 d-flex justify-content-center align-items-center  bg-sec rounded-5 "
+                                                        style="width: 47px; height: 47px;">
+                                                        <p class="fs-16 fw-semibold  text-center mb-0">DW</p>
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <p class=" fw-semibold m-0 fs-18">Denzel White</p>
+                                                        <p class="  text-1 m-0 fs-13">Male - 28 Years 3 Months</p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-shrink-0 bg-light-c  rounded-5 ">
+                                                    <img src="assets/images/Icon/more.png" class="p-1 img-fluid"
+                                                        width="30px">
+                                                </div>
+                                            </div>
+                                            <div class="row ps-2 pt-2 ">
+                                                <div class="col-lg-3 ">
+                                                    <img src="assets/images/fever.png" alt="">
+                                                    <p class="fs-13  fw-semibold m-b0">Fever</p>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <img src="assets/images/cough.png" alt="">
+                                                    <p class="fs-13  fw-semibold mb-0">Cough</p>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <img src="assets/images/heart-burn.png" alt="">
+                                                    <p class="fs-13  fw-semibold mb-0">Heart Burn</p>
+                                                </div>
+                                            </div>
+                                            <hr class="mt-0">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <p class="fs-13 fw-semibold ">Last Checked</p>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <span class="d-flex fw-semibold  fs-12">Dr Everly <p
+                                                            class="text-muted ps-1 fs-12 fw-light  mb-0"> on 21 April
+                                                            2021 Prescription</p></span>
+                                                    <a href="" class="text-decoration-none ">#2J983KT0</a>
+
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <p class="fs-13 fw-semibold ">Observation</p>
+                                                </div>
+                                                <div class="col-lg-8 mt-2">
+                                                    <p class="text-muted  fs-12 fw-light  mb-0"> High fever and cough at
+                                                        normal hemoglobin levels. </p>
+
+
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <p class="fs-13 fw-semibold ">Prescription</p>
+                                                </div>
+                                                <div class="col-lg-8 mt-2">
+                                                    <p class="text-muted  fs-12 fw-light  mb-0"> Paracetmol - 2 times a
+                                                        day
+                                                        Dizopam - Day and Night before meal
+                                                        Wikoryl </p>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card border-0 shadow mt-3">
+                            <div class="card-header d-flex justify-content-between border-0 bg-transparent ">
+                                <h5 class="fw-semibold ">Visit’s Statistics</h5>
+                                <div class="">
+                                    <img src="assets/images/Icon/edit.png" class="img-fluid " width="20px">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="donutchart"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="card shadow border-0 mt-3">
+                            <div class="card-header bg-transparent border-0">
+                                <h5 class="fw-semibold ">Home Checkup Patient’s Location</h4>
+                            </div>
+                            <div class="card-body">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13279.79175523371!2d73.17036245!3d33.684412200000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1706692962524!5m2!1sen!2s"
+                                    width="100%" height="335" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card shadow border-0 mt-3">
+                            <div class="card-header border-0 bg-transparent ">
+                                <h5 class="text-black  fw-semibold">
+                                    Unread Messages
+                                </h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex">
+                                    <span>
+                                        <img src="assets/images/av-1.png" class="img-fluid rounded-5 " width="40px">
+                                    </span>
+                                    <div class="ps-3">
+                                        <p class="fw-semibold fs-14 mb-0">Ana Black</p>
+                                        <p class="text-muted fs-14 mb-0">How are you?</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <span>
+                                        <img src="assets/images/av-1.png" class="img-fluid rounded-5 " width="40px">
+                                    </span>
+                                    <div class="ps-3">
+                                        <p class="fw-semibold fs-14 mb-0">George Litz</p>
+                                        <p class="text-muted fs-14 mb-0">How are you?</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <span>
+                                        <img src="assets/images/av-1.png" class="img-fluid rounded-5 " width="40px">
+                                    </span>
+                                    <div class="ps-3">
+                                        <p class="fw-semibold fs-14 mb-0">George Litz</p>
+                                        <p class="text-muted fs-14 mb-0">How are you?</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <span>
+                                        <img src="assets/images/av-1.png" class="img-fluid rounded-5 " width="40px">
+                                    </span>
+                                    <div class="ps-3">
+                                        <p class="fw-semibold fs-14 mb-0">John Miller</p>
+                                        <p class="text-muted fs-14 mb-0">How are you?</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <span>
+                                        <img src="assets/images/av-1.png" class="img-fluid rounded-5 " width="40px">
+                                    </span>
+                                    <div class="ps-3">
+                                        <p class="fw-semibold fs-14 mb-0">Jane Jonhson</p>
+                                        <p class="text-muted fs-14 mb-0">How are you?</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <span>
+                                        <img src="assets/images/av-1.png" class="img-fluid rounded-5 " width="40px">
+                                    </span>
+                                    <div class="ps-3">
+                                        <p class="fw-semibold fs-14 mb-0">Jane Jonhson</p>
+                                        <p class="text-muted fs-14 mb-0">How are you?</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <span>
+                                        <img src="assets/images/av-1.png" class="img-fluid rounded-5 " width="40px">
+                                    </span>
+                                    <div class="ps-3">
+                                        <p class="fw-semibold fs-14 mb-0">Katona Beatrix</p>
+                                        <p class="text-muted fs-14 mb-0">How are you?</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="card shadow border-0 mt-3">
+                            <div class="card-header d-flex justify-content-between  border-0 bg-transparent">
+                                <h5 class="fw-semibold">
+                                    Recertification
+                                </h5>
+                                <span class=""><a href="" class="text-decoration-none fs-14">View details</a> <img
+                                        src="assets/images/Icon/edit.png" class="img-fluid " width="20px"></span>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <p class="fs-14 text-center">Past due</p>
+                                        <div class="mt-5" id="donut_single" style="width: 100%;"></div>
+
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <p class="fs-14 text-center">At Risk</p>
+                                        <div id="donut_single1" style="width: 100%;"></div>
+
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <p class="fs-14 text-center">Upcoming (15 - 30 days)</p>
+                                        <div class="mt-5" id="donut_single2" style="width: 100%;"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card border-0 shadow mt-3">
+                            <div class="card-header d-flex justify-content-between border-0 bg-transparent ">
+                                <h5 class="fw-semibold ">Billing Claims</h5>
+                                <div class="">
+                                    <img src="assets/images/Icon/edit.png" class="img-fluid " width="20px">
+                                </div>
+                            </div>
+                            <div class="card-body ">
+                                <div class="text-center fw-bold text-black my-4">Total issues: 46</div>
+                                <div id="donutchart1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="card shadow p-3 border-0 mt-3">
+                            <iframe width="100%" height="500px" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0 rounded-4 shadow mt-3">
+                            <div class="card-header border-0 bg-transparent ">
+                                <div class="d-flex align-items-center">
+                                    <span>
+                                        <img src="assets/images/Icon/dot.png" class="img-fluid ">
+                                    </span>
+                                    <p class="text-muted  ps-2 fs-12 mb-0">DAILY READ</p>
+                                </div>
+                                <h5 class="fw-semibold ">Equitable medical education with efforts toward real change
+                                </h5>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="card-img">
+                                    <img src="assets/images/card-img.png" class="img-fluid " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0 rounded-4 shadow mt-3">
+                            <div class="card-header border-0 bg-transparent ">
+                                <div class="d-flex align-items-center">
+                                    <span>
+                                        <img src="assets/images/Icon/dot.png" class="img-fluid ">
+                                    </span>
+                                    <p class="text-muted  ps-2 fs-12 mb-0">DAILY READ</p>
+                                </div>
+                                <h5 class="fw-semibold ">Equitable medical education with efforts toward real change
+                                </h5>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="card-img">
+                                    <img src="assets/images/card-img.png" class="img-fluid " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0 rounded-4 shadow mt-3">
+                            <div class="card-header border-0 bg-transparent ">
+                                <div class="d-flex align-items-center">
+                                    <span>
+                                        <img src="assets/images/Icon/dot.png" class="img-fluid ">
+                                    </span>
+                                    <p class="text-muted  ps-2 fs-12 mb-0">DAILY READ</p>
+                                </div>
+                                <h5 class="fw-semibold ">Equitable medical education with efforts toward real change
+                                </h5>
+                            </div>
+                            <div class="card-body p-2">
+                                <div class="card-img">
+                                    <img src="assets/images/card-img.png" class="img-fluid " alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/myapp.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+    <!-- -------------------- CALENDER SCRIPT --------------------  -->
+    <script>
+        const daysTag = document.querySelector(".days"),
+            currentDate = document.querySelector(".current-date"),
+            prevNextIcon = document.querySelectorAll(".icons span");
+        let date = new Date(),
+            currYear = date.getFullYear(),
+            currMonth = date.getMonth();
+        const months = ["January", "February", "March", "April", "May", "June", "July",
+            "August", "September", "October", "November", "December"];
+        const renderCalendar = () => {
+            let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(),
+                lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(),
+                lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay(),
+                lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate();
+            let liTag = "";
+            for (let i = firstDayofMonth; i > 0; i--) {
+                liTag += `<li class="inactive">${lastDateofLastMonth - i + 1}</li>`;
+            }
+            for (let i = 1; i <= lastDateofMonth; i++) {
+                let isToday = i === date.getDate() && currMonth === new Date().getMonth()
+                    && currYear === new Date().getFullYear() ? "active" : "";
+                liTag += `<li class="${isToday}">${i}</li>`;
+            }
+            for (let i = lastDayofMonth; i < 6; i++) {
+                liTag += `<li class="inactive">${i - lastDayofMonth + 1}</li>`
+            }
+            currentDate.innerText = `${months[currMonth]} ${currYear}`;
+            daysTag.innerHTML = liTag;
+        }
+        renderCalendar();
+        prevNextIcon.forEach(icon => {
+            icon.addEventListener("click", () => {
+                currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
+                if (currMonth < 0 || currMonth > 11) {
+                    date = new Date(currYear, currMonth, new Date().getDate());
+                    currYear = date.getFullYear();
+                    currMonth = date.getMonth();
+                } else {
+                    date = new Date();
+                }
+                renderCalendar();
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['bar'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['month', '', '', ''],
+                ['Jan', 2000, 700, 700],
+                ['Feb', 1170, 250, 460],
+                ['Mar', 660, 1120, 300],
+                ['Apr', 1030, 540, 350],
+                ['May', 1030, 540, 350],
+                ['Jun', 1030, 540, 350],
+                ['July', 1030, 540, 350]
+            ]);
+
+            var options = {
+                title: '',
+                colors: ['#04BFDA', '#FFA84A', '#FF1519'],
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+        }
+    </script>
+    <script>
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Pizza');
+            data.addColumn('number', 'Populartiy');
+            data.addRows([
+                ['Male', 67],
+                ['Female', 27],
+                ['child', 21], // Below limit.
+
+            ]);
+
+            var options = {
+
+                sliceVisibilityThreshold: .1,
+                colors: ['#04BFDA', '#FFA84A', '#FB67CA']
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+            chart.draw(data, options);
+
+        }
+    </script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['To Do', 62],
+                ['In progress', 25],
+                ['Done', 12]
+            ]);
+
+            var options = {
+                colors: ['#04BFDA', '#f59e0b', '#14b8a6'],
+                pieHole: 0.6,
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+            chart.draw(data, options);
+        }
+    </script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Effort', 'Amount given'],
+                ['My all', 54],
+            ]);
+
+            var options = {
+                pieHole: 0.7,
+                pieSliceTextStyle: {
+                    color: 'black',
+                },
+                legend: 'none'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('donut_single'));
+            chart.draw(data, options);
+        }
+    </script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Effort', 'Amount given'],
+                ['My all', 54],
+            ]);
+
+            var options = {
+                pieHole: 0.7,
+                pieSliceTextStyle: {
+                    color: 'black',
+
+                },
+                legend: 'none'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('donut_single1'));
+            chart.draw(data, options);
+        }
+    </script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['Effort', 'Amount given'],
+                ['My all', 54],
+            ]);
+
+            var options = {
+                pieHole: 0.7,
+                pieSliceTextStyle: {
+                    color: 'black',
+
+                },
+                legend: 'none'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('donut_single2'));
+            chart.draw(data, options);
+        }
+    </script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Task', 'Hours per Day'],
+                ['To Be Send', 62],
+                ['Already Send', 25],
+                ['Received', 12]
+            ]);
+    
+            var options = {
+                colors: ['#04BFDA', '#f59e0b', '#14b8a6'],
+                pieHole: 0.6,
+                width: 200,
+                height: 100,
+                chartArea: { width: '100%', height: '100%' },
+                fontSize: 12,
+                legend: { alignment: 'center', textStyle: { fontSize: 10 } },
+                pieSliceText: 'none'
+            };
+    
+            var chart = new google.visualization.PieChart(document.getElementById('donutchart1'));
+            chart.draw(data, options);
+        }
+    </script>
+</body>
+</html

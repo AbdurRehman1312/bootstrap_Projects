@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Public+Sans:wght@100;200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --main-color: #1b9ede;
+  --text-gray: #848a9c;
+  --bg-light: rgba(35, 166, 240, 0.4);
+  --black-color: #000;
+  --bg-blue: #23a6f0;
+  --text-dark-gray: #5c5e64;
+  --text-1: #128983;
+  --text-pink: #f62088;
+  --bg-light-pink: #fedeed;
+  --bg-light-blue: #bfbfff;
+  --text-light-blue: #0000ff;
+  --bg-sky: #e9f3fc;
+}
+.fs-10 {
+  font-size: 10px;
+}
+.fs-11 {
+  font-size: 11px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-13 {
+  font-size: 13px !important;
+}
+.fs-14 {
+  font-size: 14px !important;
+}
+
+.fs-10 {
+  font-size: 10px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.linear {
+  background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%);
+}
+.bg-light-pink {
+  background-color: var(--bg-light-pink);
+}
+.text-dark-gray {
+  color: var(--text-dark-gray);
+}
+.pad-14-20 {
+  padding: 10px 20px;
+}
+.pad-9-16 {
+  padding: 10px 16px !important;
+}
+
+.text-main {
+  color: var(--main-color);
+}
+.text-1 {
+  color: var(--text-1);
+}
+.text-light-blue {
+  color: var(--text-light-blue);
+}
+.text-pink {
+  color: var(--text-pink);
+}
+.form-control:focus {
+  outline: 0;
+}
+.bg-light-c {
+  background-color: #c8c7c7;
+}
+.bg-blue {
+  background: rgba(35, 166, 240, 0.4);
+}
+.bg-light-b {
+  background-color: #f6f6f6;
+}
+.bg-sky {
+  background-color: var(--bg-sky);
+}
+.per {
+  background-color: #dffddd;
+  color: #008000;
+}
+.bg-sec {
+  background-color: #bcdad9;
+}
+.bg-light-blue {
+  background-color: var(--bg-light-blue);
+}
+.per-red {
+  background: rgba(211, 4, 4, 0.15);
+  color: #d30404;
+}
+.sidebar_list .nav-item .nav-link {
+  background-color: var(--main-color) !important;
+  border: none;
+  font-weight: 700;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.collapse ul li .active {
+  color: var(--main-color);
+  border-radius: 8px;
+  background: #f6f6f6;
+  /* padding: 8px 12px; */
+}
+.collapse ul li a {
+  display: flex;
+  width: 172px;
+  padding: 8px 12px;
+  align-items: center;
+  gap: 12px;
+}
+#wrapper {
+  overflow-x: hidden;
+}
+#sidebar-wrapper {
+  width: 20%;
+}
+.side-list {
+  border-right: 1px solid #d9d9d9;
+  height: 560px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#page-content-wrapper {
+  width: 80%;
+  height: 100vh;
+  overflow: scroll;
+}
+.border-gray {
+  border: 1px solid var(--border-color) !important;
+}
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  background-color: var(--text-gray1) !important;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 12px;
+}
+.border-blue {
+  border-radius: 16.386px;
+  border: 1.024px solid rgba(88, 182, 222, 0.5);
+}
+.blobs-vector {
+  width: 60%;
+}
+.input-bg {
+  background: rgba(176, 186, 195, 0.4);
+}
+.btncust {
+  padding: 10px 14px;
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  width: 120px;
+}
+.border-r {
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 30px;
+}
+.calendar .weeks,
+.calendar .days {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important; /* Align items to the start */
+  gap: 5px !important; /* Adjust the gap between items as needed */
+}
+.calendar .weeks li,
+.calendar .days li {
+  width: calc(100% / 9); /* Set equal width for each day */
+}
+.card-header .icons span {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  text-align: center;
+  user-select: none;
+  border-radius: 50%;
+}
+.card-header .icons span:hover {
+  background: #f2f2f2;
+}
+.calendar li {
+  color: #333;
+}
+.calendar .weeks li {
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+}
+.days li.inactive {
+  color: #aaa;
+}
+.days li.active {
+  color: #fff;
+}
+.days li::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 20px;
+  width: 20px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-90%, -50%);
+}
+.days li.active::before {
+  background: var(--bg-blue);
+}
+.days li:not(.active):hover::before {
+  background: #f2f2f2;
+}
