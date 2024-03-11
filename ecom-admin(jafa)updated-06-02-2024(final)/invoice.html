@@ -1,0 +1,1410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css" />
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  " />
+    <!-- flag dropdown -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.3.3/css/intlTelInput.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
+
+    <title>Invoice || Ecom Admin Panel</title>
+
+    <style>
+        #logobox {
+            height: 50px;
+            width: 50px;
+        }
+
+        .form-range::-webkit-slider-thumb,
+        .form-range::-webkit-slider-thumb:active {
+            background-color: #B88E2F;
+        }
+
+        .product_img {
+            height: 60px;
+            width: 80px;
+        }
+
+        .controlsOptions {
+            height: 350px;
+        }
+        #logoSizeRange{
+            direction: rtl;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <!-- navbar start from here -->
+            <header class="">
+                <nav class="bg-white custom_nav">
+                    <div class="container-fluid">
+                        <div class="row g-2 align-items-center justify-content-between">
+                            <div class="col-6 col-md-6 col-lg-3">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="dropdown">
+                                        <button class="btn p-0 border-0 d-flex align-items-center" type="button"
+                                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="assets/images/icons/user.png" class="img-fluid" width="22px">
+                                        </button>
+                                        <ul class="dropdown-menu dropact" style="width: 300px"
+                                            aria-labelledby="dropdownMenuButton1">
+                                            <li>
+                                                <a class="dropdown-item d-flex fs-13 align-items-center gap-3 text-black"
+                                                    href="profile-setting.html">
+                                                    <span>
+                                                        <img src="assets/images/icons/ch-cir-b.png" class="img-fluid"
+                                                            width="18px">
+                                                    </span>
+                                                    <span>
+                                                        Profile personally
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item d-flex fs-13 align-items-center gap-3 text-black"
+                                                    href="store-settings-notification.html">
+                                                    <span>
+                                                        <img src="assets/images/icons/ch-cir-b.png" class="img-fluid"
+                                                            width="18px">
+                                                    </span>
+                                                    <span>
+                                                        Alerts
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item d-flex fs-13 align-items-center gap-3 text-black"
+                                                    href="https://quffa.replatechnologies.com/news-blog.html">
+                                                    <span>
+                                                        <img src="assets/images/icons/ch-cir-b.png" class="img-fluid"
+                                                            width="18px">
+                                                    </span>
+                                                    <span>
+                                                        Platform updates
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item d-flex fs-13 align-items-center gap-3 text-black"
+                                                    href="https://quffa.replatechnologies.com/help-center.html">
+                                                    <span>
+                                                        <img src="assets/images/icons/ch-cir-b.png" class="img-fluid"
+                                                            width="18px">
+                                                    </span>
+                                                    <span>
+                                                        Suggestions
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item d-flex fs-13 align-items-center gap-3 text-black"
+                                                    href="#">
+                                                    <span>
+                                                        <img src="assets/images/icons/ch-cir-b.png" class="img-fluid"
+                                                            width="18px">
+                                                    </span>
+                                                    <span>
+                                                        Sign out
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            <img src="assets/images/icons/noti.png" class="img-fluid" width="20px">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="customer-complaint.html">
+                                            <img src="assets/images/icons/report-ic.png" class="img-fluid" width="22px">
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center text-blue">
+                                        <i class="fas fa-sliders-h fs-4 me-3" id="menu-toggle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-6">
+                                <div class="input-group shadow pad-14-20">
+                                    <input type="text" class="form-control p-0 fs-14 bg-transparent border-0"
+                                        placeholder="Search for anything...">
+                                    <span class="input-group-text bg-transparent p-0 border-0" id="basic-addon2">
+                                        <img src="assets/images/icons/search.png" class="img-fluid" width="20px">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 d-none d-lg-flex"></div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- navbar end here -->
+            <div class="container-fluid pt-3">
+                <div class="card border-gray3 rounded-3 shadow-c mb-3">
+                    <div class="card-body">
+                        <div class="row g-3 justify-content-between">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center flex-wrap gap-3">
+                                    <div class="flex-shrink-0">
+                                        <a href="#restoreSettings" data-bs-toggle='modal'
+                                            class="btn border-gray fs-14 shadow-c d-flex align-items-center gap-2 text-1 bg-white"
+                                            type="button">
+                                            <img src="./assets/images/icons/list-icon-g.png" class="img-fluid"
+                                                width="15px">
+                                            <span>Restore the Default Settings</span>
+                                        </a>
+                                    </div>
+                                    <div class="flex-shrink-0">
+                                        <button
+                                            class="btn border-gray fs-14 w-100 d-flex align-items-center gap-2 shadow-c text-1 bg-white"
+                                            type="button">
+                                            <img src="assets/images/icons/filter.png" class="img-fluid" width="15px">
+                                            <span>Export PDF</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 d-flex align-items-center justify-content-end">
+                                <h6 class="m-0 text-black fw-bold">Invoices</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                        <div class="card  border-gray3 rounded-3 shadow-c">
+                            <div class="card-header border-0 bg-transparent py-3">
+                                <h6 class="text-black text-end fw-semibold">
+                                    Controls
+                                </h6>
+                            </div>
+                            <div class="card-body py-0">
+                                <div class="accordion accordcu iconleft" id="accordionPanelsStayOpenExample">
+                                    <div class="accordion-item border-0 mb-4">
+                                        <h2 class="accordion-header" id="producthead">
+                                            <button
+                                                class="accordion-button bg-gray-shade d-flex flex-row-reverse rounded-0 fs-13 fw-semibold collapsed"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#productcont"
+                                                aria-expanded="true" aria-controls="productcont">
+                                                Controls Options
+                                            </button>
+                                        </h2>
+                                        <div id="productcont" class="accordion-collapse collapse"
+                                            aria-labelledby="producthead">
+                                            <div
+                                                class="accordion-body controlsOptions pb-0 overflow-y-scroll overflow-auto">
+                                                <div
+                                                    class="d-flex flex-wrap gap-2 justify-content-between flex-row-reverse align-items-center border-0 bg-transparent py-3">
+                                                    <div class="d-flex justify-content-start flex-column">
+                                                        <h6 class="text-black text-end mb-0 fs-14 fw-semibold">Method of
+                                                            issuing the invoice
+                                                        </h6>
+                                                        <div class="d-flex align-items-center justify-content-end my-3">
+                                                            <label class="form-check-label fs-14 text-end text-black"
+                                                                for="basket">
+                                                                Basket
+                                                            </label>
+                                                            <input class="form-check-input ms-2" type="radio"
+                                                                name="selection" id="basket" />
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-end">
+                                                            <label class="form-check-label fs-14 text-end text-black"
+                                                                for="custom">
+                                                                Custom
+                                                            </label>
+                                                            <input class="form-check-input ms-2" type="radio"
+                                                                name="selection" id="custom" />
+                                                        </div>
+                                                        <div id="customContent" class="d-none">
+                                                            <p class="text-1 fs-13 text-end pt-1">If you choose a
+                                                                provider different from Basket, the merchant will be
+                                                                responsible for linking billing in his store.</p>
+                                                            <div class="alert alert-primary alert-dismissible p-2 fs-13"
+                                                                role="alert">
+                                                                <span class="text-blue text-end fw-semibold">To be able
+                                                                    to properly connect to the Sella platform, see the
+                                                                    <a href="#">API Documentation</a></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 class="text-black text-end mb-0 fs-14 fw-semibold">
+                                                        Store address
+                                                    </h6>
+                                                    <p class="text-1 fs-13 text-end pt-1">Add a custom phrase before the
+                                                        store name, at the top of the invoice
+                                                    </p>
+                                                    <input type="text"
+                                                        class="form-control text-end rounded-1 pad-9-16 text-1 fs-12"
+                                                        value="Store Address" name="">
+                                                </div>
+                                                <div class="d-flex flex-column align-items-end gap-2 my-2">
+                                                    <div class="flex-shrink-0 d-flex align-items-center gap-2">
+                                                        <div class="">
+                                                            <label class="text-black text-end fs-14 fw-semibold"
+                                                                for="productImage">
+                                                                Show Product image
+                                                            </label>
+                                                            <p class="text-1 fs-12 m-0 text-end">Show Product image</p>
+                                                        </div>
+                                                        <input type="checkbox" checked
+                                                            class="form-check-input flex-shrink-0 fs-15 align-self-start"
+                                                            name="productImage" id="productImage">
+                                                    </div>
+                                                    <div class="flex-shrink-0 d-flex align-items-center gap-2">
+                                                        <div class="text-end">
+                                                            <label class="text-black text-end fs-14 fw-semibold"
+                                                                for="productDesc">
+                                                                Show Product Description
+                                                            </label>
+                                                            <p class="text-1 fs-12 m-0 text-end">Show a summary of the
+                                                                products description</p>
+                                                        </div>
+                                                        <input type="checkbox" checked
+                                                            class="form-check-input flex-shrink-0 fs-15 align-self-start"
+                                                            name="productDesc" id="productDesc">
+                                                    </div>
+                                                    <div class="flex-shrink-0 d-flex align-items-center gap-2">
+                                                        <div class="text-end">
+                                                            <label class="text-black text-end fs-14 fw-semibold"
+                                                                for="contactInfo">
+                                                                Show Contact Information
+                                                            </label>
+                                                            <p class="text-1 fs-12 m-0 text-end">View Contact
+                                                                Information</p>
+                                                        </div>
+                                                        <input type="checkbox" checked
+                                                            class="form-check-input flex-shrink-0 fs-15 align-self-start"
+                                                            name="contactInfo" id="contactInfo">
+                                                    </div>
+                                                    <div class="flex-shrink-0 d-flex align-items-center gap-2">
+                                                        <div class="text-end">
+                                                            <label class="text-black text-end fs-14 fw-semibold"
+                                                                for="acknowledgment">
+                                                                Show invoice acknowledgment/order details
+                                                            </label>
+                                                            <p class="text-1 fs-12 m-0 text-end">Display the
+                                                                acknowledgment text</p>
+                                                        </div>
+                                                        <input type="checkbox" checked
+                                                            class="form-check-input flex-shrink-0 fs-15 align-self-start"
+                                                            name="acknowledgment" id="acknowledgment">
+                                                    </div>
+                                                    <div class="flex-shrink-0 d-flex align-items-center gap-2">
+                                                        <div class="text-end">
+                                                            <label class="text-black text-end fs-14 fw-semibold"
+                                                                for="exchangeReturnCheck">
+                                                                Show the exchange and return policy
+                                                            </label>
+                                                            <p class="text-1 fs-12 m-0 text-end">Display the exchange
+                                                                and return policy barcode</p>
+                                                        </div>
+                                                        <input type="checkbox" checked
+                                                            class="form-check-input flex-shrink-0 fs-15 align-self-start"
+                                                            name="exchangeReturnCheck" id="exchangeReturnCheck">
+                                                    </div>
+                                                    <div class="flex-shrink-0 d-flex align-items-center gap-2">
+                                                        <div class="text-end">
+                                                            <label class="text-black text-end fs-14 fw-semibold"
+                                                                for="orderCheck">
+                                                                Show order notes
+                                                            </label>
+                                                            <p class="text-1 fs-12 m-0 text-end">View the order note
+                                                                that the customer entered</p>
+                                                        </div>
+                                                        <input type="checkbox" checked
+                                                            class="form-check-input flex-shrink-0 fs-15 align-self-start"
+                                                            name="orderCheck" id="orderCheck">
+                                                    </div>
+                                                    <div class="flex-shrink-0 d-flex align-items-center gap-2">
+                                                        <div class="text-end">
+                                                            <label class="text-black text-end fs-14 fw-semibold"
+                                                                for="storeaddressCheck">
+                                                                Show store address
+                                                            </label>
+                                                            <p class="text-1 fs-12 m-0 text-end">Show store address</p>
+                                                        </div>
+                                                        <input type="checkbox" checked
+                                                            class="form-check-input flex-shrink-0 fs-15 align-self-start"
+                                                            name="storeaddressCheck" id="storeaddressCheck">
+                                                    </div>
+                                                    <div class="flex-shrink-0 d-flex align-items-center gap-2">
+                                                        <div class="text-end">
+                                                            <label class="text-black text-end fs-14 fw-semibold"
+                                                                for="invoiceBarCheck">
+                                                                Show invoice barcode
+                                                            </label>
+                                                            <p class="text-1 fs-12 m-0 text-end">View store address</p>
+                                                        </div>
+                                                        <input type="checkbox" checked
+                                                            class="form-check-input flex-shrink-0 fs-15 align-self-start"
+                                                            name="invoiceBarCheck" id="invoiceBarCheck">
+                                                    </div>
+                                                    <div class="flex-shrink-0 d-flex align-items-center gap-2">
+                                                        <div class="text-end">
+                                                            <label class="text-black text-end fs-14 fw-semibold"
+                                                                for="productBarCheck">
+                                                                Show product barcode
+                                                            </label>
+                                                            <p class="text-1 fs-12 m-0 text-end">View store address</p>
+                                                        </div>
+                                                        <input type="checkbox" checked
+                                                            class="form-check-input flex-shrink-0 fs-15 align-self-start"
+                                                            name="productBarCheck" id="productBarCheck">
+                                                    </div>
+                                                    <div class="flex-shrink-0 d-flex align-items-center gap-2">
+                                                        <div class="text-end">
+                                                            <label class="text-black text-end fs-14 fw-semibold" for="">
+                                                                Issuing a copy of the invoice in English
+                                                            </label>
+                                                            <p class="text-1 fs-12 m-0 text-end">You will be able to
+                                                                print the invoice in Arabic and English</p>
+                                                        </div>
+                                                        <input type="checkbox" checked
+                                                            class="form-check-input flex-shrink-0 fs-15 align-self-start"
+                                                            name="" id="">
+                                                    </div>
+                                                    <div class="flex-shrink-0 d-flex align-items-center gap-2">
+                                                        <div class="text-end">
+                                                            <label class="text-black text-end fs-14 fw-semibold"
+                                                                for="productWeightCheck">
+                                                                Show Product Weight
+                                                            </label>
+                                                            <p class="text-1 fs-12 m-0 text-end">Show product weight</p>
+                                                        </div>
+                                                        <input type="checkbox" checked
+                                                            class="form-check-input flex-shrink-0 fs-15 align-self-start"
+                                                            name="productWeightCheck" id="productWeightCheck">
+                                                    </div>
+                                                    <div class="flex-shrink-0 d-flex align-items-center gap-2">
+                                                        <div class="text-end">
+                                                            <label class="text-black text-end fs-14 fw-semibold"
+                                                                for="autoSendCheck">
+                                                                Automatically send invoice/order details
+                                                            </label>
+                                                            <p class="text-1 fs-12 m-0 text-end">When the order is
+                                                                completed, the invoice is automatically sent to the
+                                                                customer</p>
+                                                        </div>
+                                                        <input type="checkbox" checked
+                                                            class="form-check-input flex-shrink-0 fs-15 align-self-start"
+                                                            name="autoSendCheck" id="autoSendCheck">
+                                                    </div>
+                                                    <div
+                                                        class="flex-shrink-0 d-flex flex-column align-items-center gap-2 autoSendContent">
+                                                        <div class="text-end">
+                                                            <h6 class="text-black text-end mb-0 fs-14 fw-semibold">
+                                                                Choose Order Status
+                                                            </h6>
+                                                            <p class="text-1 fs-12 m-0 text-end">Customize the order
+                                                                statuses in which you would like the invoice to be sent
+                                                                automatically</p>
+                                                            <select
+                                                                class="form-select js-example-basic-single rounded-1 pad-9-16 text-1 fs-12 ar-left"
+                                                                id="mySelect" name="states[]" multiple="multiple">
+                                                                <option value="optiona1">Deleted</option>
+                                                                <option value="optiona2">Waiting for payment after
+                                                                    modification</option>
+                                                                <option value="optiona3">Pending internal review
+                                                                </option>
+                                                                <option value="optiona4">Underway</option>
+                                                                <option value="optiona5" selected>Implemented</option>
+                                                                <option value="optiona6">Cancelled</option>
+                                                                <option value="optiona7">Retreived</option>
+                                                                <option value="optiona8">Sub Delivery is in progress
+                                                                </option>
+                                                                <option value="optiona9">Connected sub of implemented
+                                                                </option>
+                                                                <option value="optiona10">Subshipped from completed
+                                                                </option>
+                                                                <option value="optiona11">Being returned</option>
+                                                                <option value="optiona12">Request for quotation</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-4">
+                                        <h2 class="accordion-header" id="mainacchead">
+                                            <button
+                                                class="accordion-button bg-gray-shade d-flex flex-row-reverse rounded-0 fs-13 fw-semibold collapsed"
+                                                type="button" data-bs-toggle="collapse" data-bs-target="#mainacc"
+                                                aria-expanded="true" aria-controls="mainacc">
+                                                Design Options
+                                            </button>
+                                        </h2>
+                                        <div id="mainacc" class="accordion-collapse collapse"
+                                            aria-labelledby="mainacchead">
+                                            <div
+                                                class="accordion-body controlsOptions pb-0 overflow-y-scroll overflow-auto">
+                                                <h6 class="text-black text-end mb-0 fs-14 fw-semibold">Logo settings
+                                                </h6>
+                                                <div class="d-flex justify-content-center flex-column">
+                                                    <label for="logoSizeRange"
+                                                        class="form-label text-1 fs-13 text-end pt-1">Logo
+                                                        size</label>
+                                                    <input type="range" class="form-range" id="logoSizeRange">
+                                                    <p class="text-1 fs-13 text-end pt-1">Logo location</p>
+                                                    <div
+                                                        class="d-flex align-items-center pb-3 border-bottom justify-content-between">
+                                                        <div class="flex-shrink-0">
+                                                            <button
+                                                                class="btn border-gray fs-14 w-100 d-flex align-items-center gap-2 shadow-c text-1 bg-white"
+                                                                type="button" id="leftLogo">
+                                                                <span>Left</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="flex-shrink-0">
+                                                            <button
+                                                                class="btn border-gray fs-14 w-100 d-flex align-items-center gap-2 shadow-c text-1 bg-white"
+                                                                type="button" id="centerLogo">
+                                                                <span>Center</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="flex-shrink-0">
+                                                            <button
+                                                                class="btn border-gray fs-14 w-100 d-flex align-items-center gap-2 shadow-c text-1 bg-white"
+                                                                type="button" id="rightLogo">
+                                                                <span>Right</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-shrink-0 my-2">
+                                                        <h6 class="text-black text-end mb-0 fs-14 fw-semibold">
+                                                            Baseline
+                                                        </h6>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <div>
+                                                                <input type="color" id="color" class="border-gray">
+                                                            </div>
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-start gap-2">
+                                                                <div class="d-flex align-items-center">
+                                                                    <label
+                                                                        class="form-check-label fs-14 text-end text-black"
+                                                                        for="baselineLight">
+                                                                        Light
+                                                                    </label>
+                                                                    <input class="form-check-input ms-2" type="radio"
+                                                                        name="baseline" id="baselineLight">
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <label
+                                                                        class="form-check-label fs-14 text-end text-black"
+                                                                        for="baselineDark">
+                                                                        Dark
+                                                                    </label>
+                                                                    <input class="form-check-input ms-2" type="radio"
+                                                                        name="baseline" id="baselineDark">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-shrink-0 my-2">
+                                                        <h6 class="text-black text-end mb-0 fs-14 fw-semibold">
+                                                            Subline
+                                                        </h6>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <div>
+                                                                <input type="color" id="color" class="border-gray">
+                                                            </div>
+                                                            <div
+                                                                class="d-flex align-items-center justify-content-start gap-2">
+                                                                <div class="d-flex align-items-center">
+                                                                    <label
+                                                                        class="form-check-label fs-14 text-end text-black"
+                                                                        for="sublineLight">
+                                                                        Light
+                                                                    </label>
+                                                                    <input class="form-check-input ms-2" type="radio"
+                                                                        name="subline" id="sublineLight">
+                                                                </div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <label
+                                                                        class="form-check-label fs-14 text-end text-black"
+                                                                        for="sublineDark">
+                                                                        Dark
+                                                                    </label>
+                                                                    <input class="form-check-input ms-2" type="radio"
+                                                                        name="subline" id="sublineDark">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-shrink-0 my-2">
+                                                        <p class="text-1 fs-13 text-end pt-1">Add a financial tag</p>
+                                                        <div>
+                                                            <label for="uploaddiv"
+                                                                class="uploadimg h-55 text-1 d-flex justify-content-center align-items-center fs-13 w-100 fw-semibold">
+                                                                <span>Upload or drag file here</span>
+                                                            </label>
+                                                            <input type="file" class="d-none" id="uploaddiv" name="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-shrink-0 text-end my-2">
+                                                        <label for=""
+                                                            class="form-label text-1 fs-13 text-end pt-1">Transaprency</label>
+                                                        <input type="range" class="form-range" id="">
+                                                    </div>
+                                                    <div class="flex-shrink-0 my-2">
+                                                        <p class="text-1 fs-13 text-end pt-1">Add a stamp to the invoice
+                                                        </p>
+                                                        <div>
+                                                            <label for="uploaddiv"
+                                                                class="uploadimg h-55 text-1 d-flex justify-content-center align-items-center fs-13 w-100 fw-semibold">
+                                                                <span>Upload or drag file here</span>
+                                                            </label>
+                                                            <input type="file" class="d-none" id="uploaddiv" name="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex-shrink-0 text-end my-2">
+                                                        <label for=""
+                                                            class="form-label text-1 fs-13 text-end pt-1">Transaprency</label>
+                                                        <input type="range" class="form-range" id="">
+                                                    </div>
+                                                    <div class="flex-shrink-0 text-end my-2">
+                                                        <p class="text-1 fs-13 text-end pt-1">Place to stamp the invoice
+                                                        </p>
+                                                        <div
+                                                            class="d-flex align-items-center pb-3 border-bottom justify-content-between">
+                                                            <div class="flex-shrink-0">
+                                                                <button
+                                                                    class="btn border-gray fs-14 w-100 d-flex align-items-center gap-2 shadow-c text-1 bg-white"
+                                                                    type="button">
+                                                                    <span>Top</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="flex-shrink-0">
+                                                                <button
+                                                                    class="btn border-gray fs-14 w-100 d-flex align-items-center gap-2 shadow-c text-1 bg-white"
+                                                                    type="button">
+                                                                    <span>Center</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="flex-shrink-0">
+                                                                <button
+                                                                    class="btn border-gray fs-14 w-100 d-flex align-items-center gap-2 shadow-c text-1 bg-white"
+                                                                    type="button">
+                                                                    <span>Bottom</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="my-3">
+                                    <button class="btncust rounded-1 text-white fs-13 w-100 py-2 mt-2">Save</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+                        <div class="card border-gray3 rounded-3 shadow-c">
+                            <div class="card-header border-0 bg-transparent py-3">
+                                <h6 class="text-black text-end fw-semibold">
+                                    Invoice Preview
+                                </h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="alert alert-primary d-flex justify-content-end alert-dismissible p-2 fs-13"
+                                    role="alert">
+                                    <span class="text-blue fw-semibold">
+                                        The invoice is a non-actual sample and is intended to reflect items only</span>
+                                </div>
+                                <div class="card rounded-0">
+                                    <div class="card-body">
+                                        <div class="row justify-content-between border-bottom g-3">
+                                            <div class="col-12">
+                                                <div id="logoLocation" class="d-flex justify-content-center py-3">
+                                                    <div class="border border-dark" id="logobox"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-between g-3 py-2 border-bottom">
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                                <div class="d-flex flex-column gap-2">
+                                                    <h6 class="text-black mb-0 fs-12 fw-semibold">Wednesday,
+                                                        July 20, 2022 | 12:58 PM
+                                                    </h6>
+                                                    <img src="./assets/images/barcode.png" alt=""
+                                                        class="img-fluid invoice_barcode" width="50%">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                                <div class="d-flex gap-2 flex-column">
+                                                    <h6 class="text-black text-end mb-0 fs-12 fw-semibold">Tax invoice:
+                                                        #33
+                                                    </h6>
+                                                    <h6 class="text-black text-end mb-0 fs-12 fw-semibold">Order number:
+                                                        42723324
+                                                    </h6>
+                                                    <h6 class="text-black text-end mb-0 fs-12 fw-semibold">Invoice code:
+                                                        0200000
+                                                    </h6>
+                                                    <h6 class="text-black text-end mb-0 fs-12 fw-semibold">Tax number:
+                                                        1234567890
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-between g-3 py-2 border-bottom">
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                                <div class="d-flex gap-2 flex-column">
+                                                    <h6
+                                                        class="text-black text-end mb-0 fs-12 fw-semibold text-decoration-underline">
+                                                        Exported To:
+                                                    </h6>
+                                                    <h6 class="text-black text-end mb-0 fs-12">Zaher Hassan Al-Ghamdi
+                                                    </h6>
+                                                    <h6 class="text-black text-end mb-0 fs-12">Saudi Arabia
+                                                    </h6>
+                                                    <h6 class="text-black text-end mb-0 fs-12">Makkah
+                                                    </h6>
+                                                    <h6 class="text-black text-end mb-0 fs-12">Al-Safa District, Omar
+                                                        Bin Al-Khattab Street, Mecca, Saudi
+                                                    </h6>
+                                                    <h6 class="text-black text-end mb-0 fs-12">Arabia
+                                                    </h6>
+                                                    <h6 class="text-black text-end mb-0 fs-12">05591198
+                                                    </h6>
+                                                    <h6 class="text-black text-end mb-0 fs-12">customer@quffa
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                                <h6
+                                                    class="text-black text-end mb-0 fs-12 fw-semibold text-decoration-underline">
+                                                    Sourced from:
+                                                </h6>
+                                                <div class="d-flex gap-2 flex-column storeAddress my-2">
+                                                    <h6 class="text-black text-end mb-0 fs-12">Saudi Arabia
+                                                    </h6>
+                                                    <h6 class="text-black text-end mb-0 fs-12">Makkah
+                                                    </h6>
+                                                    <h6 class="text-black text-end mb-0 fs-12">Umm al-Kattad Street,
+                                                        Mecca, Saudi Arabia
+                                                    </h6>
+                                                    <h6 class="text-black text-end mb-0 fs-12">customer@quffa
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center g-3 py-2">
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                                <div class="d-flex gap-2 flex-column">
+                                                    <h6
+                                                        class="text-black text-end mb-0 fs-12 fw-semibold text-decoration-underline">
+                                                        Shipping Details:
+                                                    </h6>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h6 class="text-black text-end mb-0 fs-12">Aramex
+                                                        </h6>
+                                                        <h6 class="text-black text-end mb-0 fs-12">By :
+                                                        </h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h6 class="text-black text-end mb-0 fs-12">0.028 kg
+                                                        </h6>
+                                                        <h6 class="text-black text-end mb-0 fs-12">Total Weight:
+                                                        </h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h6 class="text-black text-end mb-0 fs-12">3 working days
+                                                        </h6>
+                                                        <h6 class="text-black text-end mb-0 fs-12">Expected number of
+                                                            days for shipping:
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                                <div class="d-flex gap-2 flex-column">
+                                                    <h6
+                                                        class="text-black text-end mb-0 fs-12 fw-semibold text-decoration-underline">
+                                                        Payment details :
+                                                    </h6>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h6 class="text-black text-end mb-0 fs-12">35.50 SAR
+                                                        </h6>
+                                                        <h6 class="text-black text-end mb-0 fs-12">The amount:
+                                                        </h6>
+                                                    </div>
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h6 class="text-black text-end mb-0 fs-12">Banque Saudi Fransi
+                                                        </h6>
+                                                        <h6 class="text-black text-end mb-0 fs-12">payment method:
+                                                        </h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="table-responsive scroll-x">
+                                                    <table class="table align-middle">
+                                                        <thead class="fw-semibold light-gray-bg">
+                                                            <th class="text-end">
+                                                                <span class="text-nowrap fs-12">
+                                                                    Total
+                                                                </span>
+                                                            </th>
+                                                            <th class="text-end ">
+                                                                <span class="text-nowrap fs-12">
+                                                                    Price
+                                                                </span>
+                                                            </th>
+                                                            <th class="text-end">
+                                                                <span class="text-nowrap  fs-12">
+                                                                    Quantity
+                                                                </span>
+                                                            </th>
+                                                            <th class="text-end">
+                                                                <span class="text-nowrap fs-12">
+                                                                    The Product
+                                                                </span>
+                                                            </th>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="text-end">
+                                                                    <span class="text-black fs-12 text-nowrap">
+                                                                        31.50 SAR
+                                                                    </span>
+                                                                    <div class="productBarcode">
+                                                                        <img src="./assets/images/barcode.png" alt=""
+                                                                            class="img-fluid">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-end">
+                                                                    <div class="d-flex gap-2 flex-column">
+                                                                        <h6 class="text-black text-end mb-0 fs-12">30
+                                                                            SAR
+                                                                        </h6>
+                                                                        <h6 class="text-black text-end mb-0 fs-12">Price
+                                                                            before discount: 45 SAR
+                                                                        </h6>
+                                                                        <h6 class="text-black text-end mb-0 fs-12">Tax
+                                                                            (5%): 1.5 SAR
+                                                                        </h6>
+                                                                        <h6 class="text-black text-end mb-0 fs-12">Price
+                                                                            including tax: 31.50 SAR
+                                                                        </h6>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-end">
+                                                                    <span class="text-black fs-12 text-nowrap">
+                                                                        1
+                                                                    </span>
+                                                                </td>
+                                                                <td class="text-end">
+                                                                    <div class="d-flex gap-3 align-items-start">
+                                                                        <div>
+                                                                            <p class="text-black m-0 fs-12 text-nowrap">
+                                                                                Sea salt scrub
+                                                                            </p>
+                                                                            <p
+                                                                                class="text-black m-0 fs-12 text-nowrap product_weight">
+                                                                                Weight: 0.028 kg
+                                                                            </p>
+                                                                            <p class="text-black m-0 fs-12 text-nowrap">
+                                                                                SKU 10826
+                                                                            </p>
+                                                                            <p
+                                                                                class="text-black project_desc m-0 fs-12">
+                                                                                A gentle
+                                                                                exfoliant made from natural
+                                                                                ingredientsiant
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="product_img flex-shrink-0">
+                                                                            <img src="./assets/images/ayma.png" alt=""
+                                                                                class="img-fluid w-100 object-fit-cover">
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class=" light-gray-bg">
+                                                                <th colspan="3">
+                                                                    <span class="text-nowrap fs-12">
+                                                                        30 SAR
+                                                                    </span>
+                                                                </th>
+                                                                <th class=" text-end">
+                                                                    <span class="text-nowrap fs-12">
+                                                                        Subtotal (excluding tax)
+                                                                    </span>
+                                                                </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th colspan="3">
+                                                                    <span class="text-nowrap fs-12">
+                                                                        + 22 SAR
+                                                                    </span>
+                                                                </th>
+                                                                <th class=" text-end">
+                                                                    <span class="text-nowrap fs-12">
+                                                                        Shipping charges
+                                                                    </span>
+                                                                </th>
+                                                            </tr>
+                                                            <tr class=" light-gray-bg">
+                                                                <th colspan="3">
+                                                                    <span class="text-nowrap fs-12">
+                                                                        + 1.50 SAR
+                                                                    </span>
+                                                                </th>
+                                                                <th class=" text-end">
+                                                                    <span class="text-nowrap fs-12">
+                                                                        Tax (5%)
+                                                                    </span>
+                                                                </th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th colspan="3">
+                                                                    <span class="text-nowrap fs-12">
+                                                                        35.50 SAR
+                                                                    </span>
+                                                                </th>
+                                                                <th class=" text-end">
+                                                                    <span class="text-nowrap fs-12">
+                                                                        Total Demand
+                                                                    </span>
+                                                                </th>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                                                <div class="d-flex gap-2 flex-column contactInformation">
+                                                    <h6 class="text-black text-end mb-0 fs-12 fw-semibold">Contact
+                                                        Information
+                                                    </h6>
+                                                    <h6 class="text-black text-end mb-0 fs-12">Online store undefined
+                                                    </h6>
+                                                    <h6 class="text-black text-end mb-0 fs-12">05591198
+                                                    </h6>
+                                                    <h6 class="text-black text-end mb-0 fs-12">customer@quffa
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md 8 col-lg-8">
+                                                <div class="d-flex gap-2 flex-column orderNotes">
+                                                    <h6 class="text-black text-end mb-0 fs-12 fw-semibold">Order notes
+                                                    </h6>
+                                                    <h6 class="text-black text-end mb-0 fs-12">Pack the order tightly
+                                                    </h6>
+                                                    <h6 class="text-black text-end mb-0 fs-12">Mark it as fragile with
+                                                        the
+                                                        shipping company
+                                                    </h6>
+                                                </div>
+                                                <div class="d-flex gap-2 flex-column mt-2 acknowledgmentInfo">
+                                                    <h6 class="text-black text-end mb-0 fs-12 fw-semibold">
+                                                        Acknowledgment
+                                                    </h6>
+                                                    <h6 class="text-black text-end mb-0 fs-12">I, the customer,
+                                                        acknowledge receipt of the product upon payment, and in the
+                                                        event that I wish to exchange and return, I will ensure that the
+                                                        store’s terms and conditions are applied.
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-5 col-lg-4">
+                                                <div class="d-flex flex-column align-items-center">
+                                                    <img src="./assets/images/icons/qr-code.png" alt=""
+                                                        class="img-fluid" width="40px" height="40px">
+                                                    <h6 class="text-black text-end mb-0 fs-12 fw-semibold">
+                                                        To view the tax invoice
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-5 col-lg-4 exchangeReturn">
+                                                <div class="d-flex flex-column align-items-center">
+                                                    <img src="./assets/images/icons/qr-code.png" alt=""
+                                                        class="img-fluid" width="40px" height="40px">
+                                                    <h6 class="text-black text-center mb-0 fs-12 fw-semibold">
+                                                        To view the exchange and return policy
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="text-center py-2">
+                <a href="#" class="text-decoration-none btncircle">
+                    <img src="assets/images/icons/email-w.png" class="img-fluid" width="32px" />
+                </a>
+            </footer>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="bg-white px-2" id="sidebar-wrapper">
+            <div class="text-center py-3">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" width="112px" height="57.93px" alt="">
+                </a>
+            </div>
+            <div class="height-fix-side scroll-leftsid">
+                <div class="d-flex flex-column gap-2 justify-content-center align-items-center pt-4 pb-5">
+                    <img src="assets/images/maya.jpg" class="rounded-pill" width="100px" height="100px" alt="">
+                    <span class="fs-16">E-E products</span>
+                </div>
+                <ul class="navbar-nav sidebar_list">
+                    <li class="nav-item">
+                        <a href="index.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/main.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">main</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/product.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">product</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="request.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/req.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Requests</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="customer.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/customer.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Customers</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="report.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/report.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Reports</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="question-evaluation.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/ques-ev.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Question & evaluation</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="introduction-page.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/intro.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Introduction pages</p>
+                        </a>
+                    </li>
+                </ul>
+                <!-- marketing -->
+                <div class="my-3">
+                    <h6 class="text-main fw-bold text-end me-3 m-0">MARKETING</h6>
+                </div>
+                <ul class="navbar-nav sidebar_list">
+                    <li class="nav-item">
+                        <a href="marketing-tools.html" class="text-decoration-none active nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/mart-campaign.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Marketing tools</p>
+                        </a>
+                    </li>
+                </ul>
+                <!-- sales channel -->
+                <div class="my-3">
+                    <h6 class="text-main fw-bold text-end me-3 m-0">SALES CHANNELS</h6>
+                </div>
+                <ul class="navbar-nav sidebar_list">
+                    <li class="nav-item">
+                        <a href="coming-soon.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/local.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Quffah market</p>
+                        </a>
+                    </li>
+                </ul>
+                <!-- setting -->
+                <div class="my-3">
+                    <h6 class="text-main fw-bold text-end me-3 m-0">SETTINGS</h6>
+                </div>
+                <ul class="navbar-nav sidebar_list">
+                    <li class="nav-item">
+                        <a href="store-settings.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/cogs.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Store settings</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="wallet-and-bill.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/wallet.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Wallet and bills</p>
+                        </a>
+                    </li>
+                </ul>
+                <!-- store apperance -->
+                <div class="my-3">
+                    <h6 class="text-main fw-bold text-end me-3 m-0">STORE APPEARANCE</h6>
+                </div>
+                <ul class="navbar-nav sidebar_list">
+                    <li class="nav-item">
+                        <a href="store-design.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/store-design.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Store design</p>
+                        </a>
+                    </li>
+                </ul>
+                <!-- app store -->
+                <div class="my-3">
+                    <h6 class="text-main fw-bold text-end me-3 m-0">APP STORE</h6>
+                </div>
+                <ul class="navbar-nav sidebar_list">
+                    <li class="nav-item">
+                        <a href="installation-application.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/installed-app.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Installed applications</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/application-st.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Visit the App Store</p>
+                        </a>
+                    </li>
+                </ul>
+                <!-- supporting tools -->
+                <div class="my-3">
+                    <h6 class="text-main fw-bold text-end me-3 m-0">SUPPORTING TOOLS</h6>
+                </div>
+                <ul class="navbar-nav sidebar_list">
+                    <li class="nav-item">
+                        <a href="merchant-service.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/merchant-sv.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Merchant services</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="helpdesk.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/help-desk.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Help desk</p>
+                        </a>
+                    </li>
+                </ul>
+                <!-- supporting tools -->
+                <div class="my-3">
+                    <h6 class="text-main fw-bold text-end me-3 m-0">MERCHANT APPLICATION</h6>
+                </div>
+                <div class="d-flex flex-column gap-1 p-2 align-items-center justify-content-center">
+                    <a href="#">
+                        <img src="assets/images/play-store.png" class="img-fluid" width="150px">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/appstore.png" class="img-fluid" width="150px">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /#sidebar-wrapper -->
+    </div>
+
+    <div class="modal fade" id="restoreSettings" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0 position-relative justify-content-end">
+                    <button class="btn-close position-absolute end-0 fs-13 m-2" data-bs-dismiss='modal'></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <img src="assets/images/icons/warn.png" class="img-fluid" width="80px">
+                        <p class="fs-13 mt-3">
+                            All custom settings entered on the invoice will be lost
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="btncust rounded-1 text-main bg-transparent fs-13"
+                        data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                    <button type="button" class="btncust rounded-1 text-white fs-13" data-bs-toggle="modal"
+                        data-bs-target="#savesucessmodal">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/datatables.js"></script>
+    <script type="text/javascript" src="assets/js/select2.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        let customCheckBtn = document.getElementById("custom");
+        let basketCheckBtn = document.getElementById("basket");
+        let customContent = document.getElementById("customContent");
+        customCheckBtn.addEventListener("click", () => {
+            if (customCheckBtn.checked) {
+                customContent.classList.remove("d-none");
+                customContent.classList.add("d-block");
+            }
+        });
+        basketCheckBtn.addEventListener("click", () => {
+            if (basketCheckBtn.checked) {
+                customContent.classList.remove("d-block");
+                customContent.classList.add("d-none");
+            }
+        });
+    </script>
+
+
+    <!-- --------------- SCRIPT FOR LOGO LOCATION ---------------  -->
+    <script>
+        let logoLocation = document.getElementById("logoLocation");
+        let leftLogoBtn = document.getElementById("leftLogo");
+        let centertLogoBtn = document.getElementById("centerLogo");
+        let rightLogoBtn = document.getElementById("rightLogo");
+
+        leftLogoBtn.addEventListener("click", () => {
+            logoLocation.classList.add("justify-content-start");
+            logoLocation.classList.remove("justify-content-end");
+            logoLocation.classList.remove("justify-content-center");
+        })
+        centertLogoBtn.addEventListener("click", () => {
+            logoLocation.classList.remove("justify-content-start");
+            logoLocation.classList.remove("justify-content-end");
+            logoLocation.classList.add("justify-content-center");
+        })
+        rightLogoBtn.addEventListener("click", () => {
+            logoLocation.classList.remove("justify-content-start");
+            logoLocation.classList.remove("justify-content-center");
+            logoLocation.classList.add("justify-content-end");
+        })
+    </script>
+
+    <!-- --------------- SCRIPT FOR SIZE LOGO ---------------  -->
+    <script>
+        let logoSizeRange = document.getElementById("logoSizeRange");
+        function sizeOfLogo() {
+            let value = parseInt(this.value);
+            document.getElementById("logobox").style.width = value + "px";
+            document.getElementById("logobox").style.height = value + "px";
+        }
+        logoSizeRange.addEventListener("input", sizeOfLogo);
+    </script>
+    <!-- ---------------------- CONTROL OPTIONS SCRIPT ----------------------  -->
+    <script>
+        // ------------------- CONTENT ON CHECK ------------------ 
+        let productImg = document.querySelector(".product_img");
+        let projectDescription = document.querySelector(".project_desc");
+        let contactInformation = document.querySelector(".contactInformation");
+        let acknowledgmentInfo = document.querySelector(".acknowledgmentInfo");
+        let exchangeReturn = document.querySelector(".exchangeReturn");
+        let orderNotes = document.querySelector(".orderNotes");
+        let storeAddress = document.querySelector(".storeAddress");
+        let invoiceBarcode = document.querySelector(".invoice_barcode");
+        let productBarcode = document.querySelector(".productBarcode");
+        let productWeight = document.querySelector(".product_weight");
+        let autoSendContent = document.querySelector(".autoSendContent");
+
+        // ---------------------- CHECK BUTTONS  ------------------- 
+        let productDescCheck = document.getElementById("productDesc");
+        let productImageCheck = document.getElementById("productImage");
+        let contactInfoCheck = document.getElementById("contactInfo");
+        let acknowledgeInfoCheck = document.getElementById("acknowledgment");
+        let exchangeReturnCheck = document.getElementById("exchangeReturnCheck");
+        let orderCheck = document.getElementById("orderCheck");
+        let storeaddressCheck = document.getElementById("storeaddressCheck");
+        let invoiceBarCheck = document.getElementById("invoiceBarCheck");
+        let productBarCheck = document.getElementById("productBarCheck");
+        let productWeightCheck = document.getElementById("productWeightCheck");
+        let autoSendCheck = document.getElementById("autoSendCheck");
+
+        productImageCheck.addEventListener("click", () => {
+            if (productImageCheck.checked) {
+                productImg.classList.add("d-block");
+                productImg.classList.remove("d-none");
+            }
+            else {
+                productImg.classList.add("d-none");
+                productImg.classList.remove("d-block");
+            }
+        })
+        productDescCheck.addEventListener("click", () => {
+            if (productDescCheck.checked) {
+                projectDescription.classList.add("d-block");
+                projectDescription.classList.remove("d-none");
+            }
+            else {
+                projectDescription.classList.add("d-none");
+                projectDescription.classList.remove("d-block");
+            }
+        })
+        acknowledgeInfoCheck.addEventListener("click", () => {
+            if (acknowledgeInfoCheck.checked) {
+                acknowledgmentInfo.classList.add("d-block");
+                acknowledgmentInfo.classList.remove("d-none");
+            }
+            else {
+                acknowledgmentInfo.classList.add("d-none");
+                acknowledgmentInfo.classList.remove("d-block");
+            }
+        })
+        exchangeReturnCheck.addEventListener("click", () => {
+            if (exchangeReturnCheck.checked) {
+                exchangeReturn.classList.add("d-block");
+                exchangeReturn.classList.remove("d-none");
+            }
+            else {
+                exchangeReturn.classList.add("d-none");
+                exchangeReturn.classList.remove("d-block");
+            }
+        })
+        orderCheck.addEventListener("click", () => {
+            if (orderCheck.checked) {
+                orderNotes.classList.add("d-block");
+                orderNotes.classList.remove("d-none");
+            }
+            else {
+                orderNotes.classList.add("d-none");
+                orderNotes.classList.remove("d-block");
+            }
+        })
+        storeaddressCheck.addEventListener("click", () => {
+            if (storeaddressCheck.checked) {
+                storeAddress.classList.add("d-block");
+                storeAddress.classList.remove("d-none");
+            }
+            else {
+                storeAddress.classList.add("d-none");
+                storeAddress.classList.remove("d-block");
+            }
+        })
+        invoiceBarCheck.addEventListener("click", () => {
+            if (invoiceBarCheck.checked) {
+                invoiceBarcode.classList.add("d-block");
+                invoiceBarcode.classList.remove("d-none");
+            }
+            else {
+                invoiceBarcode.classList.add("d-none");
+                invoiceBarcode.classList.remove("d-block");
+            }
+        })
+        productBarCheck.addEventListener("click", () => {
+            if (productBarCheck.checked) {
+                productBarcode.classList.add("d-block");
+                productBarcode.classList.remove("d-none");
+            }
+            else {
+                productBarcode.classList.add("d-none");
+                productBarcode.classList.remove("d-block");
+            }
+        })
+        productWeightCheck.addEventListener("click", () => {
+            if (productWeightCheck.checked) {
+                productWeight.classList.add("d-block");
+                productWeight.classList.remove("d-none");
+            }
+            else {
+                productWeight.classList.add("d-none");
+                productWeight.classList.remove("d-block");
+            }
+        })
+        autoSendCheck.addEventListener("click", () => {
+            if (autoSendCheck.checked) {
+                autoSendContent.classList.add("d-block");
+                autoSendContent.classList.remove("d-none");
+            }
+            else {
+                autoSendContent.classList.add("d-none");
+                autoSendContent.classList.remove("d-block");
+            }
+        })
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.js-example-basic-single').select2();
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            function updateDivVisibility() {
+                var selectedOptions = $('#mySelect').val();
+                $('#addnewe').toggle(selectedOptions && selectedOptions.length > 0);
+                $('#proselect').toggle(selectedOptions && selectedOptions.length > 0);
+                $('#maindivselect').toggle(selectedOptions && selectedOptions.length > 0);
+                $('.maindivselect1').toggle(selectedOptions && selectedOptions.length > 0);
+            }
+            updateDivVisibility();
+            $('#mySelect').on('change', function () {
+                updateDivVisibility();
+            });
+        });
+    </script>
+</body>
+
+</html>

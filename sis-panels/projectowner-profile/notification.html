@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css">
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  ">
+    <title>Notification || SIS Admin</title>
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="shadow border-end-blue" id="sidebar-wrapper">
+            <div class="text-center py-3">
+                <img src="assets/images/logo-1.png" width="150" height="100" alt="">
+            </div>
+            <ul class="navbar-nav sidebar_list">
+                <li class="nav-item mt-1">
+                    <a href="index.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/icons/dashboard-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0 truncate-2">Project Owner Dashboard</p>
+                    </a>
+                </li>
+                <!-- <li class="nav-item mt-1">
+                    <a href="add-project-pro.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/icons/detail-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0">Project Submission</p>
+                    </a>
+                </li> -->
+                <li class="nav-item mt-1">
+                    <a href="listproject.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/projects/project-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0">Projects</p>
+                    </a>
+                </li>
+                <li class="nav-item mt-1">
+                    <a href="boostoption.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/projects/boost-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0">Boost Option</p>
+                    </a>
+                </li>
+                <li class="nav-item mt-1">
+                    <a href="withdrawal.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/projects/withdraw-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0">Withdrawal</p>
+                    </a>
+                </li>
+                <li class="nav-item mt-1">
+                    <a href="repament-track.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/projects/repayment-track-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0">Repayment Tracking</p>
+                    </a>
+                </li>
+                <li class="nav-item mt-1">
+                    <a href="updates.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/projects/updates-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0">Updates</p>
+                    </a>
+                </li>
+                <li class="nav-item mt-1">
+                    <a href="profile-page.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/projects/profile-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0 text-capitalize">profile setting</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <!-- navbar start from here -->
+            <header class="">
+                <nav class="border-bottom-blue custom_nav">
+                    <div class="container-fluid mt-1">
+                        <div class="row g-2 align-items-center justify-content-between">
+                            <div class="col-4 col-sm-4 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="d-flex align-items-center text-blue">
+                                        <i class="fas fa-sliders-h fs-4 me-3" id="menu-toggle"></i>
+                                    </div>
+                                    <div>
+                                         <h5 class="fw-bold text-blue m-0">
+                                             Project Owner Panel
+                                         </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8 col-sm-8 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-end">
+                                <div class="d-flex align-items-center justify-content-end">
+                                    <div class="dropdown">
+                                        <button class="btn p-0 border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <div class="d-flex align-items-center position-relative text-blue justify-content-center">
+                                                <i class="fas fa-bell fs-5"></i>
+                                                <span class="position-absolute pad-ci top-0 start-100 translate-middle bg-danger border border-light rounded-circle">
+                                                    <span class="visually-hidden">New alerts</span>
+                                                </span>
+                                            </div>
+                                        </button>
+                                        <ul class="dropdown-menu dropact" style="width: 300px" aria-labelledby="dropdownMenuButton1">
+                                            <li>
+                                                <div class="d-flex align-items-center justify-content-between pt-2 px-3">
+                                                    <span class="mb-0 text-capitalize fs-14">notifications</span>
+                                                    <a href="" class="text-decoration-none fs-12">
+                                                      Mark All as Read
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <hr>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <span class="fs-12 text-capitalize text-secondary ps-3">today</span>
+                                                    <a class="dropdown-item fs-14 dropitemone d-flex justify-content-between py-2" href="#">
+                                                        <div class="d-flex align-items-start">
+                                                            <span class="text-capitalize circlewhite bg-secondary text-white">
+                                                                amc
+                                                            </span>
+                                                            <span class="text-capitalize ps-2 fs-12 text-wrap">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            </span>
+                                                        </div>
+                                                        <p class="mb-0 fs-12 text-secondary">2 min</p>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <span class="fs-12 text-capitalize text-secondary ps-3">yesterday</span>
+                                                    <a class="dropdown-item fs-14 dropitemone d-flex justify-content-between py-2" href="#">
+                                                        <div class="d-flex align-items-start">
+                                                            <span class="text-capitalize circlewhite bg-secondary text-white">
+                                                                amc
+                                                            </span>
+                                                            <span class="text-capitalize ps-2 fs-12 text-wrap">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            </span>
+                                                        </div>
+                                                        <p class="mb-0 fs-12 text-secondary">2 min</p>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <span class="fs-12 text-capitalize text-secondary ps-3">today</span>
+                                                    <a class="dropdown-item fs-14 dropitemone d-flex justify-content-between py-2" href="#">
+                                                        <div class="d-flex align-items-start">
+                                                            <span class="text-capitalize circlewhite bg-secondary text-white">
+                                                                amc
+                                                            </span>
+                                                            <span class="text-capitalize ps-2 fs-12 text-wrap">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            </span>
+                                                        </div>
+                                                        <p class="mb-0 fs-12 text-secondary">2 min</p>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <hr class="mb-1">
+                                            </li>
+                                            <li>
+                                                <a href="notification.html" class="text-decoration-none text-capitalize fs-12 text-center d-block">
+                                                    view all
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown ms-3">
+                                        <button class="btn p-0 border-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <div class="d-flex align-items-center">
+                                                <span class="text-blue"><i class="fas fa-user-circle fs-4"></i></span>
+                                            </div>
+                                        </button>
+                                        <ul class="dropdown-menu lh-sm noti-ul2" aria-labelledby="dropdownMenuButton1">
+                                            <li>
+                                                <a href="profile-page.html" class="d-flex align-items-center text-decoration-none mx-2 ">
+                                                    <div class="flex-shrink-0">
+                                                        <img src="assets/images/dp-1.png" alt="" class="img-fluid  " width="50" height="50">
+                                                    </div>
+                                                    <div class="user-profile flex-grow-1 mt-3 mx-2">
+                                                        <span class="text-wrap fs-6">John Smith</span>
+                                                        <p class="text-muted fs-12">John786@gmail.com</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item fs-14 dropitem d-flex align-items-center" href="settings.html">
+                                                    <span>
+                                                        <i class="fa-solid fa-gear"></i>
+                                                    </span>
+                                                    <span class="text-capitalize p-2">
+                                                        account settings
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item fs-14 dropitem d-flex align-items-center" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                                    </span>
+                                                    <span class="text-capitalize p-2">
+                                                        logout
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- navbar end here -->
+            <div class="container-fluid px-4 mt-3 height-fix">
+                <div class="row px-2">
+                    <div class="col-12">
+                        <div class="card border rounded-4 mb-5">
+                            <div class="card-header border-0 p-4 pb-0 bg-transparent justify-content-between d-flex align-items-center">
+                                <h5 class="text-main mb-0 text-blue">View Notifications</h5>
+                                <div>
+                                    <button class="border-0 fs-14 fw-semibold bg-transparent text-blue border-blue p-1 rounded" onclick='markread();'>
+                                        Mark all as <span class="read text-capitalize">Unread</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body p-4">
+                                <div class="row g-3">
+                                    <div class="col-lg-12">
+                                        <div class="card shadow rounded-2 border-start-0 border-end-0 border-bottom-0 border-top border-orange-color border-3">
+                                            <div class="card-body">
+                                                <div class="d-flex gap-3">
+                                                    <div class="w50 flex-shrink-0 overflow-hidden">
+                                                        <img src="assets/images/avatar/av-1.png" class="img-fluid">
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-flex align-items-start justify-content-between">
+                                                            <div>
+                                                                <h5 class="text-capitalize mb-1">Sarah jhon</h5>
+                                                                <p class="fs-13 truncate-w2">
+                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                                    tempor incididunt ut labore et dolore magna aliqua.
+                                                                </p>
+                                                            </div>
+                                                            <div class="d-flex flex-column justify-content-end gap-2">
+                                                                <span class="fs-12 text-end">5h ago</span>
+                                                                <div class="d-flex align-items-center gap-2">
+                                                                    <a href="#viewModal" data-bs-toggle="modal" class="btn btn-main fs-12">
+                                                                        <i class="fas fa-eye"></i>
+                                                                    </a>
+                                                                    <a href="#deletemodal" data-bs-toggle="modal" class="btn btn-main fs-12">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="card shadow rounded-2 border-start-0 border-end-0 border-bottom-0 border-top border-orange-color border-3">
+                                            <div class="card-body">
+                                                <div class="d-flex gap-3">
+                                                    <div class="w50 flex-shrink-0 overflow-hidden">
+                                                        <img src="assets/images/avatar/av-2.png" class="img-fluid">
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-flex align-items-start justify-content-between">
+                                                            <div>
+                                                                <h5 class="text-capitalize mb-1">Sarah jhon</h5>
+                                                                <p class="fs-13 truncate-w2">
+                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                                    tempor incididunt ut labore et dolore magna aliqua.
+                                                                </p>
+                                                            </div>
+                                                            <div class="d-flex flex-column justify-content-end gap-2">
+                                                                <span class="fs-12 text-end">2h ago</span>
+                                                                <div class="d-flex align-items-center gap-2">
+                                                                    <a href="#viewModal" data-bs-toggle="modal" class="btn btn-main fs-12">
+                                                                        <i class="fas fa-eye"></i>
+                                                                    </a>
+                                                                    <a href="#deletemodal" data-bs-toggle="modal" class="btn btn-main fs-12">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="card shadow rounded-2 border-start-0 border-end-0 border-bottom-0 border-top border-orange-color border-3">
+                                            <div class="card-body">
+                                                <div class="d-flex gap-3">
+                                                    <div class="w50 flex-shrink-0 overflow-hidden">
+                                                        <img src="assets/images/avatar/av-1.png" class="img-fluid">
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-flex align-items-start justify-content-between">
+                                                            <div>
+                                                                <h5 class="text-capitalize mb-1">Sarah jhon</h5>
+                                                                <p class="fs-13 truncate-w2">
+                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                                    tempor incididunt ut labore et dolore magna aliqua.
+                                                                </p>
+                                                            </div>
+                                                            <div class="d-flex flex-column justify-content-end gap-2">
+                                                                <span class="fs-12 text-end">3h ago</span>
+                                                                <div class="d-flex align-items-center gap-2">
+                                                                    <a href="#viewModal" data-bs-toggle="modal" class="btn btn-main fs-12">
+                                                                        <i class="fas fa-eye"></i>
+                                                                    </a>
+                                                                    <a href="#deletemodal" data-bs-toggle="modal" class="btn btn-main fs-12">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="card shadow rounded-2 border-start-0 border-end-0 border-bottom-0 border-top border-orange-color border-3">
+                                            <div class="card-body">
+                                                <div class="d-flex gap-3">
+                                                    <div class="w50 flex-shrink-0 overflow-hidden">
+                                                        <img src="assets/images/avatar/av-2.png" class="img-fluid">
+                                                    </div>
+                                                    <div class="flex-grow-1">
+                                                        <div class="d-flex align-items-start justify-content-between">
+                                                            <div>
+                                                                <h5 class="text-capitalize mb-1">Sarah jhon</h5>
+                                                                <p class="fs-13 truncate-w2">
+                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                                    tempor incididunt ut labore et dolore magna aliqua.
+                                                                </p>
+                                                            </div>
+                                                            <div class="d-flex flex-column justify-content-end gap-2">
+                                                                <span class="fs-12 text-end">7h ago</span>
+                                                                <div class="d-flex align-items-center gap-2">
+                                                                    <a href="#viewModal" data-bs-toggle="modal" class="btn btn-main fs-12">
+                                                                        <i class="fas fa-eye"></i>
+                                                                    </a>
+                                                                    <a href="#deletemodal" data-bs-toggle="modal" class="btn btn-main fs-12">
+                                                                        <i class="fas fa-trash"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <footer class="text-center p-2">
+                <p class="m-0">&copy; 2023 <a href="https://replatechnologies.com/" class="text-decoration-none text-orange"> Repla Technologies. </a>All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+    <div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-blue" id="viewModalLabel">Campagin Details View</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex text-center justify-content-center flex-column gap-3">
+                        <img src="assets/images/avatar/av-1.png" class="img-fluid w-200 m-auto">
+                        <h5 class="m-0 text-capitalize text-blue">
+                            Sarah jhon
+                        </h5>
+                        <p class="text-justify">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btncust p-2 border-blue text-uppercase bg-transparent rounded-5 fs-12" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Delete modal areas -->
+    <div class="modal fade" id="deletemodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-gray">
+              <div class="modal-body">
+                <div class="my-3 text-center iconcircle">
+                    <img src="assets/images/delete.png" class="img-fluid">
+                </div>
+                <h5 class="text-center">
+                    Are you sure you want to delete this item?
+                </h5>
+                <p class="text-center">
+                    This action will delete this item.
+                </p>
+              </div>
+              <div class="modal-footer border-0 bg-transparent justify-content-center">
+                <button type="button" class="btncust p-2 border-blue text-uppercase bg-transparent rounded-5 fs-12" data-bs-dismiss="modal">cancel</button>
+                <button type="button" class="btncust p-2 border-0 text-uppercase rounded-5 text-white fs-12 primary-bg border-white">delete</button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- Delete modal areas -->
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/datatables.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#table').DataTable({
+            "language": {
+                "paginate": {
+                    "previous": '<i class="fa-solid fa-chevron-left p-5px"></i>',
+                    "next": '<i class="fa-solid fa-chevron-right p-5px"></i>',
+                },
+                "lengthMenu": "",
+                search: "",
+                searchPlaceholder: "Search..."
+            },
+
+            "ordering": true
+        });
+
+    });
+    </script>
+    <script type="text/javascript">
+        let showread = document.querySelector('.read');
+        let x = 0;
+        const markread = () => {
+            if (x=!x) {
+                showread.innerHTML = 'Read';
+            }else {
+                showread.innerHTML = 'Unread';
+            }
+        }
+    </script>
+</body>
+
+</html>

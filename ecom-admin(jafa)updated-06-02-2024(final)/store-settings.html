@@ -1,0 +1,1685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css">
+    <!-- for icons -->    
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  " />
+    <!-- flag dropdown -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.3.3/css/intlTelInput.css" />
+
+    <title>Store Settings|| Ecom Admin Panel</title>
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <!-- navbar start from here -->
+            <header class="">
+                <nav class="bg-white custom_nav">
+                    <div class="container-fluid">
+                        <div class="row g-2 align-items-center justify-content-between">
+                            <div class="col-6 col-md-6 col-lg-3">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="dropdown">
+                                        <button class="btn p-0 border-0 d-flex align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="assets/images/icons/user.png" class="img-fluid" width="22px">
+                                        </button>
+                                        <ul class="dropdown-menu dropact" style="width: 300px" aria-labelledby="dropdownMenuButton1">
+                                            <li>
+                                                <a class="dropdown-item d-flex fs-13 align-items-center gap-3 text-black" href="profile-setting.html">
+                                                    <span>
+                                                        <img src="assets/images/icons/ch-cir-b.png" class="img-fluid" width="18px">
+                                                    </span>
+                                                    <span>
+                                                        Profile personally
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item d-flex fs-13 align-items-center gap-3 text-black" href="store-settings-notification.html">
+                                                    <span>
+                                                        <img src="assets/images/icons/ch-cir-b.png" class="img-fluid" width="18px">
+                                                    </span>
+                                                    <span>
+                                                        Alerts
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item d-flex fs-13 align-items-center gap-3 text-black" href="https://quffa.replatechnologies.com/news-blog.html">
+                                                    <span>
+                                                        <img src="assets/images/icons/ch-cir-b.png" class="img-fluid" width="18px">
+                                                    </span>
+                                                    <span>
+                                                        Platform updates
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item d-flex fs-13 align-items-center gap-3 text-black" href="https://quffa.replatechnologies.com/help-center.html">
+                                                    <span>
+                                                        <img src="assets/images/icons/ch-cir-b.png" class="img-fluid" width="18px">
+                                                    </span>
+                                                    <span>
+                                                        Suggestions
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item d-flex fs-13 align-items-center gap-3 text-black" href="#">
+                                                    <span>
+                                                        <img src="assets/images/icons/ch-cir-b.png" class="img-fluid" width="18px">
+                                                    </span>
+                                                    <span>
+                                                        Sign out
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            <img src="assets/images/icons/noti.png" class="img-fluid" width="20px">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="customer-complaint.html">
+                                            <img src="assets/images/icons/report-ic.png" class="img-fluid" width="22px">
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center text-blue">
+                                        <i class="fas fa-sliders-h fs-4 me-3" id="menu-toggle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-6">
+                                <div class="input-group shadow pad-14-20">
+                                    <input type="text" class="form-control p-0 fs-14 bg-transparent border-0" placeholder="Search for anything...">
+                                    <span class="input-group-text bg-transparent p-0 border-0" id="basic-addon2">
+                                        <img src="assets/images/icons/search.png" class="img-fluid" width="20px">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 d-none d-lg-flex"></div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- navbar end here -->
+            <div class="container-fluid pt-3">
+                <div class="card border-gray3 rounded-3 shadow-c mb-3">
+                    <div class="card-body">
+                        <div class="row g-3 justify-content-between">
+                            <div class="col-lg-4">
+                                <div class="dropdown">
+                                    <button class="btn border-gray fs-14 d-flex align-items-center gap-2 text-1 shadow-c bg-white arrowdown-arr" type="button" id="helpdropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                        <img src="assets/images/icons/quest-cir.png" class="img-fluid" width="15px">
+                                        <span>Help</span>
+                                        <span class="myArrow1"><img src="assets/images/icons/arr-down.png" class="img-fluid" width="15px"></span>
+                                    </button>
+                                    <ul class="dropdown-menu px-3 lh-lg dropact shadow rounded-2 border-0 height-limit" style="width: 400px" aria-labelledby="helpdropdown">
+                                        <li class="mt-2">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <button class="border-0 bg-transparent fs-14 d-flex align-items-center gap-1">
+                                                    <span>Zoom</span>
+                                                    <span>
+                                                        <img src="assets/images/icons/zoom-ic.png" class="img-fluid" width="14px">
+                                                    </span>
+                                                </button>
+                                                <h5 class="m-0 fw-bold">
+                                                    Articles
+                                                </h5>
+                                            </div>
+                                        </li>
+                                        <li class="mt-2">
+                                            <div class="input-group bg-gray-input p-2 ">
+                                                <input type="text" class="form-control text-end p-0 fs-14 bg-transparent border-0" placeholder="Search">
+                                                <span class="input-group-text bg-transparent p-0 ps-2 border-0" id="basic-addon2">
+                                                    <img src="assets/images/icons/search-1.png" class="img-fluid" width="20px">
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="mt-2">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="mt-2">
+                                            <button class="border-0 bg-transparent d-flex align-items-center justify-content-between w-100 arrowdown-arr" data-bs-toggle='collapse' data-bs-target='#collap01'>
+                                                <span class="myArrow1">
+                                                    <img src="assets/images/icons/arr-down-b.png" class="img-fluid" width="15px">
+                                                </span>
+                                                <div class="d-flex align-items-center justify-content-end gap-2 flex-grow-1">
+                                                    <span class="fs-13 fw-semibold text-black">Setting up the store for the first time</span>
+                                                    <span class="w-40 text-end d-block">
+                                                        <img src="assets/images/icons/dots.png" class="img-fluid" width="8px">
+                                                    </span>
+                                                </div>
+                                            </button>
+                                            <div class="collapse" id="collap01">
+                                                <ul class="list-unstyled lh-lg m-0">
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Register new account</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/dots-g.png" class="img-fluid" width="8px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Create new store on cart</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/check-g.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Add first product</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Frequently asked question about your new store in basket</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mt-2">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="mt-2">
+                                            <button class="border-0 bg-transparent d-flex align-items-center justify-content-between w-100 arrowdown-arr" data-bs-toggle='collapse' data-bs-target='#collap02'>
+                                                <span class="myArrow1">
+                                                    <img src="assets/images/icons/arr-down-b.png" class="img-fluid" width="15px">
+                                                </span>
+                                                <div class="d-flex align-items-center justify-content-end gap-2 flex-grow-1">
+                                                    <span class="fs-13 fw-semibold text-black">Products</span>
+                                                    <span class="w-40 text-end d-block">
+                                                        <img src="assets/images/icons/dots.png" class="img-fluid" width="8px">
+                                                    </span>
+                                                </div>
+                                            </button>
+                                            <div class="collapse" id="collap02">
+                                                <ul class="list-unstyled lh-lg m-0">
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Register new account</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/dots-g.png" class="img-fluid" width="8px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Create new store on cart</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/check-g.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Add first product</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Frequently asked question about your new store in basket your new store in basket</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mt-2">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="mt-2">
+                                            <button class="border-0 bg-transparent d-flex align-items-center justify-content-between w-100 arrowdown-arr" data-bs-toggle='collapse' data-bs-target='#collap03'>
+                                                <span class="myArrow1">
+                                                    <img src="assets/images/icons/arr-down-b.png" class="img-fluid" width="15px">
+                                                </span>
+                                                <div class="d-flex align-items-center justify-content-end gap-2 flex-grow-1">
+                                                    <span class="fs-13 fw-semibold text-black">Requests</span>
+                                                    <span class="w-40 text-end d-block">
+                                                        <img src="assets/images/icons/dots.png" class="img-fluid" width="8px">
+                                                    </span>
+                                                </div>
+                                            </button>
+                                            <div class="collapse" id="collap03">
+                                                <ul class="list-unstyled lh-lg m-0">
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Register new account</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/dots-g.png" class="img-fluid" width="8px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Create new store on cart</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/check-g.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Add first product</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Frequently asked question about your new store in basket your new store in basket</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mt-2">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="mt-2">
+                                            <button class="border-0 bg-transparent d-flex align-items-center justify-content-between w-100 arrowdown-arr" data-bs-toggle='collapse' data-bs-target='#collap04'>
+                                                <span class="myArrow1">
+                                                    <img src="assets/images/icons/arr-down-b.png" class="img-fluid" width="15px">
+                                                </span>
+                                                <div class="d-flex align-items-center justify-content-end gap-2 flex-grow-1">
+                                                    <span class="fs-13 fw-semibold text-black">Marketing and marketing tools</span>
+                                                    <span class="w-40 text-end d-block">
+                                                        <img src="assets/images/icons/dots.png" class="img-fluid" width="8px">
+                                                    </span>
+                                                </div>
+                                            </button>
+                                            <div class="collapse" id="collap04">
+                                                <ul class="list-unstyled lh-lg m-0">
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Register new account</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/dots-g.png" class="img-fluid" width="8px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Create new store on cart</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/check-g.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Add first product</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Frequently asked question about your new store in basket your new store in basket</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mt-2">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="mt-2">
+                                            <button class="border-0 bg-transparent d-flex align-items-center justify-content-between w-100 arrowdown-arr" data-bs-toggle='collapse' data-bs-target='#collap05'>
+                                                <span class="myArrow1">
+                                                    <img src="assets/images/icons/arr-down-b.png" class="img-fluid" width="15px">
+                                                </span>
+                                                <div class="d-flex align-items-center justify-content-end gap-2 flex-grow-1">
+                                                    <span class="fs-13 fw-semibold text-black">Themes and store design</span>
+                                                    <span class="w-40 text-end d-block">
+                                                        <img src="assets/images/icons/dots.png" class="img-fluid" width="8px">
+                                                    </span>
+                                                </div>
+                                            </button>
+                                            <div class="collapse" id="collap05">
+                                                <ul class="list-unstyled lh-lg m-0">
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Register new account</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/dots-g.png" class="img-fluid" width="8px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Create new store on cart</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/check-g.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Add first product</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Frequently asked question about your new store in basket your new store in basket</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mt-2">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="mt-2">
+                                            <button class="border-0 bg-transparent d-flex align-items-center justify-content-between w-100 arrowdown-arr" data-bs-toggle='collapse' data-bs-target='#collap06'>
+                                                <span class="myArrow1">
+                                                    <img src="assets/images/icons/arr-down-b.png" class="img-fluid" width="15px">
+                                                </span>
+                                                <div class="d-flex align-items-center justify-content-end gap-2 flex-grow-1">
+                                                    <span class="fs-13 fw-semibold text-black">Shipping and delivery</span>
+                                                    <span class="w-40 text-end d-block">
+                                                        <img src="assets/images/icons/dots.png" class="img-fluid" width="8px">
+                                                    </span>
+                                                </div>
+                                            </button>
+                                            <div class="collapse" id="collap06">
+                                                <ul class="list-unstyled lh-lg m-0">
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Register new account</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/dots-g.png" class="img-fluid" width="8px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Create new store on cart</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/check-g.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Add first product</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Frequently asked question about your new store in basket your new store in basket</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mt-2">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="mt-2">
+                                            <button class="border-0 bg-transparent d-flex align-items-center justify-content-between w-100 arrowdown-arr" data-bs-toggle='collapse' data-bs-target='#collap07'>
+                                                <span class="myArrow1">
+                                                    <img src="assets/images/icons/arr-down-b.png" class="img-fluid" width="15px">
+                                                </span>
+                                                <div class="d-flex align-items-center justify-content-end gap-2 flex-grow-1">
+                                                    <span class="fs-13 fw-semibold text-black">Manage payments and store wallet</span>
+                                                    <span class="w-40 text-end d-block">
+                                                        <img src="assets/images/icons/dots.png" class="img-fluid" width="8px">
+                                                    </span>
+                                                </div>
+                                            </button>
+                                            <div class="collapse" id="collap07">
+                                                <ul class="list-unstyled lh-lg m-0">
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Register new account</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/dots-g.png" class="img-fluid" width="8px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Create new store on cart</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/check-g.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Add first product</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Frequently asked question about your new store in basket your new store in basket</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mt-2">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="mt-2">
+                                            <button class="border-0 bg-transparent d-flex align-items-center justify-content-between w-100 arrowdown-arr" data-bs-toggle='collapse' data-bs-target='#collap08'>
+                                                <span class="myArrow1">
+                                                    <img src="assets/images/icons/arr-down-b.png" class="img-fluid" width="15px">
+                                                </span>
+                                                <div class="d-flex align-items-center justify-content-end gap-2 flex-grow-1">
+                                                    <span class="fs-13 fw-semibold text-black">Bouquets and shop basket</span>
+                                                    <span class="w-40 text-end d-block">
+                                                        <img src="assets/images/icons/dots.png" class="img-fluid" width="8px">
+                                                    </span>
+                                                </div>
+                                            </button>
+                                            <div class="collapse" id="collap08">
+                                                <ul class="list-unstyled lh-lg m-0">
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Register new account</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/dots-g.png" class="img-fluid" width="8px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Create new store on cart</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/check-g.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Add first product</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Frequently asked question about your new store in basket your new store in basket</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mt-2">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="mt-2">
+                                            <button class="border-0 bg-transparent d-flex align-items-center justify-content-between w-100 arrowdown-arr" data-bs-toggle='collapse' data-bs-target='#collap09'>
+                                                <span class="myArrow1">
+                                                    <img src="assets/images/icons/arr-down-b.png" class="img-fluid" width="15px">
+                                                </span>
+                                                <div class="d-flex align-items-center justify-content-end gap-2 flex-grow-1">
+                                                    <span class="fs-13 fw-semibold text-black">App store</span>
+                                                    <span class="w-40 text-end d-block">
+                                                        <img src="assets/images/icons/dots.png" class="img-fluid" width="8px">
+                                                    </span>
+                                                </div>
+                                            </button>
+                                            <div class="collapse" id="collap09">
+                                                <ul class="list-unstyled lh-lg m-0">
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Register new account</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/dots-g.png" class="img-fluid" width="8px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Create new store on cart</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/check-g.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Add first product</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Frequently asked question about your new store in basket your new store in basket</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mt-2">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="mt-2">
+                                            <button class="border-0 bg-transparent d-flex align-items-center justify-content-between w-100 arrowdown-arr" data-bs-toggle='collapse' data-bs-target='#collap10'>
+                                                <span class="myArrow1">
+                                                    <img src="assets/images/icons/arr-down-b.png" class="img-fluid" width="15px">
+                                                </span>
+                                                <div class="d-flex align-items-center justify-content-end gap-2 flex-grow-1">
+                                                    <span class="fs-13 fw-semibold text-black">Store settings and option</span>
+                                                    <span class="w-40 text-end d-block">
+                                                        <img src="assets/images/icons/dots.png" class="img-fluid" width="8px">
+                                                    </span>
+                                                </div>
+                                            </button>
+                                            <div class="collapse" id="collap10">
+                                                <ul class="list-unstyled lh-lg m-0">
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Register new account</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/dots-g.png" class="img-fluid" width="8px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Create new store on cart</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/check-g.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Add first product</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Frequently asked question about your new store in basket your new store in basket</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mt-2">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="mt-2">
+                                            <button class="border-0 bg-transparent d-flex align-items-center justify-content-between w-100 arrowdown-arr" data-bs-toggle='collapse' data-bs-target='#collap11'>
+                                                <span class="myArrow1">
+                                                    <img src="assets/images/icons/arr-down-b.png" class="img-fluid" width="15px">
+                                                </span>
+                                                <div class="d-flex align-items-center justify-content-end gap-2 flex-grow-1">
+                                                    <span class="fs-13 fw-semibold text-black">Basket hints</span>
+                                                    <span class="w-40 text-end d-block">
+                                                        <img src="assets/images/icons/dots.png" class="img-fluid" width="8px">
+                                                    </span>
+                                                </div>
+                                            </button>
+                                            <div class="collapse" id="collap11">
+                                                <ul class="list-unstyled lh-lg m-0">
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Register new account</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/dots-g.png" class="img-fluid" width="8px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Create new store on cart</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/check-g.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Add first product</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Frequently asked question about your new store in basket your new store in basket</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mt-2">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="mt-2">
+                                            <button class="border-0 bg-transparent d-flex align-items-center justify-content-between w-100 arrowdown-arr" data-bs-toggle='collapse' data-bs-target='#collap12'>
+                                                <span class="myArrow1">
+                                                    <img src="assets/images/icons/arr-down-b.png" class="img-fluid" width="15px">
+                                                </span>
+                                                <div class="d-flex align-items-center justify-content-end gap-2 flex-grow-1">
+                                                    <span class="fs-13 fw-semibold text-black">Retails</span>
+                                                    <span class="w-40 text-end d-block">
+                                                        <img src="assets/images/icons/dots.png" class="img-fluid" width="8px">
+                                                    </span>
+                                                </div>
+                                            </button>
+                                            <div class="collapse" id="collap12">
+                                                <ul class="list-unstyled lh-lg m-0">
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Register new account</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/dots-g.png" class="img-fluid" width="8px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Create new store on cart</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/check-g.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Add first product</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Frequently asked question about your new store in basket your new store in basket</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mt-2">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="mt-2">
+                                            <button class="border-0 bg-transparent d-flex align-items-center justify-content-between w-100 arrowdown-arr" data-bs-toggle='collapse' data-bs-target='#collap13'>
+                                                <span class="myArrow1">
+                                                    <img src="assets/images/icons/arr-down-b.png" class="img-fluid" width="15px">
+                                                </span>
+                                                <div class="d-flex align-items-center justify-content-end gap-2 flex-grow-1">
+                                                    <span class="fs-13 fw-semibold text-black">Educational videos</span>
+                                                    <span class="w-40 text-end d-block">
+                                                        <img src="assets/images/icons/dots.png" class="img-fluid" width="8px">
+                                                    </span>
+                                                </div>
+                                            </button>
+                                            <div class="collapse" id="collap13">
+                                                <ul class="list-unstyled lh-lg m-0">
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Register new account</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/dots-g.png" class="img-fluid" width="8px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Create new store on cart</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/check-g.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Add first product</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Frequently asked question about your new store in basket your new store in basket</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mt-2">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="mt-2">
+                                            <button class="border-0 bg-transparent d-flex align-items-center justify-content-between w-100 arrowdown-arr" data-bs-toggle='collapse' data-bs-target='#collap14'>
+                                                <span class="myArrow1">
+                                                    <img src="assets/images/icons/arr-down-b.png" class="img-fluid" width="15px">
+                                                </span>
+                                                <div class="d-flex align-items-center justify-content-end gap-2 flex-grow-1">
+                                                    <span class="fs-13 fw-semibold text-black">Merchant services</span>
+                                                    <span class="w-40 text-end d-block">
+                                                        <img src="assets/images/icons/dots.png" class="img-fluid" width="8px">
+                                                    </span>
+                                                </div>
+                                            </button>
+                                            <div class="collapse" id="collap14">
+                                                <ul class="list-unstyled lh-lg m-0">
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Register new account</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/dots-g.png" class="img-fluid" width="8px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Create new store on cart</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/check-g.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Add first product</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Frequently asked question about your new store in basket your new store in basket</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="mt-2">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li class="mt-2">
+                                            <button class="border-0 bg-transparent d-flex align-items-center justify-content-between w-100 arrowdown-arr" data-bs-toggle='collapse' data-bs-target='#collap15'>
+                                                <span class="myArrow1">
+                                                    <img src="assets/images/icons/arr-down-b.png" class="img-fluid" width="15px">
+                                                </span>
+                                                <div class="d-flex align-items-center justify-content-end gap-2 flex-grow-1">
+                                                    <span class="fs-13 fw-semibold text-black">Improve store operations</span>
+                                                    <span class="w-40 text-end d-block">
+                                                        <img src="assets/images/icons/dots.png" class="img-fluid" width="8px">
+                                                    </span>
+                                                </div>
+                                            </button>
+                                            <div class="collapse" id="collap15">
+                                                <ul class="list-unstyled lh-lg m-0">
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Register new account</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/dots-g.png" class="img-fluid" width="8px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Create new store on cart</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/check-g.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Add first product</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="text-decoration-none fs-13 text-1 d-flex gap-3 w-100 justify-content-end">
+                                                            <span>Frequently asked question about your new store in basket your new store in basket</span>
+                                                            <span class="w-40 d-block text-center"><img src="assets/images/icons/mouse-circle.png" class="img-fluid" width="15px"></span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="text-end">
+                                    <a href="#addtaxmodal" data-bs-toggle="modal" class="btn border-gray fs-14 shadow-c text-1 bg-white">
+                                        <span>+ Add tax</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-3 border-gray3 shadow-c mt-3">
+                    <div class="card-header border-0 bg-transparent py-3">
+                        <h6 class="text-capitalize text-black text-end fw-semibold">
+                            Store settings
+                        </h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-5 justify-content-end g-3">
+                            <div class="col">
+                                <a href="store-settings-currency.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/currency.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Currencies</h6>
+                                            <p class="fs-12 text-1">Currencies available in the store</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="wallet-and-bill.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/wallet_bills.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Wallet and bills</h6>
+                                            <p class="fs-12 text-1">Wallet balance, bills, my subscriptions</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="payment-method.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/payment_method.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Payment methods</h6>
+                                            <p class="fs-12 text-1">Activate electronic payments</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="shipping-and-delivery.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/shipping_delivery.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Shipping and delivery</h6>
+                                            <p class="fs-12 text-1">Linking with shipping companies</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="basic-setting-basket.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/basic_settings.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Basic settings</h6>
+                                            <p class="fs-12 text-1">Link, logo, name, headquarters</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="store-settings-maintainance.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/maintenance_mode.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Maintenance mode</h6>
+                                            <p class="fs-12 text-1">Temporarily closing the store</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="domain-settings.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/domain_setting.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Domain settings</h6>
+                                            <p class="fs-12 text-1">Control the store's domain settings</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="store-settings-evaluation-setting.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/evaluation-setting.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Evaluation settings</h6>
+                                            <p class="fs-12 text-1">Define your store's rating settings</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="store-settings-languages.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/language.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Languages</h6>
+                                            <p class="fs-12 text-1">Activate multilingualism in the store</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="store-option.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/store_options.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Store options</h6>
+                                            <p class="fs-12 text-1">Store control options</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="store-package.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/invoice_setting.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Store package</h6>
+                                            <p class="fs-12 text-1">
+                                                Control the store’s domain settings
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/invoice_setting.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Preparing store invoices</h6>
+                                            <p class="fs-12 text-1">Controlling invoices issued with orders</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="store-settings-notification.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/notifications.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Notification</h6>
+                                            <p class="fs-12 text-1">Set up your notifications</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="fraud-protection.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/payment_restrictions.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Payment restrictions</h6>
+                                            <p class="fs-12 text-1">Add payment restrictions</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="shipping-companies-restriction.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/shipping_restrictions.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Shipping restrictions</h6>
+                                            <p class="fs-12 text-1">Add specific restrictions for shipping companies</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <h6 class="text-capitalize text-black text-end fw-semibold my-3">
+                            Product settings
+                        </h6>
+                        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-5 justify-content-end g-3">
+                            <div class="col">
+                                <a href="store-settings-digital-gifting-system.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/digi_gift_system.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Digital gifting system</h6>
+                                            <p class="fs-12 text-1">Providing a gifting mechanism to your customers</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="store-settings-notify-me.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/notify.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Notify me when available</h6>
+                                            <p class="fs-12 text-1">Send an alert to the customer if the product is available</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="store-settings-inventory-settings.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/inventory_settings.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Inventory settings</h6>
+                                            <p class="fs-12 text-1">Determine the settings for the products, their quantities, and how they are displayed</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <h6 class="text-capitalize text-black text-end fw-semibold my-3">
+                            Advanced settings
+                        </h6>
+                        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-5 justify-content-end g-3">
+                            <div class="col">
+                                <a href="branch-and-warehouse.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/branches_warehouses.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Branches and warehouses</h6>
+                                            <p class="fs-12 text-1">
+                                                Receiving orders from branches and warehouses
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="store-employee.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/store_employees.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Store employees</h6>
+                                            <p class="fs-12 text-1">Controlling the powers of store employees</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="taxes.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/tax.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Value added tax</h6>
+                                            <p class="fs-12 text-1">Tax preparation</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="account-control.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/account_control.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Account control</h6>
+                                            <p class="fs-12 text-1">Stop subscription, delete store</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="store-settings-advertisement.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/advertisements_banner.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Advertisements</h6>
+                                            <p class="fs-12 text-1">Show ads to customers in the store</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <h6 class="text-capitalize text-black text-end fw-semibold my-3">
+                            Archieves
+                        </h6>
+                        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-5 justify-content-end g-3">
+                            <div class="col">
+                                <a href="store-settings-archive-text.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/messages_archive.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Archive text messages</h6>
+                                            <p class="fs-12 text-1">Messages issued from the store</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="recovery-data.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/data-recovery.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Data recovery</h6>
+                                            <p class="fs-12 text-1">Recover deleted orders and products</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="store-settings-basket-policies.html" class="text-decoration-none">
+                                    <div class="card py-2 h-100">
+                                        <div class="card-header bg-transparent d-flex justify-content-center border-0">
+                                            <div>
+                                                <img src="assets/images/icons/basket-policy.png" alt="" class="img-fluid" width="32px">
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <h6 class="fw-semibold text-dark fs-14">Basket policies archive</h6>
+                                            <p class="fs-12 text-1">All policy data basket</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="text-center py-2">
+                <a href="#" class="text-decoration-none btncircle">
+                    <img src="assets/images/icons/email-w.png" class="img-fluid" width="32px">
+                </a>
+            </footer>
+        </div>
+        <!-- Sidebar -->
+        <div class="bg-white px-2" id="sidebar-wrapper">
+            <div class="text-center py-3">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" width="112px" height="57.93px" alt="">
+                </a>
+            </div>
+            <div class="height-fix-side scroll-leftsid">
+                <div class="d-flex flex-column gap-2 justify-content-center align-items-center pt-4 pb-5">
+                    <img src="assets/images/maya.jpg" class="rounded-pill" width="100px" height="100px" alt="">
+                    <span class="fs-16">E-E products</span>
+                </div>
+                <ul class="navbar-nav sidebar_list">
+                    <li class="nav-item">
+                        <a href="index.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/main.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">main</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="product.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/product.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">product</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="request.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/req.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Requests</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="customer.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/customer.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Customers</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="report.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/report.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Reports</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="question-evaluation.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/ques-ev.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Question & evaluation</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="introduction-page.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/intro.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Introduction pages</p>
+                        </a>
+                    </li>
+                </ul>
+                <!-- marketing -->
+                <div class="my-3">
+                    <h6 class="text-main fw-bold text-end me-3 m-0">MARKETING</h6>
+                </div>
+                <ul class="navbar-nav sidebar_list">
+                    <li class="nav-item">
+                        <a href="marketing-tools.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/mart-campaign.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Marketing tools</p>
+                        </a>
+                    </li>
+                </ul>
+                <!-- sales channel -->
+                <div class="my-3">
+                    <h6 class="text-main fw-bold text-end me-3 m-0">SALES CHANNELS</h6>
+                </div>
+                <ul class="navbar-nav sidebar_list">
+                    <li class="nav-item">
+                        <a href="coming-soon.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/local.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Quffah market</p>
+                        </a>
+                    </li>
+                </ul>
+                <!-- setting -->
+                <div class="my-3">
+                    <h6 class="text-main fw-bold text-end me-3 m-0">SETTINGS</h6>
+                </div>
+                <ul class="navbar-nav sidebar_list">
+                    <li class="nav-item">
+                        <a href="store-settings.html" class="text-decoration-none active nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/cogs.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Store settings</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="wallet-and-bill.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/wallet.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Wallet and bills</p>
+                        </a>
+                    </li>
+                </ul>
+                <!-- store apperance -->
+                <div class="my-3">
+                    <h6 class="text-main fw-bold text-end me-3 m-0">STORE APPEARANCE</h6>
+                </div>
+                <ul class="navbar-nav sidebar_list">
+                    <li class="nav-item">
+                        <a href="store-design.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/store-design.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Store design</p>
+                        </a>
+                    </li>
+                </ul>
+                <!-- app store -->
+                <div class="my-3">
+                    <h6 class="text-main fw-bold text-end me-3 m-0">APP STORE</h6>
+                </div>
+                <ul class="navbar-nav sidebar_list">
+                    <li class="nav-item">
+                        <a href="installation-application.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/installed-app.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Installed applications</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/application-st.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Visit the App Store</p>
+                        </a>
+                    </li>
+                </ul>
+                <!-- supporting tools -->
+                <div class="my-3">
+                    <h6 class="text-main fw-bold text-end me-3 m-0">SUPPORTING TOOLS</h6>
+                </div>
+                <ul class="navbar-nav sidebar_list">
+                    <li class="nav-item">
+                        <a href="merchant-service.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/merchant-sv.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Merchant services</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="helpdesk.html" class="text-decoration-none nav-link d-flex">
+                            <span class="">
+                                <img src="assets/images/icons/help-desk.png" class="img-fluid">
+                            </span>
+                            <p class="m-0 pt-1 text-capitalize">Help desk</p>
+                        </a>
+                    </li>
+                </ul>
+                <!-- supporting tools -->
+                <div class="my-3">
+                    <h6 class="text-main fw-bold text-end me-3 m-0">MERCHANT APPLICATION</h6>
+                </div>
+                <div class="d-flex flex-column gap-1 p-2 align-items-center justify-content-center">
+                    <a href="#">
+                        <img src="assets/images/play-store.png" class="img-fluid" width="150px">
+                    </a>
+                    <a href="#">
+                        <img src="assets/images/appstore.png" class="img-fluid" width="150px">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        
+    </div>
+
+    <!-- all customer modal -->
+    <div class="modal fade" id="allcustomermodal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0 position-relative justify-content-end">
+                    <button class="btn-close position-absolute start-0 m-2 fs-13" data-bs-dismiss='modal'></button>
+                    <h6 class="text-black text-end fw-bold" id="viewModalLabel">
+                        Change requests to status - Cancelled
+                    </h6>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="input-group pad-9-16 rounded border-gray mb-3">
+                            <span class="input-group-text bg-transparent border-0 p-0 pe-2" id="basic-addon1">
+                                <img src="assets/images/icons/custinput.png" class="img-fluid" width="20px">
+                            </span>
+                            <input type="text" class="form-control text-end fs-14 px-2 p-0 border-0 border-start" placeholder="All customers" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-black text-end fw-bold">Group advantages</h6>
+                            <p class="fs-14">
+                                You can assign benefits to the customer group through the store settings. Through the shipping company restrictions, you can control which shipping company appears to the group’s customers. Through the payment method restrictions, you can control any payment methods that appear to the group’s customers.
+                            </p>
+                            <ul class="ps-3 fs-14">
+                                <li>
+                                    <a href="fraud-protection.html" class="text-decoration-none text-main">
+                                        Fraud protection
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="text-decoration-none text-main">
+                                        Shipping company restrictions
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btncust rounded-1 text-white fs-13">
+                        Keep
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add product modal -->
+    <div class="modal fade" id="hiringmodal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0 justify-content-end position-relative">
+                    <button class="btn-close position-absolute start-0 m-2 fs-13" data-bs-dismiss='modal'></button>
+                    <h6 class="modal-title text-black fw-bold" id="viewModalLabel">
+                        The establishment's tax number
+                    </h6>
+                </div>
+                <div class="modal-body">
+                    <form class="">
+                        <div class="row g-3 px-1">
+                            <div class="col-lg-12">
+                                <div class="text-end">
+                                    <label class="fs-13 text-black">The establishment's tax number</label>
+                                    <input type="text" class="form-control text-end rounded-1 pad-9-16 text-1 fs-13" placeholder="The establishment's tax number" name="">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-check d-flex flex-row-reverse gap-4">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label fs-14 pe-2 text-end d-flex flex-column" for="flexCheckDefault">
+                                        <span class="fw-bold text-black">Display the tax number below the store</span>
+                                        <span class="text-1">The tax number will be displayed to users at the bottom of the store</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="d-flex align-items-center justify-content-between w-100 bg-gray-shade p-2 mb-3 fs-14">
+                                    <div class="form-check form-switch">
+                                      <input class="form-check-input" type="checkbox" role="switch" id="showuploadimg">
+                                    </div>
+                                    <p class="m-0 text-end"> 
+                                        <span class="text-black">
+                                            Display the tax certificate icon at the bottom of the store
+                                        </span>
+                                        <span class="fs-12 text-1 d-block">
+                                            The tax certificate icon will be displayed to users at the bottom of the store
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 " id="uploadimg" style="display: none;">
+                                <div class="w-100">
+                                    <label for="uploaddiv" class="uploadimg h-55 text-1 d-flex justify-content-center align-items-center fs-13 fw-semibold">
+                                        <span>Upload tax certificate image</span>
+                                    </label>
+                                    <input type="file" class="d-none" id="uploaddiv" name="">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btncust rounded-1 text-main bg-transparent fs-13"
+                        data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                    <button type="button" class="btncust rounded-1 text-white fs-13">
+                        Add
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- add tax modal -->
+    <div class="modal fade" id="addtaxmodal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0 position-relative justify-content-end">
+                    <button class="btn-close position-absolute start-0 m-2 fs-13" data-bs-dismiss='modal'></button>
+                    <h6 class="text-black text-end fw-bold" id="viewModalLabel">
+                        Create the tax
+                    </h6>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-lg-12">
+                            <div>
+                                <select class="form-select rounded-1 pad-9-16 text-end text-1 fs-13 ar-left" id="optionsec1">
+                                    <option selected>Choose Country</option>
+                                    <option>Saudia Arab</option>
+                                    <option>Pakistan </option>
+                                    <option>All countries</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="input-group pad-9-16 rounded border-gray mb-3">
+                                <span class="input-group-text bg-transparent border-0 p-0 pe-2" id="basic-addon1">
+                                    %
+                                </span>
+                                <input type="text" class="form-control text-end fs-14 px-2 p-0 border-0 border-start" placeholder="Tax rate">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btncust rounded-1 text-white fs-13">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/datatables.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+
+    <!-- <script type="text/javascript">
+    $(document).ready(function() {
+        $('#table').DataTable({
+            "language": {
+                "paginate": {
+                    "previous": '<i class="fa-solid fa-chevron-left p-5px"></i>',
+                    "next": '<i class="fa-solid fa-chevron-right p-5px"></i>',
+                },
+                "lengthMenu": "",
+                search: "",
+                searchPlaceholder: "Search..."
+            },
+
+            "ordering": true
+        });
+
+    });
+    </script> -->
+    <script>
+        $(document).ready(function() {
+            // Initialize the datepicker on the hidden input field
+            $("#datepicker2").datepicker({
+              dateFormat: 'yy-mm-dd' // Set your desired date format
+            });
+
+            // Event handler for the button click
+            $("#showCalendarButton2").on("click", function() {
+              // Show the datepicker
+              $("#datepicker2").datepicker("show");
+            });
+            $("#ui-datepicker-div").addClass('customcalender')
+          });
+    </script>
+
+    <script type="text/javascript">
+        let btnswitch = document.getElementById('lastcheck')
+        let redtext = document.getElementById('redtext')
+
+        btnswitch.addEventListener('change',function(){
+            if (btnswitch.checked) {
+                redtext.style.display='block'
+            }else {
+                redtext.style.display='none'
+            }
+        })
+    </script>
+
+    <script type="text/javascript">
+        let btn2 = document.getElementById('showuploadimg')
+        let uploadimg = document.getElementById('uploadimg')
+
+        btn2.addEventListener('change',function(){
+            if (btn2.checked) {
+                uploadimg.style.display='flex'
+            }else {
+                uploadimg.style.display='none'
+            }
+        })
+    </script>
+
+</body>
+
+</html>

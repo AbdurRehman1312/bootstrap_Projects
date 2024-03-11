@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recruitment & Training</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style-ltr.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/style-rtl.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/00b231478f.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./images/LOGO_3.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl p-0 navbar-light fixed-top">
+            <div class="container  ">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/LOGO_3.png" class="img-fluid sizelogo">
+                </a>
+                <div class="d-flex align-items-center justify-content-end gap-3">
+                    <button type="button"
+                        class="nav-link fs-2 text-capitalize d-block d-md-none searchlase d-lg-none border-0 bg-transparent">
+                        <i class="fa-solid fa-magnifying-glass search_color"></i>
+                    </button>
+                    <button class="navbar-toggler" type="button" onclick="openNav()">
+                        <img src="images/menu.png" class="img-fluid">
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse ">
+                    <ul class="navbar-nav d-flex justify-content-center align-items-center mb-2 mb-lg-0 w-100">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text_gold text-nowrap "
+                                href="./index.html">
+                                الرئيسية
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text_gold text-nowrap" href="about-us.html">
+                                عن الشركة
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text_gold text-nowrap" href="our-services.html">
+                                الخدمات
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text_gold text-nowrap" href="blog.html">
+                                المدونة
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text_gold text-nowrap" href="service-req.html">
+                                طلب خدمة                     
+                                   </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text_gold text-nowrap " href="recruitment.html">
+                                التوظيف والتدريب
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text_gold text-nowrap " href="contact-us.html">
+                                اتصل بنا
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center justify-content-center gap-3">
+                        <button type="button" class="fs-4  text-capitalize searchlase border-0 bg-transparent">
+                            <i class="fa-solid fa-magnifying-glass text_gold fs-5"></i>
+                        </button>
+                        <div class="nav-link ">
+                            <button class="bg-transparent p-0 border-0">
+                                <img src="images/saudi-arabia.png" class="img-fluid" width="25" height="25">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+       <!-- search div -->
+       <section class="searchblock">
+        <div class="position-absolute top-0 end-0 m-3">
+            <button id="closesearch" class="bg-transparent text-white fs-1 border-0">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="text"
+                                class="form-control search-nav bg-transparent fs-1 text-white border-0 border-bottom border-white"
+                                placeholder="ابحث هنا..." aria-label="Search here..."
+                                aria-describedby="basic-addon2">
+                            <span class="input-group-text  bg-transparent text-white border-0 fs-1"
+                                id="basic-addon2">
+                                <i class="fa-solid fa-magnifying-glass fs-1"></i>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- search div end -->
+
+     <!-- mobile menu start -->
+     <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn text-white" onclick="closeNav()">&times;</a>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="index.html" class="text-decoration-none text-white text-nowrap text-capitalize">
+                الرئيسية
+            </a>
+            <a href="about-us.html" class="text-decoration-none text-white text-capitalize">عن الشركة
+                نحن</a>
+            <a href="our-services.html" class="text-decoration-none text-white text-capitalize">الخدمات</a>
+            <a href="blog.html" class="text-decoration-none text-white text-capitalize">المدونة</a>
+            <a href="service-req.html" class="text-decoration-none text-white text-capitalize">
+                طلب خدمة
+            </a>
+            <a href="recruitment.html" class="text-decoration-none text-white text-nowrap text-capitalize">توظيف
+                & تمرين</a>
+            <a href="contact-us.html" class="text-decoration-none text-white text-capitalize">اتصال
+                نحن</a>
+        </div>
+    </div>
+    <!-- mobile menu end -->
+    </header>
+    <main>
+        <section class="m--100 py-3">
+            <div class="container my-5">
+                <div class="row justify-content-center g-5 align-items-center">
+                    <div class="col-lg-12">
+                        <div>
+                            <p class="about-heading text-capitalize">التوظيف والتدريب</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <form action="" class="bg_offwhite shadow mb-5">
+                            <p class="fw-bold fs-18">اختر نوع الطلب<sup class="text-danger">*</sup> </p>
+                            <div class="row g-3">
+                                <div class="col-lg-2">
+                                    <div class="form-check d-flex gap-5 align-items-center">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label fs-14" for="flexRadioDefault1">
+                                            توظيف
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="form-check d-flex gap-5 align-items-center">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label fs-14" for="flexRadioDefault1">
+                                            تدريب
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row g-3 fs-14">
+                                <p class="fw-bold fs-18">معلومات </p>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                    <label for="" class="form-label">البريد الالكترونى<sup class="text-danger">*</sup>
+                                    </label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg_ow" id="basic-addon1">
+                                            <img src="./images/name-input.png" alt="" class="img-fluid" width="15"
+                                                height="15">
+                                        </span>
+                                        <input class="form-control form-control-lg" type="text"
+                                            placeholder="Enter Your Full Name" aria-label="default input example">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                    <label for="" class="form-label">
+                                        البريد الالكترونى</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg_ow" id="basic-addon1">
+                                            <img src="./images/email-input.png" alt="" class="img-fluid" width="16"
+                                                height="16">
+                                        </span>
+                                        <input class="form-control form-control-lg" type="email"
+                                            placeholder="أدخل بريدك الإلكتروني" aria-label="default input example">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                    <label for="" class="form-label">
+                                        الجوال</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg_ow" id="basic-addon1">
+                                            <img src="./images/phone-input.png" alt="" class="img-fluid" width="16"
+                                                height="16">
+                                        </span>
+                                        <input class="form-control form-control-lg" type="number" placeholder="+92..."
+                                            aria-label="default input example">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                    <label for="" class="form-label">
+                                        المؤهل<sup class="text-danger">*</sup></label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg_ow" id="basic-addon1">
+                                            <img src="./images/degree-input.png" alt="" class="img-fluid" width="16"
+                                                height="16">
+                                        </span>
+                                        <select class="form-select form-select-lg" aria-label="Large select example">
+                                            <option selected hidden>اختر مؤهلاتك</option>
+                                            <option value="1">بكالوريوس</option>
+                                            <option value="2">سادة</option>
+                                            <option value="3">دكتوراه</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-12">
+                                    <label for="" class="form-label">
+                                        التخصص<sup class="text-danger">*</sup> </label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg_ow" id="basic-addon1">
+                                            <img src="./images/certificate-input.png" alt="" class="img-fluid"
+                                                width="16" height="16">
+                                        </span>
+                                        <input class="form-control form-control-lg" type="number" placeholder=""
+                                            aria-label="default input example">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-12">
+                                    <div class="mt-3">
+                                        <label for="" class="form-label text-capitalize">
+                                            الخبرات السابقة والدورات<sup class="text-danger">*</sup> </label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                            rows="10"></textarea>
+                                    </div>
+                                    <div class="mt-5">
+                                        <button type="submit" class="text-decoration-none sub_btn border-0">
+                                            ارسال
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="need-help-section pb-3">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 my-5">
+                        <div class="need p-4">
+                            <p class="about-heading1 text-white mb-0 text-capitalize">المساعدة</p>
+                            <p class="fs-14 text-white">نحن هنا لخدمتك ومساعدتك، تواصل مع شركة خالدالسليم وشركاؤه مستشارون ومحامون مكتب محاسبة معتمد.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="d-flex align-items-center justify-content-center gap-5">
+                            <span class="flip-btn1">
+                                <a href="service-req.html" class="text-decoration-none fs-3">
+                                    طلب خدمة </a>
+                            </span>
+                            <span class="flip-btn3">
+                                <a href="contact-us.html" class="text-decoration-none fs-3">
+                                    اتصل بنا الآن
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="live-chat">
+        <div class="position-fixed  chat ">
+            <img src="./images/whatsapp.png" alt="" class="rounded-circle">
+        </div>
+    </div>
+    <!-- ----Footer-start-from-here------ -->
+   <footer class="bg-dark text-white">
+        <div class="container">
+            <div class="row gy-5 py-5 justify-content-between ">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class>
+                        <img src="images/LOGO_3.png" class="img-fluid sizelogo">
+                        <p class="fs-14 text-white my-4">Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Optio,
+                            consectetur.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-2">
+                    <div class>
+                        <h2 class="text-dark-clr mb-3 text-capitalize">روابط هامة</h2>
+                        <p class="fs-5"><a href="index.html"
+                                class="text-decoration-none text-capitalize text-white">الرئيسية</a></p>
+                        <p class="fs-5"><a href="about-us.html"
+                                class="text-decoration-none text-white text-capitalize ">معلومات عنا</a>
+                        </p>
+                        <p class="fs-5"><a href="#" class="text-decoration-none text-white text-capitalize ">
+                                خدمات
+                            </a></p>
+                        <p class="fs-5"><a href="blog.html"
+                                class="text-decoration-none text-white text-capitalize ">مدونة</a>
+                        </p>
+                        <p class="fs-5"><a href="service-req.html"
+                                class="text-decoration-none text-white text-capitalize ">طلب
+                                خدمة</a>
+                        </p>
+                        <p class="fs-5"><a href="recruitment.html"
+                                class="text-decoration-none text-white text-capitalize ">التوظيف والتدريب</a>
+                        </p>
+                        <p class="fs-5"><a href="contact-us.html"
+                                class="text-decoration-none text-white text-capitalize ">اتصل بنا</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-2">
+                    <div class>
+                        <h2 class="text-dark-clr mb-3 text-capitalize"></h2>
+                        <p class="fs-5"><a href="our-partner.html"
+                                class="text-decoration-none text-white text-capitalize ">شركاء النجاح</a>
+                        </p>
+                        <p class="fs-5"><a href="our-team.html"
+                                class="text-decoration-none text-white text-capitalize ">فريق الإدارة</a>
+                        </p>
+                        <p class="fs-5"><a href="our-quality.html"
+                                class="text-decoration-none text-white text-capitalize ">
+                                جودة
+                            </a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-2">
+                    <div class>
+                        <h2 class="text-dark-clr mb-3 text-capitalize">تواصل معنا</h2>
+                        <address class="fs-14">
+                            <!--<p class="mb-0">اسم الشركة</p>-->
+                            <!--<p class="mb-0">59 طريق راثي</p>-->
+                            <!--<p class="mb-0">كولشيستر، في تي 05408</p>-->
+                            <p class="mb-0">الهاتف: (800) 123-1234</p>
+                            <p class="mb-2">فاكس: (800) 123-1234</p>
+                            <p class="mb-0"><a href="mailto:support@cpasitesolutions.com"
+                                    class="text-decoration-none text-white">demo@demo.com
+                                    Dates</a></p>
+                        </address>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-2">
+                    <div class>
+                        <h2 class="text-dark-clr mb-3 text-capitalize">تابعنا على</h2>
+                        <div class="social-footer mt-4">
+                            <ul class="d-flex align-items-center">
+                                <li>
+                                    <a href="https://twitter.com/" class="text-decoration-none me-3">
+                                        <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/fundme" class="text-decoration-none me-3">
+                                        <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" class="text-decoration-none me-3">
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/" class="text-decoration-none me-3">
+                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <hr>
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <p class="mb-0 fs-4 text-dark-clr">
+                                © 2023 | <a href="#"
+                                    class="text-decoration-none text-white">عكس تكنولوجيز بي في تي المحدودة.
+                                    كل الحقوق محفوظة
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- js area start -->
+    <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/myScript.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#dropdownMenu').click(function () {
+                $('.down-caret').toggleClass('open-caret');;
+            });
+        });
+        $(document).ready(function () {
+            $('#dropdownMenuone').click(function () {
+                $('.down-caretone').toggleClass('open-caret');;
+            });
+        });
+        $(document).ready(function () {
+            $('#dropdownMenutwo').click(function () {
+                $('.down-carettwo').toggleClass('open-caret');;
+            });
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".mySwipermain", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            // effect: "fade",
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.searchlase').click(function () {
+                $(".searchblock").toggleClass('active')
+            });
+            $('#closesearch').click(function () {
+                $(".searchblock").toggleClass('active')
+            });
+        })
+    </script>
+    <script>
+        $('.counter-count').each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+
+                //chnage count up speed here
+                duration: 4000,
+                easing: 'swing',
+                step: function (now) {
+                    $(this).text(Math.ceil(now));
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

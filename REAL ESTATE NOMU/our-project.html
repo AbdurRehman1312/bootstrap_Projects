@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our Projects</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style-rtl.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./images/LOGO_1.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl p-0 navbar-light ">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/LOGO_3.png" class="img-fluid sizelogo">
+                </a>
+                <div class="d-flex align-items-center justify-content-end gap-3">
+                    <button type="button"
+                        class="nav-link fs-2 text-capitalize d-block d-md-none searchlase d-lg-none border-0 bg-transparent">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="navbar-toggler" type="button" onclick="openNav()">
+                        <img src="images/menu.png" class="img-fluid">
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse ">
+                    <ul class="navbar-nav h-nav d-flex  align-items-center mb-2 mb-lg-0 w-100">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-dark text-nowrap" href="./index.html">
+                                الصحفة الرئيسة
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-dark text-nowrap" href="./about-us.html">
+                                عــنّــا
+                            </a>
+                        </li>
+                        <li class="nav-item active-nav-link">
+                            <a class="nav-link text-uppercase text-dark text-nowrap" href="our-project.html">
+                                مشاريعنا
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-dark text-nowrap" href="news.html">
+                                أخبارنا
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-dark text-nowrap" href="events-confrences.html">
+                                الفعاليات
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-dark  text-nowrap" href="gallery.html">
+                                البوم
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-dark text-nowrap" href="guarantees-feature.html">
+                                الضمانات و المميزات
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase text-dark text-nowrap" href="contact-us.html">
+                                الاتصال
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center justify-content-end  w-20p">
+                        <div class="d-flex align-items-center justify-content-between ms-3">
+                            <div class="dropdown">
+                                <button class="btn p-0 border-0 " type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <div class="p_pic">
+                                        <img src="images/av-1.png" alt="">
+                                    </div>
+                                </button>
+                                <ul class="dropdown-menu profile-ul p-8" aria-labelledby="dropdownMenuButton1">
+                                    <li class="p-2">
+                                        <a class="dropdown-item fs-14 dropitem d-flex align-items-center p-0"
+                                            href="profile.html">
+                                            <img src="./images/profile-1.svg" alt="" width="18"
+                                                height="18" class="ms-1">
+                                            <span class=" fs-14 fw-400">
+                                                حساب تعريفي
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <hr class="m-0 p-4tb text-grey">
+                                    <li class="p-2 mt-2">
+                                        <a class="dropdown-item fs-14 dropitem d-flex align-items-center p-0"
+                                        href="#logout" data-bs-toggle="modal">
+                                            <img src="./images/sign-out.svg" alt="" width="18"
+                                                height="18" class="ms-1">
+                                            <span class=" fs-14 fw-400">
+                                                خروج
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ms-5 p-1">
+                            <a href="sign-in.html"
+                                class="mb-0 fs-14 text-nowrap  text-decoration-none text-dark-clr">تسجيل الدخول</a>
+                        </div>
+                        <button type="button" class=" ms-5  fs-4  text-capitalize searchlase border-0 bg-transparent">
+                            <i class="fa-solid fa-magnifying-glass "></i>
+                        </button>
+                        <div class="dropdown nav-link ms-5">
+                            <button class="bg-transparent text-dark p-0 d-flex  align-items-center border-0 fs-5 gap-2"
+                                id="dropdownMenu" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="images/saudi-arabia.png" class="img-fluid w-20">
+                                <span class="down-caret">
+                                    <i class="fa-solid fa-chevron-down nav-bar-link"></i>
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="lang-dropdown">
+                                    <a class="dropdown-item text-uppercase fs-5 d-flex align-items-center gap-2"
+                                        href="#">
+                                        <img src="images/en.jpg" class="img-fluid w-20">
+                                        <span>
+                                            ENG
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- search div -->
+        <section class="searchblock">
+            <div class="position-absolute top-0 end-0 m-3">
+                <button id="closesearch" class="bg-transparent text-white fs-1 border-0">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <form>
+                            <div class="input-group mb-3">
+                                <input type="text"
+                                    class="form-control search-nav bg-transparent fs-1 text-white border-0 border-bottom border-white"
+                                    placeholder="Search here..." aria-label="Search here..."
+                                    aria-describedby="basic-addon2">
+                                <span class="input-group-text  bg-transparent text-white border-0 fs-1"
+                                    id="basic-addon2">
+                                    <i class="fa-solid fa-magnifying-glass fs-1"></i>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- search div end -->
+
+        <!-- mobile menu start -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn text-white" onclick="closeNav()">&times;</a>
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="index.html" class="text-decoration-none text-white text-nowrap text-capitalize">الصحفة الرئيسة
+                </a>
+                <a href="about-us.html" class="text-decoration-none text-white text-capitalize">عــنّــا</a>
+                <a href="our-project.html" class="text-decoration-none text-white text-capitalize">مشاريعنا</a>
+                <a href="news.html" class="text-decoration-none text-white text-capitalize">أخبارنا</a>
+                <a href="events-confrences.html" class="text-decoration-none text-white text-capitalize"> الفعاليات </a>
+                <a href="gallery.html" class="text-decoration-none text-white text-capitalize">البوم</a>
+                <a href="guarantees-feature.html" class="text-decoration-none text-white text-capitalize">الضمانات و
+                    المميزات</a>
+                <a href="contact-us.html" class="text-decoration-none text-white text-capitalize">الاتصال</a>
+                <a href="sign-in.html" class="mb-0 fs-14 text-nowrap text-decoration-none text-white">تسجيل الدخول</a>
+                <a href="profile.html" class="mb-0 fs-14 text-nowrap text-decoration-none text-white">حساب تعريفي</a>
+            </div>
+        </div>
+        <!-- mobile menu end -->
+    </header>
+    <main>
+        <section class="breadcrumb-section position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="position-relative">
+                            <h1 class="fcust text-capitalize text-white fw-bold mb-4 text-capitalize">مشاريعنا</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="py-5 my-5">
+            <div class="container-fluid">
+                <div class="row align-items-center g-5 justify-content-between proj-head">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 ">
+                        <div class="m-0 p-0">
+                            <h1 class="fw-bold text-nowrap text-capitalize">
+                                مشاريع حديثه
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-5">
+                        <div class="d-flex justify-content-end gap-4 align-items-center w-100">
+                            <div class="input-group border pad-8-16 gap-8  rounded-2">
+                                <span class="input-group-text border-0 p-0  bg-transparent" id="basic-addon1">
+                                    <img src="./images/magnify.png" class="img-fluid" width="22px">
+                                </span>
+                                <input type="text"
+                                    class="form-control p-0 text-input fw-400-24px fs-4 border-0 bg-transparent"
+                                    placeholder="ابحث هنا ...">
+                            </div>
+                            <div class="input-group border pad-8-16 gap-8  rounded-2">
+                                <select
+                                    class="form-control text-capitalize p-0 text-input fs-4 fw-400-24px border-0 bg-transparent">
+                                    <option value="">المشاريع السكنية</option>
+                                    <option value="">المشاريع التجارية</option>
+                                    <option value="">مشاريع الأراضي والتنمية</option>
+                                </select>
+                                <span class="input-group-text border-0 p-0  bg-transparent" id="basic-addon1">
+                                    <i class="fa-solid fa-chevron-down text-muted"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center g-5 m--100 " style="direction: rtl;">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                        <div class="card1" style="background-image:url(/images/project-4.jpeg) ;">
+                            <div class="m-auto">
+                                <h1 class="card-title text-white position-relative text-capitalize">مشروع 1 </h1>
+                            </div>
+                            <div class="details">
+                                <div class="center">
+                                    <h5 class="card-title fs-2 text-capitalize">مشروع 1</h5>
+                                    <p class="card-text fs-5 custom_text">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.</p>
+                                    <div class="d-flex justify-content-between text-capitalize align-items-center mt-5">
+                                        <button href="#project" data-bs-toggle="modal"
+                                            class="btn detail-btn1 fs-5  ">انظر التفاصيل</button>
+                                        <div>
+                                            <div class="d-flex align-items-center ">
+                                                <span class="fs-5 fw-bold ">يكتب:</span>
+                                                <span class="fs-5 me-2">سكني</span>
+                                            </div>
+                                            <div class="d-flex align-items-center ">
+                                                <span class="fs-5 fw-bold ">موقع :</span>
+                                                <span class="fs-5 me-2">مكه</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                        <div class="card1" style="background-image:url(/images/project-3.jpeg) ;">
+                            <div class="m-auto">
+                                <h1 class="card-title text-white position-relative text-capitalize">مشروع 1</h1>
+                            </div>
+                            <div class="details">
+                                <div class="center">
+                                    <h5 class="card-title fs-2 text-capitalize">مشروع 1</h5>
+                                    <p class="card-text fs-5 custom_text">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.</p>
+                                    <div class="d-flex justify-content-between text-capitalize align-items-center mt-5">
+                                        <button href="#project" data-bs-toggle="modal"
+                                            class="btn detail-btn1 fs-5  ">انظر التفاصيل</button>
+                                        <div>
+                                            <div class="d-flex align-items-center ">
+                                                <span class="fs-5 fw-bold ">يكتب:</span>
+                                                <span class="fs-5 me-2">سكني</span>
+                                            </div>
+                                            <div class="d-flex align-items-center ">
+                                                <span class="fs-5 fw-bold ">موقع :</span>
+                                                <span class="fs-5 me-2">مكه</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                        <div class="card1" style="background-image:url(/images/project-2.jpeg) ;">
+                            <div class="m-auto">
+                                <h1 class="card-title text-white position-relative text-capitalize">مشروع 1</h1>
+                            </div>
+                            <div class="details">
+                                <div class="center">
+                                    <h5 class="card-title fs-2 text-capitalize">مشروع 1</h5>
+                                    <p class="card-text fs-5 custom_text">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.</p>
+                                    <div class="d-flex justify-content-between text-capitalize align-items-center mt-5">
+                                        <button href="#project" data-bs-toggle="modal"
+                                            class="btn detail-btn1 fs-5  ">انظر التفاصيل</button>
+                                        <div>
+                                            <div class="d-flex align-items-center ">
+                                                <span class="fs-5 fw-bold ">يكتب:</span>
+                                                <span class="fs-5 me-2">سكني</span>
+                                            </div>
+                                            <div class="d-flex align-items-center ">
+                                                <span class="fs-5 fw-bold ">موقع :</span>
+                                                <span class="fs-5 me-2">مكه</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                        <div class="card1" style="background-image:url(/images/project-4.jpeg) ;">
+                            <div class="m-auto">
+                                <h1 class="card-title text-white position-relative text-capitalize">مشروع 1</h1>
+                            </div>
+                            <div class="details">
+                                <div class="center">
+                                    <h5 class="card-title fs-2 text-capitalize">مشروع 1</h5>
+                                    <p class="card-text fs-5 custom_text">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.</p>
+                                    <div class="d-flex text-capitalize justify-content-between align-items-center mt-5">
+                                        <button href="#project" data-bs-toggle="modal"
+                                            class="btn detail-btn1 fs-5  ">انظر التفاصيل</button>
+                                        <div>
+                                            <div class="d-flex align-items-center ">
+                                                <span class="fs-5 fw-bold ">يكتب:</span>
+                                                <span class="fs-5 me-2">سكني</span>
+                                            </div>
+                                            <div class="d-flex align-items-center ">
+                                                <span class="fs-5 fw-bold ">موقع :</span>
+                                                <span class="fs-5 me-2">مكه</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-footer m--100">
+        <div class="container-fluid">
+            <div class="row justify-content-around g-5">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <div class="d-flex flex-column justify-content-start ">
+                        <div class="footer_logo">
+                            <img src="images/LOGO_3.png" alt="logo" class="img-fluid">
+                        </div>
+                        <div class="my-4">
+                            <h5 class="text-dark-clr fs-14 text-justify">نمو المساكن العقارية هي شركة رائدة في القطاع
+                                العقاري، تأسست
+                                على يد نخبة من المتخصصين في المجال </h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-2">
+                    <div>
+                        <h2 class="text-dark-clr mb-3 ">الروابط</h2>
+                        <ul class="ul-list-footer ">
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase text-dark-clr pe-0 text-capitalize"
+                                    href="./index.html">
+                                    الصحفة الرئيسة
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase text-dark-clr pe-0 text-capitalize"
+                                    href="./about-us.html">
+                                    عــنّــا
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase text-dark-clr pe-0 text-capitalize"
+                                    href="our-project.html">
+                                    مشاريعنا
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase text-dark-clr pe-0 text-capitalize" href="news.html">
+                                    أخبارنا
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase text-dark-clr pe-0 text-capitalize"
+                                    href="events-confrences.html">
+                                    الفعاليات
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase text-dark-clr pe-0 text-capitalize"
+                                    href="gallery.html">
+                                    البوم
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase text-dark-clr pe-0 text-capitalize"
+                                    href="guarantees-feature.html">
+                                    الضمانات و المميزات
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase text-dark pe-0 text-capitalize"
+                                    href="contact-us.html">
+                                    الاتصال
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase text-dark pe-0 text-capitalize" href="ticket-system.html">
+                                    نظام التذاكر   
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-2">
+                    <h2 class="text-dark-clr mb-3 text-capitalize">اتصل بنا</h2>
+                    <div class="d-flex align-items-center mt-4">
+                        <div>
+                            <i class="fa-solid fa-phone text-dark-clr fa-xl "></i> :
+                        </div>
+                        <div>
+                            <p class="text-dark-clr fs-4 me-2 mb-0 ">966122121212+</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                    <h2 class="text-dark-clr mb-3 text-capitalize">اتبعنا</h2>
+                    <div class="social-footer mt-4">
+                        <ul class="d-flex align-items-center">
+                            <li>
+                                <a href="https://twitter.com/" class="text-decoration-none">
+                                    <i class="fa-brands fa-twitter text-white"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/fundme" class="text-decoration-none me-3">
+                                    <i class="fa-brands fa-facebook text-white "></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" class="text-decoration-none me-3">
+                                    <i class="fa-brands fa-linkedin-in text-white"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/" class="text-decoration-none me-3">
+                                    <i class="fa-brands fa-instagram text-white"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row border_top mt-5">
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <p class="mb-0 fs-4 text-dark-clr">
+                                © 2023 <a href="#" class="text-decoration-none text-dark-clr"> |عكس بي في تي المحدودة. كل الحقوق محفوظة
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="live-chat">
+        <div class="position-fixed  chat ">
+            <img src="./images/chat.png" alt="" class="rounded-circle">
+        </div>
+    </div>
+
+    <!-- -------- project MODAL --------  -->
+    <div class="modal  fade" id="project" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg  Home-project-card">
+            <div class="modal-content ">
+                <div class="modal-header d-flex align-items-center justify-content-between">
+                    <h2 class="modal-title fw-bolder fs-20 text-1 text_cap" id="viewModalLabel">مشروع 1</h2>        
+                        <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                   
+                </div>
+                <div class="modal-body_project py-5">
+                    <div class="swiper  mySwiper2_project">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/project-1.jpeg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/project-2.jpeg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/project-3.jpeg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/project-2.jpeg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/project-1.jpeg" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <div thumbsSlider="" class="swiper mySwiper_project">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/project-1.jpeg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/project-2.jpeg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/project-3.jpeg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/project-2.jpeg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/project-1.jpeg" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid  mt-3">
+                       <div class="d-flex align-items-center ">
+                        <h1 class="fw-bold fs-30 text-1 text_cap me-1">1,199,000</h1>
+                        <p class="mb-0 fs-2 me-1">ريال</p>
+                       </div>
+                       <div class="d-flex align-items-center justify-content-between mt-4 flex-wrap ">
+                        <div class="d-flex align-items-center   ">
+                            <img src="./images/stairs.svg" alt="" width="30" height="20" class="mb-0 ms-2">
+                            <p class="mb-0 fs-2 me-1 ms-1"> الثالث</p>
+                        </div>
+                        <div class="d-flex align-items-center   ">
+                            <img src="./images/space-icon.svg" alt="" width="30" height="20" class="mb-0">
+                            <p class="mb-0 fs-2 me-1 ms-1"> 195.45</p>
+                        </div>
+                        <div class="d-flex align-items-center   ">
+                            <img src="./images/rooms-icon.svg" alt="" width="30" height="20" class="mb-0 ms-2">
+                            <p class="mb-0 fs-2 me-1 ms-1">غرف النوم:</p>
+                            <h5 class="fw-bold text-1 fs-2 me-1 text_cap mb-0">2</h5>
+                        </div>
+                        <div class="d-flex align-items-center   ">
+                            <img src="./images/bath.svg" alt="" width="40" height="30" class="mb-0">
+                            <p class="mb-0 fs-2 me-1 ms-1">دورات المياه:</p>
+                            <h5 class="fw-bold text-1 fs-2 me-1 text_cap mb-0">3</h5>
+                        </div>
+                       </div>
+                       <div class="mt-3">
+                        <h1 class="fw-bold fs-20 text-1 text_cap">مواصفات أخرى:</h1>
+                       </div>
+                       <div class="border p-3 d-flex justify-content-center mt-4">
+                        <p class="mb-0 fs-16">سطح خاص - واجهه امامية - تراس</p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- logout modal -->
+
+    <div class="modal  fade" id="logout" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rtl">
+              <div class="modal-header">
+                <h1 class="modal-title fs-20 fw-bold " id="staticBackdropLabel">تسجيل الخروج</h1>
+              </div>
+              <div class="modal-body">
+               <p class="fs-20 fw-semibold ">هل أنت متأكد أنك تريد الخروج؟</p> 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary fs-16 ms-1" data-bs-dismiss="modal">يغلق</button>
+                <button type="button" class="btn bg-dark-clr text-white fs-16">خروج</button>
+              </div>
+            </div>
+          </div>
+    </div>
+   
+    <!-- js area start -->
+    <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/myScript.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.searchlase').click(function () {
+                $(".searchblock").toggleClass('active')
+            });
+            $('#closesearch').click(function () {
+                $(".searchblock").toggleClass('active')
+            });
+        })
+    </script>
+
+    <!-- Swiper JS -->
+
+
+    <!-- project Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper_project", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 5,
+            freeMode: true,
+            watchSlidesProgress: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+        var swiper2 = new Swiper(".mySwiper2_project", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+</body>
+
+</html>

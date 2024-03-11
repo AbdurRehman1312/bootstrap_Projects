@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
+
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  ">
+    <script type="text/javascript" src="assets/css/select2.min.css"></script>
+    <title>Boost || SIS Admin</title>
+</head>
+
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="shadow border-end-blue" id="sidebar-wrapper">
+            <div class="text-center py-3">
+                <img src="assets/images/logo-1.png" width="150" height="100" alt="">
+            </div>
+            <ul class="navbar-nav sidebar_list">
+                <li class="nav-item mt-1">
+                    <a href="index.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/icons/dashboard-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0 truncate-2">Project Owner Dashboard</p>
+                    </a>
+                </li>
+                <!-- <li class="nav-item mt-1">
+                    <a href="add-project-pro.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/icons/detail-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0">Project Submission</p>
+                    </a>
+                </li> -->
+                <li class="nav-item mt-1">
+                    <a href="listproject.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/projects/project-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0">Projects</p>
+                    </a>
+                </li>
+                <li class="nav-item mt-1">
+                    <a href="boostoption.html" class="text-decoration-none active nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/projects/boost-w.png" class="img-fluid">
+                        </span>
+                        <p class="m-0">Boost Option</p>
+                    </a>
+                </li>
+                <li class="nav-item mt-1">
+                    <a href="withdrawal.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/projects/withdraw-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0">Withdrawal</p>
+                    </a>
+                </li>
+                <li class="nav-item mt-1">
+                    <a href="repament-track.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/projects/repayment-track-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0">Repayment Tracking</p>
+                    </a>
+                </li>
+                <li class="nav-item mt-1">
+                    <a href="updates.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/projects/updates-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0">Updates</p>
+                    </a>
+                </li>
+                <li class="nav-item mt-1">
+                    <a href="profile-page.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/projects/profile-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0 text-capitalize">profile setting</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <!-- navbar start from here -->
+            <header class="">
+                <nav class="border-bottom-blue custom_nav">
+                    <div class="container-fluid mt-1">
+                        <div class="row g-2 align-items-center justify-content-between">
+                            <div class="col-4 col-sm-4 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="d-flex align-items-center text-blue">
+                                        <i class="fas fa-sliders-h fs-4 me-3" id="menu-toggle"></i>
+                                    </div>
+                                    <div>
+                                         <h5 class="fw-bold text-blue m-0">
+                                             Project Owner Panel
+                                         </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8 col-sm-8 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-end">
+                                <div class="d-flex align-items-center justify-content-end">
+                                    <div class="dropdown">
+                                        <button class="btn p-0 border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <div class="d-flex align-items-center position-relative text-blue justify-content-center">
+                                                <i class="fas fa-bell fs-5"></i>
+                                                <span class="position-absolute pad-ci top-0 start-100 translate-middle bg-danger border border-light rounded-circle">
+                                                    <span class="visually-hidden">New alerts</span>
+                                                </span>
+                                            </div>
+                                        </button>
+                                        <ul class="dropdown-menu dropact" style="width: 300px" aria-labelledby="dropdownMenuButton1">
+                                            <li>
+                                              <div class="d-flex align-items-center justify-content-between pt-2 px-3">
+                                                  <span class="mb-0 text-capitalize fs-14">notifications</span>
+                                                  <a href="" class="text-decoration-none fs-12">
+                                                      Mark All as Read
+                                                  </a>
+                                              </div>
+                                            </li>
+                                            <li>
+                                                <hr>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <span class="fs-12 text-capitalize text-secondary ps-3">today</span>
+                                                    <a class="dropdown-item fs-14 dropitemone d-flex justify-content-between py-2" href="#">
+                                                        <div class="d-flex align-items-start">
+                                                            <span class="text-capitalize circlewhite bg-secondary text-white">
+                                                                amc
+                                                            </span>
+                                                            <span class="text-capitalize ps-2 fs-12 text-wrap">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            </span>
+                                                        </div>
+                                                        <p class="mb-0 fs-12 text-secondary">2 min</p>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <span class="fs-12 text-capitalize text-secondary ps-3">yesterday</span>
+                                                    <a class="dropdown-item fs-14 dropitemone d-flex justify-content-between py-2" href="#">
+                                                        <div class="d-flex align-items-start">
+                                                            <span class="text-capitalize circlewhite bg-secondary text-white">
+                                                                amc
+                                                            </span>
+                                                            <span class="text-capitalize ps-2 fs-12 text-wrap">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            </span>
+                                                        </div>
+                                                        <p class="mb-0 fs-12 text-secondary">2 min</p>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <span class="fs-12 text-capitalize text-secondary ps-3">today</span>
+                                                    <a class="dropdown-item fs-14 dropitemone d-flex justify-content-between py-2" href="#">
+                                                        <div class="d-flex align-items-start">
+                                                            <span class="text-capitalize circlewhite bg-secondary text-white">
+                                                                amc
+                                                            </span>
+                                                            <span class="text-capitalize ps-2 fs-12 text-wrap">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            </span>
+                                                        </div>
+                                                        <p class="mb-0 fs-12 text-secondary">2 min</p>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <hr class="mb-1">
+                                            </li>
+                                            <li>
+                                                <a href="notification.html" class="text-decoration-none text-capitalize fs-12 text-center d-block">
+                                                    view all
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+            
+                                    <div class="dropdown">
+                                        <button class="btn p-0 border-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <div class="d-flex align-items-center ms-3">
+                                                <span class="text-blue"><i class="fas fa-user-circle fs-4"></i></span>
+                                            </div>
+                                        </button>
+                                        <ul class="dropdown-menu lh-sm noti-ul2" aria-labelledby="dropdownMenuButton1">
+                                            <li>
+                                                <a href="profile-page.html"
+                                                    class="d-flex align-items-center text-decoration-none mx-2 ">
+                                                    <div class="flex-shrink-0">
+                                                        <img src="assets/images/dp-1.png" alt="" class="img-fluid  "
+                                                        width="50" height="50">
+                                                    </div>
+                                                    <div class="user-profile flex-grow-1 mt-3 mx-2">
+                                                        <span class="text-wrap fs-6">John Smith</span>
+                                                        <p class="text-muted fs-12">John786@gmail.com</p>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item fs-14 dropitem d-flex align-items-center" href="settings.html">
+                                                    <span>
+                                                        <i class="fa-solid fa-gear"></i>
+                                                    </span>
+                                                    <span class="text-capitalize p-2">
+                                                        account settings
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item fs-14 dropitem d-flex align-items-center" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                                    </span>
+                                                    <span class="text-capitalize p-2">
+                                                        logout
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- navbar end here -->
+            <div class="container-fluid px-4 height-fix">
+                <div class="row mt-3 g-4">
+                    <div class="col-12">
+                        <div class="card border-0 p-4 rounded-3 shadow mb-5">
+                            <div class="card-body p-0">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5 class="text-blue mb-3 fw-semibold">Boost Campaign</h5>
+                                    <div
+                                        data-bs-toggle="tooltip" 
+                                        data-bs-placement="top"
+                                        data-bs-title="Add Campagin"
+                                    >
+                                        <a href="#addModal" data-bs-toggle="modal" class="btn btnCust-1 text-white py-2">
+                                            Add Campaign
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <table class="table table-bordered align-middle" id="table">
+                                        <thead class="bg-light-orange fw-semibold">
+                                            <th>
+                                                <span class="fs-6">
+                                                    <input type="checkbox" class="form-check-input" name="check">
+                                                </span>
+                                            </th>
+                                            <th>
+                                                <span class="fs-13">
+                                                    ID
+                                                </span>
+                                            </th>
+                                            <th>
+                                                <span class="fs-13">
+                                                    On/Off
+                                                </span>
+                                            </th>
+                                            
+                                            <th>
+                                                <span class="text-capitalize fs-13 fw-bold">
+                                                    Campaign
+                                                </span>
+                                            </th>
+                                            <th>
+                                                <span class="text-capitalize fs-13 fw-bold">
+                                                    Campaign Budget
+                                                </span>
+                                            </th>
+                                            <th>
+                                                <span class="text-capitalize fs-13 fw-bold">
+                                                    Campaign description
+                                                </span>
+                                            </th>
+                                            <th>
+                                                <span class="text-capitalize fs-13 fw-bold">
+                                                    Status
+                                                </span>
+                                            </th>
+                                            <th class="text-capitalize fs-13 fw-bold">
+                                                <span>
+                                                    Action
+                                                </span>
+                                            </th>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <span class="fs-6">
+                                                        <input type="checkbox" class="form-check-input" name="check">
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <div class="form-check form-switch fs-5">
+                                                      <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class="fs-13">
+                                                        1
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="fs-13">
+                                                        Pos
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="fs-13">
+                                                        $500
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="fs-13 truncate-3">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                        tempor incididunt ut labore et dolore magna aliqua.
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="fs-13 text-capitalize">
+                                                        Processing
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center gap-2">
+                                                        <span
+                                                            data-bs-toggle="tooltip" 
+                                                            data-bs-placement="top"
+                                                            data-bs-title="View"
+                                                            data-bs-custom-class='custom-tooltip'
+                                                            class="d-block"
+                                                        >
+                                                            <a href="#viewModal" data-bs-toggle="modal" class="btn btn-main fs-14">
+                                                                <i class="fas fa-eye"></i>
+                                                            </a>
+                                                        </span>
+                                                        <span
+                                                            data-bs-toggle="tooltip" 
+                                                            data-bs-placement="top"
+                                                            data-bs-title="Delete"
+                                                            data-bs-custom-class='custom-tooltip'
+                                                            class="d-block"
+                                                        >
+                                                            <a href="#deletemodal" data-bs-toggle="modal" class="btn btn-main fs-14">
+                                                               <i class="fas fa-trash"></i>
+                                                            </a>
+                                                        </span>
+                                                        <span
+                                                            data-bs-toggle="tooltip" 
+                                                            data-bs-placement="top"
+                                                            data-bs-title="Edit"
+                                                            data-bs-custom-class='custom-tooltip'
+                                                            class="d-block"
+                                                        >
+                                                            <a href="#addModal" data-bs-toggle="modal" class="btn btn-main fs-14">
+                                                                <i class="fas fa-edit"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="text-center p-2">
+                <p class="m-0">&copy; 2023 <a href="https://replatechnologies.com/" class="text-decoration-none text-orange"> Repla Technologies. </a>All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title text-orange" id="viewModalLabel">Campagin Details View</h5>
+                </div> -->
+                <div class="modal-body">
+                    <div class="row g-3">
+                        <div class="col-lg-12">
+                            <div class="text-center">
+                                <img src="assets/images/avatar/av-2.png" class="img-fluid h-s" >
+                                <div class="mt-2">
+                                    <h5 class="text-blue mb-2 fw-semibold">Sarah Watson</h5>
+                                    <h6 class="text-blue fw-semibold">Campaign Title</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="table-responsive">
+                                <table class="table table-bordered align-middle">
+                                    <thead class="bg-light-orange fw-semibold">
+                                        <th>
+                                            <span class="fs-13 text-nowrap">
+                                                Product ID
+                                            </span>
+                                        </th>
+                                        <th>
+                                            <span class="fs-13 text-nowrap">
+                                                Campaign Budget
+                                            </span>
+                                        </th>
+                                        
+                                        <th>
+                                            <span class="text-capitalize fs-13 text-nowrap">
+                                                amount spend
+                                            </span>
+                                        </th>
+                                        <th>
+                                            <span class="text-capitalize fs-13">
+                                                reach
+                                            </span>
+                                        </th>
+                                        <th>
+                                            <span class="text-capitalize fs-13 fw-bold">
+                                                impression
+                                            </span>
+                                        </th>
+                                        <th>
+                                            <span class="text-capitalize fs-13 fw-bold">
+                                                Start date
+                                            </span>
+                                        </th>
+                                        <th>
+                                            <span class="text-capitalize fs-13 fw-bold">
+                                                end date
+                                            </span>
+                                        </th>
+                                        <th>
+                                            <span class="text-capitalize fs-13 fw-bold">
+                                                Status
+                                            </span>
+                                        </th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <span class="fs-13">
+                                                    1
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="fs-13">
+                                                    $1200
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="fs-13">
+                                                    $500
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="fs-13 text-capitalize">
+                                                    28
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="fs-13 text-capitalize">
+                                                    90
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="fs-13 text-capitalize">
+                                                    12/12/2023
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="fs-13 text-capitalize">
+                                                    12/12/2023
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <span class="fs-13 text-capitalize">
+                                                    Processing
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div>
+                            <canvas id="projectChart3" width="400" height="100"></canvas>
+                        </div>
+                        <div>
+                            <h5 class="text-blue">
+                                Description
+                            </h5>
+                            <p class="fs-13 my-2 text-justify">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btncust p-2 border-blue text-uppercase bg-transparent rounded-5 fs-12" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <!-- View Modal -->
+    <div class="modal fade modalcust" id="addModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">       
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content overflow-auto">
+                <div class="modal-header">
+                    <h5 class="modal-title text-blue" id="viewModalLabel">Add Campaign</h5>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-lg-12">
+                            <!-- <div class="d-flex align-items-center justify-content-center">
+                                <input type="file" class="d-none" onchange="loadFile(event)" id="profileimg" name="">
+                                <div class="text-center position-relative uploadimgdummy">
+                                    <img src="assets/images/avatar/av-2.png" class="img-fluid " id="output">
+                                    <label for="profileimg" class="border editicon bg-secondary p-2">
+                                        <i class="fa-solid fa-camera text-white"></i>
+                                    </label>
+                                </div>
+                            </div> -->
+                            <div>
+                                <label for="uploadd" class="uploaddoc flex-column">
+                                    <img src="assets/images/icons/file.png" class="img-fluid">
+                                    <h5 class="m-0">Choose Post</h5>
+                                    <span class="fs-12">(image,video)</span>
+                                </label>
+                                <input type="file" class="d-none" id="uploadd" name="">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div>
+                                <label class="fs-14 text-capitalize mb-3 fw-semibold">Choose Campaign Objective</label>
+
+                                <div class="row g-3">
+                                    <div class="col-lg-3 col-md-4 col-6">
+                                        <div>
+                                            <div class="form-check fs-13">
+                                              <input class="form-check-input fs-6" type="checkbox" name="flexRadioDefault" id="checkone">
+                                              <label class="form-check-label" for="checkone">
+                                                Automatic
+                                              </label>
+                                            </div>
+                                            <div class="form-check fs-13">
+                                              <input class="form-check-input fs-6" type="checkbox" name="flexRadioDefault" id="checksx">
+                                              <label class="form-check-label text-capitalize" for="checksx">
+                                                visitors
+                                              </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6">
+                                        <div>
+                                            <div class="form-check fs-13">
+                                              <input class="form-check-input fs-6" type="checkbox" name="flexRadioDefault" id="checktwo">
+                                              <label class="form-check-label" for="checktwo">
+                                                Project Promotions
+                                              </label>
+                                            </div>
+                                            <div class="form-check fs-13">
+                                              <input class="form-check-input fs-6" type="checkbox" name="flexRadioDefault" id="checksv">
+                                              <label class="form-check-label text-capitalize" for="checksv">
+                                                leads
+                                              </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6">
+                                        <div>
+                                            <div class="form-check fs-13">
+                                              <input class="form-check-input fs-6" type="checkbox" name="flexRadioDefault" id="checkthree">
+                                              <label class="form-check-label" for="checkthree">
+                                                Messages
+                                              </label>
+                                            </div>
+                                            <div class="form-check fs-13">
+                                              <input class="form-check-input fs-6" type="checkbox" name="flexRadioDefault" id="checkeg">
+                                              <label class="form-check-label text-capitalize" for="checkeg">
+                                                calls
+                                              </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4 col-6">
+                                        <div>
+                                            <div class="form-check fs-13">
+                                              <input class="form-check-input fs-6" type="checkbox" name="flexRadioDefault" id="checkfr">
+                                              <label class="form-check-label text-capitalize" for="checkfr">
+                                                engagement
+                                              </label>
+                                            </div>
+                                            <div class="form-check fs-13">
+                                              <input class="form-check-input fs-6" type="checkbox" name="flexRadioDefault" id="checknn">
+                                              <label class="form-check-label text-capitalize" for="checknn">
+                                                sales
+                                              </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div>
+                                <label for="" class="fs-14 mb-2 text-capitalize">Audience</label>
+                            </div>
+                            <div class="d-flex align-items-center gap-4 flex-wrap">
+                                <div class="form-check fs-13">
+                                  <input class="form-check-input fs-6" type="checkbox" name="flexRadioDefault" id="checkloc" data-bs-toggle="collapse" data-bs-target="#location"> 
+                                  <label class="form-check-label text-capitalize" for="checkloc">
+                                    location
+                                  </label>
+                                </div>
+                                <div class="form-check fs-13">
+                                  <input class="form-check-input fs-6" type="checkbox" name="flexRadioDefault" id="checkage" data-bs-toggle="collapse" data-bs-target="#age">
+                                  <label class="form-check-label text-capitalize" for="checkage">
+                                    age
+                                  </label>
+                                </div>
+                                <div class="form-check fs-13">
+                                  <input class="form-check-input fs-6" type="checkbox" name="flexRadioDefault" id="checkint" data-bs-toggle="collapse" data-bs-target="#interest">
+                                  <label class="form-check-label text-capitalize" for="checkint">
+                                    interest
+                                  </label>
+                                </div>
+                            </div>
+                            <div class="collapse mt-2" id="location">
+                                <select class="js-example-basic-single fs-14 form-select cust-input-1 rounded-0" name="state" id="mySelect2">
+                                    <option>Algeria</option>
+                                    <option>Angola</option>
+                                    <option>Benin</option>
+                                    <option>Botswana</option>
+                                    <option>Burkina Faso</option>
+                                    <option>Burundi</option>
+                                    <option>Cabo Verde</option>
+                                    <option>Cameroon</option>
+                                    <option>Central African Republic (CAR)</option>
+                                    <option>Chad</option>
+                                    <option>Comoros</option>
+                                    <option>Congo, Democratic Republic of the Congo</option>
+                                    <option>Cote d’Ivoire</option>
+                                    <option>Djibouti</option>
+                                    <option>Egypt</option>
+                                    <option>Equatorial Guinea</option>
+                                    <option>Eritrea</option>
+                                    <option>Eswatini</option>
+                                    <option>Ethiopia</option>
+                                    <option>Gabon</option>
+                                    <option>Gambia</option>
+                                    <option>Ghana</option>
+                                    <option>Guinea</option>
+                                    <option>Guinea-Bissau</option>
+                                    <option>Kenya</option>
+                                    <option>Lesotho</option>
+                                    <option>Liberia</option>
+                                    <option>Libya</option>
+                                    <option>Madagascar</option>
+                                    <option>Malawi</option>
+                                    <option>Mali</option>
+                                    <option>Mauritania</option>
+                                    <option>Mauritius</option>
+                                    <option>Morocco</option>
+                                    <option>Mozambique</option>
+                                    <option>Namibia</option>
+                                    <option>Niger</option>
+                                    <option>Nigeria</option>
+                                    <option>Rwanda</option>
+                                    <option>Sao Tome and Principe</option>
+                                    <option>Senegal</option>
+                                    <option>Seychelles</option>
+                                    <option>Sierra Leone</option>
+                                    <option>Somalia</option>
+                                    <option>South Africa</option>
+                                    <option>South Sudan</option>
+                                    <option>Sudan</option>
+                                    <option>Tanzania</option>
+                                    <option>Togo</option>
+                                    <option>Tunisia</option>
+                                    <option>Uganda</option>
+                                    <option>Zambia</option>
+                                    <option>Zimbabwe</option>
+                                </select>
+                            </div>
+                            <div class="collapse mt-2" id="age">
+                                <select class="form-select fs-14 cust-input-1" name="state" >
+                                    <option selected>Select Age</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+                                </select>
+                            </div>
+                            <div class="collapse mt-2" id="interest">
+                                <input type="text" class="form-control cust-input-1" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div>
+                                <label for="" class="fs-14 text-capitalize">Campaign Id</label>
+                                <input type="text" class="form-control cust-input-1" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div>
+                                <label for="" class="fs-14 text-capitalize">Campaign title</label>
+                                <input type="text" class="form-control cust-input-1" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div>
+                                <label for="" class="fs-14 text-capitalize">Campaign type</label>
+                                <select class="form-select fs-14 cust-input-1" name="state" >
+                                    <option selected>Select Campaign Type</option>
+                                    <option>Auction</option>
+                                    <option>Reservation</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <label for="" class="fs-14 mb-3 text-capitalize">
+                                Campaign bugdet
+                                <span class="text-blue" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-title="
+                                    <P class='text-start mb-2 fs-13'>
+                                        <strong>Select Budget Type</strong>
+                                    </p>
+                                    <ul class='ps-3'>
+                                        <li>
+                                            <p class='text-justify mb-1 fs-12'>
+                                                If you choose a <strong>lifetime budget</strong>, then we will never spend more than that amount.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class='text-justify mb-1 fs-12'>
+                                                If you choose a <strong>daily budget</strong>, you may spend more on spend days and less on others but will maintain an average daily budget.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                ">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                </span>
+                            </label>
+                            <div class="row g-3">
+                                <div class="col-lg-6">
+                                    <div>
+                                        <select class="form-select cust-input-1">
+                                            <option selected>Daily Budget</option>
+                                            <option>Lifetime Budget</option>
+                                            <option>Weekly</option>
+                                            <option>Monthly</option>
+                                            <option>Yearly</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div>
+                                        <div class="input-group cust-input-1">
+                                          <input type="text" class="form-control border-0  p-0 fs-13" placeholder="Rs 12000" aria-label="Rs 12000" aria-describedby="basic-addon2">
+                                          <span class="input-group-text bg-transparent border-0 p-0 fs-13" id="basic-addon2">PKR</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <label for="" class="fs-14 mb-3 text-capitalize">
+                                Schedule
+                                <span class="text-blue" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-title="
+                                    <P class='text-start mb-2 fs-13'>
+                                        <strong>Schedule Your Ads</strong>
+                                    </p>
+                                    <p class='text-justify mb-1 fs-12'>
+                                        You can choose to run your ads continuously starting today or only during a specific date range. 
+                                    </p>
+                                ">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                </span>
+                            </label>
+                            <div class="row g-3">
+                                <div class="col-lg-6">
+                                    <div>
+                                        <input type="date" class="form-control cust-input-1 rounded-0 " name="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div>
+                                        <input type="time" class="form-control cust-input-1 rounded-0 " name="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div>
+                                <div class="form-check">
+                                  <input class="form-check-input fs-6" type="checkbox" value="" id="enddatecheck" data-bs-toggle="collapse" data-bs-target="#endate">
+                                  <label class="form-check-label fs-14" for="enddatecheck">
+                                    End
+                                    <span class="text-blue" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-html="true" data-bs-title="
+                                        <P class='text-start m-0 fs-12'>
+                                            If you checked <strong>End</strong> then you have to given ending time of ads
+                                        </p>
+                                    ">
+                                        <i class="fa-solid fa-circle-question"></i>
+                                    </span>
+                                  </label>
+                                </div>
+                                <div class="collapse" id="endate">
+                                    <div class="row g-3">
+                                        <div class="col-lg-6">
+                                            <div>
+                                                <input type="date" class="form-control cust-input-1 rounded-0 " name="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div>
+                                                <input type="time" class="form-control cust-input-1 rounded-0 " name="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="mb-2">
+                                <label for="" class="fs-13 text-capitalize">Campaign Description</label>
+                                <textarea rows="4" cols="4" class="form-control cust-input-1"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div>
+                                <label for="" class="fs-14 text-capitalize">Payment Method</label>
+                                <select class="form-select fs-14 cust-input-1" id="paymentmethod">
+                                    <option selected>Select Payment Method</option>
+                                    <option value="0">Bank Transfer</option>
+                                    <option value="1">Credit Card</option>
+                                    <option value="2">Paypal</option>
+                                </select>
+                            </div>
+                            <div class="mt-2 border rounded-4 p-4" id="creditcard" style="display:none;">
+                                <div class="row g-3">
+                                    <div class="col-lg-12">
+                                        <div>
+                                            <label for="" class="fs-13 text-capitalize">card holder name</label>
+                                            <input type="text" class="form-control cust-input-1" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <div>
+                                            <label for="" class="fs-13 text-capitalize">card number</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control border-end-0 cust-input-1" placeholder="" aria-label="" aria-describedby="basic-addon2">
+                                                <span class="input-group-text text-blue bg-transparent rounded-0 border-start-0 border-blue mt-1 px-2 p-0 d-flex gap-2" id="basic-addon2">
+                                                    <span class="fs-3">
+                                                        <i class="fa-brands fa-cc-visa"></i>
+                                                    </span>
+                                                    <span class="fs-3">
+                                                        <i class="fa-brands fa-cc-amex"></i>
+                                                    </span>
+                                                    <span class="fs-3">
+                                                        <i class="fa-brands fa-cc-mastercard"></i>
+                                                    </span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div>
+                                            <label for="" class="fs-13 text-capitalize">expiration</label>
+                                            <input type="date" class="form-control cust-input-1" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div>
+                                            <label for="" class="fs-13 text-capitalize">CVV</label>
+                                            <input type="number" class="form-control cust-input-1" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2 border rounded-4 p-4" id="paypal" style="display: none;">
+                                <div class="">
+                                    <p class="fs-13">
+                                        Paypal is easiest way to pay online
+                                    </p>
+                                    <div class="mb-2">
+                                        <a href="" class="btn btnCust-1 fs-14 text-white py-2 text-capitalize">
+                                            <i class="fa-brands fa-paypal"></i>
+                                            <span>
+                                                Login with my PayPal
+                                            </span>
+                                        </a>
+                                    </div>
+                                    <p class="fs-13 text-justify">
+                                        <strong>Note:</strong>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mt-2 border rounded-4 p-4" id="banktransfer" style="display: none;">
+                                <div>
+                                    <p class="text-capitalize">
+                                        Bank account details
+                                    </p>
+                                    <div class="row g-3">
+                                        <div class="col-lg-12">
+                                            <div>
+                                                <label for="" class="fs-13 text-capitalize">Bank name</label>
+                                                <input type="text" class="form-control cust-input-1" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div>
+                                                <label for="" class="fs-13 text-capitalize">account number</label>
+                                                <input type="number" class="form-control cust-input-1" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div>
+                                                <label for="" class="fs-13 text-capitalize">IBAN</label>
+                                                <input type="number" class="form-control cust-input-1" placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer w-100 border-0">
+                    <div class="d-flex justify-content-end w-100 gap-2">
+                        <button type="button" class="btncust p-2 border-blue text-uppercase bg-transparent rounded-5 fs-12" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btncust p-2 border-0 text-uppercase text-white rounded-5 fs-12 primary-bg border-white">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- View Modal -->
+
+    <!-- Delete modal areas -->
+    <div class="modal fade" id="deletemodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-gray">
+              <div class="modal-body">
+                <div class="my-3 text-center iconcircle">
+                    <img src="assets/images/delete.png" class="img-fluid">
+                </div>
+                <h5 class="text-center">
+                    Are you sure you want to delete this item?
+                </h5>
+                <p class="text-center">
+                    This action will delete this item.
+                </p>
+              </div>
+              <div class="modal-footer border-0 bg-transparent justify-content-center">
+                <button type="button" class="btncust p-2 border-blue text-uppercase bg-transparent rounded-5 fs-12" data-bs-dismiss="modal">cancel</button>
+                <button type="button" class="btncust p-2 border-0 text-uppercase rounded-5 text-white fs-12 primary-bg border-white">delete</button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- Delete modal areas -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="assets/js/datatables.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/select2.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.js-example-basic-single').select2();
+        
+        $('#mySelect2').select2({
+            dropdownParent: $('#addModal')
+        });
+    });
+    </script>
+
+    <script>
+        var loadFile = function(event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#table').DataTable({
+                "language": {
+                    "paginate": {
+                        "previous": '<i class="fa-solid fa-chevron-left p-5px"></i>',
+                        "next": '<i class="fa-solid fa-chevron-right p-5px"></i>',
+                    },
+                    "lengthMenu": "",
+                    search: "",
+                    searchPlaceholder: "Search..."
+                },
+
+                "ordering": true
+            });
+
+        });
+    </script>
+    <script>
+        var projectData = {
+        labels: ["January", "February", "March", "April", "May", "June"],
+        datasets: [{
+            label: 'Boost',
+            backgroundColor: 'rgba(244, 83, 2, .2)',
+            borderColor: '#f45302',
+            borderWidth: 1,
+            data: [5, 10, 15, 7, 20, 12] // Replace with your project data
+        }]
+    };
+        var ctx = document.getElementById('projectChart3').getContext('2d');
+        var projectChart = new Chart(ctx, {
+            type: 'line',
+            data: projectData,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        let paymentMeth = document.getElementById('paymentmethod');
+        let creditcard = document.getElementById('creditcard');
+        let paypal = document.getElementById('paypal');
+        let bankTransfer = document.getElementById('banktransfer');
+
+        paymentMeth.addEventListener('click',function(){
+            if (paymentMeth.value=='0') {
+                bankTransfer.style.display='block';
+                creditcard.style.display='none';
+                paypal.style.display='none';
+            }
+            else if (paymentMeth.value=='1') {                
+                bankTransfer.style.display='none';
+                creditcard.style.display='block';
+                paypal.style.display='none';
+            }
+            else if (paymentMeth.value=='2') {
+                bankTransfer.style.display='none';
+                creditcard.style.display='none';
+                paypal.style.display='block';
+            }
+            else {
+                creditcard.style.display='none';
+                paypal.style.display='none';
+                bankTransfer.style.display='none';
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css">
+
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  ">
+    <title>Repayment Tracking || SIS Admin</title>
+</head>
+
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="shadow border-end-blue" id="sidebar-wrapper">
+            <div class="text-center py-3">
+                <img src="assets/images/logo-1.png" width="150" height="100" alt="">
+            </div>
+            <ul class="navbar-nav sidebar_list">
+                <li class="nav-item mt-1">
+                    <a href="index.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/icons/dashboard-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0 truncate-2">Dashboard</p>
+                    </a>
+                </li>
+                <li class="nav-item mt-1">
+                    <a href="listproject.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/projects/project-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0">Projects</p>
+                    </a>
+                </li>
+                <!-- <li class="nav-item mt-1">
+                    <a href="add-project-pro.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/icons/detail-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0 text-capitalize">Project Submission</p>
+                    </a>
+                </li> -->
+                <li class="nav-item mt-1">
+                    <a href="wallet.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/icons/wallet-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0 text-capitalize">wallet</p>
+                    </a>
+                </li>
+                <li class="nav-item mt-1">
+                    <a href="repayment-track.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/icons/repayment-track-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0">Repayment</p>
+                    </a>
+                </li>
+                <li class="nav-item mt-1">
+                    <a href="transaction.html" class="text-decoration-none active nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/icons/transaction-w.png" class="img-fluid">
+                        </span>
+                        <p class="m-0">Transaction</p>
+                    </a>
+                </li>
+                
+                <li class="nav-item mt-1">
+                    <a href="updates.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/icons/updates-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0">Updates</p>
+                    </a>
+                </li>
+                <li class="nav-item mt-1">
+                    <a href="profile-page.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/icons/profile-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0 text-capitalize">profile setting</p>
+                    </a>
+                </li>
+                <li class="nav-item mt-1">
+                    <a href="preference.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/icons/preference-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0 text-capitalize">Preferences</p>
+                    </a>
+                </li>
+                <li class="nav-item mt-1">
+                    <a href="investment.html" class="text-decoration-none nav-link d-flex align-items-center">
+                        <span class="">
+                            <img src="assets/images/icons/invest-stat-b.png" class="img-fluid">
+                        </span>
+                        <p class="m-0 text-capitalize">Investment statistics</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <!-- navbar start from here -->
+            <header class="">
+                <nav class="border-bottom-blue custom_nav">
+                    <div class="container-fluid mt-1">
+                        <div class="row g-2 align-items-center justify-content-between">
+                            <div class="col-4 col-sm-4 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="d-flex align-items-center text-blue">
+                                        <i class="fas fa-sliders-h fs-4 me-3" id="menu-toggle"></i>
+                                    </div>
+                                    <div>
+                                         <h5 class="fw-bold text-blue m-0 text-capitalize">
+                                             Incubator/Accelerator profile
+                                         </h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8 col-sm-8 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-end">
+                                <div class="d-flex align-items-center justify-content-end">
+                                    <div class="dropdown">
+                                        <button class="btn p-0 border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <div class="d-flex align-items-center position-relative text-blue justify-content-center">
+                                                <i class="fas fa-bell fs-5"></i>
+                                                <span class="position-absolute pad-ci top-0 start-100 translate-middle bg-danger border border-light rounded-circle">
+                                                    <span class="visually-hidden">New alerts</span>
+                                                </span>
+                                            </div>
+                                        </button>
+                                        <ul class="dropdown-menu dropact" style="width: 300px" aria-labelledby="dropdownMenuButton1">
+                                            <li>
+                                              <div class="d-flex align-items-center justify-content-between pt-2 px-3">
+                                                  <span class="mb-0 text-capitalize fs-14">notifications</span>
+                                                  <a href="" class="text-decoration-none fs-12">
+                                                        Mark All as Read
+                                                    </a>
+                                              </div>
+                                            </li>
+                                            <li>
+                                                <hr>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <span class="fs-12 text-capitalize text-secondary ps-3">today</span>
+                                                    <a class="dropdown-item fs-14 dropitemone d-flex justify-content-between py-2" href="#">
+                                                        <div class="d-flex align-items-start">
+                                                            <span class="text-capitalize circlewhite bg-secondary text-white">
+                                                                amc
+                                                            </span>
+                                                            <span class="text-capitalize ps-2 fs-12 text-wrap">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            </span>
+                                                        </div>
+                                                        <p class="mb-0 fs-12 text-secondary">2 min</p>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <span class="fs-12 text-capitalize text-secondary ps-3">yesterday</span>
+                                                    <a class="dropdown-item fs-14 dropitemone d-flex justify-content-between py-2" href="#">
+                                                        <div class="d-flex align-items-start">
+                                                            <span class="text-capitalize circlewhite bg-secondary text-white">
+                                                                amc
+                                                            </span>
+                                                            <span class="text-capitalize ps-2 fs-12 text-wrap">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            </span>
+                                                        </div>
+                                                        <p class="mb-0 fs-12 text-secondary">2 min</p>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <span class="fs-12 text-capitalize text-secondary ps-3">today</span>
+                                                    <a class="dropdown-item fs-14 dropitemone d-flex justify-content-between py-2" href="#">
+                                                        <div class="d-flex align-items-start">
+                                                            <span class="text-capitalize circlewhite bg-secondary text-white">
+                                                                amc
+                                                            </span>
+                                                            <span class="text-capitalize ps-2 fs-12 text-wrap">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            </span>
+                                                        </div>
+                                                        <p class="mb-0 fs-12 text-secondary">2 min</p>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <hr class="mb-1">
+                                            </li>
+                                            <li>
+                                                <a href="notification.html" class="text-decoration-none text-capitalize fs-12 text-center d-block">
+                                                    view all
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+            
+                                    <div class="dropdown">
+                                          <button class="btn p-0 border-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <div class="d-flex align-items-center ms-3 text-blue">
+                                                    <span><i class="fas fa-user-circle fs-4"></i></span>
+                                        </div>
+                                      </button>
+                                      <ul class="dropdown-menu lh-sm noti-ul2" aria-labelledby="dropdownMenuButton1">
+                                        <li>
+                                            <a href="profile-page.html"
+                                                class="d-flex align-items-center text-decoration-none mx-2 ">
+                                                <div class="flex-shrink-0">
+                                                    <img src="assets/images/dp-1.png" alt="" class="img-fluid  "
+                                                    width="50" height="50">
+                                                </div>
+                                                <div class="user-profile flex-grow-1 mt-3 mx-2">
+                                                    <span class="text-wrap fs-6">John Smith</span>
+                                                    <p class="text-muted fs-12">John786@gmail.com</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-14 dropitem d-flex align-items-center" href="settings.html">
+                                                <span>
+                                                    <i class="fa-solid fa-gear"></i>
+                                                </span>
+                                                <span class="text-capitalize p-2">
+                                                    account settings
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-14 dropitem d-flex align-items-center" href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                                </span>
+                                                <span class="text-capitalize p-2">
+                                                    logout
+                                                </span>
+                                            </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- navbar end here -->
+            <div class="container-fluid px-4 height-fix">
+                <div class="row mt-3 g-4">
+                    <div class="col-12">
+                        <div class="card p-3 rounded-4 mt-3 shadow border mb-5">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <h5 class="text-capitalize text-blue fs-4">Transactions</h5>
+                                </div>
+                                <div class="">
+                                    <table id="table" class="table table-bordered align-middle">
+                                        <thead class="bg-light-orange fw-semibold">
+                                            <tr class="text-center ">
+                                                <th>Project</th>
+                                                <th class="text-capitalize">project owner</th>
+                                                <th>Date</th>
+                                                <th>Invoice ID</th>
+                                                <th>Amount</th>
+                                                <th>Status</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <span class="fs-13">
+                                                        CMS
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center text-decoration-none">
+                                                        <img src="assets/images/dp-1.png" alt="" class="img-fluid mb-2" width="50"
+                                                            height="50">
+                                                        <div class="user-profile mx-2">
+                                                            <span class="text-wrap fs-6">John Smith</span>
+                                                            <p class="text-muted m-0 fs-13">ID:123456789</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="fs-13">
+                                                    21 March 2023
+                                                    <p class="text-muted small-size fs-13 m-0">At 8:45PM</p>
+                                                </td>
+                                                <td>
+                                                    <span>OPO12243219</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fs-13">$24,500</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fs-12 text-capitalize">Recieved</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <span
+                                                            data-bs-toggle="tooltip" 
+                                                            data-bs-placement="top"
+                                                            data-bs-title="View"
+                                                            data-bs-custom-class='custom-tooltip'
+                                                            class="d-block"
+                                                        >
+                                                            <a href="#viewModal" data-bs-toggle="modal" class="btn btn-main fs-14">
+                                                               <i class="fas fa-eye"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="fs-13">
+                                                        POS
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center text-decoration-none">
+                                                        <img src="assets/images/dp-2.png" alt="" class="img-fluid mb-2" width="50"
+                                                            height="50">
+                                                        <div class="user-profile mx-2">
+                                                            <span class="text-wrap fs-6">Sarah</span>
+                                                            <p class="text-muted m-0 fs-13">ID:123456789</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="fs-13">
+                                                    21 March 2023
+                                                    <p class="text-muted small-size fs-13 m-0">At 8:45PM</p>
+                                                </td>
+                                                <td>
+                                                    <span>OPO12243219</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fs-13">$24,500</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fs-12 text-capitalize">pending</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <span
+                                                            data-bs-toggle="tooltip" 
+                                                            data-bs-placement="top"
+                                                            data-bs-title="View"
+                                                            data-bs-custom-class='custom-tooltip'
+                                                            class="d-block"
+                                                        >
+                                                            <a href="#viewModal" data-bs-toggle="modal" class="btn btn-main fs-14">
+                                                               <i class="fas fa-eye"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="fs-13">
+                                                        Panel
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center text-decoration-none">
+                                                        <img src="assets/images/dp-3.png" alt="" class="img-fluid mb-2" width="50"
+                                                            height="50">
+                                                        <div class="user-profile mx-2">
+                                                            <span class="text-wrap fs-6">Awadaa</span>
+                                                            <p class="text-muted m-0 fs-13">ID:123456789</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="fs-13">
+                                                    21 March 2023
+                                                    <p class="text-muted small-size fs-13 m-0">At 8:45PM</p>
+                                                </td>
+                                                <td>
+                                                    <span>OPO12243219</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fs-13">$24,500</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fs-12 text-capitalize">Recieved</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <span
+                                                            data-bs-toggle="tooltip" 
+                                                            data-bs-placement="top"
+                                                            data-bs-title="View"
+                                                            data-bs-custom-class='custom-tooltip'
+                                                            class="d-block"
+                                                        >
+                                                            <a href="#viewModal" data-bs-toggle="modal" class="btn btn-main fs-14">
+                                                               <i class="fas fa-eye"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="fs-13">
+                                                        CMS
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center text-decoration-none">
+                                                        <img src="assets/images/dp-4.png" alt="" class="img-fluid mb-2" width="50"
+                                                            height="50">
+                                                        <div class="user-profile mx-2">
+                                                            <span class="text-wrap fs-6">John Smith</span>
+                                                            <p class="text-muted m-0 fs-13">ID:123456789</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="fs-13">
+                                                    21 March 2023
+                                                    <p class="text-muted small-size fs-13 m-0">At 8:45PM</p>
+                                                </td>
+                                                <td>
+                                                    <span>OPO12243219</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fs-13">$24,500</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fs-12 text-capitalize">Recieved</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <span
+                                                            data-bs-toggle="tooltip" 
+                                                            data-bs-placement="top"
+                                                            data-bs-title="View"
+                                                            data-bs-custom-class='custom-tooltip'
+                                                            class="d-block"
+                                                        >
+                                                            <a href="#viewModal" data-bs-toggle="modal" class="btn btn-main fs-14">
+                                                               <i class="fas fa-eye"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="fs-13">
+                                                        CMS
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center text-decoration-none">
+                                                        <img src="assets/images/dp-5.png" alt="" class="img-fluid mb-2" width="50"
+                                                            height="50">
+                                                        <div class="user-profile mx-2">
+                                                            <span class="text-wrap fs-6">John Smith</span>
+                                                            <p class="text-muted m-0 fs-13">ID:123456789</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="fs-13">
+                                                    21 March 2023
+                                                    <p class="text-muted small-size fs-13 m-0">At 8:45PM</p>
+                                                </td>
+                                                <td>
+                                                    <span>OPO12243219</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fs-13">$24,500</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fs-12 text-capitalize">rejected</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <span
+                                                            data-bs-toggle="tooltip" 
+                                                            data-bs-placement="top"
+                                                            data-bs-title="View"
+                                                            data-bs-custom-class='custom-tooltip'
+                                                            class="d-block"
+                                                        >
+                                                            <a href="#viewModal" data-bs-toggle="modal" class="btn btn-main fs-14">
+                                                               <i class="fas fa-eye"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="fs-13">
+                                                        CMS
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center text-decoration-none">
+                                                        <img src="assets/images/dp-1.png" alt="" class="img-fluid mb-2" width="50"
+                                                            height="50">
+                                                        <div class="user-profile mx-2">
+                                                            <span class="text-wrap fs-6">John Smith</span>
+                                                            <p class="text-muted m-0 fs-13">ID:123456789</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="fs-13">
+                                                    21 March 2023
+                                                    <p class="text-muted small-size fs-13 m-0">At 8:45PM</p>
+                                                </td>
+                                                <td>
+                                                    <span>OPO12243219</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fs-13">$24,500</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fs-12 text-capitalize">pending</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <span
+                                                            data-bs-toggle="tooltip" 
+                                                            data-bs-placement="top"
+                                                            data-bs-title="View"
+                                                            data-bs-custom-class='custom-tooltip'
+                                                            class="d-block"
+                                                        >
+                                                            <a href="#viewModal" data-bs-toggle="modal" class="btn btn-main fs-14">
+                                                               <i class="fas fa-eye"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <span class="fs-13">
+                                                        CMS
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex align-items-center text-decoration-none">
+                                                        <img src="assets/images/dp-3.png" alt="" class="img-fluid mb-2" width="50"
+                                                            height="50">
+                                                        <div class="user-profile mx-2">
+                                                            <span class="text-wrap fs-6">John Smith</span>
+                                                            <p class="text-muted m-0 fs-13">ID:123456789</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="fs-13">
+                                                    21 March 2023
+                                                    <p class="text-muted small-size fs-13 m-0">At 8:45PM</p>
+                                                </td>
+                                                <td>
+                                                    <span>OPO12243219</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fs-13">$24,500</span>
+                                                </td>
+                                                <td>
+                                                    <span class="fs-12 text-capitalize">Recieved</span>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex">
+                                                        <span
+                                                            data-bs-toggle="tooltip" 
+                                                            data-bs-placement="top"
+                                                            data-bs-title="View"
+                                                            data-bs-custom-class='custom-tooltip'
+                                                            class="d-block"
+                                                        >
+                                                            <a href="#viewModal" data-bs-toggle="modal" class="btn btn-main fs-14">
+                                                               <i class="fas fa-eye"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="text-center p-2">
+                <p class="m-0">&copy; 2023 <a href="https://replatechnologies.com/" target="_blank" class="text-decoration-none text-orange"> Repla Technologies. </a>All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+    <div class="modal fade" id="viewModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0 bg-transparent">
+                    <h5 class="modal-title text-blue" id="viewModalLabel">Transaction Details</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered align-middle">
+                            <thead class="bg-light-orange fw-semibold">
+                                <th>
+                                    <span class="fs-13">
+                                        Project name
+                                    </span>
+                                </th>
+                                <th>
+                                    <span class="text-capitalize fs-13 fw-bold">
+                                        Project Owner
+                                    </span>
+                                </th>
+                                <th>
+                                    <span class="text-capitalize fs-13 fw-bold">
+                                        date
+                                    </span>
+                                </th>
+                                <th>
+                                    <span class="text-capitalize fs-13 fw-bold">
+                                        Invoice ID
+                                    </span>
+                                </th>
+                                <th>
+                                    <span class="text-capitalize fs-13 fw-bold">
+                                        amount
+                                    </span>
+                                </th>
+                                <th>
+                                    <span class="text-capitalize fs-13 fw-bold">
+                                        Status
+                                    </span>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="fs-13">
+                                            CMS
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="d-flex align-items-center text-decoration-none">
+                                            <img src="assets/images/dp-1.png" alt="" class="img-fluid mb-2" width="50"
+                                                height="50">
+                                            <div class="user-profile mx-2">
+                                                <span class="text-wrap fs-6">John Smith</span>
+                                                <p class="text-muted m-0 fs-13">ID:123456789</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="fs-13">
+                                        21 March 2023
+                                        <p class="text-muted small-size fs-13 m-0">At 8:45PM</p>
+                                    </td>
+                                    <td>
+                                        <span>OPO12243219</span>
+                                    </td>
+                                    <td>
+                                        <span class="fs-13">$24,500</span>
+                                    </td>
+                                    <td>
+                                        <span class="fs-12 text-capitalize">Recieved</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btncust p-2 border-blue text-uppercase bg-transparent rounded-5 fs-12" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete modal areas -->
+    <div class="modal fade" id="deletemodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-gray">
+              <div class="modal-body">
+                <div class="my-3 text-center iconcircle">
+                    <img src="assets/images/delete.png" class="img-fluid">
+                </div>
+                <h5 class="text-center">
+                    Are you sure you want to delete this item?
+                </h5>
+                <p class="text-center">
+                    This action will delete this item.
+                </p>
+              </div>
+              <div class="modal-footer border-0 bg-transparent justify-content-center">
+                <button type="button" class="btncust p-2 border-blue text-uppercase bg-transparent rounded-5 fs-12" data-bs-dismiss="modal">cancel</button>
+                <button type="button" class="btncust p-2 border-0 text-uppercase rounded-5 text-white fs-12 primary-bg border-white">delete</button>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- Delete modal areas -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="assets/js/datatables.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+
+    <script>
+        var loadFile = function(event) {
+            var image = document.getElementById('output');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#table').DataTable({
+                "language": {
+                    "paginate": {
+                        "previous": '<i class="fa-solid fa-chevron-left p-5px"></i>',
+                        "next": '<i class="fa-solid fa-chevron-right p-5px"></i>',
+                    },
+                    "lengthMenu": "",
+                    search: "",
+                    searchPlaceholder: "Search..."
+                },
+
+                "ordering": true
+            });
+
+        });
+    </script>
+    <script>
+        var projectData = {
+        labels: ["January", "February", "March", "April", "May", "June"],
+        datasets: [{
+            label: 'Boost',
+            backgroundColor: 'rgba(244, 83, 2, .2)',
+            borderColor: '#f45302',
+            borderWidth: 1,
+            data: [5, 10, 15, 7, 20, 12] // Replace with your project data
+        }]
+    };
+        var ctx = document.getElementById('projectChart3').getContext('2d');
+        var projectChart = new Chart(ctx, {
+            type: 'line',
+            data: projectData,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

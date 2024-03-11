@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css">
+    <link rel="shortcut icon" href="assets/images/logo-1.png" type="image/x-icon">
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  ">
+    <title>Forgot Password || SIS Admin</title>
+</head>
+
+
+<body>
+    <main>
+        <div class="container d-flex justify-content-center align-items-center min-vh-100">
+            <div class="row border rounded-5 p-3 bg-white shadow box-area">
+                <div class="col-md-12 right-box">
+                    <div class="featured-image text-center mb-3">
+                        <img src="./assets/images/logo-1.png" class="img-fluid" style="width: 300px;">
+                    </div>
+                    <form class="row g-3">
+                        <div class="col-12">
+                            <div class="">
+                                <div class="input-group cust-input-1">
+                                  <input type="password" class="form-control p-0 rounded-0 bg-transparent border-0 fs-14" id="passone" placeholder="New Password" aria-label="Password">
+                                  <span class="input-group-text p-0 bg-transparent border-0 rounded-0" id="btnpass">
+                                      <span class="eyeopen" style="display: none;"><i class="fa-regular fa-eye"></i></span>
+                                      <span class="eyeoff"><i class="fa-regular fa-eye-slash"></i></span>
+                                  </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="">
+                                <div class="input-group cust-input-1">
+                                  <input type="password" class="form-control p-0 rounded-0 bg-transparent border-0 fs-14" id="passonen" placeholder="Confirm Password" aria-label="Password">
+                                  <span class="input-group-text p-0 bg-transparent border-0 rounded-0" id="btnpassn">
+                                      <span class="eyeopenn" style="display: none;"><i class="fa-regular fa-eye"></i></span>
+                                      <span class="eyeoffn"><i class="fa-regular fa-eye-slash"></i></span>
+                                  </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="">
+                                <div class="input-group">
+                                    <button class="btn btn-lg btnCust-1 w-100 fs-14">Password Change</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex justify-content-center">
+                                <small>Already have account!<a href="login.html" class="text-decoration-none"> Login</a></small>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <script type="text/javascript">
+        let btnPass = document.getElementById('btnpass');
+        let passfield = document.getElementById('passone');
+        let eyeone = document.querySelector('.eyeopen');
+        let eyetwo = document.querySelector('.eyeoff')
+        let x = 0;
+        btnPass.addEventListener('click',function(){
+            if (x=!x) {
+                passfield.type='text';
+                eyeone.style.display='block'
+                eyetwo.style.display='none'
+            }
+            else {
+                passfield.type='password';
+                eyeone.style.display='none'
+                eyetwo.style.display='block'
+            }
+        })
+    </script>
+    <script type="text/javascript">
+        let btnPassNew = document.getElementById('btnpassn');
+        let passfieldNew = document.getElementById('passonen');
+        let eyeoneNew = document.querySelector('.eyeopenn');
+        let eyetwoNew = document.querySelector('.eyeoffn')
+        let y = 0;
+        btnPassNew.addEventListener('click',function(){
+            if (y=!y) {
+                passfieldNew.type='text';
+                eyeoneNew.style.display='block'
+                eyetwoNew.style.display='none'
+            }
+            else {
+                passfieldNew.type='password';
+                eyeoneNew.style.display='none'
+                eyetwoNew.style.display='block'
+            }
+        })
+    </script>
+
+</body>
+
+</html>

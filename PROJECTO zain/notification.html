@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css">
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  " />
+
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="shadow border-end-blue side-bar" id="">
+            <div class="text-center brand-logo  py-3">
+                <img src="assets/images/logo.png" class="img-fluid" style="width: 11rem;" alt="">
+            </div>
+            <div class="">
+                <ul class="navbar-nav sidebar_list active">
+                    <li class="nav-item mt-1">
+                        <a href="index.html"
+                            class="text-decoration-none nav-link active d-flex align-items-center slimplus-d">
+                            <span class="slimspan" data-bs-toggle="tooltip" data-bs-placement="right"
+                                data-bs-title="Dashboard">
+                                <img src="assets/images/icons/dashboard-w.png" class="img-fluid im1">
+                            </span>
+                            <p class="m-0 slimactive slimaplusctivetext active-text">Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex justify-content-between slimplus-d"
+                            data-bs-toggle="collapse" href="#collapseExample" onclick="toggleArrow()" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            <div class=" d-flex align-items-center slimplus-d">
+                                <span class="slimspan" data-bs-toggle="tooltip" data-bs-placement="right"
+                                    data-bs-title="Planning">
+                                    <img src="assets/images/icons/profile-b.png" class="img-fluid im2">
+                                </span>
+                                <p class="m-0 slimactive slimaplusctivetext">
+                                    Planning
+                                </p>
+                            </div>
+                            <div id="myArrow1" class="slimactive slimaplusctiveicon"><i class="fas fa-angle-right"></i>
+                            </div>
+                        </a>
+                        <ul class="collapse navbar-nav pt-2 slim-drop" id="collapseExample">
+                            <li class="nav-item px-2 py-0">
+                                <a href="project-owner.html"
+                                    class="text-decoration-none text-capitalize nav-link px-2 side-text">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+                                        <path
+                                            d="M14.155 4.055a1 1 0 00-1.271.62l-4.83 14.046a1 1 0 001.891.65l4.83-14.045a1 1 0 00-.62-1.271m-6.138 8.21l-2.58-2.501L8.236 7.05a.999.999 0 10-1.392-1.436l-3.54 3.432a1 1 0 000 1.436l3.32 3.219a1 1 0 101.393-1.436m12.219 1.568l-3.32-3.22a.999.999 0 10-1.393 1.437l2.58 2.5-2.799 2.715a.999.999 0 101.392 1.436l3.54-3.432a1 1 0 000-1.436"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                    </svg>
+                                    Timeline</a>
+                            </li>
+                            <li class="nav-item px-2 py-0">
+                                <a href="backlog.html" class="text-decoration-none nav-link px-2 side-text">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+                                        <g fill="currentColor">
+                                            <path
+                                                d="M5 19.002C5 19 17 19 17 19v-2.002C17 17 5 17 5 17v2.002zm-2-2.004C3 15.894 3.895 15 4.994 15h12.012c1.101 0 1.994.898 1.994 1.998v2.004A1.997 1.997 0 0117.006 21H4.994A1.998 1.998 0 013 19.002v-2.004z">
+                                            </path>
+                                            <path d="M5 15h12v-2H5v2zm-2-4h16v6H3v-6z"></path>
+                                            <path
+                                                d="M7 11.002C7 11 19 11 19 11V8.998C19 9 7 9 7 9v2.002zM5 8.998C5 7.894 5.895 7 6.994 7h12.012C20.107 7 21 7.898 21 8.998v2.004A1.997 1.997 0 0119.006 13H6.994A1.998 1.998 0 015 11.002V8.998z">
+                                            </path>
+                                            <path
+                                                d="M5 5v2h12V5H5zm-2-.002C3 3.894 3.895 3 4.994 3h12.012C18.107 3 19 3.898 19 4.998V9H3V4.998z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    Backlog</a>
+                            </li>
+                            <li class="nav-item px-2 py-0">
+                                <a href="board.html" class="text-decoration-none nav-link px-2 side-text">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+                                        <g fill="currentColor">
+                                            <path
+                                                d="M4 18h16.008C20 18 20 6 20 6H3.992C4 6 4 18 4 18zM2 5.994C2 4.893 2.898 4 3.99 4h16.02C21.108 4 22 4.895 22 5.994v12.012A1.997 1.997 0 0120.01 20H3.99A1.994 1.994 0 012 18.006V5.994z">
+                                            </path>
+                                            <path d="M8 6v12h2V6zm6 0v12h2V6z"></path>
+                                        </g>
+                                    </svg>
+                                    Board</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex justify-content-between slimplus-d"
+                            data-bs-toggle="collapse" href="#collapseSchedular" onclick="toggleArrow1()" role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            <div class=" d-flex align-items-center slimplus-d">
+                                <span class="slimspan" data-bs-toggle="tooltip" data-bs-placement="right"
+                                    data-bs-title="Development">
+                                    <img src="assets/images/icons/overview-b.png" class="img-fluid im3">
+                                </span>
+                                <p class="m-0 slimactive slimaplusctivetext">
+                                    Development
+                                </p>
+                            </div>
+                            <div id="myArrow2" class="slimactive slimaplusctiveicon"><i class="fas fa-angle-right"></i>
+                            </div>
+                        </a>
+                        <ul class="collapse navbar-nav slim-drop" id="collapseSchedular">
+                            <li class="nav-item px-2 py-0">
+                                <a href="#" class="text-decoration-none nav-link px-2 side-text">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+                                        <path
+                                            d="M14.155 4.055a1 1 0 00-1.271.62l-4.83 14.046a1 1 0 001.891.65l4.83-14.045a1 1 0 00-.62-1.271m-6.138 8.21l-2.58-2.501L8.236 7.05a.999.999 0 10-1.392-1.436l-3.54 3.432a1 1 0 000 1.436l3.32 3.219a1 1 0 101.393-1.436m12.219 1.568l-3.32-3.22a.999.999 0 10-1.393 1.437l2.58 2.5-2.799 2.715a.999.999 0 101.392 1.436l3.54-3.432a1 1 0 000-1.436"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                    </svg>
+                                    Code</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex justify-content-between slimplus-d side-text"
+                            role="button">
+                            <div class=" d-flex align-items-center slimplus-d">
+                                <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+                                    <g fill="currentColor" fill-rule="evenodd">
+                                        <rect x="8" y="6" width="8" height="2" rx="1"></rect>
+                                        <rect x="8" y="9" width="8" height="2" rx="1"></rect>
+                                        <rect x="8" y="12" width="4" height="2" rx="1"></rect>
+                                        <path
+                                            d="M7 4v16h10V4H7zm-2-.01C5 2.892 5.897 2 7.006 2h9.988C18.102 2 19 2.898 19 3.99v16.02c0 1.099-.897 1.99-2.006 1.99H7.006A2.003 2.003 0 015 20.01V3.99z"
+                                            fill-rule="nonzero"></path>
+                                    </g>
+                                </svg>
+                                <p class="m-0 mx-3 slimactive slimaplusctivetext">
+                                    Project Pages
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex justify-content-between slimplus-d side-text"
+                            role="button">
+                            <div class=" d-flex align-items-center slimplus-d">
+                                <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+                                    <g fill="currentColor" fill-rule="evenodd">
+                                        <path
+                                            d="M16.002 3H4.995A1.995 1.995 0 003 4.995v14.01C3 20.107 3.893 21 4.995 21h14.01A1.995 1.995 0 0021 19.005V7.998 11h-2v8H5V5h8V3h3.002z"
+                                            fill-rule="nonzero"></path>
+                                        <path
+                                            d="M19 5V3.99A1 1 0 0018 3c-.556 0-1 .444-1 .99V5h-1a1 1 0 000 2h1v1.01A1 1 0 0018 9c.556 0 1-.444 1-.99V7h1a1 1 0 000-2h-1z">
+                                        </path>
+                                    </g>
+                                </svg>
+                                <p class="m-0 mx-3 slimactive slimaplusctivetext">
+                                    Add Shortcut
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex justify-content-between slimplus-d"
+                            data-bs-toggle="collapse" href="#collapseSchedular2" onclick="toggleArrow2()" role="button"
+                            aria-expanded="false" aria-controls="collapseExample2">
+                            <div class=" d-flex align-items-center slimplus-d">
+                                <span class="slimspan" data-bs-toggle="tooltip" data-bs-placement="right"
+                                    data-bs-title="Development">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+                                        <path
+                                            d="M11.701 16.7a5.002 5.002 0 110-10.003 5.002 5.002 0 010 10.004m8.368-3.117a1.995 1.995 0 01-1.346-1.885c0-.876.563-1.613 1.345-1.885a.48.48 0 00.315-.574 8.947 8.947 0 00-.836-1.993.477.477 0 00-.598-.195 2.04 2.04 0 01-1.29.08 1.988 1.988 0 01-1.404-1.395 2.04 2.04 0 01.076-1.297.478.478 0 00-.196-.597 8.98 8.98 0 00-1.975-.826.479.479 0 00-.574.314 1.995 1.995 0 01-1.885 1.346 1.994 1.994 0 01-1.884-1.345.482.482 0 00-.575-.315c-.708.2-1.379.485-2.004.842a.47.47 0 00-.198.582A2.002 2.002 0 014.445 7.06a.478.478 0 00-.595.196 8.946 8.946 0 00-.833 1.994.48.48 0 00.308.572 1.995 1.995 0 011.323 1.877c0 .867-.552 1.599-1.324 1.877a.479.479 0 00-.308.57 8.99 8.99 0 00.723 1.79.477.477 0 00.624.194c.595-.273 1.343-.264 2.104.238.117.077.225.185.302.3.527.8.512 1.58.198 2.188a.473.473 0 00.168.628 8.946 8.946 0 002.11.897.474.474 0 00.57-.313 1.995 1.995 0 011.886-1.353c.878 0 1.618.567 1.887 1.353a.475.475 0 00.57.313 8.964 8.964 0 002.084-.883.473.473 0 00.167-.631c-.318-.608-.337-1.393.191-2.195.077-.116.185-.225.302-.302.772-.511 1.527-.513 2.125-.23a.477.477 0 00.628-.19 8.925 8.925 0 00.728-1.793.478.478 0 00-.314-.573"
+                                            fill="currentColor" fill-rule="evenodd"></path>
+                                    </svg>
+                                </span>
+                                <p class="m-0 slimactive slimaplusctivetext">
+                                    Project Settings
+                                </p>
+                            </div>
+                            <div id="myArrow3" class="slimactive slimaplusctiveicon"><i class="fas fa-angle-right"></i>
+                            </div>
+                        </a>
+                        <ul class="collapse navbar-nav slim-drop" id="collapseSchedular2">
+                            <li class="nav-item px-2 py-0">
+                                <a href="details.html" class="text-decoration-none nav-link px-2 side-text">
+                                    <img src="./assets/images/svg/details.svg" alt="" width="20" height="20"
+                                        class="img-fluid  me-2">
+                                    Details</a>
+                            </li>
+                            <li class="nav-item px-2 py-0">
+                                <a href="notification.html" class="text-decoration-none nav-link px-2 side-text">
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path
+                                                d="M12 5.5C14.7614 5.5 17 7.73858 17 10.5V12.7396C17 13.2294 17.1798 13.7022 17.5052 14.0683L18.7808 15.5035C19.6407 16.4708 18.954 18 17.6597 18H6.34025C5.04598 18 4.35927 16.4708 5.21913 15.5035L6.4948 14.0683C6.82022 13.7022 6.99998 13.2294 6.99998 12.7396L7 10.5C7 7.73858 9.23858 5.5 12 5.5ZM12 5.5V3M10.9999 21H12.9999"
+                                                stroke="#000000" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"></path>
+                                        </g>
+                                    </svg>
+                                    Notifications</a>
+                            </li>
+                            <li class="nav-item px-2 py-0">
+                                <a href="access.html" class="text-decoration-none nav-link px-2 side-text">
+                                    <svg width="24px" height="24px" viewBox="0 0 48 48" id="b"
+                                        xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000"
+                                        stroke-width="2.112">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <defs>
+                                                <style>
+                                                    .c {
+                                                        fill: none;
+                                                        stroke: #000000;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <path class="c"
+                                                d="m28.9722,19.4677c4.1332,0,7.4838-3.3506,7.4838-7.4838s-3.3506-7.4838-7.4838-7.4838-7.4838,3.3506-7.4838,7.4838">
+                                            </path>
+                                            <path class="c"
+                                                d="m36.7621,19.4677c0-4.3022-3.4877-7.7898-7.7899-7.7898s-7.7897,3.4876-7.7897,7.7898c0,3.3055,2.0669,6.1128,4.9722,7.2441v13.1419l2.8175,3.6463,2.8177-3.6463v-13.1419c2.9054-1.1313,4.9722-3.9386,4.9722-7.2441Z">
+                                            </path>
+                                            <path class="c"
+                                                d="m19.5872,24.8336l-7.7633,7.7633-.586,4.5706,4.5707-.5859,7.7633-7.7633">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    Access</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <!-- navbar start from here -->
+            <header class="">
+                <nav class="border-bottom-blue custom_nav">
+                    <div class="container-fluid mt-1">
+                        <div class="row g-2 align-items-center justify-content-between">
+                            <div class="col-12 d-flex justify-content-between align-items-center ">
+                                <div class="d-flex  gap-3">
+                                    <div class="d-flex justify-content-evenly">
+                                        <div class="dropdown ">
+                                            <button class="btn nav-btn dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Your Work
+                                            </button>
+                                            <ul class="dropdown-menu ">
+
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown ms-1">
+                                            <button class="btn nav-btn dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Projects
+                                            </button>
+                                            <ul class="dropdown-menu ">
+
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown ms-1">
+                                            <button class="btn nav-btn dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Filters
+                                            </button>
+                                            <ul class="dropdown-menu ">
+
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown ms-1">
+                                            <button class="btn nav-btn dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Dashbords
+                                            </button>
+                                            <ul class="dropdown-menu ">
+
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown ms-1 ">
+                                            <button class="btn nav-btn dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Teams
+                                            </button>
+                                            <ul class="dropdown-menu ">
+
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown ms-1">
+                                            <button class="btn nav-btn dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Plans
+                                            </button>
+                                            <ul class="dropdown-menu ">
+
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown ms-1">
+                                            <button class="btn nav-btn dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Apps
+                                            </button>
+                                            <ul class="dropdown-menu ">
+
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-danger  ">Create</button>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex ms-xl-5 ">
+                                        <form class="" role="search">
+                                            <input class="form-control border" type="search" placeholder="Search"
+                                                aria-label="Search">
+                                        </form>
+                                        <div class="d-flex align-items-center justify-content-between ">
+                                            <div class="ms-xl-4">
+                                                <input type="checkbox" class="checkbox" id="checkbox">
+                                                <label for="checkbox" class="checkbox-label">
+                                                    <i class="fas fa-moon"></i>
+                                                    <i class="fas fa-sun"></i>
+                                                    <span class="ball"></span>
+                                                </label>
+                                            </div>
+                                            <div class="dropdown ms-3">
+                                                <button class="btn p-0 border-0 position-relative " type="button"
+                                                    id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <span
+                                                        class="position-absolute notification-number rounded-4 text-white fw-medium ">0</span>
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <span><i class="fas fa-bell fs-5"></i></span>
+                                                    </div>
+                                                </button>
+                                                <ul class="dropdown-menu dropact" style="width: 300px"
+                                                    aria-labelledby="dropdownMenuButton1">
+                                                    <li>
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-between pt-2 px-3">
+                                                            <span
+                                                                class="mb-0 text-capitalize fs-14">notifications</span>
+                                                            <a href=""
+                                                                class="text-decoration-none text-capitalize fs-12">
+                                                                marked all as read
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <hr>
+                                                    </li>
+                                                    <li>
+                                                        <div>
+                                                            <span
+                                                                class="fs-12 text-capitalize text-secondary ps-3">today</span>
+                                                            <a class="dropdown-item fs-14 dropitemone d-flex justify-content-between py-2"
+                                                                href="#">
+                                                                <div class="d-flex align-items-start">
+                                                                    <span
+                                                                        class="text-capitalize circlewhite bg-secondary text-white">
+                                                                        amc
+                                                                    </span>
+                                                                    <span class="text-capitalize ps-2 fs-12 text-wrap">
+                                                                        Lorem ipsum dolor sit amet, consectetur
+                                                                        adipisicing
+                                                                        elit.
+                                                                    </span>
+                                                                </div>
+                                                                <p class="mb-0 fs-12 text-secondary">2 min</p>
+                                                            </a>
+                                                        </div>
+                                                        <div>
+                                                            <span
+                                                                class="fs-12 text-capitalize text-secondary ps-3">yesterday</span>
+                                                            <a class="dropdown-item fs-14 dropitemone d-flex justify-content-between py-2"
+                                                                href="#">
+                                                                <div class="d-flex align-items-start">
+                                                                    <span
+                                                                        class="text-capitalize circlewhite bg-secondary text-white">
+                                                                        amc
+                                                                    </span>
+                                                                    <span class="text-capitalize ps-2 fs-12 text-wrap">
+                                                                        Lorem ipsum dolor sit amet, consectetur
+                                                                        adipisicing
+                                                                        elit.
+                                                                    </span>
+                                                                </div>
+                                                                <p class="mb-0 fs-12 text-secondary">2 min</p>
+                                                            </a>
+                                                        </div>
+                                                        <div>
+                                                            <span
+                                                                class="fs-12 text-capitalize text-secondary ps-3">today</span>
+                                                            <a class="dropdown-item fs-14 dropitemone d-flex justify-content-between py-2"
+                                                                href="#">
+                                                                <div class="d-flex align-items-start">
+                                                                    <span
+                                                                        class="text-capitalize circlewhite bg-secondary text-white">
+                                                                        amc
+                                                                    </span>
+                                                                    <span class="text-capitalize ps-2 fs-12 text-wrap">
+                                                                        Lorem ipsum dolor sit amet, consectetur
+                                                                        adipisicing
+                                                                        elit.
+                                                                    </span>
+                                                                </div>
+                                                                <p class="mb-0 fs-12 text-secondary">2 min</p>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="mb-1">
+                                                    </li>
+                                                    <li>
+                                                        <a href="notification.html"
+                                                            class="text-decoration-none text-capitalize fs-12 text-center d-block">
+                                                            view all
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown ms-3">
+                                                <button class="btn p-0 border-0" type="button" id="dropdownMenuButton1"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <span><i class="fas fa-gear fs-5"></i></span>
+                                                    </div>
+                                                </button>
+                                                <ul class="dropdown-menu dropact" style="width: 300px"
+                                                    aria-labelledby="dropdownMenuButton1">
+
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown">
+                                                <button class="btn p-0 border-0 " type="button" id="dropdownMenuButton1"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <div class="d-flex align-items-center ms-3">
+                                                        <span><i class="fas fa-user-circle fs-2"></i></span>
+                                                    </div>
+                                                </button>
+                                                <ul class="dropdown-menu lh-sm noti-ul2"
+                                                    aria-labelledby="dropdownMenuButton1">
+                                                    <li>
+                                                        <a href="#"
+                                                            class="d-flex align-items-center text-decoration-none mx-2 ">
+                                                            <div class="flex-shrink-0">
+                                                                <img src="assets/images/dp-1.png" alt=""
+                                                                    class="img-fluid  " width="50" height="50">
+                                                            </div>
+                                                            <div class="user-profile flex-grow-1 mt-3 mx-2">
+                                                                <span class="text-wrap fs-6">John Smith</span>
+                                                                <p class="text-muted fs-12">John786@gmail.com</p>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item fs-14 dropitem d-flex align-items-center"
+                                                            href="#">
+                                                            <span>
+                                                                <i class="fa-solid fa-gear"></i>
+                                                            </span>
+                                                            <span class="text-capitalize p-2">
+                                                                account settings
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item fs-14 dropitem d-flex align-items-center"
+                                                            href="#">
+                                                            <span>
+                                                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                                            </span>
+                                                            <span class="text-capitalize p-2">
+                                                                logout
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- <div class="shadow horizontalmenu" style="display: none;">
+                    <nav class="navbar navbar-expand-lg bg-light">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-capitalize d-flex align-items-center gap-2" href="#">
+                                            <span class="d-flex align-items-center">
+                                                <img src="assets/images/icons/dashboard-b.png"
+                                                    class="img-fluid w-20 im1a">
+                                            </span>
+                                            <p class="m-0 fs-13">Dashboard</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown ms-3">
+                                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <div class="d-flex align-items-center justify-content-between gap-3">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="d-flex align-items-center">
+                                                        <img src="assets/images/icons/profile-b.png"
+                                                            class="img-fluid w-20 im2a">
+                                                    </span>
+                                                    <p class="m-0 fs-13">
+                                                        All Profiles
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <i class="fas fa-angle-down fs-13"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-person-chalkboard me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Project Owner
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-user me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Investor
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i
+                                                            class="fa-solid fa-person-walking-arrow-loop-left me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Incubator/Accelerator
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown ms-3">
+                                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <div class="d-flex align-items-center justify-content-between gap-3">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="d-flex align-items-center">
+                                                        <img src="assets/images/icons/overview-b.png"
+                                                            class="img-fluid w-20 im3a">
+                                                    </span>
+                                                    <p class="m-0 fs-13">
+                                                        Overview of Projects
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <i class="fas fa-angle-down fs-13"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-file-shield me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Campaign Submission
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-gauge-high me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Boost Campaign
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-file-signature me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        E-Signature
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-money-bill-transfer me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Funds Withdrawal
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown ms-3">
+                                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <div class="d-flex align-items-center justify-content-between gap-3">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="d-flex align-items-center">
+                                                        <img src="assets/images/icons/invest-b.png"
+                                                            class="img-fluid w-20 im4a">
+                                                    </span>
+                                                    <p class="m-0 fs-13">
+                                                        Investments
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <i class="fas fa-angle-down fs-13"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fas fa-user me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Debt and Equity
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-clock-rotate-left me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Transaction History
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-wallet me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Wallet
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-money-check-dollar me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Payment Integration
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-file-invoice me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Report
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown ms-3">
+                                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <div class="d-flex align-items-center justify-content-between gap-3">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="d-flex align-items-center">
+                                                        <img src="assets/images/icons/portfo-b.png"
+                                                            class="img-fluid w-20 im5a">
+                                                    </span>
+                                                    <p class="m-0 fs-13">
+                                                        Portfolio Management
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <i class="fas fa-angle-down fs-13"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-regular fa-credit-card me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Track investments
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="dropdown">
+                                    <a href="" class="text-decoration-none text-dark" data-bs-toggle="dropdown"
+                                        data-bs-display="static" aria-expanded="false">
+                                        <img src="assets/images/avatar/av-2.png" class="img-fluid w50">
+                                        <span class="text-capitalize ps-2">username</span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-lg-end">
+                                        <li>
+                                            <a class="dropdown-item fs-14 dropitem d-flex align-items-center" href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-gear"></i>
+                                                </span>
+                                                <span class="text-capitalize p-2">
+                                                    account settings
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-14 dropitem d-flex align-items-center" href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                                </span>
+                                                <span class="text-capitalize p-2">
+                                                    logout
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div> -->
+            </header>
+            <!-- navbar end here -->
+            <div class="h-500px scroll pb-3">
+                <div class="container px-5">
+                    <section>
+                        <div class="breadcrumb mt-4">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#"
+                                            class="text-decoration-none text-muted">Projects</a></li>
+                                    <li class="breadcrumb-item"><a href="#"
+                                            class="text-decoration-none text-muted">Repla Tech</a></li>
+                                    <li class="breadcrumb-item"><a href="#"
+                                            class="text-decoration-none text-muted">Project Settings</a></li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </section>
+                    <section>
+                        <div>
+                            <div class="project-name-line d-flex justify-content-between align-items-center mt-5">
+                                <div class="project-name">
+                                    <h3 class="">Notifications</h3>
+                                </div>
+                                <div class="">
+                                    <button href="" class="btn p-0 bg-custom p-2 me-3">
+                                        <span class="user-plus fw-semibold ">Add Notification</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <p>Jira can send people or roles an email when events happen on an issue - for example,
+                                    when someone comments on an issue. Settings on this page will be overridden by a
+                                    user’s <a href=""
+                                        class="link-danger link-underline-opacity-0  link-underline-opacity-100-hover fw-medium  ">personal
+                                        notification preferences.</a></p>
+                            </div>
+                        </div>
+
+                        <div class="mt-5">
+                            <div class="project-name">
+                                <h3 class="">Email</h3>
+                            </div>
+                            <div class="mt-3">
+                                <p class="mb-1">Notification emails for this project can be sent directly from Jira
+                                    Software, or you can use a custom email with your own domain instead. <a href=""
+                                        class="link-danger link-underline-opacity-0  link-underline-opacity-100-hover fw-medium  ">Learn
+                                        more about sending emails from your domain.</a></p>
+
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="project-name-line d-flex justify-content-between align-items-center mt-5 slack-border p-4">
+                                <div class="d-flex align-items-center">
+                                    <i class="fa-regular fa-envelope user-plus "></i>
+                                    <p class="mb-1 ms-3">jira@abdur-rehman1312.atlassian.net</p>
+                                </div>
+                                <div class="">
+                                    <button href="" class="btn p-0 bg-custom p-2 me-3">
+                                        <span class="user-plus fw-semibold ">Edit</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <table class="table align-middle ">
+                                <thead>
+                                    <tr>
+                                        <th scope="col ">Event</th>
+                                        <th scope="col ">Recipient</th>
+                                        <th scope="col">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                    <tr>
+                                        <td class="fs-6">Issue Created</td>
+                                        <td class="fs-6">All Watchers, Current Assignee, Reporter</td>
+                                        <td>
+                                            <ul class="list-unstyled d-flex  gap-3 mb-0 ms-2">
+                                                <li class="dropdown bg-custom me-4">
+                                                    <a class="nav-link px-1 fs-5 pb-1 " href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="true">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+                                                            <g fill="currentColor" fill-rule="evenodd">
+                                                                <circle cx="5" cy="12" r="2"></circle>
+                                                                <circle cx="12" cy="12" r="2"></circle>
+                                                                <circle cx="19" cy="12" r="2"></circle>
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end  my-2">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Edit
+                                                                Sprint</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Manage
+                                                                Workflow</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Manage
+                                                                Custom Filters</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Configure Board</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fs-6">Issue Updated</td>
+                                        <td class="fs-6">All Watchers, Current Assignee, Reporter</td>
+                                        <td>
+                                            <ul class="list-unstyled d-flex  gap-3 mb-0 ms-2">
+                                                <li class="dropdown bg-custom me-4">
+                                                    <a class="nav-link px-1 fs-5 pb-1 " href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="true">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+                                                            <g fill="currentColor" fill-rule="evenodd">
+                                                                <circle cx="5" cy="12" r="2"></circle>
+                                                                <circle cx="12" cy="12" r="2"></circle>
+                                                                <circle cx="19" cy="12" r="2"></circle>
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end  my-2">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Edit
+                                                                Sprint</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Manage
+                                                                Workflow</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Manage
+                                                                Custom Filters</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Configure Board</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fs-6">Issue Assigned</td>
+                                        <td class="fs-6">All Watchers, Current Assignee, Reporter</td>
+                                        <td>
+                                            <ul class="list-unstyled d-flex  gap-3 mb-0 ms-2">
+                                                <li class="dropdown bg-custom me-4">
+                                                    <a class="nav-link px-1 fs-5 pb-1 " href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="true">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+                                                            <g fill="currentColor" fill-rule="evenodd">
+                                                                <circle cx="5" cy="12" r="2"></circle>
+                                                                <circle cx="12" cy="12" r="2"></circle>
+                                                                <circle cx="19" cy="12" r="2"></circle>
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end  my-2">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Edit
+                                                                Sprint</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Manage
+                                                                Workflow</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Manage
+                                                                Custom Filters</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Configure Board</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fs-6">Issue Deleted</td>
+                                        <td class="fs-6">All Watchers, Current Assignee, Reporter</td>
+                                        <td>
+                                            <ul class="list-unstyled d-flex  gap-3 mb-0 ms-2">
+                                                <li class="dropdown bg-custom me-4">
+                                                    <a class="nav-link px-1 fs-5 pb-1 " href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="true">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+                                                            <g fill="currentColor" fill-rule="evenodd">
+                                                                <circle cx="5" cy="12" r="2"></circle>
+                                                                <circle cx="12" cy="12" r="2"></circle>
+                                                                <circle cx="19" cy="12" r="2"></circle>
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end  my-2">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Edit
+                                                                Sprint</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Manage
+                                                                Workflow</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Manage
+                                                                Custom Filters</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Configure Board</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fs-6">Issue Moved</td>
+                                        <td class="fs-6">All Watchers, Current Assignee, Reporter</td>
+                                        <td>
+                                            <ul class="list-unstyled d-flex  gap-3 mb-0 ms-2">
+                                                <li class="dropdown bg-custom me-4">
+                                                    <a class="nav-link px-1 fs-5 pb-1 " href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="true">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+                                                            <g fill="currentColor" fill-rule="evenodd">
+                                                                <circle cx="5" cy="12" r="2"></circle>
+                                                                <circle cx="12" cy="12" r="2"></circle>
+                                                                <circle cx="19" cy="12" r="2"></circle>
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end  my-2">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Edit
+                                                                Sprint</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Manage
+                                                                Workflow</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Manage
+                                                                Custom Filters</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Configure Board</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fs-6">Issue Commented</td>
+                                        <td class="fs-6">All Watchers, Current Assignee, Reporter</td>
+                                        <td>
+                                            <ul class="list-unstyled d-flex  gap-3 mb-0 ms-2">
+                                                <li class="dropdown bg-custom me-4">
+                                                    <a class="nav-link px-1 fs-5 pb-1 " href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="true">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+                                                            <g fill="currentColor" fill-rule="evenodd">
+                                                                <circle cx="5" cy="12" r="2"></circle>
+                                                                <circle cx="12" cy="12" r="2"></circle>
+                                                                <circle cx="19" cy="12" r="2"></circle>
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end  my-2">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Edit
+                                                                Sprint</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Manage
+                                                                Workflow</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Manage
+                                                                Custom Filters</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Configure Board</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fs-6">Issue Comment Edited</td>
+                                        <td class="fs-6">All Watchers, Current Assignee, Reporter</td>
+                                        <td>
+                                            <ul class="list-unstyled d-flex  gap-3 mb-0 ms-2">
+                                                <li class="dropdown bg-custom me-4">
+                                                    <a class="nav-link px-1 fs-5 pb-1 " href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="true">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+                                                            <g fill="currentColor" fill-rule="evenodd">
+                                                                <circle cx="5" cy="12" r="2"></circle>
+                                                                <circle cx="12" cy="12" r="2"></circle>
+                                                                <circle cx="19" cy="12" r="2"></circle>
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end  my-2">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Edit
+                                                                Sprint</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Manage
+                                                                Workflow</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Manage
+                                                                Custom Filters</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Configure Board</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fs-6">Work Logged On Issue</td>
+                                        <td class="fs-6">All Watchers, Current Assignee, Reporter</td>
+                                        <td>
+                                            <ul class="list-unstyled d-flex  gap-3 mb-0 ms-2">
+                                                <li class="dropdown bg-custom me-4">
+                                                    <a class="nav-link px-1 fs-5 pb-1 " href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="true">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+                                                            <g fill="currentColor" fill-rule="evenodd">
+                                                                <circle cx="5" cy="12" r="2"></circle>
+                                                                <circle cx="12" cy="12" r="2"></circle>
+                                                                <circle cx="19" cy="12" r="2"></circle>
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end  my-2">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Edit
+                                                                Sprint</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Manage
+                                                                Workflow</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Manage
+                                                                Custom Filters</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Configure Board</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fs-6">Issue Worklog Updated</td>
+                                        <td class="fs-6">All Watchers, Current Assignee, Reporter</td>
+                                        <td>
+                                            <ul class="list-unstyled d-flex  gap-3 mb-0 ms-2">
+                                                <li class="dropdown bg-custom me-4">
+                                                    <a class="nav-link px-1 fs-5 pb-1 " href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="true">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+                                                            <g fill="currentColor" fill-rule="evenodd">
+                                                                <circle cx="5" cy="12" r="2"></circle>
+                                                                <circle cx="12" cy="12" r="2"></circle>
+                                                                <circle cx="19" cy="12" r="2"></circle>
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end  my-2">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Edit
+                                                                Sprint</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Manage
+                                                                Workflow</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Manage
+                                                                Custom Filters</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Configure Board</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fs-6">Issue Worklog Deleted</td>
+                                        <td class="fs-6">All Watchers, Current Assignee, Reporter</td>
+                                        <td>
+                                            <ul class="list-unstyled d-flex  gap-3 mb-0 ms-2">
+                                                <li class="dropdown bg-custom me-4">
+                                                    <a class="nav-link px-1 fs-5 pb-1 " href="#" role="button"
+                                                        data-bs-toggle="dropdown" aria-expanded="true">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+                                                            <g fill="currentColor" fill-rule="evenodd">
+                                                                <circle cx="5" cy="12" r="2"></circle>
+                                                                <circle cx="12" cy="12" r="2"></circle>
+                                                                <circle cx="19" cy="12" r="2"></circle>
+                                                            </g>
+                                                        </svg>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-end  my-2">
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Edit
+                                                                Sprint</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Manage
+                                                                Workflow</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Manage
+                                                                Custom Filters</a>
+                                                        </li>
+                                                        <li class="dropdown-item">
+                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                href="#">Configure Board</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/datatables.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#table').DataTable({
+                "language": {
+                    "paginate": {
+                        "previous": '<i class="fa-solid fa-chevron-left p-5px"></i>',
+                        "next": '<i class="fa-solid fa-chevron-right p-5px"></i>',
+                    },
+                    "lengthMenu": "",
+                    search: "",
+                    searchPlaceholder: "Search..."
+                },
+
+                "ordering": true
+            });
+
+        });
+    </script>
+    <script>
+        // Sample project data
+        var projectData = {
+            labels: ["January", "February", "March", "April", "May", "June"],
+            datasets: [{
+                label: 'Investment',
+                backgroundColor: 'rgba(244, 83, 2, .2)',
+                borderColor: '#f45302',
+                borderWidth: 1,
+                data: [5, 10, 15, 7, 20, 12] // Replace with your project data
+            }]
+        };
+
+        // Get the canvas element and create the chart
+        var ctx = document.getElementById('projectChart').getContext('2d');
+        var projectChart = new Chart(ctx, {
+            type: 'bar',
+            data: projectData,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+        var projectData = {
+            labels: ["January", "February", "March", "April", "May", "June"],
+            datasets: [{
+                label: 'Repayments',
+                backgroundColor: 'rgba(244, 83, 2, .2)',
+                borderColor: '#f45302',
+                borderWidth: 1,
+                data: [5, 10, 15, 7, 20, 12] // Replace with your project data
+            }]
+        };
+
+        // Get the canvas element and create the chart
+        var ctx = document.getElementById('projectChart2').getContext('2d');
+        var projectChart = new Chart(ctx, {
+            type: 'line',
+            data: projectData,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+
+    <script>
+        const checkbox = document.getElementById("checkbox")
+        checkbox.addEventListener("change", () => {
+            document.body.classList.toggle("dark-mode")
+        })
+    </script>
+</body>
+
+</html>

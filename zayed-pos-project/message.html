@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  " />
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <!-- /#page-content-wrapper starts -->
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="side-bar position-relative " id="">
+            <div class="text-center brand-logo">
+                <img src="assets/images/logo.png" class="img-fluid" width="145px" alt="">
+            </div>
+            <div class="">
+                <ul class="navbar-nav sidebar_list active">
+                    <li class="nav-item mt-1">
+                        <a href="index.html" class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/overview-w.png" class="img-fluid me-1" width="20"
+                                    height="20">
+                            </span>
+                            <p class="m-0">Overview</p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a href="message.html" class="text-decoration-none nav-link active d-flex align-items-center ">
+                            <span class="p-0">
+                                <img src="assets/images/icons/Chats.png" class="img-fluid me-1" width="20" height="20">
+                            </span>
+                            <p class="m-0">Messages</p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex justify-content-between arrowdown-arr"
+                            data-bs-toggle="collapse" href="#collapseExample">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icons/Scroll.png" class="img-fluid me-1" width="20"
+                                        height="20">
+                                </span>
+                                <p class="m-0">
+                                    Invoices
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down "></i></div>
+                        </a>
+                        <div class="collapse list-style-cs" id="collapseExample">
+                            <ul class="list-unstyled position-relative ">
+                                <li>
+                                    <a href="sales-invoice.html" class="text-decoration-none text-capitalize">
+                                        sales
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="purchase-invoice.html" class="text-decoration-none text-capitalize">
+                                        Purchase
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="add-expense-invoice.html" class="text-decoration-none text-capitalize">
+                                        Expense
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex justify-content-between arrowdown-arr"
+                            data-bs-toggle="collapse" href="#collapseExample2">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icons/HouseLine.png" class="img-fluid me-1" width="20"
+                                        height="20">
+                                </span>
+                                <p class="m-0">
+                                    Inventory
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down "></i></div>
+                        </a>
+                        <div class="collapse list-style-cs" id="collapseExample2">
+                            <ul class="list-unstyled position-relative ">
+                                <li>
+                                    <a href="transfer-inventory.html" class="text-decoration-none text-capitalize">
+                                        Inventory Transfer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Stocktaking
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Inventory Transaction
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex justify-content-between arrowdown-arr"
+                            data-bs-toggle="collapse" href="#collapseExample3">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icons/Stack.png" class="img-fluid me-1" width="20"
+                                        height="20">
+                                </span>
+                                <p class="m-0">
+                                    Directory
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down "></i></div>
+                        </a>
+                        <div class="collapse list-style-cs" id="collapseExample3">
+                            <ul class="list-unstyled position-relative ul3">
+                                <li>
+                                    <a href="customer-directory.html" class="text-decoration-none text-capitalize">
+                                        Customer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="supplier-directory.html" class="text-decoration-none text-capitalize">
+                                        Supplier
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="items-directory.html" class="text-decoration-none text-capitalize">
+                                        Items
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="category-directory.html" class="text-decoration-none text-capitalize">
+                                        Category
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex justify-content-between arrowdown-arr"
+                            data-bs-toggle="collapse" href="#collapseExample4">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icons/Files.png" class="img-fluid me-1" width="20"
+                                        height="20">
+                                </span>
+                                <p class="m-0">
+                                    Report
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down "></i></div>
+                        </a>
+                        <div class="collapse list-style-cs" id="collapseExample4">
+                            <ul class="list-unstyled position-relative ul4">
+                                <li>
+                                    <a href="sales-report.html" class="text-decoration-none text-capitalize">
+                                        sales
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="purchase-report.html" class="text-decoration-none text-capitalize">
+                                        Purchase
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="taxes-report.html" class="text-decoration-none text-capitalize">
+                                        Taxes
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="profit-loss-report.html" class="text-decoration-none text-capitalize">
+                                        Profit & Loss
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="expenses-report.html" class="text-decoration-none text-capitalize">
+                                        Expenses
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="inventory-report.html" class="text-decoration-none text-capitalize">
+                                        Inventory
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex justify-content-between arrowdown-arr"
+                            data-bs-toggle="collapse" href="#collapseExample5">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icons/manage.png" class="img-fluid me-1" width="20"
+                                        height="20">
+                                </span>
+                                <p class="m-0">
+                                    Management
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down "></i></div>
+                        </a>
+                        <div class="collapse list-style-cs" id="collapseExample5">
+                            <ul class="list-unstyled position-relative ul5">
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Setting
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Users
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Stores
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Payments
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Promotions
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="card-section m-2 position-absolute bottom-0 ">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <h5 class="card-title fs-14">Your trial will ends in 7 days</h5>
+                                <img src="./assets/images/icons/rocket-1.png" alt="" class="img-fluid me-2 " width="20"
+                                    height="20">
+                            </div>
+                            <p class="card-text text-muted fs-12">Your Basic plan is a free trial.</p>
+                            <div class="progress m-18 rounded-5" role="progressbar" aria-label="Basic example"
+                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 8px;">
+                                <div class="progress-bar bg-progress" style="width: 75%"></div>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn pad-6-16 text-white bg-dark rounded-3">Upgrade Plan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <!-- navbar start from here -->
+            <header class="">
+                <nav class="border-bottom custom_nav">
+                    <div class="d-flex justify-content-between">
+                        <div class="input-group border-1 pad-8-16 gap-8 bg-grey rounded-2 w-25">
+                            <span class="input-group-text border-0 p-0  bg-transparent" id="basic-addon1">
+                                <img src="assets/images/icons/magnify.png" class="img-fluid" width="22px">
+                            </span>
+                            <input type="text"
+                                class="form-control p-0 text-input fs-16 fw-400-24px border-0 bg-transparent"
+                                placeholder="Search here ...">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-12">
+                            <div>
+                                <button type="button"
+                                    class="btncust border-c bg-transparent d-flex fw-500-24 rounded-2 justify-content-center align-items-center gap-8 fs-16 btn-box-shadow">
+                                    <img src="./assets/images/icons/quest.png" alt="" width="24" height="24"
+                                        class="me-2">
+                                    <span>Need Help?</span>
+                                </button>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between ">
+                                <div class="dropdown">
+                                    <button class="btn p-0 border-0 " type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="d-flex align-items-center">
+                                            <span>
+                                                <img src="assets/images/avatar/av-1.png" alt="" class="img-fluid"
+                                                    width="40" height="40" style="border-radius: 50%;">
+                                            </span>
+                                        </div>
+                                    </button>
+                                    <ul class="dropdown-menu profile-ul p-8" aria-labelledby="dropdownMenuButton1">
+                                        <li class="p-12tb">
+                                            <a href="self-profile-view.html"
+                                                class="d-flex flex-column align-items-center text-decoration-none">
+                                                <div class="">
+                                                    <img src="assets/images/avatar/av-1.png" alt="" class="img-fluid  "
+                                                        width="60" height="60" style="border-radius: 50%;">
+                                                </div>
+                                                <div class="py-1">
+                                                    <span class="fw-600 text-black">Salem Muhamed Al-Dawsari</span>
+                                                    <p class="m-0 gray-text text-center fw-400">salem.moh@gmail.com</p>
+                                                </div>
+                                                <button type="button"
+                                                    class="btncust border-c bg-transparent m-12tb d-flex fw-500-24 rounded-2 justify-content-center align-items-center gap-8 fs-16 btn-box-shadow">
+                                                    <img src="./assets/images/icons/GearSix.png" alt="" width="20"
+                                                        height="20" class="me-2">
+                                                    <span class="fw-500">Go To Settings</span>
+                                                </button>
+                                            </a>
+                                        </li>
+                                        <hr class="m-0 p-4tb text-grey">
+                                        <li>
+                                            <a class="dropdown-item fs-14 dropitem d-flex align-items-center pad-6-12"
+                                                href="#">
+                                                <img src="./assets/images/icons/SignOut.png" alt="" width="18"
+                                                    height="18" class="me-1">
+                                                <span class="text-danger fs-14 fw-400">
+                                                    Sign Out
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- navbar end here -->
+            <div class="h-500px scroll p-24">
+                <div class="container-fluid bg-light-grey  rounded-3 " id="no-chat">
+                    <div class="d-flex flex-column justify-content-center align-items-center message-card">
+                        <div class="d-flex flex-column justify-content-center align-items-center ">
+                            <div>
+                                <img src="./assets/images/icons/25.png" alt="" width="192.59874px" height="160px">
+                            </div>
+                            <div>
+                                <h4 class="text-1 fs-20 fw-600-24 mt-12 mb-0">No Messages Yet</h4>
+                            </div>
+                            <div class="tab-p">
+                                <p class="fs-14 text-center gray-text mt-12 mb-0 ">You haven't received any messages
+                                    yet. Stay tuned for updates or start a conversation with your customers now</p>
+                            </div>
+                            <div>
+                                <button id="Message"
+                                    class="btn bg-white btn-box-shadow rounded-2 border d-flex mt-12 align-items-center justify-content-evenly fs-16 fw-500-24 pad-8-16 text-1"><img
+                                        src="./assets/images/icons/Plus-1.png" alt="" width="24px" height="24px"
+                                        class="me-2 ">New Message</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="chat" class="container-fluid  border rounded-2 btn-box-shadow " >
+                    <div class="row ">
+                        <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-12 col-xs-12  p-0 border-end  d-none d-md-block " id="chat-contacts">
+                            <div class="d-flex pad-17-16 border-bottom border-end  ">
+                                <div class="input-group border-1 pad-8-16 gap-8 bg-grey rounded-2 me-12">
+                                    <span class="input-group-text border-0 p-0  bg-transparent" id="basic-addon1">
+                                        <img src="assets/images/icons/magnify.png" class="img-fluid" width="22px">
+                                    </span>
+                                    <input type="text"
+                                        class="form-control p-0 text-input fs-16 fw-400-24px border-0 bg-transparent"
+                                        placeholder="Search here ...">
+                                </div>
+                                <div>
+                                    <button class="btn bg-white btn-box-shadow rounded-2 border pad-8"><img
+                                            src="./assets/images/icons/PencilSimpleLine.png" alt="" width="24px"
+                                            height="24px"></button>
+                                </div>
+                            </div>
+
+                            <div class="overflow-auto   " style="height: 70vh;">
+
+
+                                <div class="d-flex align-items-center pad-14 border-bottom  chat-background">
+                                    <div class="me-12">
+                                        <img src="assets/images/avatar/av-1.png" alt="" width="40" height="40"
+                                            style="border-radius: 50%;">
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center  w-100">
+                                        <div class="d-flex flex-column justify-content-between ">
+                                            <h5 class="text-1 fs-14 fw-600-20 mb-1">Admin</h5>
+                                            <p class="gray-text fs-12 fw-500-18 mb-0">Amet minim mollit no... </p>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-between  ">
+                                            <p class="gray-text fs-12 fw-400-16 mb-1">12.12 PM</p>
+                                            <span class="badge-background pad-2 fw-500-16 fs-10 text-1 align-self-end"
+                                                style="border-radius: 50%;">10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center pad-14 border-bottom ">
+                                    <div class="me-12">
+                                        <img src="assets/images/avatar/av-1.png" alt="" width="40" height="40"
+                                            style="border-radius: 50%;">
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center  w-100">
+                                        <div class="d-flex flex-column justify-content-between ">
+                                            <h5 class="text-1 fs-14 fw-600-20 mb-1">Jenny Wilson</h5>
+                                            <p class="gray-text fs-12 fw-500-18 mb-0">Amet minim mollit non dese... </p>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-between  ">
+                                            <p class="gray-text fs-12 fw-400-16 mb-1">12.12 PM</p>
+                                            <img src="./assets/images/icons/CheckChat.png" alt="" width="18" height="18"
+                                                class="align-self-end">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center pad-14 border-bottom  ">
+                                    <div class="me-12">
+                                        <img src="assets/images/avatar/av-1.png" alt="" width="40" height="40"
+                                            style="border-radius: 50%;">
+                                    </div>
+                                    <div class="d-flex justify-content-between  align-items-center  w-100">
+                                        <div class="d-flex flex-column justify-content-between ">
+                                            <h5 class="text-1 fs-14 fw-600-20 mb-1">Robert Fox</h5>
+                                            <p class="gray-text fs-12 fw-500-18 mb-0">Amet minim mollit non dese... </p>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-between  ">
+                                            <p class="gray-text fs-12 fw-400-16 mb-1">12.12 PM</p>
+                                            <img src="./assets/images/icons/Checks.png" alt="" width="18" height="18"
+                                                class="align-self-end">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center pad-14 border-bottom  ">
+                                    <div class="me-12">
+                                        <img src="assets/images/avatar/av-1.png" alt="" width="40" height="40"
+                                            style="border-radius: 50%;">
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center  w-100">
+                                        <div class="d-flex flex-column justify-content-between ">
+                                            <h5 class="text-1 fs-14 fw-600-20 mb-1">Kathryn Murphy</h5>
+                                            <p class="link-color fs-12 fw-500-18 mb-0">Typing .... </p>
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-between  ">
+                                            <p class="gray-text fs-12 fw-400-16 mb-1">12.12 PM</p>
+                                            <span class="badge-background pad-2 fw-500-16 fs-10 text-1 align-self-end"
+                                                style="border-radius: 50%;">10</span>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+
+
+
+
+
+
+                            </div>
+
+
+
+                        </div>
+                        <div class="col-12 col-xl-9 col-lg-9 col-md-8 col-sm-12  p-0" id="chat-view">
+                            <div class="d-flex justify-content-between align-items-center  border-bottom pad-14 ">
+                                <div>
+                                    <h6 class="text-1 fs-18 fw-600-24 mb-border">Admin</h6>
+                                    <p class="gray-text fs-12 fw-400-18 mb-0">Online 2 minutes ago </p>
+                                </div>
+                                <div class="d-flex align-items-center ">
+
+                                    <button class="btn bg-white btn-box-shadow rounded-2 border pad-8 d-block d-md-none"><img
+                                        src="./assets/images/icons/profiles.png" alt="" width="24px"
+                                        height="24px" id="chat-toggle-btn"></button>
+                                
+
+                                    <button class="btn bg-white btn-box-shadow rounded-2 border pad-8 ms-2"><img
+                                            src="./assets/images/icons/DotsThreeVertical.png" alt="" width="24px"
+                                            height="24px"></button>
+                                </div>
+                            </div>
+                            <div class="p-24 d-flex flex-column overflow-auto " style="height: 63vh;">
+                                <div class="incoming-chat w-50 pad-10">
+                                    <p class="incoming-chat-text fs-14 fw-400-20 mb-0">Amet minim mollit non deserunt
+                                        ullamco est sit aliqua dolor do amet sint. </p>
+                                </div>
+                                <div class="d-flex justify-content-evenly align-items-center  mt-4">
+                                    <div class="border-bottom date-line"></div>
+                                    <span class="fs-12 fw-400-18 px-2 text-1 text-nowrap ">August 22, 2022</span>
+                                    <div class="border-bottom date-line"></div>
+                                </div>
+                                <div class="bg-grey outgoing-chat w-50 pad-10 mt-4 align-self-end ">
+                                    <p class="text-1 fs-14 fw-400-20 mb-0 outgoing-chat-text">Amet minim mollit non
+                                        deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                                </div>
+                            </div>
+                            <div class="border-top   pad-14 d-flex align-items-center send">
+                                <div class="input-group border pad-8-16  rounded-2  me-12">
+
+                                    <input type="text" class="form-control p-0 text-input fs-16 fw-400-24px border-0 "
+                                        placeholder="Type here ...">
+                                    <span class=" border-0 p-0 ">
+                                        <img src="assets/images/icons/ImageSquare.png" class="" width="22px"
+                                            class="me-12 ">
+                                        <img src="assets/images/icons/Paperclip.png" class="img-fluid" width="22px">
+                                    </span>
+                                </div>
+                                <div>
+                                    <button class="btn bg-link text-white d-flex align-items-center ">Send <img
+                                            src="./assets/images/icons/PaperPlaneTilt.png" alt="" width="24" height="24"
+                                            class="ms-2"></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper ends-->
+    <!-- Modal -->
+    <div class="modal modalcust fade" id="viewModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-orange" id="viewModalLabel">Projects Details View</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table class="table align-middle table-bordered">
+                            <thead class="bg-light-orange ">
+                                <th>
+                                    <span>Review ID</span>
+                                </th>
+                                <th>
+                                    <span>Product Name</span>
+                                </th>
+                                <th>
+                                    <span>Customer Name</span>
+                                </th>
+                                <th>
+                                    <span>Vendor Name</span>
+                                </th>
+                                <th>
+                                    <span>Review</span>
+                                </th>
+                                <th>
+                                    <span>Start Date</span>
+                                </th>
+                                <th>
+                                    <span>End Date</span>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span>
+                                            10132
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span>
+                                            Necklace
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span>
+                                            Alice Johnson
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span>
+                                            Gemstone Treasures
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span>
+                                            I'm very satisfied with the quality Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Omnis, ratione?
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span>
+                                            23-08-88
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span>
+                                            23-08-88
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-main px-5" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- send message button -->
+
+    <script>
+
+        document.getElementById("Message").addEventListener("click", function toggleDisplay() {
+            console.log("clicked");
+            let chat = document.getElementById("chat");
+            let noChat = document.getElementById("no-chat");
+            if (chat.style.display != "none") {
+                chat.style.display = "block";
+                noChat.style.display = "none";
+
+            } else {
+                chat.style.display = "none";
+                noChat.style.display = "block";
+            }
+        });      
+    </script>
+
+    <!-- chat toggle btn -->
+    <script>
+        document.getElementById("chat-toggle-btn").addEventListener("click", function toggleChat(){
+            document.getElementById("chat-contacts").classList.add("d-block");
+            document.getElementById("chat-contacts").classList.remove("d-none");
+            document.getElementById("chat-view").classList.add("d-none");
+            document.getElementById("chat-view").classList.add("d-md-block");
+        })
+    </script>
+
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <script>
+        let dropdowns = document.querySelectorAll('.project-dropdown')
+        dropdowns.forEach((dd) => {
+            dd.addEventListener('click', function (e) {
+                var el = this.nextElementSibling
+                el.style.display = el.style.display === 'block' ? 'none' : 'block'
+            })
+        })
+    </script>
+    <script>
+        $(".work").click(function (event) {
+            event.stopPropagation();
+        });
+    </script>
+    <script>
+        function changeIcon(anchor) {
+            anchor.closest('.star-wrapper').classList.toggle('active');
+        }
+    </script>
+    <script>
+        function HandleBrowseClick() {
+            var fileinput = document.getElementById("browse");
+            fileinput.click();
+        }
+    </script>
+
+
+</body>
+
+</html>

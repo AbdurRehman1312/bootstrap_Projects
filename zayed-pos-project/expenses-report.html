@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  " />
+    <title>Dashboard</title>
+    <!-- ----- DATE RANGE PICKER CSS -----  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+</head>
+
+<body>
+    <!-- /#page-content-wrapper starts -->
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="side-bar position-relative " id="">
+            <div class="text-center brand-logo">
+                <img src="assets/images/logo.png" class="img-fluid" width="145px" alt="">
+            </div>
+            <div class="">
+                <ul class="navbar-nav sidebar_list ">
+                    <li class="nav-item mt-1">
+                        <a href="index.html" class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/overview-w.png" class="img-fluid me-1" width="20" height="20">
+                            </span>
+                            <p class="m-0">Overview</p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a href="message.html" class="text-decoration-none nav-link d-flex align-items-center ">
+                            <span class="p-0">
+                                <img src="assets/images/icons/Chats.png" class="img-fluid me-1" width="20" height="20">
+                            </span>
+                            <p class="m-0">Messages</p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex justify-content-between arrowdown-arr" data-bs-toggle="collapse" href="#collapseExample">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icons/Scroll.png" class="img-fluid me-1" width="20" height="20">
+                                </span>
+                                <p class="m-0">
+                                    Invoices
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down "></i></div>
+                        </a>
+                        <div class="collapse list-style-cs" id="collapseExample">
+                            <ul class="list-unstyled position-relative " >
+                                <li>
+                                    <a href="sales-invoice.html" class="text-decoration-none text-capitalize ">
+                                        sales
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Purchase
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Expense
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex justify-content-between arrowdown-arr" data-bs-toggle="collapse" href="#collapseExample2" >
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icons/HouseLine.png" class="img-fluid me-1" width="20" height="20">
+                                </span>
+                                <p class="m-0">
+                                    Inventory
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down "></i></div>
+                        </a>
+                        <div class="collapse list-style-cs" id="collapseExample2">
+                            <ul class="list-unstyled position-relative " >
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Inventory Transfer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Stocktaking
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Inventory Transaction
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex justify-content-between arrowdown-arr" data-bs-toggle="collapse" href="#collapseExample3">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icons/Stack.png" class="img-fluid me-1" width="20" height="20">
+                                </span>
+                                <p class="m-0">
+                                    Directory
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down "></i></div>
+                        </a>
+                        <div class="collapse list-style-cs" id="collapseExample3">
+                            <ul class="list-unstyled position-relative ul3" >
+                                <li>
+                                    <a href="customer-directory.html" class="text-decoration-none text-capitalize">
+                                        Customer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="supplier-directory.html" class="text-decoration-none text-capitalize">
+                                        Supplier
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="items-directory.html" class="text-decoration-none text-capitalize">
+                                        Items
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="category-directory.html" class="text-decoration-none text-capitalize">
+                                        Category
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex justify-content-between arrowdown-arr" data-bs-toggle="collapse" href="#collapseExample4">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icons/Files.png" class="img-fluid me-1" width="20" height="20">
+                                </span>
+                                <p class="m-0">
+                                    Report
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down "></i></div>
+                        </a>
+                        <div class="collapse show list-style-cs" id="collapseExample4">
+                            <ul class="list-unstyled position-relative ul4" >
+                                <li>
+                                    <a href="sales-report.html" class="text-decoration-none text-capitalize ">
+                                        sales
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="purchase-report.html" class="text-decoration-none text-capitalize ">
+                                        Purchase
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="taxes-report.html" class="text-decoration-none text-capitalize">
+                                        Taxes
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="profit-loss-report.html" class="text-decoration-none text-capitalize">
+                                        Profit & Loss
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="expenses-report.html" class="text-decoration-none text-capitalize active">
+                                        Expenses
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="inventory-report.html" class="text-decoration-none text-capitalize">
+                                        Inventory
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex justify-content-between arrowdown-arr" data-bs-toggle="collapse" href="#collapseExample5">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icons/manage.png" class="img-fluid me-1" width="20" height="20">
+                                </span>
+                                <p class="m-0">
+                                    Management
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down "></i></div>
+                        </a>
+                        <div class="collapse list-style-cs" id="collapseExample5">
+                            <ul class="list-unstyled position-relative ul5" >
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Setting
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Users
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Stores
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Payments
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Promotions
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="card-section m-2 position-absolute bottom-0 ">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <h5 class="card-title fs-14">Your trial will ends in 7 days</h5>
+                                <img src="./assets/images/icons/rocket-1.png" alt="" class="img-fluid me-2 " width="20" height="20">
+                            </div>
+                            <p class="card-text text-muted fs-12">Your Basic plan is a free trial.</p>
+                            <div class="progress m-18 rounded-5" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 8px;">
+                                <div class="progress-bar bg-progress" style="width: 75%"></div>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn pad-6-16 text-white bg-dark rounded-3">Upgrade Plan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <!-- navbar start from here -->
+            <header class="">
+                <nav class="border-bottom custom_nav">
+                    <div class="d-flex justify-content-between">
+                        <div class="input-group border-1 pad-8-16 gap-8 bg-grey rounded-2 w-25">
+                            <span class="input-group-text border-0 p-0  bg-transparent" id="basic-addon1">
+                                <img src="assets/images/icons/magnify.png" class="img-fluid" width="22px">
+                            </span>
+                            <input type="text" class="form-control p-0 text-input fs-16 fw-400-24px border-0 bg-transparent" placeholder="Search here ..." >
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-12">
+                            <div>
+                                <button type="button" class="btncust border-c bg-transparent d-flex fw-500-24 rounded-2 justify-content-center align-items-center gap-8 fs-16 btn-box-shadow">
+                                    <img src="./assets/images/icons/quest.png" alt="" width="24" height="24" class="me-2"> 
+                                    <span>Need Help?</span>
+                                </button>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between ">
+                                <div class="dropdown">
+                                    <button class="btn p-0 border-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="d-flex align-items-center">
+                                            <span>
+                                                <img src="assets/images/avatar/av-1.png" alt="" class="img-fluid" width="40" height="40" style="border-radius: 50%;">
+                                            </span>
+                                        </div>
+                                    </button>
+                                    <ul class="dropdown-menu profile-ul p-8" aria-labelledby="dropdownMenuButton1">
+                                        <li class="p-12tb">
+                                            <a href="self-profile-view.html"
+                                                class="d-flex flex-column align-items-center text-decoration-none">
+                                                <div class="">
+                                                    <img src="assets/images/avatar/av-1.png" alt="" class="img-fluid  "
+                                                        width="60" height="60" style="border-radius: 50%;">
+                                                </div>
+                                                <div class="py-1">
+                                                    <span class="fw-600 text-black">Salem Muhamed Al-Dawsari</span>
+                                                    <p class="m-0 gray-text text-center fw-400">salem.moh@gmail.com</p>
+                                                </div>
+                                                <button type="button"
+                                                    class="btncust border-c bg-transparent m-12tb d-flex fw-500-24 rounded-2 justify-content-center align-items-center gap-8 fs-16 btn-box-shadow">
+                                                    <img src="./assets/images/icons/GearSix.png" alt="" width="20"
+                                                        height="20" class="me-2">
+                                                    <span class="fw-500">Go To Settings</span>
+                                                </button>
+                                            </a>
+                                        </li>
+                                        <hr class="m-0 p-4tb text-grey">
+                                        <li>
+                                            <a class="dropdown-item fs-14 dropitem d-flex align-items-center pad-6-12"
+                                                href="#">
+                                                <img src="./assets/images/icons/SignOut.png" alt="" width="18"
+                                                    height="18" class="me-1">
+                                                <span class="text-danger fs-14 fw-400">
+                                                    Sign Out
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- navbar end here -->
+            <div class="h-500px scroll">
+                <div class="container-fluid p-24">
+                    <div class="row justify-content-between gap-24 align-items-center">
+                        <div class="col-lg-12">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-4c">
+                                    <p class="m-0 gray-text fs-14 fw-400-20px text-capitalize">Report</p>
+                                    <span>
+                                        <img src="assets/images/icons/arr-right-dark.png" class="img-fluid" width="16">
+                                    </span>
+                                    <a href="expenses-report.html" class="text-decoration-none text-1 fs-14 fw-500-20 text-capitalize">
+                                        Expense
+                                    </a>
+                                </div>
+                                <div>
+                                    <button type="button"
+                                    class="btn border btn-sm d-flex fs-16 justify-content-center align-items-center pad-8-16 rounded-2 btn-box-shadow">
+                                    <img src="assets/images/icons/UploadSimple.png" class="img-fluid me-2" width="24"
+                                        height="24">
+                                    Export</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 d-flex justify-content-between ">
+                            <div class=" select-sales-report ">
+                                <select class="form-select pad-8-16 purchase-select">
+                                    <option value="0" selected>All Store</option>
+                                </select>
+                            </div>
+                            <div>
+                                <input type="text" name="daterange" value="" class="form-control pad-8-16"
+                                placeholder="May, 6 - October 6">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                                <table class="table border p-0  align-middle ">
+                                    <thead class="bg-grey-head">
+                                        <th>
+                                            
+                                        </th>
+                                        
+                                        <th>
+                                            <span class="fs-12 fw-400-18">Total After Discount</span>
+                                        </th>
+                                        <th>
+                                            <span class="fs-12 fw-400-18">Total Tax</span>
+                                        </th>
+                                        <th>
+                                            <span class="fs-12 fw-400-18">Total After Tax</span>
+                                        </th>
+                                        <th>
+                                            
+                                        </th>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="tr-report-sale">
+                                            <td class="td-report-sale">
+                                                <span class="fs-16 text-1 fw-500-24 ">
+                                                    Expense
+                                                </span>
+                                            </td>
+                                            <td class="px-2 py-0">
+                                                <span class="fs-14 text-1 fw-500-20">
+                                                    5,000 SAR
+                                                </span>
+                                            </td>
+                                            <td class="px-2 py-0">
+                                                <span class="fs-14 text-1 fw-500-20">
+                                                    25,000 SAR
+                                                </span>
+                                            </td>
+                                            <td class="px-2 py-0">
+                                                <span class="fs-14 text-1 fw-500-20">
+                                                    20,000 SAR
+                                                </span>
+                                            </td>
+                                            <td class="px-2 py-0">
+                                                <span class="fs-14 text-1 fw-500-20">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="p-2 bg-transparent border-0" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                                                            <img src="assets/images/icons/3dots.png" class="img-fluid" width="24px">
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-menu-lg-end p-2">
+                                                            <li>
+                                                                <a href="#" class="dropdown-item pad-6-12 d-flex gap-4c fs-14 fw-400-20px text-1">
+                                                                    <span>
+                                                                        <img src="assets/images/icons/eye.png" class="img-fluid" width="18px">
+                                                                    </span>
+                                                                    <span>
+                                                                        Show Detail
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="dropdown-item pad-6-12 d-flex gap-4c fs-14 fw-400-20px text-1">
+                                                                    <span>
+                                                                        <img src="assets/images/icons/print.png" class="img-fluid" width="18px">
+                                                                    </span>
+                                                                    <span>
+                                                                        Print
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="dropdown-item pad-6-12 d-flex gap-4c fs-14 fw-400-20px text-1">
+                                                                    <span>
+                                                                        <img src="assets/images/icons/duplicate.png" class="img-fluid" width="18px">
+                                                                    </span>
+                                                                    <span>
+                                                                        Duplicate
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="dropdown-item pad-6-12 d-flex gap-4c fs-14 fw-400-20px text-1">
+                                                                    <span>
+                                                                        <img src="assets/images/icons/return.png" class="img-fluid" width="18px">
+                                                                    </span>
+                                                                    <span>
+                                                                        Return
+                                                                    </span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper ends-->
+    <!-- Modal -->
+    <div class="modal modalcust fade" id="viewModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-orange" id="viewModalLabel">Projects Details View</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="table-responsive">
+                        <table class="table align-middle table-bordered">
+                            <thead class="bg-light-orange ">
+                                <th>
+                                    <span>Review ID</span>
+                                </th>
+                                <th>
+                                    <span>Product Name</span>
+                                </th>
+                                <th>
+                                    <span>Customer Name</span>
+                                </th>
+                                <th>
+                                    <span>Vendor Name</span>
+                                </th>
+                                <th>
+                                    <span>Review</span>
+                                </th>
+                                <th>
+                                    <span>Start Date</span>
+                                </th>
+                                <th>
+                                    <span>End Date</span>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span>
+                                            10132
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span>
+                                            Necklace
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span>
+                                            Alice Johnson
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span>
+                                            Gemstone Treasures
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span>
+                                            I'm very satisfied with the quality Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Omnis, ratione?
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span>
+                                            23-08-88
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <span>
+                                            23-08-88
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-main px-5" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>    
+    <script src="assets/js/app.js"></script>
+
+    <script>
+    let dropdowns = document.querySelectorAll('.project-dropdown')
+    dropdowns.forEach((dd) => {
+        dd.addEventListener('click', function(e) {
+            var el = this.nextElementSibling
+            el.style.display = el.style.display === 'block' ? 'none' : 'block'
+        })
+    })
+    </script>
+    <script>
+    $(".work").click(function(event) {
+        event.stopPropagation();
+    });
+    </script>
+    <script>
+    function changeIcon(anchor) {
+        anchor.closest('.star-wrapper').classList.toggle('active');
+    }
+    </script>
+    <script>
+    function HandleBrowseClick() {
+        var fileinput = document.getElementById("browse");
+        fileinput.click();
+    }
+    </script>
+
+    <!-- ----- DATE RANGE PICKER SCRIPTS -----  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <!-- -------------------- DATE RANGE PICKER SCRIPT --------------------  -->
+    <script>
+        var $j = jQuery.noConflict();
+        $j(function () {
+            $j('input[name="daterange"]').daterangepicker({
+                opens: 'left'
+            }, function (start, end, label) {
+                console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

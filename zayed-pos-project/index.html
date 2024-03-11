@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  " />
+    <!-- ----- DATE RANGE PICKER CSS -----  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <!-- /#page-content-wrapper starts -->
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="side-bar position-relative " id="">
+            <div class="text-center brand-logo">
+                <img src="assets/images/logo.png" class="img-fluid" width="145px" alt="">
+            </div>
+            <div class="">
+                <ul class="navbar-nav sidebar_list active">
+                    <li class="nav-item mt-1">
+                        <a href="index.html" class="text-decoration-none nav-link active d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/SquaresFour.png" class="img-fluid me-1" width="20"
+                                    height="20">
+                            </span>
+                            <p class="m-0">Overview</p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a href="message.html" class="text-decoration-none nav-link d-flex align-items-center ">
+                            <span class="p-0">
+                                <img src="assets/images/icons/Chats.png" class="img-fluid me-1" width="20" height="20">
+                            </span>
+                            <p class="m-0">Messages</p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex justify-content-between arrowdown-arr"
+                            data-bs-toggle="collapse" href="#collapseExample">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icons/Scroll.png" class="img-fluid me-1" width="20"
+                                        height="20">
+                                </span>
+                                <p class="m-0">
+                                    Invoices
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down "></i></div>
+                        </a>
+                        <div class="collapse list-style-cs" id="collapseExample">
+                            <ul class="list-unstyled position-relative ">
+                                <li>
+                                    <a href="sales-invoice.html" class="text-decoration-none text-capitalize">
+                                        sales
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="purchase-invoice.html" class="text-decoration-none text-capitalize">
+                                        Purchase
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="expense-invoice.html" class="text-decoration-none text-capitalize">
+                                        Expense
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex justify-content-between arrowdown-arr"
+                            data-bs-toggle="collapse" href="#collapseExample2">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icons/HouseLine.png" class="img-fluid me-1" width="20"
+                                        height="20">
+                                </span>
+                                <p class="m-0">
+                                    Inventory
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down "></i></div>
+                        </a>
+                        <div class="collapse list-style-cs" id="collapseExample2">
+                            <ul class="list-unstyled position-relative ">
+                                <li>
+                                    <a href="transfer-inventory.html" class="text-decoration-none text-capitalize">
+                                        Inventory Transfer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Stocktaking
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Inventory Transaction
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex justify-content-between arrowdown-arr"
+                            data-bs-toggle="collapse" href="#collapseExample3">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icons/Stack.png" class="img-fluid me-1" width="20"
+                                        height="20">
+                                </span>
+                                <p class="m-0">
+                                    Directory
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down "></i></div>
+                        </a>
+                        <div class="collapse list-style-cs" id="collapseExample3">
+                            <ul class="list-unstyled position-relative ul3">
+                                <li>
+                                    <a href="customer-directory.html" class="text-decoration-none text-capitalize">
+                                        Customer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="supplier-directory.html" class="text-decoration-none text-capitalize">
+                                        Supplier
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="items-directory.html" class="text-decoration-none text-capitalize">
+                                        Items
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="category-directory.html" class="text-decoration-none text-capitalize">
+                                        Category
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex justify-content-between arrowdown-arr"
+                            data-bs-toggle="collapse" href="#collapseExample4">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icons/Files.png" class="img-fluid me-1" width="20"
+                                        height="20">
+                                </span>
+                                <p class="m-0">
+                                    Report
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down "></i></div>
+                        </a>
+                        <div class="collapse list-style-cs" id="collapseExample4">
+                            <ul class="list-unstyled position-relative ul4">
+                                <li>
+                                    <a href="sales-report.html" class="text-decoration-none text-capitalize">
+                                        sales
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="purchase-report.html" class="text-decoration-none text-capitalize">
+                                        Purchase
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="taxes-report.html" class="text-decoration-none text-capitalize">
+                                        Taxes
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="profit-loss-report.html" class="text-decoration-none text-capitalize">
+                                        Profit & Loss
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="expenses-report.html" class="text-decoration-none text-capitalize">
+                                        Expenses
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="inventory-report.html" class="text-decoration-none text-capitalize">
+                                        Inventory
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item mt-1 position-relative">
+                        <a class="text-decoration-none nav-link d-flex justify-content-between arrowdown-arr"
+                            data-bs-toggle="collapse" href="#collapseExample5">
+                            <div class=" d-flex align-items-center">
+                                <span>
+                                    <img src="assets/images/icons/manage.png" class="img-fluid me-1" width="20"
+                                        height="20">
+                                </span>
+                                <p class="m-0">
+                                    Management
+                                </p>
+                            </div>
+                            <div class="myArrow1"><i class="fas gray-text fa-angle-down "></i></div>
+                        </a>
+                        <div class="collapse list-style-cs" id="collapseExample5">
+                            <ul class="list-unstyled position-relative ul5">
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Setting
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Users
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Stores
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Payments
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-decoration-none text-capitalize">
+                                        Promotions
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="card-section m-2 position-absolute bottom-0 ">
+                    <div class="card border-0">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <h5 class="card-title fs-14">Your trial will ends in 7 days</h5>
+                                <img src="./assets/images/icons/rocket-1.png" alt="" class="img-fluid me-2 " width="20"
+                                    height="20">
+                            </div>
+                            <p class="card-text text-muted fs-12">Your Basic plan is a free trial.</p>
+                            <div class="progress m-18 rounded-5" role="progressbar" aria-label="Basic example"
+                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 8px;">
+                                <div class="progress-bar bg-progress" style="width: 75%"></div>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn pad-6-16 text-white bg-dark rounded-3">Upgrade Plan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <!-- navbar start from here -->
+            <header class="">
+                <nav class="border-bottom custom_nav">
+                    <div class="d-flex justify-content-between">
+                        <div class="input-group border-1 pad-8-16 gap-8 bg-grey rounded-2 w-25">
+                            <span class="input-group-text border-0 p-0  bg-transparent" id="basic-addon1">
+                                <img src="assets/images/icons/magnify.png" class="img-fluid" width="22px">
+                            </span>
+                            <input type="text"
+                                class="form-control p-0 text-input fs-16 fw-400-24px border-0 bg-transparent"
+                                placeholder="Search here ...">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-12">
+                            <div>
+                                <button type="button"
+                                    class="btncust border-c bg-transparent d-flex fw-500-24 rounded-2 justify-content-center align-items-center gap-8 fs-16 btn-box-shadow">
+                                    <img src="./assets/images/icons/quest.png" alt="" width="24" height="24"
+                                        class="me-2">
+                                    <span>Need Help?</span>
+                                </button>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between ">
+                                <div class="dropdown">
+                                    <button class="btn p-0 border-0 " type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="d-flex align-items-center">
+                                            <span>
+                                                <img src="assets/images/avatar/av-1.png" alt="" class="img-fluid"
+                                                    width="40" height="40" style="border-radius: 50%;">
+                                            </span>
+                                        </div>
+                                    </button>
+                                    <ul class="dropdown-menu profile-ul p-8" aria-labelledby="dropdownMenuButton1">
+                                        <li class="p-12tb">
+                                            <a href="self-profile-view.html"
+                                                class="d-flex flex-column align-items-center text-decoration-none">
+                                                <div class="">
+                                                    <img src="assets/images/avatar/av-1.png" alt="" class="img-fluid  "
+                                                        width="60" height="60" style="border-radius: 50%;">
+                                                </div>
+                                                <div class="py-1">
+                                                    <span class="fw-600 text-black">Salem Muhamed Al-Dawsari</span>
+                                                    <p class="m-0 gray-text text-center fw-400">salem.moh@gmail.com</p>
+                                                </div>
+                                                <button type="button"
+                                                    class="btncust border-c bg-transparent m-12tb d-flex fw-500-24 rounded-2 justify-content-center align-items-center gap-8 fs-16 btn-box-shadow">
+                                                    <img src="./assets/images/icons/GearSix.png" alt="" width="20"
+                                                        height="20" class="me-2">
+                                                    <span class="fw-500">Go To Settings</span>
+                                                </button>
+                                            </a>
+                                        </li>
+                                        <hr class="m-0 p-4tb text-grey">
+                                        <li>
+                                            <a class="dropdown-item fs-14 dropitem d-flex align-items-center pad-6-12"
+                                                href="#">
+                                                <img src="./assets/images/icons/SignOut.png" alt="" width="18"
+                                                    height="18" class="me-1">
+                                                <span class="text-danger fs-14 fw-400">
+                                                    Sign Out
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- navbar end here -->
+            <div class="h-500px scroll">
+                <div class="container-fluid p-24">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-sm-12 col-md-9 col-lg-9">
+                            <h4 class="fs-24 m-0">Overview</h4>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-3">
+                            <div class="d-flex justify-content-end align-items-center gap-12">
+                                <button type="button"
+                                    class="btn border rounded-2 btn-sm d-flex fs-16 justify-content-center align-items-center pad-8-16 btn-box-shadow">
+                                    <img src="assets/images/icons/Printer.png" class="img-fluid me-2" width="24"
+                                        height="24">
+                                    Print</button>
+                                <button type="button"
+                                    class="btn border btn-sm d-flex fs-16 justify-content-center align-items-center pad-8-16 rounded-2 btn-box-shadow">
+                                    <img src="assets/images/icons/UploadSimple.png" class="img-fluid me-2" width="24"
+                                        height="24">
+                                    Export</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- -------------------- SALES AND COSTS CHART -------------------  -->
+                    <div class="row p-24t">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="card">
+                                <div class="card-body pad-20">
+                                    <div class="d-flex justify-content-between align-items-center p-20lr ">
+                                        <h5 class="card-title fs-20 m-0 fw-600">Sales and Cost</h5>
+                                        <div>
+                                            <input type="text" name="daterange" value="" class="form-control pad-8-16"
+                                                placeholder="May, 6 - October 6">
+                                        </div>
+                                    </div>
+                                    <div class="p-20lr-16tb">
+                                        <div class="d-flex gap-120 align-items-center">
+                                            <div>
+                                                <p class="fs-14 m-0 fs-400">Total Sales</p>
+                                                <div class="d-flex pt-6">
+                                                    <h4 class="m-0 fs-24">372,1k SAR</h4>
+                                                    <div class="d-flex justify-content-between align-items-center"
+                                                        style="padding-left: 6px;">
+                                                        <img src="./assets/images/icons/ArrowUpRight.png" alt=""
+                                                            width="22" height="22">
+                                                        <p class="fs-14 text-green fw-500 m-0">7.28% <span
+                                                                class="gray-text fw-400">vs Last Month</span> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p class="fs-14 m-0 fw-400">Total Cost</p>
+                                                <div class="d-flex pt-6">
+                                                    <h4 class="m-0 fs-24">477,21k SAR</h4>
+                                                    <div class="d-flex justify-content-between align-items-center"
+                                                        style="padding-left: 6px;">
+                                                        <img src="./assets/images/icons/ArrowUpRight.png" alt=""
+                                                            width="22" height="22">
+                                                        <p class="fs-14 text-green fw-500 m-0">7.28% <span
+                                                                class="gray-text fw-400">vs Last Month</span> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="sales-cost-chart" class="p-16b "></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -------------------NET INCOME AND EXPENSE CHARTS -------------------  -->
+                    <div class="row p-24t">
+                        <div class="col-sm-12 col-md-12 col-lg-6">
+                            <div class="card">
+                                <div class="card-body pad-20">
+                                    <div class="d-flex justify-content-between align-items-center p-20lr">
+                                        <h5 class="card-title fs-20 m-0 fw-600">Net Income</h5>
+                                        <div>
+                                            <input type="text" name="daterange" value="" class="form-control pad-8-16"
+                                                placeholder="May, 6 - October 6">
+                                        </div>
+                                    </div>
+                                    <div class="p-20lr-16tb">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <p class="fs-14 m-0 fs-400">Net Income All of Time</p>
+                                                <div class="d-flex pt-6">
+                                                    <h4 class="m-0 fs-24">1,256,789 SAR</h4>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p class="fs-14 m-0 fw-400">Net Income This Year</p>
+                                                <div class="d-flex pt-6">
+                                                    <h4 class="m-0 fs-24">432,567 SAR</h4>
+                                                    <div class="d-flex justify-content-between align-items-center"
+                                                        style="padding-left: 6px;">
+                                                        <img src="./assets/images/icons/ArrowUpRight.png" alt=""
+                                                            width="22" height="22">
+                                                        <p class="fs-14 text-green fw-500 m-0">7.28% <span
+                                                                class="gray-text fw-400">vs Last Year</span> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="net-income-chart" class="p-12tb"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-6">
+                            <div class="card">
+                                <div class="card-body pad-20">
+                                    <div class="d-flex justify-content-between align-items-center p-20lr ">
+                                        <h5 class="card-title fs-20 m-0 fw-600">Expense</h5>
+                                        <div>
+                                            <input type="text" name="daterange" value="" class="form-control pad-8-16"
+                                                placeholder="May, 6 - October 6">
+                                        </div>
+                                    </div>
+                                    <div class="p-20lr-16tb">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <p class="fs-14 m-0 fs-400">Expense All of Time</p>
+                                                <div class="d-flex pt-6">
+                                                    <h4 class="m-0 fs-24">678,901 SAR</h4>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p class="fs-14 m-0 fw-400">Expense This Year</p>
+                                                <div class="d-flex pt-6">
+                                                    <h4 class="m-0 fs-24">234,567 SAR</h4>
+                                                    <div class="d-flex justify-content-between align-items-center"
+                                                        style="padding-left: 6px;">
+                                                        <img src="./assets/images/icons/ArrowDownLeft.png" alt=""
+                                                            width="22" height="22">
+                                                        <p class="fs-14 text-danger fw-500 m-0">7.28% <span
+                                                                class="gray-text fw-400">vs Last Year</span> </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="expense-chart" class="p-12tb"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -------------------- SALES BY ITEMS CHART -------------------  -->
+                    <div class="row p-24t">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="card">
+                                <div class="card-body p-20">
+                                    <div class="d-flex justify-content-between align-items-center p-20lr">
+                                        <h5 class="card-title fs-20 m-0 fw-600">Sales By Items</h5>
+                                        <div class="d-flex justify-content-evenly align-items-center gap-12">
+                                            <select class="form-select pad-8-16 w-100">
+                                                <option value="0" selected>All Items</option>
+                                            </select>
+                                            <input type="text" name="daterange" value="" class="form-control pad-8-16"
+                                                placeholder="May, 6 - October 6">
+                                        </div>
+                                    </div>
+                                    <div id="salesByItem-chart" class="p-12tb"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -------------------- SALES BY CATEGORIES AND STORES CHARTS -------------------  -->
+                    <div class="row p-24t">
+                        <div class="col-sm-12 col-md-12 col-lg-6">
+                            <div class="card">
+                                <div class="card-body p-20">
+                                    <div class="d-flex justify-content-between align-items-center p-20lr ">
+                                        <h5 class="card-title fs-20 m-0 fw-600">Select By Categories</h5>
+                                        <div>
+                                            <input type="text" name="daterange" value="" class="form-control pad-8-16"
+                                                placeholder="May, 6 - October 6">
+                                        </div>
+                                    </div>
+                                    <div id="sales-by-category" class="p-12tb"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-6">
+                            <div class="card">
+                                <div class="card-body p-20">
+                                    <div class="d-flex justify-content-between align-items-center p-20lr">
+                                        <h5 class="card-title fs-20 m-0 fw-600">Sales By Stores</h5>
+                                        <div>
+                                            <input type="text" name="daterange" value="" class="form-control pad-8-16"
+                                                placeholder="May, 6 - October 6">
+                                        </div>
+                                    </div>
+                                    <div id="salesByStores-chart" class="p-12tb"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -------------------- SALES BY CASHIER CHART -------------------  -->
+                    <div class="row p-24t">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="card">
+                                <div class="card-body p-20">
+                                    <div class="d-flex justify-content-between align-items-center p-20lr ">
+                                        <h5 class="card-title fs-20 m-0 fw-600">Sales and Cost</h5>
+                                        <div>
+                                            <input type="text" name="daterange" value="" class="form-control pad-8-16"
+                                                placeholder="May, 6 - October 6">
+                                        </div>
+                                    </div>
+                                    <div id="sales-by-cashier" class="p-12tb"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- -------------------- SALES FORECAST CHART -------------------  -->
+                    <div class="row p-24t">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="card">
+                                <div class="card-body p-20">
+                                    <div class="d-flex justify-content-between align-items-center p-20lr ">
+                                        <h5 class="card-title fs-20 m-0 fw-600">Sales Forecast</h5>
+                                        <div>
+                                            <input type="text" name="daterange" value="" class="form-control pad-8-16"
+                                                placeholder="May, 6 - October 6">
+                                        </div>
+                                    </div>
+                                    <div id="sales-forecast" class="p-12tb"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper ends-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ----- DATE RANGE PICKER SCRIPTS -----  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <!-- ------------------AMCHARTS SCRIPTS------------------   -->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+
+    <script src="assets/js/app.js"></script>
+    <script type="text/javascript">
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <script>
+        let dropdowns = document.querySelectorAll('.project-dropdown')
+        dropdowns.forEach((dd) => {
+            dd.addEventListener('click', function (e) {
+                var el = this.nextElementSibling
+                el.style.display = el.style.display === 'block' ? 'none' : 'block'
+            })
+        })
+    </script>
+
+    <!-- ABDUR REHMAN SCRIPT  -->
+    <!-- -------------------- DATE RANGE PICKER SCRIPT --------------------  -->
+    <script>
+        var $j = jQuery.noConflict();
+        $j(function () {
+            $j('input[name="daterange"]').daterangepicker({
+                opens: 'left'
+            }, function (start, end, label) {
+                console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+            });
+        });
+    </script>
+    <!-- -------------------- SALES AND COSTS CHART --------------------  -->
+    <script>
+        am5.ready(function () {
+
+            // Create root element
+            var root = am5.Root.new("sales-cost-chart");
+
+            // Set themes
+            root.setThemes([
+                am5themes_Animated.new(root)
+            ]);
+
+            // Create chart
+            var chart = root.container.children.push(am5xy.XYChart.new(root, {
+                panX: true,
+                panY: true,
+                wheelX: "panX",
+                wheelY: "zoomX",
+                pinchZoomX: true
+            }));
+
+            // Add cursor
+            var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {
+                behavior: "none"
+            }));
+            cursor.lineY.set("visible", false);
+
+            // The data
+            var data = [{
+                "month": "May",
+                "cars": 20000,
+                "motorcycles": 25000
+            }, {
+                "month": "Jun",
+                "cars": 35000,
+                "motorcycles": 30000
+            }, {
+                "month": "July",
+                "cars": 10000,
+                "motorcycles": 18000
+            }, {
+                "month": "Aug",
+                "cars": 40000,
+                "motorcycles": 20000
+            }, {
+                "month": "Sep",
+                "cars": 20000,
+                "motorcycles": 50000
+            }, {
+                "month": "Oct",
+                "cars": 40000,
+                "motorcycles": 50000
+            }, {
+                "month": "Nov",
+                "cars": 20000,
+                "motorcycles": 25000
+            }, {
+                "month": "Dec",
+                "cars": 10000,
+                "motorcycles": 15000
+            }];
+
+            // Create axes
+            var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+                categoryField: "month",
+                // startLocation: 0.5,
+                // endLocation: 0.5,
+                renderer: am5xy.AxisRendererX.new(root, {}),
+                tooltip: am5.Tooltip.new(root, {})
+            }));
+
+            xAxis.data.setAll(data);
+
+            var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+                renderer: am5xy.AxisRendererY.new(root, {}),
+                // Set the minimum value to 0
+                min: 0,
+                // Set the maximum value to 100,000 (100k)
+                max: 100000,
+
+            }));
+
+            // Add series
+            function createSeries(name, field, color) {
+                var series = chart.series.push(am5xy.LineSeries.new(root, {
+                    name: name,
+                    xAxis: xAxis,
+                    yAxis: yAxis,
+                    stacked: true,
+                    valueYField: field,
+                    categoryXField: "month",
+                    tooltip: am5.Tooltip.new(root, {
+                        pointerOrientation: "horizontal",
+                        labelText: "[bold]{name}[/]\n{categoryX}: {valueY}"
+                    }),
+                    // Set the color of the line
+                    stroke: am5.color(color)
+                }));
+
+                series.fills.template.setAll({
+                    fillOpacity: 0.2,
+                    visible: true
+                });
+
+                series.data.setAll(data);
+                series.appear(1000);
+            }
+
+            createSeries("Cars", "cars", "#2be3b7");
+            createSeries("Motorcycles", "motorcycles", "#0086ff");
+
+            // Make stuff animate on load
+            chart.appear(1000, 100);
+
+        }); // end am5.ready()
+    </script>
+
+    <!-- -------------------- NET INCOME CHART --------------------  -->
+    <!-- Chart code -->
+    <script>
+        am5.ready(function () {
+
+            // Create root element
+            var root = am5.Root.new("net-income-chart");
+
+
+            // Set themes
+            root.setThemes([
+                am5themes_Animated.new(root)
+            ]);
+
+
+            // Create chart
+            var chart = root.container.children.push(am5xy.XYChart.new(root, {
+                panX: true,
+                panY: true,
+                wheelX: "panX",
+                wheelY: "zoomX",
+                pinchZoomX: true
+            }));
+
+            chart.get("colors").set("step", 3);
+
+
+            // Add cursor
+            var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
+            cursor.lineY.set("visible", false);
+
+
+            // Create axes
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+            var xAxis = chart.xAxes.push(am5xy.DateAxis.new(root, {
+                maxDeviation: 0.3,
+                baseInterval: {
+                    timeUnit: "year",
+                    count: 1
+                },
+                renderer: am5xy.AxisRendererX.new(root, {}),
+                tooltip: am5.Tooltip.new(root, {})
+            }));
+
+            var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+                maxDeviation: 0.3,
+                renderer: am5xy.AxisRendererY.new(root, {}),
+                // Set the minimum value to 0
+                min: 0,
+                // Set the maximum value to 100,000 (100k)
+                max: 100000,
+            }));
+
+
+            // Add series
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+            var series = chart.series.push(am5xy.LineSeries.new(root, {
+                name: "Series 1",
+                xAxis: xAxis,
+                yAxis: yAxis,
+                valueYField: "value1",
+                valueXField: "date",
+                tooltip: am5.Tooltip.new(root, {
+                    labelText: "{valueX}: {valueY}\n{previousDate}: {value2}"
+                }),
+                stroke: am5.color(0x2be3b7)
+            }));
+
+            series.strokes.template.setAll({
+                strokeWidth: 2
+            });
+
+            series.get("tooltip").get("background").set("fillOpacity", 0.5);
+            // Set date fields
+            // https://www.amcharts.com/docs/v5/concepts/data/#Parsing_dates
+            root.dateFormatter.setAll({
+                dateFormat: "yyyy-MM-dd",
+                dateFields: ["valueX"]
+            });
+
+
+            // Set data
+            var data = [{
+                date: new Date(2018, 5, 12).getTime(),
+                value1: 10000,
+                previousDate: new Date(2018, 5, 5)
+            }, {
+                date: new Date(2019, 5, 13).getTime(),
+                value1: 30000,
+                previousDate: "2019-05-06"
+            }, {
+                date: new Date(2020, 5, 14).getTime(),
+                value1: 50000,
+                previousDate: "2020-05-07"
+            }, {
+                date: new Date(2021, 5, 15).getTime(),
+                value1: 45200,
+                previousDate: "2019-05-08"
+            }, {
+                date: new Date(2022, 5, 16).getTime(),
+                value1: 40000,
+                previousDate: "2019-05-09"
+            }, {
+                date: new Date(2023, 5, 17).getTime(),
+                value1: 60000,
+                previousDate: "2019-05-10"
+            }]
+
+            series.data.setAll(data);
+
+
+            // Make stuff animate on load
+            // https://www.amcharts.com/docs/v5/concepts/animations/
+            series.appear(1000);
+            chart.appear(1000, 100);
+
+        }); // end am5.ready()
+    </script>
+
+    <!-- -------------------- EXPENSE CHART --------------------  -->
+    <script>
+        am5.ready(function () {
+
+            // Create root element
+            var root = am5.Root.new("expense-chart");
+
+
+            // Set themes
+            root.setThemes([
+                am5themes_Animated.new(root)
+            ]);
+
+
+            // Create chart
+            var chart = root.container.children.push(am5xy.XYChart.new(root, {
+                panX: true,
+                panY: true,
+                wheelX: "panX",
+                wheelY: "zoomX",
+                pinchZoomX: true
+            }));
+
+            chart.get("colors").set("step", 3);
+
+
+            // Add cursor
+            var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
+            cursor.lineY.set("visible", false);
+
+
+            // Create axes
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+            var xAxis = chart.xAxes.push(am5xy.DateAxis.new(root, {
+                maxDeviation: 0.3,
+                baseInterval: {
+                    timeUnit: "year",
+                    count: 1
+                },
+                renderer: am5xy.AxisRendererX.new(root, {}),
+                tooltip: am5.Tooltip.new(root, {})
+            }));
+
+            var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+                maxDeviation: 0.3,
+                renderer: am5xy.AxisRendererY.new(root, {}),
+                // Set the minimum value to 0
+                min: 0,
+                // Set the maximum value to 100,000 (100k)
+                max: 100000,
+            }));
+
+
+            // Add series
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+            var series = chart.series.push(am5xy.LineSeries.new(root, {
+                name: "Series 1",
+                xAxis: xAxis,
+                yAxis: yAxis,
+                valueYField: "value1",
+                valueXField: "date",
+                tooltip: am5.Tooltip.new(root, {
+                    labelText: "{valueX}: {valueY}\n{previousDate}: {value2}"
+                }),
+                stroke: am5.color(0x0086ff)
+            }));
+
+            series.strokes.template.setAll({
+                strokeWidth: 2
+            });
+
+            series.get("tooltip").get("background").set("fillOpacity", 0.5);
+            // Set date fields
+            // https://www.amcharts.com/docs/v5/concepts/data/#Parsing_dates
+            root.dateFormatter.setAll({
+                dateFormat: "yyyy-MM-dd",
+                dateFields: ["valueX"]
+            });
+
+
+            // Set data
+            var data = [{
+                date: new Date(2018, 5, 12).getTime(),
+                value1: 20000,
+                previousDate: new Date(2018, 5, 5)
+            }, {
+                date: new Date(2019, 5, 13).getTime(),
+                value1: 30000,
+                previousDate: "2019-05-06"
+            }, {
+                date: new Date(2020, 5, 14).getTime(),
+                value1: 50000,
+                previousDate: "2020-05-07"
+            }, {
+                date: new Date(2021, 5, 15).getTime(),
+                value1: 45200,
+                previousDate: "2019-05-08"
+            }, {
+                date: new Date(2022, 5, 16).getTime(),
+                value1: 40000,
+                previousDate: "2019-05-09"
+            }, {
+                date: new Date(2023, 5, 17).getTime(),
+                value1: 60000,
+                previousDate: "2019-05-10"
+            }]
+
+            series.data.setAll(data);
+
+
+            // Make stuff animate on load
+            // https://www.amcharts.com/docs/v5/concepts/animations/
+            series.appear(1000);
+            chart.appear(1000, 100);
+
+        }); // end am5.ready()
+    </script>
+
+    <!-- -------------------- SALES BY ITEM CHART --------------------  -->
+    <!-- Chart code -->
+    <script>
+        am5.ready(function () {
+
+            // Create root element
+            // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+            var root = am5.Root.new("salesByItem-chart");
+
+
+            // Set themes
+            // https://www.amcharts.com/docs/v5/concepts/themes/
+            root.setThemes([
+                am5themes_Animated.new(root)
+            ]);
+
+
+            // Create chart
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/
+            var chart = root.container.children.push(am5xy.XYChart.new(root, {
+                panX: false,
+                panY: false,
+                wheelX: "panX",
+                wheelY: "zoomX",
+                layout: root.verticalLayout
+            }));
+
+
+            var data = [{
+                "month": "May",
+                "europe": 35000,
+                "namerica": 25000,
+                "asia": 22000,
+                "lamerica": 15000
+            }, {
+                "month": "Jun",
+                "europe": 15000,
+                "namerica": 25000,
+                "asia": 18000,
+                "lamerica": 20000
+            }, {
+                "month": "Jul",
+                "europe": 35000,
+                "namerica": 25000,
+                "asia": 22000,
+                "lamerica": 15000
+            }, {
+                "month": "Aug",
+                "europe": 15000,
+                "namerica": 25000,
+                "asia": 18000,
+                "lamerica": 20000
+            }, {
+                "month": "Sep",
+                "europe": 35000,
+                "namerica": 25000,
+                "asia": 22000,
+                "lamerica": 15000
+            }, {
+                "month": "Oct",
+                "europe": 15000,
+                "namerica": 25000,
+                "asia": 18000,
+                "lamerica": 20000
+            }, {
+                "month": "Nov",
+                "europe": 35000,
+                "namerica": 25000,
+                "asia": 22000,
+                "lamerica": 15000
+            }, {
+                "month": "Dec",
+                "europe": 15000,
+                "namerica": 25000,
+                "asia": 18000,
+                "lamerica": 20000
+            }]
+
+
+            // Create axes
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+            var xRenderer = am5xy.AxisRendererX.new(root, {});
+            var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+                categoryField: "month",
+                renderer: xRenderer,
+                tooltip: am5.Tooltip.new(root, {})
+            }));
+
+            xRenderer.grid.template.setAll({
+                location: 1
+            })
+
+            xAxis.data.setAll(data);
+
+            var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+                renderer: am5xy.AxisRendererY.new(root, {
+                    strokeOpacity: 0.1
+                }),
+                min: 0,
+                max: 100000
+
+            }));
+
+
+            // Add legend
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/legend-xy-series/
+            var legend = chart.children.push(am5.Legend.new(root, {
+                centerX: am5.p50,
+                x: am5.p50
+            }));
+
+
+            // Add series
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+            function makeSeries(name, fieldName, color) {
+                var series = chart.series.push(am5xy.ColumnSeries.new(root, {
+                    name: name,
+                    stacked: true,
+                    xAxis: xAxis,
+                    yAxis: yAxis,
+                    valueYField: fieldName,
+                    categoryXField: "month",
+                }));
+
+                series.columns.template.setAll({
+                    tooltipText: "{name}, {categoryX}: {valueY}",
+                    tooltipY: am5.percent(10),
+                    fill: color
+                });
+                series.data.setAll(data);
+
+                // Make stuff animate on load
+                // https://www.amcharts.com/docs/v5/concepts/animations/
+                series.appear();
+
+                series.bullets.push(function () {
+                    return am5.Bullet.new(root, {
+                        sprite: am5.Label.new(root, {
+                            text: "{valueY}",
+                            fill: root.interfaceColors.get("alternativeText"),
+                            centerY: am5.p50,
+                            centerX: am5.p50,
+                            populateText: true
+                        })
+                    });
+                });
+
+                legend.data.push(series);
+            }
+
+            makeSeries("Europe", "europe", "#2e90fa");
+            makeSeries("North America", "namerica", "#53b1fd");
+            makeSeries("Asia", "asia", "#2be3b7");
+            makeSeries("Latin America", "lamerica", "#6fffba");
+
+            // Make stuff animate on load
+            // https://www.amcharts.com/docs/v5/concepts/animations/
+            chart.appear(1000, 100);
+
+        }); // end am5.ready()
+    </script>
+
+    <!-- ------------------- SALES BY CATEGORIES CHART --------------------  -->
+    <script>
+        am5.ready(function () {
+            var root = am5.Root.new("sales-by-category");
+
+            var myTheme = am5.Theme.new(root);
+            myTheme.rule("Grid", ["base"]).setAll({
+                strokeOpacity: 0.1
+            });
+
+            root.setThemes([
+                am5themes_Animated.new(root),
+                myTheme
+            ]);
+
+            var chart = root.container.children.push(
+                am5xy.XYChart.new(root, {
+                    panX: false,
+                    panY: false,
+                    wheelX: "none",
+                    wheelY: "none"
+                })
+            );
+
+            var yRenderer = am5xy.AxisRendererY.new(root, { minGridDistance: 30 });
+            yRenderer.grid.template.set("location", 1);
+
+            var yAxis = chart.yAxes.push(
+                am5xy.CategoryAxis.new(root, {
+                    maxDeviation: 0,
+                    categoryField: "country",
+                    renderer: yRenderer
+                })
+            );
+
+            var xAxis = chart.xAxes.push(
+                am5xy.ValueAxis.new(root, {
+                    maxDeviation: 0,
+                    min: 0,
+                    max: 100000,
+                    renderer: am5xy.AxisRendererX.new(root, {
+                        visible: true,
+                        strokeOpacity: 0.1
+                    })
+                })
+            );
+
+            var series = chart.series.push(
+                am5xy.ColumnSeries.new(root, {
+                    name: "Series 1",
+                    xAxis: xAxis,
+                    yAxis: yAxis,
+                    valueXField: "value",
+                    sequencedInterpolation: true,
+                    categoryYField: "country"
+                })
+            );
+
+            var columnTemplate = series.columns.template;
+
+            columnTemplate.setAll({
+                draggable: true,
+                cursorOverStyle: "pointer",
+                tooltipText: "drag to rearrange",
+                cornerRadiusBR: 10,
+                cornerRadiusTR: 10,
+                strokeOpacity: 0
+            });
+
+            var colors = ["#2e90fa", "#5bbac0", "#92e4fe", "#2be3b7", "#53b1fd", "#2e90fa"]; // Array of colors
+
+            columnTemplate.adapters.add("fill", (fill, target) => {
+                return am5.color(colors[series.columns.indexOf(target)]); // Set color based on array index
+            });
+
+            columnTemplate.events.on("dragstop", () => {
+                sortCategoryAxis();
+            });
+
+            function getSeriesItem(category) {
+                for (var i = 0; i < series.dataItems.length; i++) {
+                    var dataItem = series.dataItems[i];
+                    if (dataItem.get("categoryY") == category) {
+                        return dataItem;
+                    }
+                }
+            }
+
+            function sortCategoryAxis() {
+                series.dataItems.sort(function (x, y) {
+                    return y.get("graphics").y() - x.get("graphics").y();
+                });
+
+                var easing = am5.ease.out(am5.ease.cubic);
+
+                am5.array.each(yAxis.dataItems, function (dataItem) {
+                    var seriesDataItem = getSeriesItem(dataItem.get("category"));
+
+                    if (seriesDataItem) {
+                        var index = series.dataItems.indexOf(seriesDataItem);
+                        var column = seriesDataItem.get("graphics");
+                        var fy =
+                            yRenderer.positionToCoordinate(yAxis.indexToPosition(index)) -
+                            column.height() / 2;
+
+                        if (index != dataItem.get("index")) {
+                            dataItem.set("index", index);
+                            var x = column.x();
+                            var y = column.y();
+
+                            column.set("dy", -(fy - y));
+                            column.set("dx", x);
+
+                            column.animate({ key: "dy", to: 0, duration: 600, easing: easing });
+                            column.animate({ key: "dx", to: 0, duration: 600, easing: easing });
+                        } else {
+                            column.animate({ key: "y", to: fy, duration: 600, easing: easing });
+                            column.animate({ key: "x", to: 0, duration: 600, easing: easing });
+                        }
+                    }
+                });
+
+                yAxis.dataItems.sort(function (x, y) {
+                    return x.get("index") - y.get("index");
+                });
+            }
+
+            var data = [
+                { country: "Category 6", value: 20000 },
+                { country: "Category 5", value: 25000 },
+                { country: "Category 4", value: 65000 },
+                { country: "Category 3", value: 65000 },
+                { country: "Category 2", value: 25000 },
+                { country: "Category 1", value: 20000 }
+            ];
+
+            yAxis.data.setAll(data);
+            series.data.setAll(data);
+
+            series.appear(1000);
+            chart.appear(1000, 100);
+        });
+    </script>
+
+    <!-- ------------------- SALES BY STORES CHART --------------------  -->
+    <script>
+        am5.ready(function () {
+
+            // Create root element
+            var root = am5.Root.new("salesByStores-chart");
+
+
+            // Set themes
+            root.setThemes([
+                am5themes_Animated.new(root)
+            ]);
+
+
+            // Create chart
+            var chart = root.container.children.push(am5percent.PieChart.new(root, {
+                layout: root.verticalLayout
+            }));
+
+
+            // Create series
+            var series = chart.series.push(am5percent.PieSeries.new(root, {
+                valueField: "value",
+                categoryField: "category"
+            }));
+            // Setting Colors 
+            series.get("colors").set("colors", [
+                am5.color(0x0086ff),
+                am5.color(0x2be3b7),
+                am5.color(0x6fffba),
+                am5.color(0x5bbac0),
+                am5.color(0x92e4fe),
+                am5.color(0x53b1fd)
+            ]);
+            // Set data
+            series.data.setAll([
+                { value: 9, category: "Six" },
+                { value: 6, category: "Five" },
+                { value: 5, category: "Four" },
+                { value: 4, category: "Three" },
+                { value: 3, category: "Two" },
+                { value: 1, category: "One" },
+            ]);
+
+
+            // Create legend
+            var legend = chart.children.push(am5.Legend.new(root, {
+                centerX: am5.percent(50),
+                x: am5.percent(50),
+                marginTop: 15,
+                marginBottom: 35
+            }));
+
+            legend.data.setAll(series.dataItems);
+
+
+            // Play initial series animation
+            series.appear(1000, 100);
+
+        }); // end am5.ready()
+    </script>
+
+
+    <!-- ------------------- SALES BY CASHIER --------------------  -->
+    <script>
+        am5.ready(function () {
+
+            // Create root element
+            // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+            var root = am5.Root.new("sales-by-cashier");
+
+
+            // Set themes
+            // https://www.amcharts.com/docs/v5/concepts/themes/
+            root.setThemes([
+                am5themes_Animated.new(root)
+            ]);
+
+
+            // Create chart
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/
+            var chart = root.container.children.push(am5xy.XYChart.new(root, {
+                panX: false,
+                panY: false,
+                wheelX: "panX",
+                wheelY: "zoomX",
+                layout: root.verticalLayout
+            }));
+
+
+            // Add legend
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/legend-xy-series/
+            var legend = chart.children.push(
+                am5.Legend.new(root, {
+                    centerX: am5.p50,
+                    x: am5.p50
+                })
+            );
+
+            var data = [{
+                "month": "May",
+                "europe": 40000,
+                "namerica": 45000,
+                "asia": 80000,
+                "lamerica": 70000,
+                "meast": 50000,
+                "africa": 35000
+            }, {
+                "month": "Jun",
+                "europe": 40000,
+                "namerica": 45000,
+                "asia": 80000,
+                "lamerica": 70000,
+                "meast": 50000,
+                "africa": 35000
+            }, {
+                "month": "Jul",
+                "europe": 40000,
+                "namerica": 45000,
+                "asia": 80000,
+                "lamerica": 70000,
+                "meast": 50000,
+                "africa": 35000
+            }, {
+                "month": "Aug",
+                "europe": 40000,
+                "namerica": 45000,
+                "asia": 80000,
+                "lamerica": 70000,
+                "meast": 50000,
+                "africa": 35000
+            }, {
+                "month": "Sep",
+                "europe": 40000,
+                "namerica": 45000,
+                "asia": 80000,
+                "lamerica": 70000,
+                "meast": 50000,
+                "africa": 35000
+            }, {
+                "month": "Oct",
+                "europe": 40000,
+                "namerica": 45000,
+                "asia": 80000,
+                "lamerica": 70000,
+                "meast": 50000,
+                "africa": 35000
+            }, {
+                "month": "Nov",
+                "europe": 40000,
+                "namerica": 45000,
+                "asia": 80000,
+                "lamerica": 70000,
+                "meast": 50000,
+                "africa": 35000
+            }, {
+                "month": "Dec",
+                "europe": 40000,
+                "namerica": 45000,
+                "asia": 80000,
+                "lamerica": 70000,
+                "meast": 50000,
+                "africa": 35000
+            }]
+
+
+            // Create axes
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+            var xRenderer = am5xy.AxisRendererX.new(root, {
+                cellStartLocation: 0.1,
+                cellEndLocation: 0.9
+            })
+
+            var xAxis = chart.xAxes.push(am5xy.CategoryAxis.new(root, {
+                categoryField: "month",
+                renderer: xRenderer,
+                tooltip: am5.Tooltip.new(root, {})
+            }));
+
+            xRenderer.grid.template.setAll({
+                location: 1
+            })
+
+            xAxis.data.setAll(data);
+
+            var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+                renderer: am5xy.AxisRendererY.new(root, {
+                    strokeOpacity: 0.1
+                }),
+                min: 0,
+                max: 100000
+            }));
+
+
+            // Add series
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+            function makeSeries(name, fieldName, color) {
+                var series = chart.series.push(am5xy.ColumnSeries.new(root, {
+                    name: name,
+                    xAxis: xAxis,
+                    yAxis: yAxis,
+                    valueYField: fieldName,
+                    categoryXField: "month",
+                    fill: color
+                }));
+
+                series.columns.template.setAll({
+                    tooltipText: "{name}, {categoryX}:{valueY}",
+                    width: am5.percent(90),
+                    tooltipY: 0,
+                    strokeOpacity: 0
+                });
+
+                series.data.setAll(data);
+
+                // Make stuff animate on load
+                // https://www.amcharts.com/docs/v5/concepts/animations/
+                series.appear();
+
+                series.bullets.push(function () {
+                    return am5.Bullet.new(root, {
+                        locationY: 0,
+                        sprite: am5.Label.new(root, {
+                            text: "{valueY}",
+                            fill: root.interfaceColors.get("alternativeText"),
+                            centerY: 0,
+                            centerX: am5.p50,
+                            populateText: true
+                        })
+                    });
+                });
+
+                legend.data.push(series);
+            }
+
+            makeSeries("Europe", "europe", "#2e90fa");
+            makeSeries("Africa", "africa", "#53b1fd");
+            makeSeries("North America", "namerica", "#2be3b7");
+            makeSeries("Asia", "asia", "#92e4fe");
+            makeSeries("Latin America", "lamerica", "#5bbac0");
+            makeSeries("Middle East", "meast", "#6fffba");
+
+
+            // Make stuff animate on load
+            // https://www.amcharts.com/docs/v5/concepts/animations/
+            chart.appear(1000, 100);
+
+        }); // end am5.ready()
+    </script>
+
+    <!-- ------------------- SALES FORECAST --------------------  -->
+    <script>
+        am5.ready(function () {
+            // Create root element
+            var root = am5.Root.new("sales-forecast");
+
+
+            // Set themes
+            root.setThemes([
+                am5themes_Animated.new(root)
+            ]);
+
+
+            // Create chart
+            var chart = root.container.children.push(am5xy.XYChart.new(root, {
+                panX: true,
+                panY: true,
+                wheelX: "panX",
+                wheelY: "zoomX",
+                pinchZoomX: true
+            }));
+
+            chart.get("colors").set("step", 3);
+
+
+            // Add cursor
+            var cursor = chart.set("cursor", am5xy.XYCursor.new(root, {}));
+            cursor.lineY.set("visible", false);
+
+
+            // Create axes
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/axes/
+            var xAxis = chart.xAxes.push(am5xy.DateAxis.new(root, {
+                maxDeviation: 0.3,
+                baseInterval: {
+                    timeUnit: "year",
+                    count: 1
+                },
+                renderer: am5xy.AxisRendererX.new(root, {}),
+                tooltip: am5.Tooltip.new(root, {})
+            }));
+
+            var yAxis = chart.yAxes.push(am5xy.ValueAxis.new(root, {
+                maxDeviation: 0.3,
+                renderer: am5xy.AxisRendererY.new(root, {}),
+                // Set the minimum value to 0
+                min: 0,
+                // Set the maximum value to 100,000 (100k)
+                max: 100000,
+            }));
+
+
+            // Add series
+            // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
+            var series = chart.series.push(am5xy.LineSeries.new(root, {
+                name: "Series 1",
+                xAxis: xAxis,
+                yAxis: yAxis,
+                valueYField: "value1",
+                valueXField: "date",
+                tooltip: am5.Tooltip.new(root, {
+                    labelText: "{valueX}: {valueY}\n{previousDate}: {value2}"
+                }),
+                stroke: am5.color(0x0086ff)
+            }));
+
+            series.strokes.template.setAll({
+                strokeWidth: 2
+            });
+
+            series.get("tooltip").get("background").set("fillOpacity", 0.5);
+            // Set date fields
+            // https://www.amcharts.com/docs/v5/concepts/data/#Parsing_dates
+            root.dateFormatter.setAll({
+                dateFormat: "yyyy-MM-dd",
+                dateFields: ["valueX"]
+            });
+
+
+            // Set data
+            var data = [{
+                date: new Date(2018, 5, 12).getTime(),
+                value1: 20000,
+                previousDate: new Date(2018, 5, 5)
+            }, {
+                date: new Date(2019, 5, 13).getTime(),
+                value1: 30000,
+                previousDate: "2019-05-06"
+            }, {
+                date: new Date(2020, 5, 14).getTime(),
+                value1: 50000,
+                previousDate: "2020-05-07"
+            }, {
+                date: new Date(2021, 5, 15).getTime(),
+                value1: 45200,
+                previousDate: "2019-05-08"
+            }, {
+                date: new Date(2022, 5, 16).getTime(),
+                value1: 40000,
+                previousDate: "2019-05-09"
+            }, {
+                date: new Date(2023, 5, 17).getTime(),
+                value1: 60000,
+                previousDate: "2019-05-10"
+            }]
+
+            series.data.setAll(data);
+
+
+            // Make stuff animate on load
+            // https://www.amcharts.com/docs/v5/concepts/animations/
+            series.appear(1000);
+            chart.appear(1000, 100);
+
+        }); // end am5.ready()
+    </script>
+</body>
+
+</html>

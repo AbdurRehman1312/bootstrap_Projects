@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css">
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  " />
+
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <!-- navbar start from here -->
+            <header class="">
+                <nav class="border-bottom-blue custom_nav">
+                                <div class="d-flex justify-content-evenly ">
+                                    <div>
+                                        <a href="./index.html">
+                                            <img src="./assets/images/logo.png" alt="" style="width: 6rem;">
+                                        </a>
+                                    </div>
+                                    <div class="d-flex justify-content-evenly align-items-center">
+
+                                        <div class="dropdown ">
+                                            <button class="btn nav-btn dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Your Work
+                                            </button>
+                                            <ul class="dropdown-menu ">
+
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown ms-1">
+                                            <button class="btn nav-btn dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Projects
+                                            </button>
+                                            <ul class="dropdown-menu ">
+
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown ms-1">
+                                            <button class="btn nav-btn dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Filters
+                                            </button>
+                                            <ul class="dropdown-menu ">
+
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown ms-1">
+                                            <button class="btn nav-btn dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Dashbords
+                                            </button>
+                                            <ul class="dropdown-menu ">
+
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown ms-1 ">
+                                            <button class="btn nav-btn dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Teams
+                                            </button>
+                                            <ul class="dropdown-menu ">
+
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown ms-1">
+                                            <button class="btn nav-btn dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Plans
+                                            </button>
+                                            <ul class="dropdown-menu ">
+
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown ms-1">
+                                            <button class="btn nav-btn dropdown-toggle" type="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Apps
+                                            </button>
+                                            <ul class="dropdown-menu ">
+
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-danger rounded-1" data-bs-toggle="modal"
+                                                data-bs-target="#createIssue">Create</button>
+                                        </div>
+
+
+                                        <!-- --------------------CREATE ISSUE MODAL -------------------- -->
+
+                                        <div class="modal fade" id="createIssue" aria-hidden="true"
+                                            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                            <div
+                                                class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                                                <div class="modal-content rounded-1 p-1">
+                                                    <div
+                                                        class="modal-header border-0 d-flex justify-content-between align-items-center">
+                                                        <div>
+                                                            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">
+                                                                Create Issue</h1>
+                                                        </div>
+                                                        <div>
+                                                            <span data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Exit Full Screen"><button
+                                                                    class="border-0 bg-transparent user-plus "
+                                                                    data-bs-target="#exitScreen"
+                                                                    data-bs-toggle="modal"><i
+                                                                        class="fa-solid fa-down-left-and-up-right-to-center text-muted"></i></button></span>
+                                                            <button type="button" class="btn-close user-plus"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div
+                                                            class="row justify-content-between align-items-center gap-3">
+                                                            <div class="col-6">
+                                                                <p class="text-muted user-plus fw-semibold fs-10 mt-3">
+                                                                    Required fields are marked with an asterisk <sup
+                                                                        class="text-danger">*</sup> </p>
+                                                            </div>
+                                                            <div class="col-4 d-flex justify-content-evenly">
+                                                                <button type="button"
+                                                                    class="watching-eye border-0 bg-transparent text-danger d-flex justify-content-center align-items-center">
+                                                                    <i class="fa-solid fa-eye text-danger"></i>
+                                                                    <span class="ms-2 text-danger">1</span>
+                                                                </button>
+                                                                <button type="button"
+                                                                    class="btn bg-custom btn-sm fw-semibold"
+                                                                    data-bs-toggle="modal"
+                                                                    data-bs-target="#compModal">Import Issues</button>
+                                                                <li class="dropdown bg-custom me-4 list-unstyled">
+                                                                    <a class="nav-link px-1 fs-5 pb-1 " href="#"
+                                                                        role="button" data-bs-toggle="dropdown"
+                                                                        aria-expanded="true">
+                                                                        <svg width="24" height="24" viewBox="0 0 24 24"
+                                                                            role="presentation">
+                                                                            <g fill="currentColor" fill-rule="evenodd">
+                                                                                <circle cx="5" cy="12" r="2"></circle>
+                                                                                <circle cx="12" cy="12" r="2"></circle>
+                                                                                <circle cx="19" cy="12" r="2"></circle>
+                                                                            </g>
+                                                                        </svg>
+                                                                    </a>
+                                                                    <ul class="dropdown-menu dropdown-menu-end  my-2">
+                                                                        <li class="dropdown-item">
+                                                                            <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                                href="#">Show Fields</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                            </div>
+                                                            <div class="row flex-column m-0"></div>
+                                                            <div class="col-6">
+                                                                <p class="text-muted user-plus fw-semibold fs-10 my-1">
+                                                                    Project <sup class="text-danger">*</sup> </p>
+                                                                <select
+                                                                    class="form-select border rounded-0 user-plus bg-custom"
+                                                                    aria-label="Default select example bg-custom"
+                                                                    required>
+                                                                    <option value="1" selected>Repla Tech R1</option>
+                                                                    <option value="2"></option>
+                                                                    <option value="3"></option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <p class="text-muted user-plus fw-semibold fs-10 my-1">
+                                                                    Issue type <sup class="text-danger">*</sup> </p>
+                                                                <select
+                                                                    class="form-select border rounded-0 user-plus bg-custom"
+                                                                    aria-label="Default select example bg-custom"
+                                                                    required>
+                                                                    <option value="1" selected>Story</option>
+                                                                    <option value="2">Task</option>
+                                                                    <option value="3">Bug</option>
+                                                                    <option value="4">Epic</option>
+                                                                </select>
+                                                                <a href=""
+                                                                    class="fs-10 text-danger text-decoration-none">Learn
+                                                                    more about issues</a>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="col-3">
+                                                                <p class="text-muted user-plus fw-semibold fs-10 my-1">
+                                                                    Status <sup><i
+                                                                            class="fa-solid fa-circle-exclamation text-muted"></i></sup>
+                                                                </p>
+                                                                <select
+                                                                    class="form-select todo border rounded-1 user-plus bg-custom"
+                                                                    aria-label="Default select example bg-custom"
+                                                                    required>
+                                                                    <option value="1" selected>TO DO</option>
+                                                                    <option value="2" class="inprog">IN PROGRESS
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="modal-footer d-flex justify-content-between align-items-center">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input cursor-p" type="checkbox"
+                                                                value="" id="flexCheckChecked" checked>
+                                                            <label class="form-check-label cursor-p"
+                                                                for="flexCheckChecked">
+                                                                Create another issue
+                                                            </label>
+                                                        </div>
+                                                        <div>
+                                                            <button type="button"
+                                                                class="btn btn-secondary border-0 rounded-0"
+                                                                data-bs-dismiss="modal">Cancel</button>
+                                                            <button type="button"
+                                                                class="btn btn-primary bg-danger border-0 rounded-0">Create</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="exitScreen" aria-hidden="true"
+                                            aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                            <div class="modal-dialog exit-screen">
+                                                <div class="modal-content rounded-1">
+                                                    <div
+                                                        class="modal-header d-flex justify-content-between align-items-center">
+                                                        <div>
+
+                                                            <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">
+                                                                Modal
+                                                                2</h1>
+                                                        </div>
+                                                        <div>
+                                                            <span data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                                                data-bs-title="Go Full Screen"><button
+                                                                    class="border-0 bg-transparent "
+                                                                    data-bs-target="#createIssue"
+                                                                    data-bs-toggle="modal"><i
+                                                                        class="fa-solid fa-up-right-and-down-left-from-center text-muted"></i></button></span>
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Hide this modal and show the first with the button below.
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button"
+                                                            class="btn btn-secondary border-0 rounded-0"
+                                                            data-bs-dismiss="modal">Cancel</button>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center ">
+                                        <form class="" role="search">
+                                            <input class="form-control border" type="search" placeholder="Search"
+                                                aria-label="Search">
+                                        </form>
+                                        <div class="d-flex align-items-center justify-content-between ">
+                                            <div class="ms-xl-4">
+                                                <input type="checkbox" class="checkbox" id="checkbox">
+                                                <label for="checkbox" class="checkbox-label">
+                                                    <i class="fas fa-moon"></i>
+                                                    <i class="fas fa-sun"></i>
+                                                    <span class="ball"></span>
+                                                </label>
+                                            </div>
+                                            <div class="dropdown ms-3">
+                                                <button class="btn p-0 border-0 position-relative " type="button"
+                                                    id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    <span
+                                                        class="position-absolute  notification-number rounded-4 text-white fw-medium ">0</span>
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <span><i class="fas fa-bell fs-5"></i></span>
+                                                    </div>
+                                                </button>
+                                                <ul class="dropdown-menu dropact" style="width: 300px"
+                                                    aria-labelledby="dropdownMenuButton1">
+                                                    <li>
+                                                        <div
+                                                            class="d-flex align-items-center justify-content-between pt-2 px-3">
+                                                            <span
+                                                                class="mb-0 text-capitalize fs-14">notifications</span>
+                                                            <a href=""
+                                                                class="text-decoration-none text-capitalize fs-12">
+                                                                marked all as read
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <hr>
+                                                    </li>
+                                                    <li>
+                                                        <div>
+                                                            <span
+                                                                class="fs-12 text-capitalize text-secondary ps-3">today</span>
+                                                            <a class="dropdown-item fs-14 dropitemone d-flex justify-content-between py-2"
+                                                                href="#">
+                                                                <div class="d-flex align-items-start">
+                                                                    <span
+                                                                        class="text-capitalize circlewhite bg-secondary text-white">
+                                                                        amc
+                                                                    </span>
+                                                                    <span class="text-capitalize ps-2 fs-12 text-wrap">
+                                                                        Lorem ipsum dolor sit amet, consectetur
+                                                                        adipisicing
+                                                                        elit.
+                                                                    </span>
+                                                                </div>
+                                                                <p class="mb-0 fs-12 text-secondary">2 min</p>
+                                                            </a>
+                                                        </div>
+                                                        <div>
+                                                            <span
+                                                                class="fs-12 text-capitalize text-secondary ps-3">yesterday</span>
+                                                            <a class="dropdown-item fs-14 dropitemone d-flex justify-content-between py-2"
+                                                                href="#">
+                                                                <div class="d-flex align-items-start">
+                                                                    <span
+                                                                        class="text-capitalize circlewhite bg-secondary text-white">
+                                                                        amc
+                                                                    </span>
+                                                                    <span class="text-capitalize ps-2 fs-12 text-wrap">
+                                                                        Lorem ipsum dolor sit amet, consectetur
+                                                                        adipisicing
+                                                                        elit.
+                                                                    </span>
+                                                                </div>
+                                                                <p class="mb-0 fs-12 text-secondary">2 min</p>
+                                                            </a>
+                                                        </div>
+                                                        <div>
+                                                            <span
+                                                                class="fs-12 text-capitalize text-secondary ps-3">today</span>
+                                                            <a class="dropdown-item fs-14 dropitemone d-flex justify-content-between py-2"
+                                                                href="#">
+                                                                <div class="d-flex align-items-start">
+                                                                    <span
+                                                                        class="text-capitalize circlewhite bg-secondary text-white">
+                                                                        amc
+                                                                    </span>
+                                                                    <span class="text-capitalize ps-2 fs-12 text-wrap">
+                                                                        Lorem ipsum dolor sit amet, consectetur
+                                                                        adipisicing
+                                                                        elit.
+                                                                    </span>
+                                                                </div>
+                                                                <p class="mb-0 fs-12 text-secondary">2 min</p>
+                                                            </a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="mb-1">
+                                                    </li>
+                                                    <li>
+                                                        <a href="notification.html"
+                                                            class="text-decoration-none text-capitalize fs-12 text-center d-block">
+                                                            view all
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown ms-3">
+                                                <button class="btn p-0 border-0" type="button" id="dropdownMenuButton1"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <div class="d-flex align-items-center justify-content-center">
+                                                        <span><i class="fas fa-gear fs-5"></i></span>
+                                                    </div>
+                                                </button>
+                                                <ul class="dropdown-menu dropact" style="width: 300px"
+                                                    aria-labelledby="dropdownMenuButton1">
+
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown">
+                                                <button class="btn p-0 border-0 " type="button" id="dropdownMenuButton1"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <div class="d-flex align-items-center ms-3">
+                                                        <span><i class="fas fa-user-circle fs-2"></i></span>
+                                                    </div>
+                                                </button>
+                                                <ul class="dropdown-menu lh-sm noti-ul2"
+                                                    aria-labelledby="dropdownMenuButton1">
+                                                    <li>
+                                                        <a href="#"
+                                                            class="d-flex align-items-center text-decoration-none mx-2 ">
+                                                            <div class="flex-shrink-0">
+                                                                <img src="assets/images/dp-1.png" alt=""
+                                                                    class="img-fluid  " width="50" height="50">
+                                                            </div>
+                                                            <div class="user-profile flex-grow-1 mt-3 mx-2">
+                                                                <span class="text-wrap fs-6">John Smith</span>
+                                                                <p class="text-muted fs-12">John786@gmail.com</p>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item fs-14 dropitem d-flex align-items-center"
+                                                            href="#">
+                                                            <span>
+                                                                <i class="fa-solid fa-gear"></i>
+                                                            </span>
+                                                            <span class="text-capitalize p-2">
+                                                                account settings
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item fs-14 dropitem d-flex align-items-center"
+                                                            href="#">
+                                                            <span>
+                                                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                                            </span>
+                                                            <span class="text-capitalize p-2">
+                                                                logout
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            
+
+                </nav>
+                <!-- <div class="shadow horizontalmenu" style="display: none;">
+                    <nav class="navbar navbar-expand-lg bg-light">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link text-capitalize d-flex align-items-center gap-2" href="#">
+                                            <span class="d-flex align-items-center">
+                                                <img src="assets/images/icons/dashboard-b.png"
+                                                    class="img-fluid w-20 im1a">
+                                            </span>
+                                            <p class="m-0 fs-13">Dashboard</p>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item dropdown ms-3">
+                                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <div class="d-flex align-items-center justify-content-between gap-3">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="d-flex align-items-center">
+                                                        <img src="assets/images/icons/profile-b.png"
+                                                            class="img-fluid w-20 im2a">
+                                                    </span>
+                                                    <p class="m-0 fs-13">
+                                                        All Profiles
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <i class="fas fa-angle-down fs-13"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-person-chalkboard me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Project Owner
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-user me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Investor
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i
+                                                            class="fa-solid fa-person-walking-arrow-loop-left me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Incubator/Accelerator
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown ms-3">
+                                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <div class="d-flex align-items-center justify-content-between gap-3">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="d-flex align-items-center">
+                                                        <img src="assets/images/icons/overview-b.png"
+                                                            class="img-fluid w-20 im3a">
+                                                    </span>
+                                                    <p class="m-0 fs-13">
+                                                        Overview of Projects
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <i class="fas fa-angle-down fs-13"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-file-shield me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Campaign Submission
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-gauge-high me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Boost Campaign
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-file-signature me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        E-Signature
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-money-bill-transfer me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Funds Withdrawal
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown ms-3">
+                                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <div class="d-flex align-items-center justify-content-between gap-3">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="d-flex align-items-center">
+                                                        <img src="assets/images/icons/invest-b.png"
+                                                            class="img-fluid w-20 im4a">
+                                                    </span>
+                                                    <p class="m-0 fs-13">
+                                                        Investments
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <i class="fas fa-angle-down fs-13"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fas fa-user me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Debt and Equity
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-clock-rotate-left me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Transaction History
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-wallet me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Wallet
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-money-check-dollar me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Payment Integration
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-solid fa-file-invoice me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Report
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown ms-3">
+                                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <div class="d-flex align-items-center justify-content-between gap-3">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <span class="d-flex align-items-center">
+                                                        <img src="assets/images/icons/portfo-b.png"
+                                                            class="img-fluid w-20 im5a">
+                                                    </span>
+                                                    <p class="m-0 fs-13">
+                                                        Portfolio Management
+                                                    </p>
+                                                </div>
+                                                <div>
+                                                    <i class="fas fa-angle-down fs-13"></i>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    <span>
+                                                        <i class="fa-regular fa-credit-card me-2 size"></i>
+                                                    </span>
+                                                    <span class="fs-13">
+                                                        Track investments
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="dropdown">
+                                    <a href="" class="text-decoration-none text-dark" data-bs-toggle="dropdown"
+                                        data-bs-display="static" aria-expanded="false">
+                                        <img src="assets/images/avatar/av-2.png" class="img-fluid w50">
+                                        <span class="text-capitalize ps-2">username</span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-lg-end">
+                                        <li>
+                                            <a class="dropdown-item fs-14 dropitem d-flex align-items-center" href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-gear"></i>
+                                                </span>
+                                                <span class="text-capitalize p-2">
+                                                    account settings
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-14 dropitem d-flex align-items-center" href="#">
+                                                <span>
+                                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                                </span>
+                                                <span class="text-capitalize p-2">
+                                                    logout
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div> -->
+            </header>
+            <!-- navbar end here -->
+            <div class="h-500px scroll pb-3">
+                <div class="container-fluid project-all">
+                    <section>
+                        <div>
+                            <div class="project-name-line d-flex justify-content-between align-items-center mt-5">
+                                <div class="project-name">
+                                    <h3 class="">Projects</h3>
+                                </div>
+                                <div class="">
+                                    <button class="btn p-0 bg-danger p-2 " data-bs-toggle="offcanvas"
+                                        data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                                        <span class="text-white fw-semibold ">Create Project</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="mt-5">
+                            <div class="search-task d-flex align-items-center">
+                                <div class="input-group w-25 flex-nowrap ">
+                                    <input type="text" class="form-control border  rounded-0" placeholder=""
+                                        aria-label="Username" aria-describedby="addon-wrapping">
+                                    <span class="input-group-text text-muted bg-custom" id="addon-wrapping"><i
+                                            class="fa-solid fa-magnifying-glass user-plus"></i></span>
+                                </div>
+                                <select class="form-select todo border rounded-1 user-plus  w-25 ms-2"
+                                    aria-label="Default select example " required>
+                                    <option value="1" selected hidden>All Products</option>
+                                    <option value="2">Software Products</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mt-5 ">
+                            <nav aria-label="">
+                                <table class="table align-middle ">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col "><i class="fa-solid fa-star"></i></th>
+                                            <th scope="col ">Name</th>
+                                            <th scope="col ">Key</th>
+                                            <th scope="col">Type</th>
+                                            <th scope="col">Lead</th>
+                                            <th scope="col">Created By</th>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="table-group-divider">
+                                        <tr>
+                                            <td >
+                                                <div class="star-wrapper">
+                                                    <a class=" d-flex text-decoration-none star-click" onclick="changeIcon(this)" id="myBtn">
+                                                        <div class="star-projects more">
+                                                            <i class="fa-regular fa-star fa-lg grey-star-proj" style="color: #e3e2e2;"></i>
+                                                            <i class="fa-regular fa-star fa-lg  black-star-proj" style="color: #000000;"></i>
+                                                        </div>
+                                                        <i class="fa-solid fa-star fa-lg less golden-star-proj" style="color: #ffbe0a;"></i>
+                                                    </a> 
+                                                </div>
+                                                 
+                                            </td>
+                                            <td class="fs-6">
+                                                <div class="d-flex align-items-center ">
+                                                    <img src="./assets/images/svg/REP.svg" alt="" height="30"
+                                                        width="30" class="">
+                                                    <a href="" class="ms-2 text-decoration-none">repla</a>
+                                                </div>
+                                            </td>
+                                            <td class="fs-6">REP</td>
+                                            <td class="fs-6">Team-managed software</td>
+                                            
+                                            <td>
+                                                <div class="d-flex align-items-center ">
+                                                    <img src="./assets/images/assignees/AR-1.webp" alt="" height="30"
+                                                        width="30" class="cursor-p user-assign">
+                                                    <a href="" class=" ms-2 text-decoration-none">ABDUR REHMAN</a>
+                                                </div>
+                                            </td>
+                                            <td>
+
+                                            </td>
+                                            <td>
+                                                <ul class="list-unstyled d-flex  gap-3 mb-0 ms-2">
+                                                    <li class="dropdown bg-custom me-4">
+                                                        <a class="nav-link px-1 fs-5 pb-1 " href="#" role="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="true">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+                                                                <g fill="currentColor" fill-rule="evenodd">
+                                                                    <circle cx="5" cy="12" r="2"></circle>
+                                                                    <circle cx="12" cy="12" r="2"></circle>
+                                                                    <circle cx="19" cy="12" r="2"></circle>
+                                                                </g>
+                                                            </svg>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-menu-end  my-2">
+                                                            <li class="dropdown-item">
+                                                                <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                    href="#">Edit
+                                                                    Project Settings</a>
+                                                            </li>
+                                                            <li class="dropdown-item">
+                                                                <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                    href="#">Manage
+                                                                    Move to trash</a>
+                                                            </li>
+                                                            <li class="dropdown-item">
+                                                                <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                    href="#">Manage
+                                                                    Archive</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td >
+                                                <div class="star-wrapper">
+                                                    <a  class=" d-flex text-decoration-none star-click" onclick="changeIcon(this)" id="myBtn">
+                                                        <div class="star-projects more">
+                                                            <i class="fa-regular fa-star fa-lg grey-star-proj" style="color: #e3e2e2;"></i>
+                                                            <i class="fa-regular fa-star fa-lg  black-star-proj" style="color: #000000;"></i>
+                                                        </div>
+                                                        <i class="fa-solid fa-star fa-lg less golden-star-proj" style="color: #ffbe0a;"></i>
+                                                    </a> 
+                                                </div>
+                                                 
+                                            </td>
+                                            <td class="fs-6">
+                                                <div class="d-flex align-items-center ">
+                                                    <img src="./assets/images/svg/RT.svg" alt="" height="30"
+                                                        width="30" class="">
+                                                    <a href="" class="ms-2 text-decoration-none">Repla Tech</a>
+                                                </div>
+                                            </td>
+                                            <td class="fs-6">RT</td>
+                                            <td class="fs-6">Team-managed software</td>
+                                            
+                                            <td>
+                                                <div class="d-flex align-items-center ">
+                                                    <img src="./assets/images/assignees/AR-1.webp" alt="" height="30"
+                                                        width="30" class="cursor-p user-assign">
+                                                    <a href="" class=" ms-2 text-decoration-none">ABDUR REHMAN</a>
+                                                </div>
+                                            </td>
+                                            <td>
+
+                                            </td>
+                                            <td>
+                                                <ul class="list-unstyled d-flex  gap-3 mb-0 ms-2">
+                                                    <li class="dropdown bg-custom me-4">
+                                                        <a class="nav-link px-1 fs-5 pb-1 " href="#" role="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="true">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+                                                                <g fill="currentColor" fill-rule="evenodd">
+                                                                    <circle cx="5" cy="12" r="2"></circle>
+                                                                    <circle cx="12" cy="12" r="2"></circle>
+                                                                    <circle cx="19" cy="12" r="2"></circle>
+                                                                </g>
+                                                            </svg>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-menu-end  my-2">
+                                                            <li class="dropdown-item">
+                                                                <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                    href="#">Edit
+                                                                    Project Settings</a>
+                                                            </li>
+                                                            <li class="dropdown-item">
+                                                                <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                    href="#">Manage
+                                                                    Move to trash</a>
+                                                            </li>
+                                                            <li class="dropdown-item">
+                                                                <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                    href="#">Manage
+                                                                    Archive</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td >
+                                                <div class="star-wrapper">
+                                                    <a  class=" d-flex text-decoration-none star-click" onclick="changeIcon(this)" id="myBtn">
+                                                        <div class="star-projects more">
+                                                            <i class="fa-regular fa-star fa-lg grey-star-proj" style="color: #e3e2e2;"></i>
+                                                            <i class="fa-regular fa-star fa-lg  black-star-proj" style="color: #000000;"></i>
+                                                        </div>
+                                                        <i class="fa-solid fa-star fa-lg less golden-star-proj" style="color: #ffbe0a;"></i>
+                                                    </a> 
+                                                </div>
+                                                 
+                                            </td>
+                                            <td class="fs-6">
+                                                <div class="d-flex align-items-center ">
+                                                    <img src="./assets/images/svg/RP.svg" alt="" height="30"
+                                                        width="30" class="">
+                                                    <a href="" class="ms-2 text-decoration-none ">REPLA-TECHNOLOGY</a>
+                                                </div>
+                                            </td>
+                                            <td class="fs-6">RP</td>
+                                            <td class="fs-6">Company-managed software</td>
+                                            
+                                            <td>
+                                                <div class="d-flex align-items-center ">
+                                                    <img src="./assets/images/assignees/MA-4.webp" alt="" height="30"
+                                                        width="30" class="cursor-p user-assign">
+                                                   <a href="" class="ms-2 text-decoration-none ">MUHAMMAD ALI ABBAS</a> 
+                                                </div>
+                                            </td>
+                                            <td>
+                                                
+                                            </td>
+                                            <td>
+                                                <ul class="list-unstyled d-flex  gap-3 mb-0 ms-2">
+                                                    <li class="dropdown bg-custom me-4">
+                                                        <a class="nav-link px-1 fs-5 pb-1 " href="#" role="button"
+                                                            data-bs-toggle="dropdown" aria-expanded="true">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+                                                                <g fill="currentColor" fill-rule="evenodd">
+                                                                    <circle cx="5" cy="12" r="2"></circle>
+                                                                    <circle cx="12" cy="12" r="2"></circle>
+                                                                    <circle cx="19" cy="12" r="2"></circle>
+                                                                </g>
+                                                            </svg>
+                                                        </a>
+                                                        <ul class="dropdown-menu dropdown-menu-end  my-2">
+                                                            <li class="dropdown-item">
+                                                                <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                    href="#">Edit
+                                                                    Project Settings</a>
+                                                            </li>
+                                                            <li class="dropdown-item">
+                                                                <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                    href="#">Manage
+                                                                    Move to trash</a>
+                                                            </li>
+                                                            <li class="dropdown-item">
+                                                                <a class="dropdown-item fs-6 fw-semibold  text-black-50 user-plus"
+                                                                    href="#">Manage
+                                                                    Archive</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+    
+    
+    
+                                    </tbody>
+                                </table>
+                                <ul class="pagination justify-content-start mt-4">
+                                  <li class=" disabled">
+                                    <a class="page-link">&laquo;</a>
+                                  </li>
+                                  <li class=""><a class="page-link bg-danger " href="#">1</a></li>
+                                  <li class="">
+                                    <a class="page-link disabled " href="#">&raquo;</a>
+                                  </li>
+                                </ul>
+                              </nav>
+                            
+                        </div>
+
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+    <!-- offcanvas software development starts -->
+    <div class="offcanvas offcanvas-start w-100" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+        aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="staticBackdropLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class=" ">
+                <h2 class="text-center text-danger ">Software Development</h2>
+                <h4 class="text-center mt-4 ">Choose from the following Project Templates</h4>
+                <div class="container-fluid mt-5">
+                    <div class="d-flex flex-column justify-content-between align-items-center ">
+                        <a href="" class="text-decoration-none" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight-scrum" aria-controls="offcanvasRight">
+                            <div class="d-flex justify-content-center align-items-center ">
+                                <div class="d-flex justify-content-center slack-border align-items-center rounded-3">
+                                    <div class="bg-danger py-4 rounded-start-3 ">
+                                        <img src="./assets/images/svg/scrum.svg" alt="" class="">
+                                    </div>
+                                    <div class="ms-2 mt-4 ">
+                                        <div>
+                                            <h3>Scrum</h3>
+                                        </div>
+                                        <div>
+                                            <p>Sprint towards your project goals with board, backlog and timeline</p>
+                                        </div>
+                                    </div>
+                                    <div class="ms-3 px-3 ">
+                                        <i class="fa-solid fa-chevron-right text-danger "></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+
+
+                        <a href="" class="text-decoration-none mt-5 " data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight-kanban" aria-controls="offcanvasRight">
+                            <div class="d-flex justify-content-center align-items-center ">
+                                <div
+                                    class="d-flex justify-content-center slack-border align-items-center rounded-3 kanban">
+                                    <div class="bg-danger py-4 rounded-start-3 ">
+                                        <img src="./assets/images/svg/kanban.svg" alt="" class="">
+                                    </div>
+                                    <div class="ms-2 mt-4">
+                                        <div>
+                                            <h3>Kanban</h3>
+                                        </div>
+                                        <div>
+                                            <p class="fs-6">Visualize and advance your project forward using issues on a
+                                                powerful board.</p>
+                                        </div>
+                                    </div>
+                                    <div class="ms-3 px-3">
+                                        <i class="fa-solid fa-chevron-right text-danger "></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- offcanvas software development ends -->
+
+
+    <!-- offcanvas scrum starts -->
+
+    <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight-scrum"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <button class="btn fw-semibold " data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                aria-controls="staticBackdrop"><i class="fa-solid fa-arrow-left me-2" style="color: #c93438;"></i>Go
+                back</button>
+        </div>
+        <div class="offcanvas-body">
+            <div class=" d-flex flex-column align-items-center w-75 m-auto  ">
+                <div class="d-flex align-items-center align-self-start ">
+                    <span class="bg-danger text-white rounded-circle offcanvas-number">1</span>
+                    <h2 class="ms-2 mb-1 text-secondary ">Project template</h2>
+                </div>
+                <div class="mt-5">
+                    <div class="d-flex justify-content-center align-items-center  ">
+                        <div class="d-flex justify-content-center slack-border align-items-center rounded-3">
+                            <div class="bg-danger py-4 rounded-start-3 ">
+                                <img src="./assets/images/svg/scrum.svg" alt="" class="">
+                            </div>
+                            <div class="ms-2 mt-3 ">
+                                <div>
+                                    <h3>Scrum</h3>
+                                </div>
+                                <div>
+                                    <p>Sprint towards your project goals with board, backlog and timeline</p>
+                                </div>
+                            </div>
+                            <div class="ms-3 px-3 ">
+                                <button class="btn bg-danger text-white " data-bs-toggle="offcanvas"
+                                    data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                                    Change Template
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="d-flex align-items-center align-self-start mt-5">
+                    <span class="bg-danger text-white rounded-circle offcanvas-number">2</span>
+                    <h2 class="ms-2 mb-1">Choose a project type</h2>
+                </div>
+                <div class="d-flex mt-4 ">
+                    <div>
+                        <div class=" border-danger text-center managed">
+                            <h5>Team-managed</h5>
+                        </div>
+                        <div class="d-flex flex-column ">
+                            <p class="fw-bold mt-4">Set up and maintained by your team.</p>
+                            <p class="text-start ">
+                                For teams who want to control their own working processes and practices in a
+                                self-contained space. Mix and match agile features to support your team as you grow in
+                                size and complexity.
+                            </p>
+                            <button disabled="disabled"
+                                class="btn bg-danger text-white managed-btn align-self-center mt-3 p-2 ">Coming
+                                Soon...</button>
+                        </div>
+
+                    </div>
+                    <div class="d-flex flex-column ">
+                        <div class=" border-danger text-center ms-4 managed">
+                            <h5>Company-managed</h5>
+                        </div>
+                        <p class="ms-4 fw-bold mt-4">Set up and maintained by your admins.</p>
+                        <p class="ms-4 ">
+                            For teams who want to work with other teams across many projects in a standard way.
+                            Encourage and promote organizational best practices and processes through a shared
+                            configuration.
+                        </p>
+                        <button class="btn bg-danger text-white   managed-btn align-self-center mt-3 p-2">Select a
+                            Company-managed project</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- offcanvas scrum ends -->
+    <!--  offcanvas kanban starts  -->
+    <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight-kanban"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <button class="btn fw-semibold " data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                aria-controls="staticBackdrop"><i class="fa-solid fa-arrow-left me-2" style="color: #c93438;"></i>Go
+                back</button>
+        </div>
+        <div class="offcanvas-body">
+            <div class=" d-flex flex-column align-items-center w-75 m-auto  ">
+                <div class="d-flex align-items-center align-self-start ">
+                    <span class="bg-danger text-white rounded-circle offcanvas-number">1</span>
+                    <h2 class="ms-2 mb-1 text-secondary ">Project template</h2>
+                </div>
+                <div class="mt-5">
+                    <div class="d-flex justify-content-center align-items-center  ">
+                        <div class="d-flex justify-content-center slack-border align-items-center rounded-3">
+                            <div class="bg-danger py-4 rounded-start-3 ">
+                                <img src="./assets/images/svg/kanban.svg" alt="" class="">
+                            </div>
+                            <div class="ms-2 mt-3 ">
+                                <div>
+                                    <h3>Kanban</h3>
+                                </div>
+                                <div>
+                                    <p class="fs-6">Visualize and advance your project forward using issues on a
+                                        powerful board.</p>
+                                </div>
+                            </div>
+                            <div class="ms-3 px-3 ">
+                                <button class="btn bg-danger text-white " data-bs-toggle="offcanvas"
+                                    data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                                    Change Template
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="d-flex align-items-center align-self-start mt-5">
+                    <span class="bg-danger text-white rounded-circle offcanvas-number">2</span>
+                    <h2 class="ms-2 mb-1">Choose a project type</h2>
+                </div>
+                <div class="d-flex mt-4 ">
+                    <div>
+                        <div class=" border-danger text-center managed">
+                            <h5>Team-managed</h5>
+                        </div>
+                        <div class="d-flex flex-column ">
+                            <p class="fw-bold mt-4">Set up and maintained by your team.</p>
+                            <p class="text-start ">
+                                For teams who want to control their own working processes and practices in a
+                                self-contained space. Mix and match agile features to support your team as you grow in
+                                size and complexity.
+                            </p>
+                            <button disabled="disabled"
+                                class="btn bg-danger text-white managed-btn align-self-center mt-3 p-2 ">Coming
+                                Soon...</button>
+                        </div>
+
+                    </div>
+                    <div class="d-flex flex-column ">
+                        <div class=" border-danger text-center ms-4 managed">
+                            <h5>Company-managed</h5>
+                        </div>
+                        <p class="ms-4 fw-bold mt-4">Set up and maintained by your admins.</p>
+                        <p class="ms-4 ">
+                            For teams who want to work with other teams across many projects in a standard way.
+                            Encourage and promote organizational best practices and processes through a shared
+                            configuration.
+                        </p>
+                        <button class="btn bg-danger text-white   managed-btn align-self-center mt-3 p-2">Select a
+                            Company-managed project</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--  offcanvas kanban ends  -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/datatables.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+
+    <script>
+        // Sample project data
+        var projectData = {
+            labels: ["January", "February", "March", "April", "May", "June"],
+            datasets: [{
+                label: 'Investment',
+                backgroundColor: 'rgba(244, 83, 2, .2)',
+                borderColor: '#f45302',
+                borderWidth: 1,
+                data: [5, 10, 15, 7, 20, 12] // Replace with your project data
+            }]
+        };
+
+        // Get the canvas element and create the chart
+        var ctx = document.getElementById('projectChart').getContext('2d');
+        var projectChart = new Chart(ctx, {
+            type: 'bar',
+            data: projectData,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+        var projectData = {
+            labels: ["January", "February", "March", "April", "May", "June"],
+            datasets: [{
+                label: 'Repayments',
+                backgroundColor: 'rgba(244, 83, 2, .2)',
+                borderColor: '#f45302',
+                borderWidth: 1,
+                data: [5, 10, 15, 7, 20, 12] // Replace with your project data
+            }]
+        };
+
+        // Get the canvas element and create the chart
+        var ctx = document.getElementById('projectChart2').getContext('2d');
+        var projectChart = new Chart(ctx, {
+            type: 'line',
+            data: projectData,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+
+    <script>
+        const checkbox = document.getElementById("checkbox")
+        checkbox.addEventListener("change", () => {
+            document.body.classList.toggle("dark-mode")
+        })
+    </script>
+    <script>
+        function changeIcon(anchor) {
+  anchor.closest('.star-wrapper').classList.toggle('active');
+}
+    </script>
+</body>
+
+</html>

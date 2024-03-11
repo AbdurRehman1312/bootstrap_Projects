@@ -1,0 +1,213 @@
+@media screen and (max-width: 600px) {
+  /* .first-section {
+    display: none;
+  } */
+  * {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Inter', sans-serif;
+        font-family: 'Roboto Slab', serif; */
+    box-shadow: 0px 0px 0px 2px red;
+  }
+  .custom-border {
+    border-radius: 50px 50px 10px 50px;
+    background: var(--Active-White, #fff);
+    box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  .bg-img {
+    background-image: url("./images/Group\ 134.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 70%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 200;
+  }
+  .svg-1 {
+    position: absolute;
+    top: 0%;
+    z-index: -3;
+  }
+  .svg-2 {
+    position: relative;
+    z-index: -8;
+  }
+
+  svg {
+    z-index: -1;
+  }
+  .vector-faq {
+    z-index: -1;
+  }
+  .faqs-section {
+    background-image: url("./images/FAQs\ vector.png");
+    background-repeat: no-repeat;
+    background-size: 20%;
+    height: 80vh;
+  }
+  .sky-contact {
+    width: 100%;
+    height: 70vh;
+  }
+  .img-1 {
+    position: relative;
+    top: 80px;
+    width: 10%;
+    z-index: -111;
+  }
+  .img-2 {
+    z-index: -111;
+  }
+  .event-div {
+    background-image: url("./images/We\ call\ you.png");
+    width: 80%;
+
+    height: 30vh;
+    margin: 0;
+    padding: 0;
+  }
+  .we-call-u {
+    position: relative;
+    bottom: 250px;
+    left: 70px;
+  }
+  ::placeholder {
+    color: white;
+  }
+  .input {
+    border: none;
+    border-bottom: 3px solid white;
+    padding: 3px;
+    color: white;
+  }
+  .input:focus {
+    outline: none;
+  }
+  .btn1 {
+    position: relative;
+    top: 45px;
+    right: 105px;
+    border-radius: 40px;
+  }
+  .footer-section {
+    background-color: #f3f7fc;
+  }
+  .qr {
+    font-size: 14px;
+  }
+  .card-choose {
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 0px;
+    margin: 0;
+    margin: auto;
+  }
+  .card img {
+    position: relative;
+    left: 60px;
+    width: 40%;
+  }
+  #card2 {
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin: 0;
+  }
+  #card3 {
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 0px;
+    margin: 0;
+  }
+  #card4 {
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 50px;
+    margin: 0;
+  }
+  #card1 {
+    margin: 0;
+  }
+  .card-choose:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out 0s;
+    cursor: pointer;
+  }
+  .courses-section {
+    position: relative;
+    z-index: -50;
+  }
+  .courses-bg {
+    display: none;
+  }
+  .robots-cards-col {
+    position: relative;
+    z-index: 30;
+    left: 200px;
+  }
+  .robot-card {
+    position: absolute;
+    top: 160px;
+    right: 140px;
+    z-index: -1;
+  }
+  .main-container {
+    position: absolute;
+    top: 300px;
+  }
+  .upcoming {
+    position: absolute;
+    top: 90px;
+    left: 50px;
+  }
+  .white-box-desc {
+    position: absolute;
+    top: 180px;
+    left: 40px;
+    font-size: 13px;
+  }
+  .event-1-desc {
+    position: absolute;
+    top: 440px;
+    left: 35px;
+    font-size: 13px;
+  }
+  .upcoming-2 {
+    position: absolute;
+    top: 590px;
+    left: 50px;
+  }
+  .white-box2-desc {
+    position: absolute;
+    top: 685px;
+    left: 40px;
+    font-size: 13px;
+  }
+  .event-2-desc {
+    position: absolute;
+    top: 150px;
+    left: 320px;
+    font-size: 13px;
+  }
+  .event-3-desc {
+    position: absolute;
+    top: 460px;
+    left: 330px;
+    font-size: 13px;
+  }
+  .event-4-desc {
+    position: absolute;
+    top: 170px;
+    left: 30px;
+    font-size: 13px;
+  }
+  .event-bg {
+    display: none;
+  }
+}

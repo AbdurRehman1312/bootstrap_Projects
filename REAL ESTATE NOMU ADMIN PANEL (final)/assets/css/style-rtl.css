@@ -1,0 +1,745 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Tajawal", sans-serif;
+}
+:root {
+  --main-color: #0d1431;
+  --white-color: #ffffff;
+  --gray-text: #667085;
+  --heading-color: #1a1a1a;
+  --border-color: #eaecf0;
+  --link-color: #0c1431;
+  --surface-surface-gray: #f2f4f7;
+  --red-color: #cb121d;
+  --modal-bg: rgba(12, 17, 25, 0.2);
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.ltr {
+  direction: ltr !important;
+}
+.rtl {
+  direction: rtl;
+}
+.gray-text {
+  color: var(--gray-text);
+}
+.bg-grey {
+  background-color: var(--surface-surface-gray);
+}
+.text-1 {
+  text-wrap: nowrap;
+}
+.bg-link {
+  background: var(--link-color) !important;
+}
+.text-input {
+  color: var(--placeholder-color);
+}
+::placeholder {
+  color: var(--placeholder-color);
+}
+a:hover {
+  color: var(--main-color);
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fw-500-24 {
+  font-weight: 500;
+  line-height: 24px;
+}
+.fw-400-24px {
+  font-weight: 400;
+  line-height: 24px;
+}
+/*gap cs start*/
+.gap-8 {
+  gap: 8px;
+}
+.gap-12 {
+  gap: 12px;
+}
+.gap-16 {
+  gap: 16px;
+}
+.gap-4c {
+  gap: 4px;
+}
+.gap-24 {
+  gap: 24px;
+}
+.gap-2 {
+  gap: 2px;
+}
+/*gap cs end*/
+
+.fw-500 {
+  font-weight: 500;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.p-12tb {
+  padding: 12px 0px;
+}
+.m-12tb {
+  margin: 12px 0px;
+}
+.p-8 {
+  padding: 8px;
+}
+.p-4tb {
+  padding: 4px 0px;
+}
+.pad-8-16 {
+  padding: 8px 16px;
+}
+.btn-box-shadow {
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+.pad-8 {
+  padding: 8px;
+}
+.p-24 {
+  padding: 24px;
+}
+.btn-box-shadow {
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+/* -------BORDER CSS START ------  */
+.border-c {
+  border: 1px solid var(--border-color);
+}
+.border-blue {
+  border: 1px solid var(--main-color);
+}
+.border-red {
+  border: 1px solid var(--red-color);
+}
+.border-blue-dashed {
+  border: 1px dashed var(--main-color);
+}
+
+/* -------BORDER CSS END ------  */
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background: var(--border-color);
+  color: var(--heading-color);
+}
+#wrapper {
+  direction: rtl;
+}
+
+
+/* ------- BUTTON CSS ----------  */
+.btncust {
+  border-radius: 8px;
+  padding: 8px 16px;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.detail-btn {
+  padding: 10px 20px;
+  background-color: var(--link-color);
+  transition: 0.4s ease-in-out;
+}
+.detail-btn:hover {
+  background-color: #0c1d5f;
+}
+.cloneBtn {
+  width: 25px;
+  height: 25px;
+}
+
+.cloneBtn img {
+  width: 75%;
+  height: 70%;
+}
+
+
+/* --------------------- TEXT HIDE SET CSS ------------------  */
+.custom_text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 160px;
+}
+.custom_text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.custom_text2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  line-clamp: 8;
+  -webkit-box-orient: vertical;
+}
+/* --------------------- TEXT HIDE SET CSS ENDS ------------------  */
+
+
+/* ---------------- BUTTON CSS ENDS ----------------  */
+
+/* ------- SIDER BAR CSS STARTS --------  */
+.sidebar_list {
+  padding: 8px 12px;
+  height: 67vh;
+  overflow-y: auto;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-right: 0 !important;
+}
+
+#menu-toggle {
+  cursor: pointer;
+  display: none !important;
+}
+.side-bar {
+  width: 260px;
+  height: 100vh;
+  background-color: #eafafc;
+  overflow-y: hidden;
+}
+#page-content-wrapper {
+  width: 100%;
+}
+#wrapper.toggled .side-bar {
+  margin-right: 0;
+}
+.sidebar_list .nav-item {
+  border: none;
+}
+.sidebar_list .nav-item .nav-link {
+  font-weight: 400;
+  line-height: 20px;
+  padding: 10px 16px;
+  font-size: 14px;
+  color: var(--gray-text) !important;
+}
+.sidebar_list .nav-item .nav-link.active {
+  background-color: var(--white-color) !important;
+  border-radius: 6px;
+  color: var(--gray-text) !important;
+  font-weight: 500;
+  line-height: 20px;
+}
+.custom_nav {
+  padding: 16px 24px;
+}
+.brand-logo {
+  padding: 12px 8px;
+}
+.brand-logo img {
+  width: 10rem;
+  transition: 0.5s all;
+}
+/* ------- SIDER BAR CSS ENDS --------  */
+
+.h-500px {
+  height: 89vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: var(--link-color);
+}
+.scroll::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f5;
+}
+.scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--light-color-1);
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--light-color-1);
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: var(--link-color);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--link-color);
+}
+.table thead th {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--gray-text);
+}
+
+/* ------------------ MODAL CSS -------------------  */
+.modal {
+  background: var(--modal-bg);
+  backdrop-filter: blur(3px);
+}
+.modalcust.fade .modal-dialog {
+  transform: translate(200%, 0px) !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  height: 100% !important;
+  align-items: unset;
+}
+.modalcust.show .modal-dialog {
+  transform: translate(0%, 0px) !important;
+}
+.modalcust .modal-dialog {
+  margin-right: unset !important;
+}
+.height-modal {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* -------------------- MODAL CSS ENDS ---------------  */
+
+/* ----------------- HEIGHT WIDTH FOR IMAGES --------------  */
+
+.hw-100 {
+  border: 1px dashed gray;
+  height: 453px;
+  width: 500px;
+  cursor: pointer;
+  background: url(../images/icons/plus-bg.png) no-repeat center;
+}
+.hw_modalImg {
+  height: 253px;
+  width: 100%;
+  cursor: pointer;
+  background: url(../images/icons/plus-bg.png) no-repeat center;
+  background-size: 10%;
+  border: 1px dashed gray;
+}
+.hw-100img {
+  height: 453px;
+  width: 500px;
+  border-radius: 12px;
+}
+.hw-vid {
+  border: 2px dashed gray;
+  height: 69px;
+  width: 100px !important;
+  cursor: pointer;
+  padding: 20px;
+}
+.img_hw {
+  width: 60px;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.img_hw img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.project_card{
+  height: 690px !important;
+}
+/* ----------------- /HEIGHT WIDTH FOR IMAGES --------------  */
+.profile-ul {
+  width: 280px;
+  padding: 8px !important;
+  gap: 4px;
+}
+
+/* -------------------  SEARCH BLOCK CSS STARTS ---------------------  */
+
+.searchblock {
+  height: 0px;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: 0.5s all;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 111111;
+}
+
+.searchblock.active {
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.searchblock input::placeholder {
+  color: var(--white-color);
+}
+
+/* -------------------  SEARCH BLOCK CSS ENDS ---------------------  */
+/* ------- PROJECT SWIPER CSS START ------  */
+.modal-body_project .swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-body_project .swiper .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.modal-body_project .swiper {
+  width: 80%;
+}
+.modal-body_project .mySwiper2_project {
+  height: 390px;
+}
+
+.swiper-wrapper .swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.modal-body_project .mySwiper_project {
+  margin-top: 20px;
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.modal-body_project .mySwiper_project .swiper-wrapper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.modal-body_project
+  .mySwiper_project
+  .swiper-wrapper
+  .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ------- PROJECT SWIPER CSS END ------  */
+
+/* ---------- news and event date badge on view -------------  */
+.date{
+  background-color: var(--main-color);
+  color: var(--white-color);
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  font-size: 11px;
+
+}
+/* ---------- /news and event date badge on view -------------  */
+
+
+/* -------------------- CK TEXT EDITOR CSS ---------------------  */
+.ck-powered-by-balloon {
+  display: none !important;
+}
+
+.ck-blurred.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline {
+  height: 118px;
+}
+.ck.ck-editor__main > .ck-editor__editable:focus {
+  height: 118px;
+}
+/* -------------------- CK TEXT EDITOR CSS ENDS ---------------------  */
+
+
+/* ----------------------- DATATABLES CSS STARTS -------------------  */
+
+div.dataTables_wrapper div.dataTables_filter input {
+  margin-left: 0.5em;
+  display: inline-block;
+  width: auto;
+  border: 1px solid var(--border-color);
+}
+.dataTables_filter input {
+  height: 45px;
+  width: 250px !important;
+  border-radius: 0.375rem;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+}
+/* ----------------------- DATATABLES CSS ENDS -------------------  */
+
+
+
+/* --------------------- EVENTS CARDS STARTS --------------------  */
+
+.event_header {
+  height: 245px;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.event_header img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+}
+
+.card:hover .event_header {
+  height: 130px;
+}
+
+.card:hover .event_header img {
+  opacity: 0.6;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.event_body {
+  height: 185px;
+  padding: 20px;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s;
+}
+
+.card:hover .event_body {
+  height: 300px;
+}
+
+.event_text {
+  opacity: 0;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.card:hover .event_text {
+  opacity: 1;
+}
+/* --------------------------- EVENT CARDS ENDS -----------------------------  */
+
+/*====================================================== media querry ======================================================*/
+@media only screen and (max-width: 600px) {
+  .btncust {
+    margin: 10px 0px;
+  }
+  .side-bar {
+    margin-right: 0;
+  }
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+  #menu-toggle {
+    display: block !important;
+    cursor: pointer;
+    margin-right: 7px;
+  }
+  #wrapper.toggled .side-bar {
+    margin-right: -15rem;
+  }
+  .hw-100 {
+    height: 300px;
+    width: 100%;
+  }
+  .text-input {
+    display: none;
+  }
+  .input-group-text {
+    display: none;
+  }
+  .bg-grey {
+    background-color: var(--white-color);
+  }
+  .custom_nav {
+    padding: 10px 5px !important;
+  }
+  .fs-16m {
+    font-size: 12px;
+  }
+  .fs-20 {
+    font-size: 15px;
+  }
+  .glas {
+    font-size: 16px;
+  }
+  #wrapper {
+    overflow: hidden;
+  }
+  .side-bar {
+    width: 242px;
+    height: 100vh;
+    background-color: #eafafc;
+    overflow-y: hidden;
+  }
+  #sidebar-wrapper {
+    min-height: 100vh;
+    margin-right: -15rem !important;
+    -webkit-transition: margin 0.25s ease-out;
+    -moz-transition: margin 0.25s ease-out;
+    -o-transition: margin 0.25s ease-out;
+    transition: margin 0.25s ease-out;
+    z-index: 111;
+  }
+  #wrapper.toggled #sidebar-wrapper {
+    width: 400vw !important;
+  }
+  #wrapper.toggled #page-content-wrapper {
+    width: 200vw;
+  }
+  #wrapper.toggled #page-content-wrapper {
+    width: 200vw !important;
+  }
+  .detail-btn {
+    padding: 5px 10px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+  .btncust {
+    margin: 10px 0px;
+  }
+  .side-bar {
+    margin-right: 0;
+  }
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+  .custom_nav {
+    padding: 10px 5px !important;
+  }
+  #menu-toggle {
+    display: block !important;
+  }
+  #wrapper.toggled .side-bar {
+    margin-right: -15rem;
+  }
+  .hw-100 {
+    height: 300px;
+    width: 100%;
+  }
+  .text-input {
+    display: none;
+  }
+  .input-group-text {
+    display: none;
+  }
+  .bg-grey {
+    background-color: var(--white-color);
+  }
+  .custom_nav {
+    padding: 0px;
+  }
+  .fs-16m {
+    font-size: 12px;
+  }
+  .fs-20 {
+    font-size: 15px;
+  }
+  .glas {
+    font-size: 16px;
+  }
+  #wrapper {
+    overflow: hidden;
+  }
+  .side-bar {
+    width: 242px;
+    height: 100vh;
+    background-color: #eafafc;
+    overflow-y: hidden;
+  }
+  #sidebar-wrapper {
+    min-height: 100vh;
+    margin-right: -15rem !important;
+    -webkit-transition: margin 0.25s ease-out;
+    -moz-transition: margin 0.25s ease-out;
+    -o-transition: margin 0.25s ease-out;
+    transition: margin 0.25s ease-out;
+    z-index: 111;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    /* margin-right: 15rem !important; */
+    width: 80vw !important;
+  }
+  #wrapper.toggled #page-content-wrapper {
+    width: 200vw;
+  }
+  #wrapper.toggled #page-content-wrapper {
+    width: 200vw !important;
+  }
+}
+@media only screen and (min-width: 801px) and (max-width: 1100px) {
+  .btncust {
+    margin: 10px 0px;
+  }
+  .hw-100 {
+    height: 300px;
+    width: 100%;
+  }
+  .text-input {
+    display: block;
+  }
+  .input-group-text {
+    margin-top: 10px;
+    display: block;
+
+  }
+  .bg-grey {
+    background-color: var(--white-color);
+  }
+  .custom_nav {
+    padding: 0px;
+  }
+  .fs-16m {
+    font-size: 12px;
+  }
+  .fs-20 {
+    font-size: 15px;
+  }
+  .glas {
+    font-size: 16px;
+  }
+}

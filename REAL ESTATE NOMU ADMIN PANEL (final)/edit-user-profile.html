@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style-rtl.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css">
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  " />
+    <title>تحرير ملف تعريف المستخدم</title>
+    <link rel="shortcut icon" href="./assets/images/nomu-logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- /#page-content-wrapper starts -->
+    <div class="d-flex" id="wrapper">
+        <!-- ------------------------------ SIDEBAR STARTS ------------------------------  -->
+        <div class="side-bar position-relative " id="sidebar-wrapper">
+
+            <!-- -------- logo --------  -->
+            <div class="text-center brand-logo">
+                <img src="assets/images/nomu-logo.png" class="img-fluid" width="145px" alt="">
+            </div>
+            <!-- -------- sidebar links --------  -->
+            <div class="">
+                <ul class="navbar-nav sidebar_list">
+
+                    <!-- -------- HOME --------  -->
+                    <li class="nav-item mt-1">
+                        <a href="index.html" class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/house.png" class="img-fluid ms-2" width="20" height="20">
+                            </span>
+                            <p class="m-0 text-capitalize">الرئيسية</p>
+                        </a>
+                    </li>
+                    <!-- -------- ABOUT --------  -->
+                    <li class="nav-item mt-1">
+                        <a href="about-us.html" class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/about.png" class="img-fluid ms-2" width="20" height="20">
+                            </span>
+                            <p class="m-0 text-capitalize">معلومات عنا</p>
+                        </a>
+                    </li>
+                    <!-- -------- OUR PROJECTS --------  -->
+                    <li class="nav-item mt-1">
+                        <a href="our-projects.html" class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/project.png" class="img-fluid ms-2" width="20"
+                                    height="20">
+                            </span>
+                            <p class="m-0 text-capitalize">مشاريعنا</p>
+                        </a>
+                    </li>
+                    <!-- -------- NEWS --------  -->
+                    <li class="nav-item mt-1">
+                        <a href="news.html" class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/news.png" class="img-fluid ms-2" width="20" height="20">
+                            </span>
+                            <p class="m-0 text-capitalize">أخبار</p>
+                        </a>
+                    </li>
+                    <!-- --------- EVENTS --------- -->
+                    <li class="nav-item mt-1">
+                        <a href="events-and-conferences.html"
+                            class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/events.png" class="img-fluid ms-2" width="20" height="20">
+                            </span>
+                            <p class="m-0 text-nowrap text-capitalize"> الأحداث</p>
+                        </a>
+                    </li>
+                    <!-- -------- GALLERY --------  -->
+                    <li class="nav-item mt-1">
+                        <a href="gallery.html" class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/gallery.png" class="img-fluid ms-2" width="20"
+                                    height="20">
+                            </span>
+                            <p class="m-0 text-capitalize">صالة عرض</p>
+                        </a>
+                    </li>
+                    <!-- --------- GUARENTEES AND FEATURES --------  -->
+                    <li class="nav-item mt-1">
+                        <a href="Guarantees and features.html"
+                            class="text-decoration-none nav-link  d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/features.png" class="img-fluid ms-2" width="20"
+                                    height="20">
+                            </span>
+                            <p class="m-0 text-capitalize"> الضمانات و المميزات</p>
+                        </a>
+                    </li>
+                    <!-- --------- CONTACT US --------  -->
+                    <li class="nav-item mt-1">
+                        <a href="contact-us.html" class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/phone.png" class="img-fluid ms-2" width="20" height="20">
+                            </span>
+                            <p class="m-0 text-capitalize">اتصل بنا</p>
+                        </a>
+                    </li>
+                    <!-- -------- TICKET SYSTEM --------  -->
+                    <li class="nav-item mt-1">
+                        <a href="ticket-system.html" class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/register.svg" class="img-fluid ms-2" width="20" height="20">
+                            </span>
+                            <p class="m-0 text-capitalize">نظام التذاكر</p>
+                        </a>
+                    </li>
+                    <!-- -------- REGISTERATION --------  -->
+                    <li class="nav-item mt-1">
+                        <a href="accounts.html" class="text-decoration-none  nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/accounts.svg" class="img-fluid ms-2" width="20" height="20">
+                            </span>
+                            <p class="m-0 text-capitalize">تسجيل</p>
+                        </a>
+                    </li>
+                    <!-- -------- SOCIAL ACCOUNTS --------  -->
+                    <li class="nav-item mt-1">
+                        <a href="social.html" class="text-decoration-none nav-link d-flex align-items-center ">
+                            <span class="p-0">
+                                <img src="assets/images/social-ac.png" class="img-fluid ms-2" width="20" height="20">
+                            </span>
+                            <p class="m-0 text-capitalize">الحسابات الاجتماعية</p>
+                        </a>
+                    </li>
+                    <!-- -------- TICKET TYPE --------  -->
+                    <li class="nav-item mt-1">
+                        <a href="ticket-type.html" class="text-decoration-none nav-link d-flex align-items-center ">
+                            <span class="p-0">
+                                <img src="assets/images/icons/ticket-type.png" class="img-fluid ms-2" width="20"
+                                    height="20">
+                            </span>
+                            <p class="m-0 text-capitalize"> نوع التذكرة</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- ------------------------------ SIDEBAR ENDS ------------------------------  -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <header class="">
+                <nav class="border-bottom custom_nav">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex">
+                            <div class="m-auto">
+                                <button class="d-flex align-items-center text-white bg-transparent border-0"
+                                    id="menu-toggle" onclick="toggleSideBar()">
+                                    <img src="./assets/images/icons/menu-toggle.png" alt="" width="24" height="30">
+                                </button>
+                            </div>
+                            <div class="input-group border-1 pad-8-16 gap-8 bg-grey rounded-2 me-3">
+                                <span class="input-group-text border-0 p-0  bg-transparent" id="basic-addon1">
+                                    <img src="assets/images/icons/magnify.png" class="img-fluid" width="22px">
+                                </span>
+                                <input type="text"
+                                    class="form-control p-0 text-input fs-16 fw-400-24px border-0 bg-transparent"
+                                    placeholder="ابحث هنا ...">
+                                <button type="button"
+                                    class="nav-link fs-2 text-capitalize d-block d-md-none searchlase d-lg-none border-0 bg-transparent">
+                                    <i class="fa-solid fa-magnifying-glass glas"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-12">
+                            <div>
+                                <button type="button"
+                                    class="btncust border-c bg-transparent d-flex fw-500-24 rounded-2 justify-content-center align-items-center gap-8 fs-16 fs-16m btn-box-shadow">
+                                    <img src="./assets/images/icons/quest.png" alt="" width="24" height="24"
+                                        class="me-2">
+                                    <span class="text-nowrap text-capitalize">تحتاج مساعدة?</span>
+                                </button>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between ">
+                                <div class="dropdown">
+                                    <button class="btn p-0 border-0 " type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="d-flex align-items-center">
+                                            <span>
+                                                <img src="assets/images/avatar/av-1.png" alt="" class="img-fluid"
+                                                    width="40" height="40" style="border-radius: 50%;">
+                                            </span>
+                                        </div>
+                                    </button>
+                                    <ul class="dropdown-menu profile-ul p-8" aria-labelledby="dropdownMenuButton1">
+                                        <li class="p-12tb">
+                                            <a href="self-profile-view.html"
+                                                class="d-flex flex-column justify-content-center align-items-center text-decoration-none">
+                                                <div class="">
+                                                    <img src="assets/images/avatar/av-1.png" alt="" class="img-fluid  "
+                                                        width="60" height="60" style="border-radius: 50%;">
+                                                </div>
+                                                <div class="py-1 text-center">
+                                                    <span class="fw-600 text-black text-capitalize">سالم محمد </span>
+                                                    <p class="m-0 gray-text text-center fw-400">salem.moh@gmail.com</p>
+                                                </div>
+                                                <button type="button"
+                                                    class="btncust border-c bg-transparent m-12tb d-flex fw-500-24 rounded-2 justify-content-center align-items-center gap-8 fs-16 btn-box-shadow">
+                                                    <img src="./assets/images/icons/GearSix.png" alt="" width="20"
+                                                        height="20" class="me-2">
+                                                    <span class="fw-500 text-capitalize">اذهب للاعدادات</span>
+                                                </button>
+                                            </a>
+                                        </li>
+                                        <hr class="m-0 p-4tb text-grey">
+                                        <li>
+                                            <a class="dropdown-item fs-14 dropitem d-flex align-items-center pad-6-12"
+                                                href="#">
+                                                <img src="./assets/images/icons/SignOut.png" alt="" width="18"
+                                                    height="18" class="ms-2">
+                                                <span class="text-danger fs-14 fw-400">
+                                                    خروج
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- --------- SEARCHBLOCK FOR MOBILE SCREEN STARTS ---------  -->
+            <section
+                class="searchblock d-flex justify-content-center align-items-center position-fixed top-0 start-0 w-100">
+                <div class="position-absolute top-0 end-0 m-3">
+                    <button id="closesearch" class="bg-transparent text-white fs-1 border-0">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <form>
+                                <div class="input-group mb-3">
+                                    <input type="text"
+                                        class="form-control bg-transparent fs-1 text-white border-0 border-bottom border-white"
+                                        placeholder="Search here..." aria-label="Search here..."
+                                        aria-describedby="basic-addon2">
+                                    <span class="input-group-text  bg-transparent text-white border-0 fs-1"
+                                        id="basic-addon2">
+                                        <i class="fa-solid fa-magnifying-glass fs-1"></i>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- --------- SEARCHBLOCK FOR MOBILE SCREEN ENDS ---------  -->
+            <main>
+                <div class="h-500px scroll" id="page-content-wrapper">
+                    <!-- ------------------------------ REGISTERATION ------------------------------ -->
+                    <div class="container-fluid p-24">
+                        <div class="row justify-content-center align-items-center g-4 rtl">
+                            <div class="col-lg-12">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center gap-4c">
+                                        <h4 class="fs-20 m-0 text-capitalize">تحرير ملف تعريف المستخدم</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1 text-capitalize">اسم</label>
+                                    <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name=""
+                                        placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 ltr">
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1">
+                                        (In English)
+                                        اسم
+                                    </label>
+                                    <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name=""
+                                        placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 ">
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1">(Phone Number)رقم التليفون</label>
+                                    <input type="url" class="form-control fw-400-24px gray-text-2 pad-12-16" name=""
+                                        placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 ">
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1"> (ID number)رقم الهوية</label>
+                                    <input type="url" class="form-control fw-400-24px gray-text-2 pad-8-16" name=""
+                                        placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 ">
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1 text-capitalize">(Email)بريد إلكتروني</label>
+                                    <input type="email" class="form-control fw-400-24px gray-text-2 pad-8-16" name=""
+                                        placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 ">
+                                <div class="d-flex flex-column gap-4c">
+                                    <div class="d-flex justify-content-end position-relative mt-3 ">
+                                        <button type="button" class="cloneBtn d-flex justify-content-center align-items-center border-0 bg-link rounded-2  text-white"
+                                            onclick="cloneDiv4()">
+                                            <img src="assets/images/icons/plus-wh.png" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div>
+                                                <label class="fs-12 fw-400-20px text-1 text-capitalize">عمارت
+                                                    نمبر</label>
+                                                <input type="text"
+                                                    class="form-control fw-400-24px gray-text-2 pad-8-16 " name=""
+                                                    placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div>
+                                                <label class="fs-12 fw-400-20px text-1 text-capitalize">عنوان
+                                                    المبنى</label>
+                                                <input type="text"
+                                                    class="form-control fw-400-24px gray-text-2 pad-8-16 " name=""
+                                                    placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 ltr">
+                                            <div>
+                                                <label class="fs-12 fw-400-20px text-1 text-capitalize">
+                                                    (In English)
+                                                    عنوان المبنى 
+                                                </label>
+                                                <input type="text"
+                                                    class="form-control fw-400-24px gray-text-2 pad-8-16 " name=""
+                                                    placeholder="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="" id="dynamicContianerCover4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper ends-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/datatables.js"></script>
+    <script src="assets/js/app.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.searchlase').click(function () {
+                $(".searchblock").toggleClass('active')
+            });
+            $('#closesearch').click(function () {
+                $(".searchblock").toggleClass('active')
+            });
+        })
+    </script>
+
+    <!-- ------------------------------ ADD BUILDING NUMBER SCRIPT ---------------------  -->
+
+    <script>
+        let newSection4 = `
+            <div class="col-lg-12">
+                <div class="d-flex flex-column gap-4c">
+                    <div class="ab21 d-flex justify-content-end position-relative mt-3">
+                        <button class='cloneBtn border-0 bg-transparent' onclick="removeParent4(this)" type="button">
+                            <img src="assets/images/icons/deletbin.png" class="img-fluid" width="20px">
+                        </button>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div>
+                                <label class="fs-12 fw-400-20px text-1 text-capitalize">عمارت نمبر</label>
+                                <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name="" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div>
+                                <label class="fs-12 fw-400-20px text-1 text-capitalize">عنوان المبنى</label>
+                                <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name="" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 ltr">
+                            <div>
+                                <label class="fs-12 fw-400-20px text-1 text-capitalize">
+                                    (In English)
+                                    عنوان المبنى 
+                                </label>
+                                <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name="" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    
+        function cloneDiv4() {
+            let dynamicContianerCover4 = document.getElementById("dynamicContianerCover4");
+            let newDiv = document.createElement('div');
+            newDiv.innerHTML = newSection4;
+            dynamicContianerCover4.appendChild(newDiv);
+        }
+    
+        function removeParent4(childNode) {
+            var parentElement = childNode.parentNode.parentNode.parentNode;
+            parentElement.parentNode.removeChild(parentElement);
+        }
+    </script>
+    
+
+    <!-- ------------------------------ ADD BUILDING NUMBER SCRIPT  ENDS ---------------------  -->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#userTable').DataTable({
+                "language": {
+                    "paginate": {
+                        "previous": '<i class="fa-solid fa-chevron-left p-5px"></i>',
+                        "next": '<i class="fa-solid fa-chevron-right p-5px"></i>',
+                    },
+                    "lengthMenu": "",
+                    search: "",
+                    searchPlaceholder: "Search..."
+                },
+
+                "ordering": true
+            });
+
+        });
+    </script>
+</body>
+
+</html>

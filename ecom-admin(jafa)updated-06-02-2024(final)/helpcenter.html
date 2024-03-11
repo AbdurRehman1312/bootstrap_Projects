@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css">
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  " />
+  
+    <title>Store Details || Ecom Admin Panel</title>
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Page Content -->
+        <div class="w-100">
+            <!-- navbar start from here -->
+            <header class="">
+                <nav class="bg-white custom_nav">
+                    <div class="container-fluid">
+                        <div class="row g-2 align-items-center justify-content-between">
+                            <div class="col-6 col-md-6 col-lg-3">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="dropdown">
+                                        <button class="btn p-0 border-0 d-flex align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img src="assets/images/icons/user.png" class="img-fluid" width="22px">
+                                        </button>
+                                        <ul class="dropdown-menu dropact" style="width: 300px" aria-labelledby="dropdownMenuButton1">
+                                            <li>
+                                                <a class="dropdown-item d-flex fs-13 align-items-center gap-3 text-black" href="profile-setting.html">
+                                                    <span>
+                                                        <img src="assets/images/icons/ch-cir-b.png" class="img-fluid" width="18px">
+                                                    </span>
+                                                    <span>
+                                                        Profile personally
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item d-flex fs-13 align-items-center gap-3 text-black" href="store-settings-notification.html">
+                                                    <span>
+                                                        <img src="assets/images/icons/ch-cir-b.png" class="img-fluid" width="18px">
+                                                    </span>
+                                                    <span>
+                                                        Alerts
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item d-flex fs-13 align-items-center gap-3 text-black" href="https://quffa.replatechnologies.com/news-blog.html">
+                                                    <span>
+                                                        <img src="assets/images/icons/ch-cir-b.png" class="img-fluid" width="18px">
+                                                    </span>
+                                                    <span>
+                                                        Platform updates
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item d-flex fs-13 align-items-center gap-3 text-black" href="https://quffa.replatechnologies.com/help-center.html">
+                                                    <span>
+                                                        <img src="assets/images/icons/ch-cir-b.png" class="img-fluid" width="18px">
+                                                    </span>
+                                                    <span>
+                                                        Suggestions
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item d-flex fs-13 align-items-center gap-3 text-black" href="#">
+                                                    <span>
+                                                        <img src="assets/images/icons/ch-cir-b.png" class="img-fluid" width="18px">
+                                                    </span>
+                                                    <span>
+                                                        Sign out
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            <img src="assets/images/icons/noti.png" class="img-fluid" width="20px">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="customer-complaint.html">
+                                            <img src="assets/images/icons/report-ic.png" class="img-fluid" width="22px">
+                                        </a>
+                                    </div>
+                                    <div class="d-flex align-items-center text-blue">
+                                        <i class="fas fa-sliders-h fs-4 me-3" id="menu-toggle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-6">
+                                <div class="input-group shadow pad-14-20">
+                                    <input type="text" class="form-control p-0 fs-14 bg-transparent border-0" placeholder="Search for anything...">
+                                    <span class="input-group-text bg-transparent p-0 border-0" id="basic-addon2">
+                                        <img src="assets/images/icons/search.png" class="img-fluid" width="20px">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 d-none d-lg-flex"></div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- navbar end here -->
+            <div class="container-fluid pt-3">
+                <div class="row g-3">
+                    <div class="col-lg-8">
+                        <div class="card border-gray3 rounded-3 shadow-c mb-3">
+                            <div class="card-body">                        
+                                <h6 class="m-0 text-black fw-semibold">Help Center</h6>
+                            </div>
+                        </div>
+                        <div class="card rounded-3 border-gray3 shadow-c">
+                            <div class="card-body">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-tb1" role="tabpanel" aria-labelledby="v-pills-tb1-tab" tabindex="0">
+                                        <div class="card border-gray3 rounded-3 shadow-c mb-3">
+                                            <div class="card-body">                        
+                                                <div class="row g-3 align-items-center justify-content-between py-3">
+                                                    <div class="col-lg-3 col-6">
+                                                        <div>
+                                                            <button class="btn border-gray fs-14 d-flex align-items-center gap-2 shadow-c text-1 bg-white" type="button">
+                                                                    <img src="assets/images/icons/cog.png" class="img-fluid" width="15px">
+                                                                    <span>Customization</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="text-end">
+                                                            <h5 class="text-black fw-semibold">Pioneer</h5>
+                                                            <p class="text-1 fw-semibold fs-12 d-flex align-items-center gap-1 m-0 justify-content-end">
+                                                                <span>(Reviews 3)</span>
+                                                                <img src="assets/images/icons/y-star.png" class="img-fluid" width="14px">
+                                                                <span>4</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card border-gray3 rounded-3 shadow-c mb-3">
+                                            <div class="card-body">                        
+                                                <div class="row g-3 align-items-center justify-content-between py-3">
+                                                    <div class="col-lg-3 col-6">
+                                                        <div>
+                                                            <button class="btn border-gray fs-14 d-flex align-items-center gap-2 shadow-c text-1 bg-white" type="button">
+                                                                    <img src="assets/images/icons/cog.png" class="img-fluid" width="15px">
+                                                                    <span>Customization</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="text-end">
+                                                            <h5 class="text-black fw-semibold">Pioneer</h5>
+                                                            <p class="text-1 fw-semibold fs-12 d-flex align-items-center gap-1 m-0 justify-content-end">
+                                                                <span>(Reviews 3)</span>
+                                                                <img src="assets/images/icons/y-star.png" class="img-fluid" width="14px">
+                                                                <span>4</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card border-gray3 rounded-3 shadow-c mb-3">
+                                            <div class="card-body">                        
+                                                <div class="row g-3 align-items-center justify-content-between py-3">
+                                                    <div class="col-lg-3 col-6">
+                                                        <div>
+                                                            <button class="btn border-gray fs-14 d-flex align-items-center gap-2 shadow-c text-1 bg-white" type="button">
+                                                                    <img src="assets/images/icons/cog.png" class="img-fluid" width="15px">
+                                                                    <span>Customization</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="text-end">
+                                                            <h5 class="text-black fw-semibold">Pioneer</h5>
+                                                            <p class="text-1 fw-semibold fs-12 d-flex align-items-center gap-1 m-0 justify-content-end">
+                                                                <span>(Reviews 3)</span>
+                                                                <img src="assets/images/icons/y-star.png" class="img-fluid" width="14px">
+                                                                <span>4</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card border-gray3 rounded-3 shadow-c mb-3">
+                                            <div class="card-body">                        
+                                                <div class="row g-3 align-items-center justify-content-between py-3">
+                                                    <div class="col-lg-3 col-6">
+                                                        <div>
+                                                            <button class="btn border-gray fs-14 d-flex align-items-center gap-2 shadow-c text-1 bg-white" type="button">
+                                                                    <img src="assets/images/icons/cog.png" class="img-fluid" width="15px">
+                                                                    <span>Customization</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="text-end">
+                                                            <h5 class="text-black fw-semibold">Pioneer</h5>
+                                                            <p class="text-1 fw-semibold fs-12 d-flex align-items-center gap-1 m-0 justify-content-end">
+                                                                <span>(Reviews 3)</span>
+                                                                <img src="assets/images/icons/y-star.png" class="img-fluid" width="14px">
+                                                                <span>4</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card border-gray3 rounded-3 shadow-c mb-3">
+                                            <div class="card-body">                        
+                                                <div class="row g-3 align-items-center justify-content-between py-3">
+                                                    <div class="col-lg-3 col-6">
+                                                        <div>
+                                                            <button class="btn border-gray fs-14 d-flex align-items-center gap-2 shadow-c text-1 bg-white" type="button">
+                                                                    <img src="assets/images/icons/cog.png" class="img-fluid" width="15px">
+                                                                    <span>Customization</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="text-end">
+                                                            <h5 class="text-black fw-semibold">Pioneer</h5>
+                                                            <p class="text-1 fw-semibold fs-12 d-flex align-items-center gap-1 m-0 justify-content-end">
+                                                                <span>(Reviews 3)</span>
+                                                                <img src="assets/images/icons/y-star.png" class="img-fluid" width="14px">
+                                                                <span>4</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-tb2" role="tabpanel" aria-labelledby="v-pills-tb2-tab" tabindex="0">
+                                        <div class="card border-gray3 rounded-3 shadow-c mb-3">
+                                            <div class="card-body">                        
+                                                <div class="row g-3 align-items-center justify-content-between py-3">
+                                                    <div class="col-lg-3 col-6">
+                                                        <div>
+                                                            <button class="btn border-gray fs-14 d-flex align-items-center gap-2 shadow-c text-1 bg-white" type="button">
+                                                                    <img src="assets/images/icons/cog.png" class="img-fluid" width="15px">
+                                                                    <span>Customization</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="text-end">
+                                                            <h5 class="text-black fw-semibold">Pioneer</h5>
+                                                            <p class="text-1 fw-semibold fs-12 d-flex align-items-center gap-1 m-0 justify-content-end">
+                                                                <span>(Reviews 3)</span>
+                                                                <img src="assets/images/icons/y-star.png" class="img-fluid" width="14px">
+                                                                <span>4</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-tb3" role="tabpanel" aria-labelledby="v-pills-tb3-tab" tabindex="0">
+                                        <div class="card border-gray3 rounded-3 shadow-c mb-3">
+                                            <div class="card-body">                        
+                                                <div class="row g-3 align-items-center justify-content-between py-3">
+                                                    <div class="col-lg-3 col-6">
+                                                        <div>
+                                                            <button class="btn border-gray fs-14 d-flex align-items-center gap-2 shadow-c text-1 bg-white" type="button">
+                                                                    <img src="assets/images/icons/cog.png" class="img-fluid" width="15px">
+                                                                    <span>Customization</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="text-end">
+                                                            <h5 class="text-black fw-semibold">Pioneer</h5>
+                                                            <p class="text-1 fw-semibold fs-12 d-flex align-items-center gap-1 m-0 justify-content-end">
+                                                                <span>(Reviews 3)</span>
+                                                                <img src="assets/images/icons/y-star.png" class="img-fluid" width="14px">
+                                                                <span>4</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-tb4" role="tabpanel" aria-labelledby="v-pills-tb4-tab" tabindex="0">
+                                        <div class="card border-gray3 rounded-3 shadow-c mb-3">
+                                            <div class="card-body">                        
+                                                <div class="row g-3 align-items-center justify-content-between py-3">
+                                                    <div class="col-lg-3 col-6">
+                                                        <div>
+                                                            <button class="btn border-gray fs-14 d-flex align-items-center gap-2 shadow-c text-1 bg-white" type="button">
+                                                                    <img src="assets/images/icons/cog.png" class="img-fluid" width="15px">
+                                                                    <span>Customization</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="text-end">
+                                                            <h5 class="text-black fw-semibold">Pioneer</h5>
+                                                            <p class="text-1 fw-semibold fs-12 d-flex align-items-center gap-1 m-0 justify-content-end">
+                                                                <span>(Reviews 3)</span>
+                                                                <img src="assets/images/icons/y-star.png" class="img-fluid" width="14px">
+                                                                <span>4</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-tb5" role="tabpanel" aria-labelledby="v-pills-tb5-tab" tabindex="0">
+                                        <div class="card border-gray3 rounded-3 shadow-c mb-3">
+                                            <div class="card-body">                        
+                                                <div class="row g-3 align-items-center justify-content-between py-3">
+                                                    <div class="col-lg-3 col-6">
+                                                        <div>
+                                                            <button class="btn border-gray fs-14 d-flex align-items-center gap-2 shadow-c text-1 bg-white" type="button">
+                                                                    <img src="assets/images/icons/cog.png" class="img-fluid" width="15px">
+                                                                    <span>Customization</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="text-end">
+                                                            <h5 class="text-black fw-semibold">Pioneer</h5>
+                                                            <p class="text-1 fw-semibold fs-12 d-flex align-items-center gap-1 m-0 justify-content-end">
+                                                                <span>(Reviews 3)</span>
+                                                                <img src="assets/images/icons/y-star.png" class="img-fluid" width="14px">
+                                                                <span>4</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card rounded-3 border-gray3 shadow-c h-100">
+                            <div class="card-header border-0 bg-transparent py-3">
+                                <h6 class="m-0 text-black fw-semibold text-end">Help Center</h6>
+                            </div>
+                            <div class="card-body">
+                                <ul class="nav nav-pills pill-cust lh-lg " id="v-pills-tab" role="tablist">
+                                  <li class="nav-item flex-grow-1 w-100" role="presentation">
+                                    <button class="nav-link fs-12 w-100 fw-semibold active text-end" id="v-pills-tb1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tb1" type="button" role="tab" aria-controls="v-pills-tb1" aria-selected="true">
+                                        How to modify the product prices?
+                                    </button>
+                                  </li>
+                                  <li class="nav-item flex-grow-1 w-100" role="presentation">
+                                    <button class="nav-link fs-12 w-100 fw-semibold text-end" id="v-pills-tb2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tb2" type="button" role="tab" aria-controls="v-pills-tb2" aria-selected="false" tabindex="-1">
+                                        How to edit the description of your already added product?
+                                    </button>
+                                  </li>
+                                  <li class="nav-item flex-grow-1 w-100" role="presentation">
+                                    <button class="nav-link fs-12 w-100 fw-semibold text-end" id="v-pills-tb3-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tb3" type="button" role="tab" aria-controls="v-pills-tb3" aria-selected="false" tabindex="-1">
+                                        How to change the settings of our store?
+                                    </button>
+                                  </li>
+                                  <li class="nav-item flex-grow-1 w-100" role="presentation">
+                                    <button class="nav-link fs-12 w-100 fw-semibold text-end" id="v-pills-tb4-tab" data-bs-toggle="pill" data-bs-target="#v-pills-tb4" type="button" role="tab" aria-controls="v-pills-tb4" aria-selected="false" tabindex="-1">
+                                        How to change the theme of our store?
+                                    </button>
+                                  </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="text-center py-2">
+                <a href="#" class="text-decoration-none btncircle">
+                    <img src="assets/images/icons/email-w.png" class="img-fluid" width="32px">
+                </a>
+            </footer>
+        </div>
+      
+
+    </div>
+    <!-- /#page-content-wrapper -->
+    <!-- Modal -->
+
+
+    
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

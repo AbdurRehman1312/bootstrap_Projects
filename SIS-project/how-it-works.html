@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How it Works || System Invest Solux</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/00b231478f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl p-0 navbar-light fixed-top bg-white shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo-trans.png" class="img-fluid sizelogo">
+                </a>
+                <div class="d-flex align-items-center justify-content-end gap-3">
+                    <button type="button"
+                        class="nav-link fs-2 text-orange text-capitalize d-block d-md-none searchlase d-lg-none border-0 bg-transparent">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="navbar-toggler" type="button" onclick="openNav()">
+                        <img src="images/menu.png" class="img-fluid">
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse ms-4">
+                    <ul class="navbar-nav h-nav ms-auto align-items-center me-auto mb-2 mb-lg-0 w-100">
+                        <li class="position-relative nav-item">
+                            <a class="nav-link d-flex text-uppercase align-items-center gap-2" id="dropdownMenuone"
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                user manual
+                                <span class="down-caretone">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item text-capitalize fsc-10 d-flex align-items-center gap-2"
+                                        href="#">
+                                        dropdown one
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="./investment-opportunities.html">
+                                <span class="d-block pt-1">investment opportunities</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase active" href="how-it-works.html">
+                                <span class="d-block pt-1">how it works</span>
+                            </a>
+                        </li>
+                        <li class="position-relative nav-item">
+                            <a class="nav-link d-flex text-uppercase align-items-center gap-2" id="dropdownMenutwo"
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                projects
+                                <span class="down-carettwo">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item fsc-10 d-flex align-items-center gap-2"
+                                        href="./all-projects.html">
+                                        All projects
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item fsc-10 d-flex align-items-center gap-2"
+                                        href="./featured-project.html">
+                                        Featured project
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex align-items-center gap-2">
+                        <button type="button"
+                            class="me-4 fs-4 text-orange text-capitalize searchlase border-0 bg-transparent">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <div class="dropdown nav-link">
+                            <button class="bg-transparent text-dark p-0 d-flex  align-items-center border-0 fs-5 gap-2"
+                                id="dropdownMenu" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="images/en.jpg" class="img-fluid w-20">
+                                <span class="down-caret">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item text-uppercase fs-5 d-flex align-items-center gap-2"
+                                        href="#">
+                                        <img src="images/fr.png" class="img-fluid w-20">
+                                        <span>
+                                            fr
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="./login.html" class="text-decoration-none btnCust-2 text-capitalize">
+                            login/register
+                        </a>
+                        <a href="./login.html" class="text-decoration-none btnCust-1 text-capitalize">
+                            create project
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- search div -->
+        <section class="searchblock">
+            <div class="position-absolute top-0 end-0 m-3">
+                <button id="closesearch" class="bg-transparent text-white fs-1 border-0">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <form>
+                            <div class="input-group mb-3">
+                                <input type="text"
+                                    class="form-control bg-transparent fs-1 text-white border-0 border-bottom border-white"
+                                    placeholder="Search here..." aria-label="Search here..."
+                                    aria-describedby="basic-addon2">
+                                <span class="input-group-text  bg-transparent text-white border-0 fs-1"
+                                    id="basic-addon2">
+                                    <i class="fa-solid fa-magnifying-glass fs-1"></i>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- search div end -->
+
+        <!-- mobile menu start -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn text-white" onclick="closeNav()">&times;</a>
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="#colsone" class="text-decoration-none text-white" data-bs-toggle="collapse">
+                    User manual
+                    <span class="ps-3">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                </a>
+                <div class="collapse" id="colsone">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-decoration-none fs-2 text-white text-capitalize">dummy dropdown</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="investment-opportunities.html"
+                    class="text-decoration-none text-white text-capitalize">investment opportunities</a>
+                <a href="how-it-works.html" class="text-decoration-none text-white text-capitalize">how it works</a>
+                <a href="#colstw" class="text-decoration-none text-white text-capitalize" data-bs-toggle="collapse">
+                    projects
+                    <span class="ps-3">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                </a>
+                <div class="collapse" id="colstw">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="./all-projects.html" class="text-decoration-none fs-2 text-white">All projects</a>
+                        </li>
+                        <li>
+                            <a href="./featured-project.html" class="text-decoration-none fs-2 text-white">Featured
+                                Project</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu end -->
+    </header>
+    <main>
+        <section class="breadcrumb-section position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="position-relative">
+                            <h1 class="fcust text-capitalize text-white fw-bold mb-4">How it Works</h1>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item fs-4 text-capitalize">
+                                        <a href="index.html" class="text-decoration-none hover-a-3">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item pt-1 ps-3">
+                                        <span>
+                                            <ion-icon name="chevron-forward-outline" class="fs-3 text-white"></ion-icon>
+                                        </span>
+                                    </li>
+                                    <li class="breadcrumb-item fs-4 text-white active text-capitalize"
+                                        aria-current="page">How it Works</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- popular courses section start -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-lg-3">
+                        <div class="nav flex-column nav-pills shadow h-100 pills-cust me-3" id="v-pills-tab"
+                            role="tablist" aria-orientation="vertical">
+                            <button class="nav-link text-start p-3 fs-4 active" id="v-pills-finvestor-tab"
+                                data-bs-toggle="pill" data-bs-target="#v-pills-finvestor" type="button" role="tab"
+                                aria-controls="v-pills-finvestor" aria-selected="true">
+                                <span class="pe-2 arrowD"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                For Investors
+                            </button>
+                            <button class="nav-link text-start p-3 fs-4" id="v-pills-incubacce-tab"
+                                data-bs-toggle="pill" data-bs-target="#v-pills-incubacce" type="button" role="tab"
+                                aria-controls="v-pills-incubacce" aria-selected="false">
+                                <span class="pe-2 arrowD"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                For Incubators/Accelerators
+                            </button>
+                            <button class="nav-link text-start p-3 fs-4" id="v-pills-projectowner-tab"
+                                data-bs-toggle="pill" data-bs-target="#v-pills-projectowner" type="button" role="tab"
+                                aria-controls="v-pills-projectowner" aria-selected="false">
+                                <span class="pe-2 arrowD"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                For Project Owners
+                            </button>
+                            <button class="nav-link text-start p-3 fs-4" id="v-pills-vettingproc-tab"
+                                data-bs-toggle="pill" data-bs-target="#v-pills-vettingproc" type="button" role="tab"
+                                aria-controls="v-pills-vettingproc" aria-selected="false">
+                                <span class="pe-2 arrowD"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                Our Vetting Process
+                            </button>
+                            <button class="nav-link text-start p-3 fs-4" id="v-pills-faqs-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-faqs" type="button" role="tab" aria-controls="v-pills-faqs"
+                                aria-selected="false">
+                                <span class="pe-2 arrowD"><i class="fa-solid fa-arrow-right-long"></i></span>
+                                FAQS
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-finvestor" role="tabpanel"
+                                aria-labelledby="v-pills-finvestor-tab">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="imgsz">
+                                            <img src="images/img01.jpg" class="img-fluid w-100 h-100">
+                                        </div>
+                                        <div class="mt-4">
+                                            <div class="">
+                                                <h3 class="text-blue mb-3">How It Works?</h3>
+                                                <p class="fs-5">SIS Group Ltd, 1Intershore Chambers, Road Town, Tortola,
+                                                    British Virgin Islands will process any personal information
+                                                    provided to us (whether via the SIS website (the "Website"), the
+                                                    customer application form or any other means) or otherwise held by
+                                                    us relating to you in the manner set out in this Privacy Policy. By
+                                                    submitting your information to us and using the Website you confirm
+                                                    your consent to the use of your personal information as set out in
+                                                    this Privacy Policy. If you do not agree with the terms of this
+                                                    Privacy Policy please do not use the Website or otherwise provide us
+                                                    with your personal information.</p>
+                                            </div>
+                                            <div class=" mt-4">
+                                                <h4 class="mb-3 text-blue">Information Collected and How It Is Used</h4>
+                                                <p class="fs-5">The information and data about you which we may collect,
+                                                    use and process includes the following:</p>
+                                                <ol>
+                                                    <li class="fs-5">information that you provide to us by filling in
+                                                        forms on the Website or any other information you submit to us
+                                                        via the Website or email;
+                                                    </li>
+                                                    <li class="fs-5 ">records of correspondence, whether via the
+                                                        Website, email, telephone or other means;
+                                                    </li>
+                                                    <li class="fs-5 ">your responses to surveys or customer research
+                                                        that we carry out;
+                                                    </li>
+                                                    <li class="fs-5 ">details of the transactions you carry out with us,
+                                                        whether via the Website, telephone or other means;
+                                                    </li>
+                                                    <li class="fs-5 ">details of your visits to the Website including,
+                                                        but not limited to, traffic data, location data, weblogs and
+                                                        other communication data.
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                            <div class=" mt-4">
+                                                <h4 class="mb-3 text-blue">Use Of Cookies</h4>
+                                                <p class="fs-5">Cookies contain information that is transferred to your
+                                                    computer's hard drive. They help us to improve the Website and to
+                                                    deliver a and more personalised service. Some of the cookies we use
+                                                    are essential for the Website to operate.</p>
+                                                <p class="fs-5">If you want to delete any cookies already stored on your
+                                                    computer or stop the cookies that keep track of your browsing
+                                                    patterns on the Website you can do so by deleting your existing
+                                                    cookies and/or altering your browser's privacy settings to block
+                                                    cookies (the process you follow will differ from browser to
+                                                    browser). If you would like more information on how to do this
+                                                    please visit <a href=""
+                                                        class="text-decoration-none">http://www.sis.org/.</a>Please note
+                                                    that deleting our cookies or disabling our future cookies means that
+                                                    you may not be able to access certain areas or features of the
+                                                    Website.</p>
+                                            </div>
+                                            <div class=" mt-4">
+                                                <h4 class="mb-3 text-blue">Right to be forgotten</h4>
+                                                <p class="fs-5">
+                                                    You are entitled to ask us for the erasure of your personal data and
+                                                    the deletion of your account where:
+                                                </p>
+                                                <ol class="mt-2">
+                                                    <li class="fs-5">It is not necessary for us to process your data;
+                                                    </li>
+                                                    <li class="fs-5">If you have withdrawn your consent, with your
+                                                        consent being the legal basis for processing;</li>
+                                                    <li class="fs-5">You have excercised your right to object and we
+                                                        have no legitimate grounds for overriding for the processing;
+                                                    </li>
+                                                    <li class="fs-5">Your personal data has been unlawfully processed;
+                                                    </li>
+                                                    <li class="fs-5">Your personal data should be erased in accordance
+                                                        to a legal obligation;</li>
+                                                </ol>
+                                                <p class="fs-5 mt-4">
+                                                    We will not erase and still keep personal data in cases where
+                                                    legitimate interests override your request in compliance with legal
+                                                    obligation or defence of legal claims
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-incubacce" role="tabpanel"
+                                aria-labelledby="v-pills-incubacce-tab">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="imgsz">
+                                            <img src="images/incubator.jpg" class="img-fluid w-100 h-100">
+                                        </div>
+                                        <div class="mt-4">
+                                            <div class="">
+                                                <h3 class="text-blue mb-3">How It Works?</h3>
+                                                <p class="fs-5">SIS Group Ltd, 1Intershore Chambers, Road Town, Tortola,
+                                                    British Virgin Islands will process any personal information
+                                                    provided to us (whether via the SIS website (the "Website"), the
+                                                    customer application form or any other means) or otherwise held by
+                                                    us relating to you in the manner set out in this Privacy Policy. By
+                                                    submitting your information to us and using the Website you confirm
+                                                    your consent to the use of your personal information as set out in
+                                                    this Privacy Policy. If you do not agree with the terms of this
+                                                    Privacy Policy please do not use the Website or otherwise provide us
+                                                    with your personal information.</p>
+                                            </div>
+                                            <div class=" mt-4">
+                                                <h4 class="mb-3 text-blue">Information Collected and How It Is Used</h4>
+                                                <p class="fs-5">The information and data about you which we may collect,
+                                                    use and process includes the following:</p>
+                                                <ol>
+                                                    <li class="fs-5">information that you provide to us by filling in
+                                                        forms on the Website or any other information you submit to us
+                                                        via the Website or email;
+                                                    </li>
+                                                    <li class="fs-5 ">records of correspondence, whether via the
+                                                        Website, email, telephone or other means;
+                                                    </li>
+                                                    <li class="fs-5 ">your responses to surveys or customer research
+                                                        that we carry out;
+                                                    </li>
+                                                    <li class="fs-5 ">details of the transactions you carry out with us,
+                                                        whether via the Website, telephone or other means;
+                                                    </li>
+                                                    <li class="fs-5 ">details of your visits to the Website including,
+                                                        but not limited to, traffic data, location data, weblogs and
+                                                        other communication data.
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                            <div class=" mt-4">
+                                                <h4 class="mb-3 text-blue">Use Of Cookies</h4>
+                                                <p class="fs-5">Cookies contain information that is transferred to your
+                                                    computer's hard drive. They help us to improve the Website and to
+                                                    deliver a and more personalised service. Some of the cookies we use
+                                                    are essential for the Website to operate.</p>
+                                                <p class="fs-5">If you want to delete any cookies already stored on your
+                                                    computer or stop the cookies that keep track of your browsing
+                                                    patterns on the Website you can do so by deleting your existing
+                                                    cookies and/or altering your browser's privacy settings to block
+                                                    cookies (the process you follow will differ from browser to
+                                                    browser). If you would like more information on how to do this
+                                                    please visit <a href=""
+                                                        class="text-decoration-none">http://www.sis.org/.</a>Please note
+                                                    that deleting our cookies or disabling our future cookies means that
+                                                    you may not be able to access certain areas or features of the
+                                                    Website.</p>
+                                            </div>
+                                            <div class=" mt-4">
+                                                <h4 class="mb-3 text-blue">Right to be forgotten</h4>
+                                                <p class="fs-5">
+                                                    You are entitled to ask us for the erasure of your personal data and
+                                                    the deletion of your account where:
+                                                </p>
+                                                <ol class="mt-2">
+                                                    <li class="fs-5">It is not necessary for us to process your data;
+                                                    </li>
+                                                    <li class="fs-5">If you have withdrawn your consent, with your
+                                                        consent being the legal basis for processing;</li>
+                                                    <li class="fs-5">You have excercised your right to object and we
+                                                        have no legitimate grounds for overriding for the processing;
+                                                    </li>
+                                                    <li class="fs-5">Your personal data has been unlawfully processed;
+                                                    </li>
+                                                    <li class="fs-5">Your personal data should be erased in accordance
+                                                        to a legal obligation;</li>
+                                                </ol>
+                                                <p class="fs-5 mt-4">
+                                                    We will not erase and still keep personal data in cases where
+                                                    legitimate interests override your request in compliance with legal
+                                                    obligation or defence of legal claims
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-projectowner" role="tabpanel"
+                                aria-labelledby="v-pills-projectowner-tab">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="imgsz">
+                                            <img src="images/owner.jpg" class="img-fluid w-100 h-100">
+                                        </div>
+                                        <div class="mt-4">
+                                            <div class="">
+                                                <h3 class="text-blue mb-3">How It Works?</h3>
+                                                <p class="fs-5">SIS Group Ltd, 1Intershore Chambers, Road Town, Tortola,
+                                                    British Virgin Islands will process any personal information
+                                                    provided to us (whether via the SIS website (the "Website"), the
+                                                    customer application form or any other means) or otherwise held by
+                                                    us relating to you in the manner set out in this Privacy Policy. By
+                                                    submitting your information to us and using the Website you confirm
+                                                    your consent to the use of your personal information as set out in
+                                                    this Privacy Policy. If you do not agree with the terms of this
+                                                    Privacy Policy please do not use the Website or otherwise provide us
+                                                    with your personal information.</p>
+                                            </div>
+                                            <div class=" mt-4">
+                                                <h4 class="mb-3 text-blue">Information Collected and How It Is Used</h4>
+                                                <p class="fs-5">The information and data about you which we may collect,
+                                                    use and process includes the following:</p>
+                                                <ol>
+                                                    <li class="fs-5">information that you provide to us by filling in
+                                                        forms on the Website or any other information you submit to us
+                                                        via the Website or email;
+                                                    </li>
+                                                    <li class="fs-5 ">records of correspondence, whether via the
+                                                        Website, email, telephone or other means;
+                                                    </li>
+                                                    <li class="fs-5 ">your responses to surveys or customer research
+                                                        that we carry out;
+                                                    </li>
+                                                    <li class="fs-5 ">details of the transactions you carry out with us,
+                                                        whether via the Website, telephone or other means;
+                                                    </li>
+                                                    <li class="fs-5 ">details of your visits to the Website including,
+                                                        but not limited to, traffic data, location data, weblogs and
+                                                        other communication data.
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                            <div class=" mt-4">
+                                                <h4 class="mb-3 text-blue">Use Of Cookies</h4>
+                                                <p class="fs-5">Cookies contain information that is transferred to your
+                                                    computer's hard drive. They help us to improve the Website and to
+                                                    deliver a and more personalised service. Some of the cookies we use
+                                                    are essential for the Website to operate.</p>
+                                                <p class="fs-5">If you want to delete any cookies already stored on your
+                                                    computer or stop the cookies that keep track of your browsing
+                                                    patterns on the Website you can do so by deleting your existing
+                                                    cookies and/or altering your browser's privacy settings to block
+                                                    cookies (the process you follow will differ from browser to
+                                                    browser). If you would like more information on how to do this
+                                                    please visit <a href=""
+                                                        class="text-decoration-none">http://www.sis.org/.</a>Please note
+                                                    that deleting our cookies or disabling our future cookies means that
+                                                    you may not be able to access certain areas or features of the
+                                                    Website.</p>
+                                            </div>
+                                            <div class=" mt-4">
+                                                <h4 class="mb-3 text-blue">Right to be forgotten</h4>
+                                                <p class="fs-5">
+                                                    You are entitled to ask us for the erasure of your personal data and
+                                                    the deletion of your account where:
+                                                </p>
+                                                <ol class="mt-2">
+                                                    <li class="fs-5">It is not necessary for us to process your data;
+                                                    </li>
+                                                    <li class="fs-5">If you have withdrawn your consent, with your
+                                                        consent being the legal basis for processing;</li>
+                                                    <li class="fs-5">You have excercised your right to object and we
+                                                        have no legitimate grounds for overriding for the processing;
+                                                    </li>
+                                                    <li class="fs-5">Your personal data has been unlawfully processed;
+                                                    </li>
+                                                    <li class="fs-5">Your personal data should be erased in accordance
+                                                        to a legal obligation;</li>
+                                                </ol>
+                                                <p class="fs-5 mt-4">
+                                                    We will not erase and still keep personal data in cases where
+                                                    legitimate interests override your request in compliance with legal
+                                                    obligation or defence of legal claims
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-vettingproc" role="tabpanel"
+                                aria-labelledby="v-pills-vettingproc-tab">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="imgsz">
+                                            <img src="images/img02.jpg" class="img-fluid w-100 h-100">
+                                        </div>
+                                        <div class="mt-4">
+                                            <div class="">
+                                                <h3 class="text-blue mb-3">How It Works?</h3>
+                                                <p class="fs-5">SIS Group Ltd, 1Intershore Chambers, Road Town, Tortola,
+                                                    British Virgin Islands will process any personal information
+                                                    provided to us (whether via the SIS website (the "Website"), the
+                                                    customer application form or any other means) or otherwise held by
+                                                    us relating to you in the manner set out in this Privacy Policy. By
+                                                    submitting your information to us and using the Website you confirm
+                                                    your consent to the use of your personal information as set out in
+                                                    this Privacy Policy. If you do not agree with the terms of this
+                                                    Privacy Policy please do not use the Website or otherwise provide us
+                                                    with your personal information.</p>
+                                            </div>
+                                            <div class=" mt-4">
+                                                <h4 class="mb-3 text-blue">Information Collected and How It Is Used</h4>
+                                                <p class="fs-5">The information and data about you which we may collect,
+                                                    use and process includes the following:</p>
+                                                <ol>
+                                                    <li class="fs-5">information that you provide to us by filling in
+                                                        forms on the Website or any other information you submit to us
+                                                        via the Website or email;
+                                                    </li>
+                                                    <li class="fs-5 ">records of correspondence, whether via the
+                                                        Website, email, telephone or other means;
+                                                    </li>
+                                                    <li class="fs-5 ">your responses to surveys or customer research
+                                                        that we carry out;
+                                                    </li>
+                                                    <li class="fs-5 ">details of the transactions you carry out with us,
+                                                        whether via the Website, telephone or other means;
+                                                    </li>
+                                                    <li class="fs-5 ">details of your visits to the Website including,
+                                                        but not limited to, traffic data, location data, weblogs and
+                                                        other communication data.
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                            <div class=" mt-4">
+                                                <h4 class="mb-3 text-blue">Use Of Cookies</h4>
+                                                <p class="fs-5">Cookies contain information that is transferred to your
+                                                    computer's hard drive. They help us to improve the Website and to
+                                                    deliver a and more personalised service. Some of the cookies we use
+                                                    are essential for the Website to operate.</p>
+                                                <p class="fs-5">If you want to delete any cookies already stored on your
+                                                    computer or stop the cookies that keep track of your browsing
+                                                    patterns on the Website you can do so by deleting your existing
+                                                    cookies and/or altering your browser's privacy settings to block
+                                                    cookies (the process you follow will differ from browser to
+                                                    browser). If you would like more information on how to do this
+                                                    please visit <a href=""
+                                                        class="text-decoration-none">http://www.sis.org/.</a>Please note
+                                                    that deleting our cookies or disabling our future cookies means that
+                                                    you may not be able to access certain areas or features of the
+                                                    Website.</p>
+                                            </div>
+                                            <div class=" mt-4">
+                                                <h4 class="mb-3 text-blue">Right to be forgotten</h4>
+                                                <p class="fs-5">
+                                                    You are entitled to ask us for the erasure of your personal data and
+                                                    the deletion of your account where:
+                                                </p>
+                                                <ol class="mt-2">
+                                                    <li class="fs-5">It is not necessary for us to process your data;
+                                                    </li>
+                                                    <li class="fs-5">If you have withdrawn your consent, with your
+                                                        consent being the legal basis for processing;</li>
+                                                    <li class="fs-5">You have excercised your right to object and we
+                                                        have no legitimate grounds for overriding for the processing;
+                                                    </li>
+                                                    <li class="fs-5">Your personal data has been unlawfully processed;
+                                                    </li>
+                                                    <li class="fs-5">Your personal data should be erased in accordance
+                                                        to a legal obligation;</li>
+                                                </ol>
+                                                <p class="fs-5 mt-4">
+                                                    We will not erase and still keep personal data in cases where
+                                                    legitimate interests override your request in compliance with legal
+                                                    obligation or defence of legal claims
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="v-pills-faqs" role="tabpanel"
+                                aria-labelledby="v-pills-faqs-tab">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="imgsz">
+                                            <img src="images/faqs.jpg" class="img-fluid w-100 h-100">
+                                        </div>
+                                        <div class="mt-4">
+                                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="flush-headingOne">
+                                                        <button class="accordion-button text-dark collapsed fs-3"
+                                                            type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                                            aria-controls="flush-collapseOne">
+                                                            Accordion Item #1
+                                                        </button>
+                                                    </h2>
+                                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                                        aria-labelledby="flush-headingOne"
+                                                        data-bs-parent="#accordionFlushExample">
+                                                        <div class="accordion-body">
+                                                            <h3 class="text-blue mb-3">Dummy Head</h3>
+                                                            <p class="fs-5">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                                elit, sed do eiusmod
+                                                                tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                                enim ad minim veniam,
+                                                                quis nostrud exercitation ullamco laboris nisi ut
+                                                                aliquip ex ea commodo
+                                                                consequat. Duis aute irure dolor in reprehenderit in
+                                                                voluptate velit esse
+                                                                cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                                occaecat cupidatat non
+                                                                proident, sunt in culpa qui officia deserunt mollit anim
+                                                                id est laborum.
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                                elit, sed do eiusmod
+                                                                tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                                enim ad minim veniam,
+                                                                quis nostrud exercitation ullamco laboris nisi ut
+                                                                aliquip ex ea commodo
+                                                                consequat. Duis aute irure dolor in reprehenderit in
+                                                                voluptate velit esse
+                                                                cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                                occaecat cupidatat non
+                                                                proident, sunt in culpa qui officia deserunt mollit anim
+                                                                id est laborum.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                                        <button class="accordion-button text-dark collapsed fs-3"
+                                                            type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                                            aria-controls="flush-collapseTwo">
+                                                            Accordion Item #2
+                                                        </button>
+                                                    </h2>
+                                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                                        aria-labelledby="flush-headingTwo"
+                                                        data-bs-parent="#accordionFlushExample">
+                                                        <div class="accordion-body">
+                                                            <h3 class="text-blue mb-3">Dummy Head</h3>
+                                                            <p class="fs-5">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                                elit, sed do eiusmod
+                                                                tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                                enim ad minim veniam,
+                                                                quis nostrud exercitation ullamco laboris nisi ut
+                                                                aliquip ex ea commodo
+                                                                consequat. Duis aute irure dolor in reprehenderit in
+                                                                voluptate velit esse
+                                                                cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                                occaecat cupidatat non
+                                                                proident, sunt in culpa qui officia deserunt mollit anim
+                                                                id est laborum.
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                                elit, sed do eiusmod
+                                                                tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                                enim ad minim veniam,
+                                                                quis nostrud exercitation ullamco laboris nisi ut
+                                                                aliquip ex ea commodo
+                                                                consequat. Duis aute irure dolor in reprehenderit in
+                                                                voluptate velit esse
+                                                                cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                                occaecat cupidatat non
+                                                                proident, sunt in culpa qui officia deserunt mollit anim
+                                                                id est laborum.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="flush-headingThree">
+                                                        <button class="accordion-button text-dark collapsed fs-3"
+                                                            type="button" data-bs-toggle="collapse"
+                                                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                                            aria-controls="flush-collapseThree">
+                                                            Accordion Item #3
+                                                        </button>
+                                                    </h2>
+                                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                                        aria-labelledby="flush-headingThree"
+                                                        data-bs-parent="#accordionFlushExample">
+                                                        <div class="accordion-body">
+                                                            <h3 class="text-blue mb-3">Dummy Head</h3>
+                                                            <p class="fs-5">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                                elit, sed do eiusmod
+                                                                tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                                enim ad minim veniam,
+                                                                quis nostrud exercitation ullamco laboris nisi ut
+                                                                aliquip ex ea commodo
+                                                                consequat. Duis aute irure dolor in reprehenderit in
+                                                                voluptate velit esse
+                                                                cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                                occaecat cupidatat non
+                                                                proident, sunt in culpa qui officia deserunt mollit anim
+                                                                id est laborum.
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                                elit, sed do eiusmod
+                                                                tempor incididunt ut labore et dolore magna aliqua. Ut
+                                                                enim ad minim veniam,
+                                                                quis nostrud exercitation ullamco laboris nisi ut
+                                                                aliquip ex ea commodo
+                                                                consequat. Duis aute irure dolor in reprehenderit in
+                                                                voluptate velit esse
+                                                                cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                                occaecat cupidatat non
+                                                                proident, sunt in culpa qui officia deserunt mollit anim
+                                                                id est laborum.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- popular courses section end -->
+    </main>
+    <footer class="footer position-relative">
+        <div class="bg-footer"></div>
+        <div class="inner-footer">
+            <div class="container-fluid">
+                <div class="row g-3">
+                    <div class="col-lg-4">
+                        <div class="pe-lg-5">
+                            <a href="index.html" class="text-decoration-none">
+                                <img src="images/logo-trans.png" alt="logo" class="img-fluid">
+                            </a>
+                            <div class="mt-4">
+                                <h5 class="text-white">Plateforme de mise en relation entre les investisseurs et
+                                    demandeurs de financement de projets.</h5>
+                                <div class="social-footer mt-4">
+                                    <ul class="d-flex align-items-center">
+                                        <li>
+                                            <a href="https://twitter.com/" class="text-decoration-none">
+                                                <ion-icon name="logo-twitter"></ion-icon>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/fundme" class="text-decoration-none">
+                                                <ion-icon name="logo-facebook"></ion-icon>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/" class="text-decoration-none">
+                                                <ion-icon name="logo-linkedin"></ion-icon>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="icons-desc mt-3">
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li>
+                                            <a class="text-decoration-none mt-3" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Reliability">
+                                                <i class="fa-solid fa-handshake"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none mt-3" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Security">
+                                                <i class="fa-solid fa-file-shield"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none mt-3" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Platform Transparency">
+                                                <i class="fa-solid fa-layer-group"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li>
+                                            <a class="text-decoration-none mt-3" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Interactivity">
+                                                <i class="fa-solid fa-fingerprint"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none mt-3" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Support">
+                                                <i class="fa-solid fa-hand-holding-hand"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none mt-3" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Return on Investment">
+                                                <i class="fa-solid fa-money-check-dollar"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div>
+                            <h2 class="text-white mb-5">About</h2>
+                            <ul class="ul-list-footer">
+                                <li>
+                                    <a href="./terms.html" class="text-decoration-none">
+                                        Terms
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./privacy.html" class="text-decoration-none">
+                                        Privacy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="aboutus.html" class="text-decoration-none">
+                                        About us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./support.html" class="text-decoration-none">
+                                        Support
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="how-it-works.html" class="text-decoration-none">
+                                        How it works
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./blog.html" class="text-decoration-none">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contactus.html" class="text-decoration-none">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div>
+                            <h2 class="text-white mb-5">Categories</h2>
+                            <ul class="ul-list-footer">
+                                <li>
+                                    <a href="./animal.html" class="text-decoration-none text-capitalize">
+                                        animal
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./business.html" class="text-decoration-none text-capitalize">
+                                        Business
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./charity.html" class="text-decoration-none text-capitalize">
+                                        charity
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./community.html" class="text-decoration-none text-capitalize">
+                                        community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./competition.html" class="text-decoration-none text-capitalize">
+                                        competitions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="view-all-category.html" class="text-decoration-none text-capitalize">
+                                        view all
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div>
+                            <h2 class="text-white mb-5">links</h2>
+                            <ul class="ul-list-footer">
+                                <li>
+                                    <a href="./explore.html" class="text-decoration-none text-capitalize">
+                                        explore
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./faqs.html" class="text-decoration-none text-capitalize">
+                                        faqs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./login.html" class="text-decoration-none text-capitalize">
+                                        create project
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./featured-project.html" class="text-decoration-none text-capitalize">
+                                        featured project
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./login.html" class="text-decoration-none text-capitalize">
+                                        login/register
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./sign-up.html" class="text-decoration-none text-capitalize">
+                                        signup
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr style="opacity: 1;background-color: gray;" class="mt-5">
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <p class="mb-0 fs-4 text-white">
+                                © 2023 <a href="#" class="text-decoration-none text-white">SOUTH INVEST SOLUX |
+                                    Crowdfunding Platform</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- js area start -->
+    <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/myScript.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.searchlase').click(function () {
+                $(".searchblock").toggleClass('active')
+            });
+            $('#closesearch').click(function () {
+                $(".searchblock").toggleClass('active')
+            });
+        })
+    </script>
+</body>
+
+</html>

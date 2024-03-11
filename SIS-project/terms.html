@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terms || Boman Education</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"   />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-xl p-0 navbar-light fixed-top bg-white shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo-trans.png" class="img-fluid sizelogo">
+                </a>
+                <div class="d-flex align-items-center justify-content-end gap-3">
+                    <button type="button"
+                        class="nav-link fs-2 text-orange text-capitalize d-block d-md-none searchlase d-lg-none border-0 bg-transparent">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="navbar-toggler" type="button" onclick="openNav()">
+                        <img src="images/menu.png" class="img-fluid">
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse ms-4">
+                    <ul class="navbar-nav h-nav ms-auto align-items-center me-auto mb-2 mb-lg-0 w-100">
+                        <li class="position-relative nav-item">
+                            <a class="nav-link d-flex text-uppercase align-items-center gap-2"
+                                id="dropdownMenuone" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                user manual
+                                <span class="down-caretone">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item text-capitalize fsc-10 d-flex align-items-center gap-2"
+                                        href="#">
+                                        dropdown one
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="./investment-opportunities.html">
+                                <span class="d-block pt-1">investment opportunities</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="how-it-works.html">
+                                <span class="d-block pt-1">how it works</span>
+                            </a>
+                        </li>
+                        <li class="position-relative nav-item">
+                            <a class="nav-link d-flex text-uppercase align-items-center gap-2" id="dropdownMenutwo"
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                projects
+                                <span class="down-carettwo">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item fsc-10 d-flex align-items-center gap-2"
+                                        href="./all-projects.html">
+                                        All projects
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item fsc-10 d-flex align-items-center gap-2" href="./featured-project.html">
+                                        Featured project
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex align-items-center gap-2">
+                        <button type="button"
+                            class="me-4 fs-4 text-orange text-capitalize searchlase border-0 bg-transparent">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <div class="dropdown nav-link">
+                            <button class="bg-transparent text-dark p-0 d-flex  align-items-center border-0 fs-5 gap-2"
+                                id="dropdownMenu" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="images/en.jpg" class="img-fluid w-20">
+                                <span class="down-caret">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item text-uppercase fs-5 d-flex align-items-center gap-2"
+                                        href="#">
+                                        <img src="images/fr.png" class="img-fluid w-20">
+                                        <span>
+                                            fr
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="./login.html" class="text-decoration-none btnCust-2 text-capitalize">
+                            login/register
+                        </a>
+                        <a href="./login.html" class="text-decoration-none btnCust-1 text-capitalize">
+                            create project
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- search div -->
+        <section class="searchblock">
+            <div class="position-absolute top-0 end-0 m-3">
+                <button id="closesearch" class="bg-transparent text-white fs-1 border-0">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <form>
+                            <div class="input-group mb-3">
+                                <input type="text"
+                                    class="form-control bg-transparent fs-1 text-white border-0 border-bottom border-white"
+                                    placeholder="Search here..." aria-label="Search here..."
+                                    aria-describedby="basic-addon2">
+                                <span class="input-group-text  bg-transparent text-white border-0 fs-1"
+                                    id="basic-addon2">
+                                    <i class="fa-solid fa-magnifying-glass fs-1"></i>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- search div end -->
+
+        <!-- mobile menu start -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn text-white" onclick="closeNav()">&times;</a>
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="#colsone" class="text-decoration-none text-white" data-bs-toggle="collapse">
+                    User manual
+                    <span class="ps-3">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                </a>
+                <div class="collapse" id="colsone">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-decoration-none fs-2 text-white text-capitalize">dummy dropdown</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="investment-opportunities.html" class="text-decoration-none text-white text-capitalize">investment opportunities</a>
+                <a href="how-it-works.html" class="text-decoration-none text-white text-capitalize">how it works</a>
+                <a href="#colstw" class="text-decoration-none text-white text-capitalize" data-bs-toggle="collapse">
+                    projects
+                    <span class="ps-3">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                </a>
+                <div class="collapse" id="colstw">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="./all-projects.html" class="text-decoration-none fs-2 text-white">All projects</a>
+                        </li>
+                        <li>
+                            <a href="./featured-project.html" class="text-decoration-none fs-2 text-white">Featured
+                                Project</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu end -->
+    </header>
+    <main>
+        <section class="breadcrumb-section position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="position-relative">
+                            <h1 class="fcust text-capitalize text-white text-center fw-bold mb-4">Terms</h1>
+                            <p class="text-white text-center fs-3">SOUTH INVEST SOLUX | Crowdfunding Platform</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 m-auto p-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="order-type">
+                            <h3>Terms & Condition</h3>
+                            <p class="fs-3 mt-5">SIS Group Ltd, 1Intershore Chambers, Road Town, Tortola, British Virgin Islands will process any personal information provided to us (whether via the SIS website (the "Website"), the customer application form or any other means) or otherwise held by us relating to you in the manner set out in this Privacy Policy. By submitting your information to us and using the Website you confirm your consent to the use of your personal information as set out in this Privacy Policy. If you do not agree with the terms of this Privacy Policy please do not use the Website or otherwise provide us with your personal information.</p>
+                        </div>
+                        <div class="order-type mt-5">
+                            <h3>Information Collected and How It Is Used</h3>
+                            <p class="fs-3 mt-4">The information and data about you which we may collect, use and process includes the following:</p>
+                            <ol>
+                                <li class="fs-3 ">information that you provide to us by filling in forms on the Website or any other information you submit to us via the Website or email;
+                                </li>
+                                <li class="fs-3 ">records of correspondence, whether via the Website, email, telephone or other means;
+                                </li>
+                                <li class="fs-3 ">your responses to surveys or customer research that we carry out;
+                                </li>
+                                <li class="fs-3 ">details of the transactions you carry out with us, whether via the Website, telephone or other means;
+                                </li>
+                                <li class="fs-3 ">details of your visits to the Website including, but not limited to, traffic data, location data, weblogs and other communication data.
+                                </li>
+                            </ol>
+                            <p class="fs-3 mt-4">
+                                We may use your personal information and data together with other information for the purposes of:
+                            </p>
+                            <ol>
+                                <li class="fs-3">processing your, including card and on-line payments;</li>
+                                <li class="fs-3">setting up, operating and managing your account;</li>
+                                <li class="fs-3">complying with our legal and regulatory duties</li>
+                                <li class="fs-3">building up personal profiles;</li>
+                                <li class="fs-3">carrying out customer research, surveys and analyses;
+                                </li>
+                                <li class="fs-3">providing you with information about promotional offers and our products and services, where you have consented;</li>
+                                <li class="fs-3">monitoring transactions for the purposes of preventing fraud, irregular, money laundering and cheating.</li>
+                            </ol>
+                            <p class="fs-3 mt-4">
+                                Some information is gathered automatically when you visit our Websites, like your IP address, operating system, browser type and settings, device type and system activity. This information is useful for us as it allows us to see how you interact with our Services and helps us provide a experience.
+                            </p>
+                        </div>
+                        <div class="order-type mt-5">
+                            <h3>Information Storage</h3>
+                            <p class="fs-3 mt-4"> We will take all reasonable steps to ensure that your information is kept secure and protected. We will only disclose personal information to other companies within associated or subsidiary companies and to business partners, successors in title to our business and suppliers that are engaged to process such information on our behalf. If you apply for an account with us then to help us make credit decisions about you, to prevent fraud, to check your age and identity and to prevent money laundering, we may use third parties including credit reference agencies who will record any searches on your file. We may also make enquiries of, and disclose details of how you conduct your account to, such agencies, security organisations and any other relevant third parties for fraud and money laundering prevention.</p>
+                        </div>
+                        <div class="order-type mt-5">
+                            <h3>Data security
+                            </h3>
+                            <p class="fs-5 mt-4">We have taken proper technical measures to assure the security of you personal data, including:</p>
+                            <ol>
+                                <li class="fs-3">Encryption of your data when stored or transferred to our servers;</li>
+                                <li class="fs-3">Limiting the access to your data of our employees, contractors and agents who may use it for the purposes of processing;</li>
+                                <li class="fs-3">Network protection with the help of industry-leading security vendors;</li>
+                                <li class="fs-3">Secure server hosting with 24/7 monitoring, surveillance and on-site security staff;</li>
+                                <li class="fs-3">Our security team continuously monitors our systems and event logs to identify and manage threats;</li>
+                            </ol>
+                        </div>
+                        <div class="order-type mt-5">
+                            <h3>Data Retention</h3>
+                            <p class="fs-3 mt-4">
+                                All data in our possession is kept only for acceptable purposes. Some of the data is deleted automatically, some can be deleted upon request and some is kept for longer periods when necessitated by legal obligations. We make sure any deleted data is safely removed from our servers or retained in anonymous form.
+                            </p>
+                        </div>
+                        <div class="order-type mt-5">
+                            <h3>Telephone Calls</h3>
+                            <p class="fs-3 mt-4">
+                                Telephone calls to and from our Customer Contact Centre are recorded for training and security purposes along with the resolution of any queries arising from the service you receive.
+                            </p>
+                        </div>
+                        <div class="order-type mt-5">
+                            <h3>Use Of Cookies</h3>
+                            <p class="fs-3 mt-4">
+                                We may use cookies as a means of collecting information from a web server for the above purposes following a customer's use of the Website. If you register with us or if you continue to use the Website you agree to our use of cookies.
+                            </p>
+                            <p class="fs-3">Cookies contain information that is transferred to your computer's hard drive. They help us to improve the Website and to deliver a and more personalised service. Some of the cookies we use are essential for the Website to operate.</p>
+                            <p class="fs-3">If you want to delete any cookies already stored on your computer or stop the cookies that keep track of your browsing patterns on the Website you can do so by deleting your existing cookies and/or altering your browser's privacy settings to block cookies (the process you follow will differ from browser to browser). If you would like more information on how to do this please visit <a href="" class="text-decoration-none">http://www.sis.org/.</a>Please note that deleting our cookies or disabling our future cookies means that you may not be able to access certain areas or features of the Website.</p>
+                        </div>
+                        <div class="order-type mt-5">
+                            <h3>Internet-based transfers</h3>
+                            <p class="fs-3 mt-4">
+                                Given that the Internet is a global environment, using the Internet to collect and process personal data necessarily involves the transmission of data on an international basis. Some of the data processors engaged to process personal data may be based outside of the European Economic Area (EEA). Therefore, by browsing the Website and communicating electronically with us, you acknowledge and agree to our (or our suppliers or sub-contractors) processing your personal data outside the EEA. We will take all reasonable steps to ensure that your information and data is treated securely and in accordance with this Privacy Policy.
+                            </p>
+                        </div>
+                        <div class="order-type mt-5">
+                            <h3>IDisclosure of Information</h3>
+                            <p class="fs-3 mt-4">
+                                We are entitled to share the information we hold on you which includes personal data and history with the regulator, sporting bodies and other bodies, including the police, in order to investigate fraud, money laundering or sports integrity issues and to comply with our regulatory duties to the Curacao eGaming Compliance.<br>In order to comply with SIS legal and regulatory requirements and SIS own internal risk management procedures, we will retain information for a period of time (generally not more than six years) after closure of your account. All such information will be held in accordance with this Privacy Policy.
+                            </p>
+                        </div>
+                        <div class="order-type mt-5">
+                            <h3>Access to information</h3>
+                            <p class="fs-3 mt-4">
+                                You are entitled to access the information held about you. Your right of access can be exercised in accordance with the Data Protection Act 1998 as well as the General Data Protection Regulation (GDPR) 2018. Any access request may be subject to a fee of €10 to meet our costs in providing you with details of the information we hold about you.
+                            </p>
+                        </div>
+                        <div class="order-type mt-5">
+                            <h3>Right to be forgotten</h3>
+                            <p class="fs-3 mt-4">
+                                You are entitled to ask us for the erasure of your personal data and the deletion of your account where:
+                            </p>
+                            <ol class="mt-2">
+                                <li class="fs-3">It is not necessary for us to process your data;</li>
+                                <li class="fs-3">If you have withdrawn your consent, with your consent being the legal basis for processing;</li>
+                                <li class="fs-3">You have excercised your right to object and we have no legitimate grounds for overriding for the processing;</li>
+                                <li class="fs-3">Your personal data has been unlawfully processed;</li>
+                                <li class="fs-3">Your personal data should be erased in accordance to a legal obligation;</li>
+                            </ol>
+                            <p class="fs-3 mt-4">
+                                We will not erase and still keep personal data in cases where legitimate interests override your request in compliance with legal obligation or defence of legal claims
+                            </p>
+                        </div>
+                        <div class="order-type mt-5">
+                            <h3>Additional Rights</h3>
+                            <p class="fs-3 mt-4">
+                                In addition to the previously described rights you may also:
+                            </p>
+                            <ol class="mt-2">
+                                <li class="fs-3">Correct or ask us to correct any innacurate data we hold about you;</li>
+                                <li class="fs-3">Ask for a copy of your data in a machine-readable format;</li>
+                                <li class="fs-3">Object to the processing of your data where it is for our legitimate interests, however, we may still process data in any lawful basis which override your request;</li>
+                                <li class="fs-3">Ask us to restrict processing of you personal data in some circumstances;
+                                </li>
+                                <li class="fs-3">To object to direct marketing and profiling;</li>
+                                <li class="fs-3">To complain to your local data protection authority;</li>
+                            </ol>
+                        </div>
+                        <div class="order-type mt-5">
+                            <h3>Google Analytics</h3>
+                            <p class="fs-3 mt-4">
+                                We use Google Analytics to collect information about use of this site. Google Analytics collects information such as how often users visit this site, what pages they visit when they do so, and what other sites they used prior to coming to this site. We use the information we get from Google Analytics only to improve this site. Google Analytics collects only the IP address assigned to you on the date you visit this site, rather than your name or other identifying information. We do not combine information collected through the use of Google Analytics with your personal data. Although Google Analytics plants a permanent cookie on your web browser to identify you as a unique user the next time you visit this site, the cookie cannot be used by anyone but Google. Google’s ability to use and share information collected by Google Analytics about your visits to this site is restricted by the Google Analytics Terms of Use and the Google Privacy Policy. You can prevent Google Analytics from recognizing you on return visits to this site by disabling cookies on your browser.
+                            </p>
+                            <p class="fs-3 mt-4">
+                                Google Analytics employs cookies to define user sessions, which allows for the collection of data about how visitors are using the websites. Google Analytics uses only first-party cookies for data analysis. This means that the cookies are linked to a specific website domain, and Google Analytics will only use that cookie data for statistical analysis related to your browsing behavior on that specific website. According to Google, the data collected cannot be altered or retrieved by services from other domains.
+                            </p>
+                            <p class="fs-3 mt-4">
+                                If you choose, you can opt out by turning off cookies in the preferences settings in your web browser. For more information on Google Analytics, please visit <a href="" class="text-decoration-none"> http://www.sis.com</a>
+                            </p>
+                        </div>
+                        <div class="order-type mt-5">
+                            <h3>Changes to our Privacy Statement</h3>
+                            <p class="fs-3 mt-4">
+                                Any changes we may make to our Privacy Policy in the future will be posted on this page and any such changes will become effective upon posting of the revised Privacy Policy. If we make any material or substantial changes to this Privacy Policy we will use reasonable endeavours to inform you by email, notice on the Website or other agreed communications channels.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer position-relative">
+        <div class="bg-footer"></div>
+        <div class="inner-footer">
+            <div class="container-fluid">
+                <div class="row g-3">
+                    <div class="col-lg-4">
+                        <div class="pe-lg-5">
+                            <a href="index.html" class="text-decoration-none">
+                                <img src="images/logo-trans.png" alt="logo" class="img-fluid">
+                            </a>
+                            <div class="mt-4">
+                                <h5 class="text-white">Plateforme de mise en relation entre les investisseurs et
+                                    demandeurs de financement de projets.</h5>
+                                <div class="social-footer mt-4">
+                                    <ul class="d-flex align-items-center">
+                                        <li>
+                                            <a href="https://twitter.com/" class="text-decoration-none">
+                                                <ion-icon name="logo-twitter"></ion-icon>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.facebook.com/fundme" class="text-decoration-none">
+                                                <ion-icon name="logo-facebook"></ion-icon>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/" class="text-decoration-none">
+                                                <ion-icon name="logo-linkedin"></ion-icon>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="icons-desc mt-3">
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li>
+                                            <a class="text-decoration-none mt-3" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Reliability">
+                                                <i class="fa-solid fa-handshake"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none mt-3" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Security">
+                                                <i class="fa-solid fa-file-shield"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none mt-3" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Platform Transparency">
+                                                <i class="fa-solid fa-layer-group"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="d-flex align-items-center flex-wrap">
+                                        <li>
+                                            <a class="text-decoration-none mt-3" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Interactivity">
+                                                <i class="fa-solid fa-fingerprint"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none mt-3" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Support">
+                                                <i class="fa-solid fa-hand-holding-hand"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="text-decoration-none mt-3" data-bs-toggle="tooltip"
+                                                data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                                data-bs-title="Return on Investment">
+                                                <i class="fa-solid fa-money-check-dollar"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div>
+                            <h2 class="text-white mb-5">About</h2>
+                            <ul class="ul-list-footer">
+                                <li>
+                                    <a href="./terms.html" class="text-decoration-none">
+                                        Terms
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./privacy.html" class="text-decoration-none">
+                                        Privacy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="aboutus.html" class="text-decoration-none">
+                                        About us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./support.html" class="text-decoration-none">
+                                        Support
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="how-it-works.html" class="text-decoration-none">
+                                        How it works
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./blog.html" class="text-decoration-none">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="contactus.html" class="text-decoration-none">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div>
+                            <h2 class="text-white mb-5">Categories</h2>
+                            <ul class="ul-list-footer">
+                                <li>
+                                    <a href="./animal.html" class="text-decoration-none text-capitalize">
+                                        animal
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./business.html" class="text-decoration-none text-capitalize">
+                                        Business
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./charity.html" class="text-decoration-none text-capitalize">
+                                        charity
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./community.html" class="text-decoration-none text-capitalize">
+                                        community
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./competition.html" class="text-decoration-none text-capitalize">
+                                        competitions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="view-all-category.html" class="text-decoration-none text-capitalize">
+                                        view all
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div>
+                            <h2 class="text-white mb-5">links</h2>
+                            <ul class="ul-list-footer">
+                                <li>
+                                    <a href="./explore.html" class="text-decoration-none text-capitalize">
+                                        explore
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./faqs.html" class="text-decoration-none text-capitalize">
+                                        faqs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./login.html" class="text-decoration-none text-capitalize">
+                                        create project
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./featured-project.html" class="text-decoration-none text-capitalize">
+                                        featured project
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./login.html" class="text-decoration-none text-capitalize">
+                                        login/register
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./sign-up.html" class="text-decoration-none text-capitalize">
+                                        signup
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr style="opacity: 1;background-color: gray;" class="mt-5">
+                    <div class="col-lg-12">
+                        <div class="text-center">
+                            <p class="mb-0 fs-4 text-white">
+                                © 2023 <a href="#" class="text-decoration-none text-white">SOUTH INVEST SOLUX |
+                                    Crowdfunding Platform</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- js area start -->
+    <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/myScript.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.searchlase').click(function() {
+            $(".searchblock").toggleClass('active')
+        });
+        $('#closesearch').click(function() {
+            $(".searchblock").toggleClass('active')
+        });
+    })
+    </script>
+</body>
+
+</html>

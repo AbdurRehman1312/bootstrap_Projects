@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css">
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  " />
+    <!-- flag dropdown -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.3.3/css/intlTelInput.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
+
+
+    <title> Quffa market || Ecom Admin Panel</title>
+</head>
+
+<body>
+    <div class="d-flex h-100">
+        <div class="main-content">
+            <header class="shadow position-relative">
+                <ul class="nav nav-pills cust-pill activchange justify-content-center py-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link border-0 p-0 h-auto w-auto bg-transparent shadow-0 text-center" id="pills-mblvw-tab" data-bs-toggle="pill" data-bs-target="#pills-mblvw" type="button" role="tab" aria-controls="pills-mblvw" aria-selected="true">
+                        <img src="assets/images/icons/active-mbl.png" class="img-fluid one-b" width="30px">
+                        <img src="assets/images/icons/unactive-mbl.png" class="img-fluid two-b" width="30px">
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active p-0 h-auto w-auto border-0 bg-transparent shadow-0 text-center" id="pills-webvw-tab" data-bs-toggle="pill" data-bs-target="#pills-webvw" type="button" role="tab" aria-controls="pills-webvw" aria-selected="false">
+                        <img src="assets/images/icons/active-webview.png" class="img-fluid one-w" width="30px">
+                        <img src="assets/images/icons/unactive-webview.png" class="img-fluid two-w" width="30px">
+                    </button>
+                  </li>
+                </ul>
+                <div class="d-block d-lg-none position-absolute top-0 mt-3 end-0">
+                    <button class="bg-transparent border-0" type="button" data-bs-toggle='offcanvas' data-bs-target='#mblsidebar'>
+                        <img src="assets/images/icons/solar_list-bold.png" class="img-fluid" width="33px">
+                    </button>
+                </div>
+            </header>
+            <main>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade" id="pills-mblvw" role="tabpanel" aria-labelledby="pills-mblvw-tab" tabindex="0">
+                        <div class="mbl-view rounded-4 d-flex align-items-center justify-content-center bg-gray-shade text-center">
+                            <button class="btncust rounded text-white fw-semibold">
+                                mobile view
+                            </button>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show active" id="pills-webvw" role="tabpanel" aria-labelledby="pills-webvw-tab" tabindex="0">
+                        <div class="h-100vh d-flex align-items-center justify-content-center bg-gray-shade text-center">
+                            <button class="btncust rounded text-white fw-semibold">
+                                web view
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="sidebarcust offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="mblsidebar" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="card border-0 h-100">
+                <div class="card-header bg-transparent py-3 d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center gap-2">
+                        <button class="btn-close border-0 bg-transparent d-block d-lg-none" type="button" data-bs-dismiss='offcanvas'> </button>
+                        <a href="#">
+                            <img src="assets/images/icons/arrowleft-cir.png" class="img-fluid" width="20px">
+                        </a>
+                    </div>
+                    <h6 class="text-black text-end m-0 fw-semibold">Customize the theme</h6>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <div class="d-flex align-items-start justify-content-between mb-3">
+                            <a href="#collapsedetail" data-bs-toggle='collapse'>
+                                <img src="assets/images/icons/quest-cir.png" class="img-fluid" width="16px">
+                            </a>
+                            <div>
+                                <p class="fs-14 fw-semibold m-0">Customization options</p>
+                                <span class="text-capitalize d-block text-1 text-end fs-13">pioneer</span>
+                            </div>
+                        </div>
+                        <div class="text-end collapse" id="collapsedetail">
+                            <span class="fs-14">
+                                You can preview the changes in your store right when you edit. You can also access all store pages for editing and previewing.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="accordion accordcu iconleft" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item border-0 mb-4">
+                            <h6 class="accordion-header" id="designopthead">
+                                <button class="accordion-button bg-gray-shade d-flex flex-row-reverse text-end rounded-0 fs-13 fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#designoptcont" aria-expanded="true" aria-controls="designoptcont">
+                                    Design option
+                               </button>
+                            </h6>
+                            <div id="designoptcont" class="accordion-collapse collapse" aria-labelledby="designopthead">
+                                <div class="accordion-body p-0 py-3">
+                                    <form class="row g-3">
+                                        <div class="col-lg-12">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <input type="color" class="form-control w-50s rounded-1 form-control-color">
+                                                <label class="text-end d-block text-black mb-1 fs-13">Choose store color</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div>
+                                                <label class="text-end d-block text-black mb-1 fs-13">Store line</label>
+                                                <select class="form-select  rounded-1 pad-9-16 text-1 ar-left text-end fs-13">
+                                                    <option selected>Choose option</option>
+                                                    <option>Default basket line</option>
+                                                    <option>Amazon</option>
+                                                    <option>Camel</option>
+                                                    <option>Dubai</option>
+                                                    <option>Ready</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="d-flex align-items-center justify-content-between w-100 fs-13 ps-2">
+                                                <div class="form-check form-switch">
+                                                  <input class="form-check-input fs-16" type="checkbox" checked role="switch" id="sw1">
+                                                </div>
+                                                <label class="text-black d-block text-end" for="sw1">
+                                                    Breadcrumb feature
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="d-flex align-items-center justify-content-between w-100 fs-13 ps-2">
+                                                <div class="form-check form-switch">
+                                                  <input class="form-check-input fs-16" type="checkbox" role="switch" id="sw2">
+                                                </div>
+                                                <label class="text-black d-block text-end" for="sw2">
+                                                    High standardization of products into major categories
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12" id="sw2cont" style="display: none;">
+                                            <div>
+                                                <label class="text-end d-block text-black mb-1 fw-semibold fs-13">Show product image</label>
+                                                <select class="form-select  rounded-1 pad-9-16 text-1 ar-left text-end fs-13">
+                                                    <option selected>Display the image as a cover</option>
+                                                    <option>View full image</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="d-flex align-items-center justify-content-between w-100 fs-13 ps-2">
+                                                <div class="form-check form-switch">
+                                                  <input class="form-check-input fs-16" type="checkbox" role="switch" id="sw3">
+                                                </div>
+                                                <label class="text-black d-block text-end" for="sw3">
+                                                    Vertical placement of products in the fixed products box on the home page
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="d-flex align-items-center justify-content-between w-100 fs-13 ps-2">
+                                                <div class="form-check form-switch">
+                                                  <input class="form-check-input fs-16" type="checkbox" role="switch" id="sw4">
+                                                </div>
+                                                <label class="text-black d-block text-end" for="sw4">
+                                                    Show (all button) on the home page
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <hr />
+                                            <div>
+                                                <h6 class="fs-14 m-0 fw-semibold text-main text-end">Options at the top of the page</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="d-flex align-items-start justify-content-between w-100 fs-13 ps-2">
+                                                <div class="form-check form-switch">
+                                                  <input class="form-check-input fs-16" type="checkbox" role="switch" id="sw5">
+                                                </div>
+                                                <div>
+                                                    <label class="text-black d-block text-end" for="sw5">
+                                                        The main menu sticks to the top of the page when you scroll down
+                                                    </label>
+                                                    <span class="fs-12 text-1 d-block text-end">
+                                                        It is recommended to deactivate it if there are many items in the drop-down list
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="d-flex align-items-center justify-content-between w-100 fs-13 ps-2">
+                                                <div class="form-check form-switch">
+                                                  <input class="form-check-input fs-16" type="checkbox" role="switch" id="sw6">
+                                                </div>
+                                                <label class="text-black d-block text-end" for="sw6">
+                                                    Dark top bar
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="d-flex align-items-start justify-content-between w-100 fs-13 ps-2">
+                                                <div class="form-check form-switch">
+                                                  <input class="form-check-input fs-16" type="checkbox" role="switch" id="sw7">
+                                                </div>
+                                                <div>
+                                                    <label class="text-black d-block text-end" for="sw7">
+                                                        Display links to important pages in the top bar
+                                                    </label>
+                                                    <span class="fs-12 text-1 d-block text-end">
+                                                        Such as landing page, blog, and introductory pages
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <hr />
+                                            <div>
+                                                <h6 class="fs-14 m-0 fw-semibold text-main text-end">Options at the bottom of the page</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="d-flex align-items-start justify-content-between w-100 fs-13 ps-2">
+                                                <div class="form-check form-switch">
+                                                  <input class="form-check-input fs-16" type="checkbox" role="switch" id="sw8">
+                                                </div>
+                                                <label class="text-black d-block text-end" for="sw8">
+                                                    Dark mode
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <hr />
+                                            <div>
+                                                <h6 class="fs-14 m-0 fw-semibold text-main text-end">Product page options</h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="d-flex align-items-start justify-content-between w-100 fs-13 ps-2">
+                                                <div class="form-check form-switch">
+                                                  <input class="form-check-input fs-16" type="checkbox" role="switch" id="sw9">
+                                                </div>
+                                                <label class="text-black d-block text-end" for="sw9">
+                                                    Install the add and quantity button at the bottom of the mobile screen
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="d-flex align-items-start justify-content-between w-100 fs-13 ps-2">
+                                                <div class="form-check form-switch">
+                                                  <input class="form-check-input fs-16" type="checkbox" role="switch" id="sw10">
+                                                </div>
+                                                <label class="text-black d-block text-end" for="sw10">
+                                                    Show tags
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div>
+                                                <label class="text-end d-block text-black mb-1 fs-13">
+                                                    How to display images in the product image slider
+                                                </label>
+                                                <select class="form-select  rounded-1 pad-9-16 text-1 ar-left text-end fs-13">
+                                                    <option selected>Choose option</option>
+                                                    <option>The image covers the entire area while maintaining the image ratio (Cover)</option>
+                                                    <option>Show the entire image in the middle (Contain)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="d-flex align-items-start justify-content-between w-100 fs-13 ps-2">
+                                                <div class="form-check form-switch">
+                                                  <input class="form-check-input fs-16" type="checkbox" role="switch" id="sw11">
+                                                </div>
+                                                <div>
+                                                    <label class="text-black d-block text-end" for="sw11">
+                                                        Enlarge images in the product image slider
+                                                    </label>
+                                                    <span class="fs-12 text-1 d-block text-end">
+                                                        This feature enables you to zoom in on the image to make it easier to see more details
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="border-top pt-3 gap-2 d-flex justify-content-center">
+                                                <button type="button" class="btncust rounded-1 text-white fs-13" >
+                                                    Save changes
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-4">
+                            <h6 class="accordion-header" id="storelisthead">
+                                <button class="accordion-button bg-gray-shade d-flex flex-row-reverse text-end rounded-0 fs-13 fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#storelistcont" aria-expanded="true" aria-controls="storelistcont">
+                                    Store listing
+                                </button>
+                            </h6>
+                            <div id="storelistcont" class="accordion-collapse collapse" aria-labelledby="storelisthead">
+                                <div class="accordion-body px-0">
+                                    <div class="accordion accordcu iconleft" id="accordionPanelsStayOpenExample">
+                                        <div class="accordion-item border-0">
+                                            <h6 class="accordion-header" id="storelistinnerhdhead">
+                                                <button class="accordion-button bg-gray-shade d-flex flex-row-reverse text-end rounded-0 fs-13 fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#storelistinnerhdcont" aria-expanded="true" aria-controls="storelistinnerhdcont">
+                                                    Page header menu
+                                                </button>
+                                            </h6>
+                                            <div id="storelistinnerhdcont" class="accordion-collapse collapse" aria-labelledby="storelistinnerhdhead">
+                                                <div class="accordion-body px-0">
+                                                    <form class="row g-3">
+                                                        <div class="col-lg-12">
+                                                            <div>
+                                                                <label class="text-end d-block text-black mb-1 fs-13">Home page view</label>
+                                                                <select class="form-select rounded-1 pad-9-16 text-1 ar-left text-end fs-13" id="mainselectsub">
+                                                                    <option value="chs" selected>Choose option</option>
+                                                                    <option value="defaultc">Default (categories)</option>
+                                                                    <option value="customof">Custom offer</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <!-- i will apply function later -->
+                                                        <div class="col-lg-12" id="customoffersub">
+                                                            <div class="mb-3">
+                                                                <div class="d-flex justify-content-end">
+                                                                    <button class="btn border-gray fs-14 d-flex align-items-center gap-2 text-1 bg-white" type="button" data-bs-target='#pageheadadditem' data-bs-toggle='modal'>
+                                                                        <span>Add new item</span>
+                                                                        <img src="assets/images/icons/add.png" class="img-fluid" width="20px">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <div class="d-flex justify-content-between rounded text-1 bg-white btncust w-100 border-gray fs-14">
+                                                                    <div>
+                                                                        <button class="bg-transparent border-0 p-0" type="button" data-bs-toggle='modal' data-bs-target='#confirmmodal'>
+                                                                            <img src="assets/images/icons/trash-red.png" class="img-fluid" width="20px">
+                                                                        </button>
+                                                                    </div>
+                                                                    <div>
+                                                                        <button class="bg-transparent border-0" type="button" data-bs-target='#pageheadedit' data-bs-toggle='modal'>
+                                                                            <span>Earning</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12" id="defaultview" style="display: none;">
+                                                            <div class="mb-2">
+                                                                <div class="d-flex align-items-start justify-content-between w-100 fs-13 ps-2 mb-2">
+                                                                    <div class="form-check form-switch">
+                                                                      <input class="form-check-input fs-16" type="checkbox" role="switch" id="swedd1">
+                                                                    </div>
+                                                                    <div>
+                                                                        <label class="text-black d-block text-end" for="swedd1">
+                                                                            View discount link
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex align-items-start justify-content-between w-100 fs-13 ps-2 mb-2">
+                                                                    <div class="form-check form-switch">
+                                                                      <input class="form-check-input fs-16" type="checkbox" role="switch" id="swedd2">
+                                                                    </div>
+                                                                    <div>
+                                                                        <label class="text-black d-block text-end" for="swedd2">
+                                                                            View brands link
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="d-flex align-items-start justify-content-between w-100 fs-13 ps-2 mb-2">
+                                                                    <div class="form-check form-switch">
+                                                                      <input class="form-check-input fs-16" type="checkbox" role="switch" id="swedd3">
+                                                                    </div>
+                                                                    <div>
+                                                                        <label class="text-black d-block text-end" for="swedd3">
+                                                                            View blog link
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="mb-2">
+                                                                    <button class="bg-transparent pad-9-16 border-gray fs-13 w-100 d-flex align-items-center justify-content-end" type="button" data-bs-target='#pageheadedit' data-bs-toggle='modal'>
+                                                                        <span class="pe-3 border-end border-2">Earning</span>
+                                                                        <div class="flex-shrink-0 ps-3">
+                                                                            <img src="assets/images/icons/equal.png" class="img-fluid" width="20px">
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item border-0">
+                                            <h6 class="accordion-header" id="storelistinnerfthead">
+                                                <button class="accordion-button bg-gray-shade d-flex flex-row-reverse text-end rounded-0 fs-13 fw-bold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#storelistinnerftcont" aria-expanded="true" aria-controls="storelistinnerftcont">
+                                                    Footer menu
+                                                </button>
+                                            </h6>
+                                            <div id="storelistinnerftcont" class="accordion-collapse collapse" aria-labelledby="storelistinnerfthead">
+                                                <div class="accordion-body px-0">
+                                                    <form class="row g-3">
+                                                        <div class="col-lg-12">
+                                                            <div>
+                                                                <label class="text-end d-block text-black mb-1 fs-13">Home page view</label>
+                                                                <select class="form-select rounded-1 pad-9-16 text-1 ar-left text-end fs-13" id="mainselectfootsub">
+                                                                    <option value="0" selected>Choose option</option>
+                                                                    <option value="1">Default (categories)</option>
+                                                                    <option value="2">Custom offer</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <!-- i will apply function later -->
+                                                        <div class="col-lg-12" id="customofferfootsub">
+                                                            <div class="mb-3">
+                                                                <div class="d-flex justify-content-end">
+                                                                    <button class="btn border-gray fs-14 d-flex align-items-center gap-2 text-1 bg-white" type="button" data-bs-target='#pageheadadditem' data-bs-toggle='modal'>
+                                                                        <span>Add new item</span>
+                                                                        <img src="assets/images/icons/add.png" class="img-fluid" width="20px">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <div class="d-flex justify-content-between rounded text-1 bg-white btncust w-100 border-gray fs-14">
+                                                                    <div>
+                                                                        <button class="bg-transparent border-0 p-0" type="button" data-bs-toggle='modal' data-bs-target='#confirmmodal'>
+                                                                            <img src="assets/images/icons/trash-red.png" class="img-fluid" width="20px">
+                                                                        </button>
+                                                                    </div>
+                                                                    <div>
+                                                                        <button class="bg-transparent border-0" type="button" data-bs-target='#pageheadedit' data-bs-toggle='modal'>
+                                                                            <span>Earning</span>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12" id="defaultfootview" style="display: none;">
+                                                            <div class="mb-2">
+                                                                <div class="d-flex align-items-start justify-content-between w-100 fs-13 ps-2 mb-2">
+                                                                    <div class="form-check form-switch">
+                                                                      <input class="form-check-input fs-16" type="checkbox" role="switch" id="swfoot">
+                                                                    </div>
+                                                                    <div>
+                                                                        <label class="text-black d-block text-end" for="swfoot">
+                                                                            View blog link
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="mb-2">
+                                                                    <button class="bg-transparent pad-9-16 border-gray fs-13 w-100 d-flex align-items-center justify-content-end" type="button" data-bs-target='#pageheadedit' data-bs-toggle='modal'>
+                                                                        <span class="pe-3 border-end border-2">Exchange and return</span>
+                                                                        <div class="flex-shrink-0 ps-3">
+                                                                            <img src="assets/images/icons/equal.png" class="img-fluid" width="20px">
+                                                                        </div>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- confirmation modal  -->
+    <div class="modal fade" id="confirmmodal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body pt-5">
+                    <div class="d-flex align-items-center flex-column gap-3">
+                        <img src="assets/images/icons/closecross.png" alt="" class="img-fluid" width="80">
+                        <p class="fs-13 text-center mb-0">
+                           Are you sure you want to delete the item?
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex gap-1 justify-content-center border-0 pt-0">
+                    <button type="button" class="btncust rounded-1 text-main bg-transparent fs-13"
+                        data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                    <button type="button" class="btncust rounded-1 text-white fs-13" data-bs-toggle="modal"
+                        data-bs-target="#confirmDeleteModal">
+                        Confirm
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- page listing add new item modal -->
+    <div class="modal fade" id="pageheadadditem" data-bs-backdrop="static" data-bs-keyboard="false"  data-bs-focus='false' tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0 position-relative justify-content-end">
+                    <button class="btn-close position-absolute start-0 m-2 fs-13" data-bs-dismiss='modal'></button>
+                    <h6 class="text-black text-end fw-bold" id="viewModalLabel">
+                        Add menu item
+                    </h6>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3"> 
+                        <div class="col-lg-12">
+                            <div>
+                                <label class="fs-13 text-black text-end d-block">Link address</label>
+                                <input type="text" class="form-control rounded-1 text-end pad-9-16 text-1 fs-13" placeholder="Enter link address" name="">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div>
+                                <div class="mb-2">
+                                    <label class="text-end d-block text-black mb-1 fs-13">Link</label>
+                                    <select class="form-select rounded-1 pad-9-16 text-1 ar-left text-end fs-13" onchange="updateDynamicContaineradditem(event)">
+                                        <option value="opad0" selected>Choose option</option>
+                                        <option value="opad1">Project</option>
+                                        <option value="opad2">Classification</option>
+                                        <option value="opad3">Trade mark</option>
+                                        <option value="opad4">Introduction page</option>
+                                        <option value="opad5">Article</option>
+                                        <option value="opad6">Classification within the blog</option>
+                                        <option value="opad7">Discounts</option>
+                                        <option value="opad8">Brands</option>
+                                        <option value="opad9">Blog</option>
+                                        <option value="opad10">External link</option>
+                                    </select>
+                                </div>
+                                <div id="dynamic-contianeradditem" style="display: none;">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div>
+                                <div class="d-flex align-items-start justify-content-between w-100 fs-13 ps-2">
+                                    <div class="form-check form-switch">
+                                      <input class="form-check-input fs-16" type="checkbox" role="switch" id="swad">
+                                    </div>
+                                    <div>
+                                        <label class="text-black d-block text-end" for="swad">
+                                            Open the link in a separate window
+                                        </label>
+                                    </div>
+                                </div>
+                                <span class="fs-13 text-1 text-end d-block">
+                                    “Display products within the list” can be activated when adding submenus
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex gap-1 justify-content-end border-0">
+                    <button type="button" class="btncust rounded-1 text-main bg-transparent fs-13"
+                        data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                    <button type="button" class="btncust rounded-1 text-white fs-13">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- edit page listing head -->
+    <div class="modal fade" id="pageheadedit" data-bs-backdrop="static" data-bs-keyboard="false"  data-bs-focus='false' tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0 position-relative justify-content-end">
+                    <button class="btn-close position-absolute start-0 m-2 fs-13" data-bs-dismiss='modal'></button>
+                    <h6 class="text-black text-end fw-bold" id="viewModalLabel">
+                        Edit menu item
+                    </h6>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3"> 
+                        <div class="col-lg-12">
+                            <div>
+                                <label class="fs-13 text-black text-end d-block mb-2">Link address</label>
+                                <input type="text" class="form-control rounded-1 text-end pad-9-16 text-1 fs-13" placeholder="Enter link address" name="">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div>
+                                <div class="mb-2">
+                                    <label class="text-end d-block text-black mb-2 fs-13">Link</label>
+                                    <select class="form-select rounded-1 pad-9-16 text-1 ar-left text-end fs-13" onchange="updateDynamicContaineredititem(event)">
+                                        <option value="oped0" selected>Choose option</option>
+                                        <option value="oped1">Project</option>
+                                        <option value="oped2">Classification</option>
+                                        <option value="oped3">Trade mark</option>
+                                        <option value="oped4">Introduction page</option>
+                                        <option value="oped5">Article</option>
+                                        <option value="oped6">Classification within the blog</option>
+                                        <option value="oped7">Discounts</option>
+                                        <option value="oped8">Brands</option>
+                                        <option value="oped9">Blog</option>
+                                        <option value="oped10">External link</option>
+                                    </select>
+                                </div>
+                                <div id="dynamic-contianeredititem" style="display: none;">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="d-flex align-items-start justify-content-between w-100 fs-13 ps-2">
+                                <div class="form-check form-switch">
+                                  <input class="form-check-input fs-16" type="checkbox" role="switch" id="swadd">
+                                </div>
+                                <div>
+                                    <label class="text-black d-block text-end" for="swadd">
+                                        Open the link in a separate window
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="text-center mb-2">
+                                <div class="d-flex align-items-center gap-2 mb-2 justify-content-end">
+                                    <span
+                                        data-bs-toggle="tooltip" data-bs-placement="top"
+                                        data-bs-custom-class="custom-tooltip"
+                                        data-bs-html="true"
+                                        data-bs-title="<span class='fs-12'>
+                                            The appropriate size of the image according to the preferences of the current theme. If it is for icons, a square size (100 x 100 pixels) is preferred.
+                                        </span>"
+                                    >
+                                        <img src="assets/images/icons/quest-cir.png" class="img-fluid" width="14px">
+                                    </span>
+                                    <span class="fs-14 text-black text-end d-block">
+                                        Image/icon
+                                    </span>
+                                </div>
+                                <label for="uploaddiv" class="uploadimg mx-auto h-55 text-1 d-flex justify-content-center align-items-center fs-13 fw-semibold flex-column gap-2">
+                                    <img src="assets/images/icons/updated-app.png" class="img-fluid" width="40px">
+                                    <span>Upload an image (jpg, jpeg, gif, png)</span>
+                                </label>
+                                <input type="file" class="d-none" id="uploaddiv" name="">
+                                <span class="fs-13 text-1 text-end d-block mt-3">
+                                    “Display products within the list” can be activated when adding submenus
+                                </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer d-flex gap-1 justify-content-end border-0">
+                    <button type="button" class="btncust rounded-1 text-main bg-transparent fs-13"
+                        data-bs-dismiss="modal">
+                        Cancel
+                    </button>
+                    <button type="button" class="btncust rounded-1 text-white fs-13">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/datatables.js"></script>
+   <script type="text/javascript" src="assets/js/app.js"></script>
+   <script type="text/javascript" src="assets/js/select2.min.js"></script>
+
+    <script type="text/javascript">
+        $('#mySelect').select2().on('select2:open', function (e) {
+            $('.select2-container--open').css('z-index', 9999);
+        });
+        $('.mySelect3').select2().on('select2:open', function (e) {
+                $('.select2-container--open').css('z-index', 9999);
+            });
+    </script>
+
+    <script>
+        function changeImage(imageSrc) {
+            // Change the source of the image inside the button
+            const button = document.getElementById('imageDropdown');
+            button.innerHTML = `<img src="${imageSrc}">`;
+        }
+
+        
+        function changeImage4(imageSrc3) {
+            // Change the source of the image inside the button
+            const button = document.getElementById('imageDropdown4');
+            button.innerHTML = `<img src="${imageSrc3}">`;
+        }
+
+    </script>
+
+    
+
+    <script>
+
+        $(document).ready(function(){
+        let btnselectsub = document.getElementById('mainselectsub');
+            btnselectsub.addEventListener('change',function(){
+                if (btnselectsub.value === 'chs') {
+                    document.getElementById('customoffersub').style.display = 'none';
+                    document.getElementById('defaultview').style.display = 'none';
+                }
+                else if (btnselectsub.value === 'defaultc') {
+                    document.getElementById('customoffersub').style.display = 'none';
+                    document.getElementById('defaultview').style.display = 'block';
+                }
+                else if (btnselectsub.value === 'customof') {
+                    document.getElementById('customoffersub').style.display = 'block';
+                    document.getElementById('defaultview').style.display = 'none';
+                }
+            })
+        });
+
+        $(document).ready(function(){
+        let btnselectfootsub = document.getElementById('mainselectfootsub');
+            btnselectfootsub.addEventListener('change',function(){
+                if (btnselectfootsub.value === '0') {
+                    document.getElementById('customofferfootsub').style.display = 'none';
+                    document.getElementById('defaultfootview').style.display = 'none';
+                }
+                else if (btnselectfootsub.value === '1') {
+                    document.getElementById('customofferfootsub').style.display = 'none';
+                    document.getElementById('defaultfootview').style.display = 'block';
+                }
+                else if (btnselectfootsub.value === '2') {
+                    document.getElementById('customofferfootsub').style.display = 'block';
+                    document.getElementById('defaultfootview').style.display = 'none';
+                }
+            })
+        });
+
+
+    </script>
+
+    <!-- add new menu item (store listing header accordian) -->
+    <script>
+        const updateDynamicContaineradditem= (event)=>{
+            let value= event.target.value
+            console.log(event.target.parentNode)
+            let node= event.target.parentNode
+            console.log(node.nextElementSibling)
+            if(value==='opad0'){
+                document.getElementById('dynamic-contianeradditem').style.display='none'
+            }
+            else if(value==='opad1'){                
+                node.nextElementSibling.innerHTML=`
+                <div>
+                    <select class="form-select  rounded-1 pad-9-16 text-1 ar-left text-end fs-13 mySelect1" >
+                        <option selected>Choose option</option>
+                        <option>Gift</option>
+                        <option>Appliances</option>
+                    </select>
+                </div>
+                `
+                document.getElementById('dynamic-contianeradditem').style.display='block'
+            }
+            else if (value==='opad2') {                
+                node.nextElementSibling.innerHTML=`
+                <div>
+                    <select class="form-select  rounded-1 pad-9-16 text-1 ar-left text-end fs-13 mySelect1" >
+                        <option selected>Choose option</option>
+                        <option>Gift</option>
+                        <option>Appliances</option>
+                    </select>
+                </div>
+                `
+                document.getElementById('dynamic-contianeradditem').style.display='block'
+            }
+            else if (value==='opad3') {                
+                node.nextElementSibling.innerHTML=`
+                <div>
+                    <select class="form-select  rounded-1 pad-9-16 text-1 ar-left text-end fs-13 mySelect1" >
+                        <option selected>Choose option</option>
+                        <option>Gift</option>
+                        <option>Appliances</option>
+                    </select>
+                </div>
+                `
+                document.getElementById('dynamic-contianeradditem').style.display='block'
+            }
+            else if (value==='opad4') {
+                node.nextElementSibling.innerHTML=`
+                <div>
+                    <select class="form-select  rounded-1 pad-9-16 text-1 ar-left text-end fs-13 mySelect1" >
+                        <option selected>Choose option</option>
+                        <option>Gift</option>
+                        <option>Appliances</option>
+                    </select>
+                </div> `
+                document.getElementById('dynamic-contianeradditem').style.display='block'
+            }
+            else if (value==='opad5') {
+                node.nextElementSibling.innerHTML=`
+                <div>
+                    <select class="form-select  rounded-1 pad-9-16 text-1 ar-left text-end fs-13 mySelect1" >
+                        <option selected>Choose option</option>
+                        <option>Gift</option>
+                        <option>Appliances</option>
+                    </select>
+                </div>
+                `
+                document.getElementById('dynamic-contianeradditem').style.display='block'
+            }
+            else if (value==='opad6') {
+                node.nextElementSibling.innerHTML=`
+                <div>
+                    <select class="form-select  rounded-1 pad-9-16 text-1 ar-left text-end fs-13 mySelect1" >
+                        <option selected>Choose option</option>
+                        <option>Gift</option>
+                        <option>Appliances</option>
+                    </select>
+                </div>
+                `
+                document.getElementById('dynamic-contianeradditem').style.display='block'
+            }
+
+            else if (value==='opad7') {
+                document.getElementById('dynamic-contianeradditem').style.display='none'
+            }
+            else if (value==='opad8') {
+                document.getElementById('dynamic-contianeradditem').style.display='none'
+            }
+            else if (value==='opad9') {
+                document.getElementById('dynamic-contianeradditem').style.display='none'
+            }
+
+            else if (value==='opad10') {
+                node.nextElementSibling.innerHTML=`
+                <div>
+                    <input type="text" class="form-control text-end fs-13 pad-9-16" placeholder="Enter link">
+                </div>
+                `
+                document.getElementById('dynamic-contianeradditem').style.display='block'
+            }
+
+            $('.mySelect1').select2().on('select2:open', function (e) {
+                $('.select2-container--open').css('z-index', 9999);
+            });
+        }
+    </script>
+
+    <!-- edit new menu item (store listing header accordian) -->
+    <script>
+        const updateDynamicContaineredititem= (event)=>{
+            let value= event.target.value
+            console.log(event.target.parentNode)
+            let node= event.target.parentNode
+            console.log(node.nextElementSibling)
+            if(value==='oped0'){
+                document.getElementById('dynamic-contianeredititem').style.display='none'
+            }
+            else if(value==='oped1'){                
+                node.nextElementSibling.innerHTML=`
+                <div>
+                    <select class="form-select  rounded-1 pad-9-16 text-1 ar-left text-end fs-13 mySelect1" >
+                        <option selected>Choose option</option>
+                        <option>Gift</option>
+                        <option>Appliances</option>
+                    </select>
+                </div>
+                `
+                document.getElementById('dynamic-contianeredititem').style.display='block'
+            }
+            else if (value==='oped2') {                
+                node.nextElementSibling.innerHTML=`
+                <div>
+                    <select class="form-select  rounded-1 pad-9-16 text-1 ar-left text-end fs-13 mySelect1" >
+                        <option selected>Choose option</option>
+                        <option>Gift</option>
+                        <option>Appliances</option>
+                    </select>
+                </div>
+                `
+                document.getElementById('dynamic-contianeredititem').style.display='block'
+            }
+            else if (value==='oped3') {                
+                node.nextElementSibling.innerHTML=`
+                <div>
+                    <select class="form-select  rounded-1 pad-9-16 text-1 ar-left text-end fs-13 mySelect1" >
+                        <option selected>Choose option</option>
+                        <option>Gift</option>
+                        <option>Appliances</option>
+                    </select>
+                </div>
+                `
+                document.getElementById('dynamic-contianeredititem').style.display='block'
+            }
+            else if (value==='oped4') {
+                node.nextElementSibling.innerHTML=`
+                <div>
+                    <select class="form-select  rounded-1 pad-9-16 text-1 ar-left text-end fs-13 mySelect1" >
+                        <option selected>Choose option</option>
+                        <option>Gift</option>
+                        <option>Appliances</option>
+                    </select>
+                </div> `
+                document.getElementById('dynamic-contianeredititem').style.display='block'
+            }
+            else if (value==='oped5') {
+                node.nextElementSibling.innerHTML=`
+                <div>
+                    <select class="form-select  rounded-1 pad-9-16 text-1 ar-left text-end fs-13 mySelect1" >
+                        <option selected>Choose option</option>
+                        <option>Gift</option>
+                        <option>Appliances</option>
+                    </select>
+                </div>
+                `
+                document.getElementById('dynamic-contianeredititem').style.display='block'
+            }
+            else if (value==='oped6') {
+                node.nextElementSibling.innerHTML=`
+                <div>
+                    <select class="form-select  rounded-1 pad-9-16 text-1 ar-left text-end fs-13 mySelect1" >
+                        <option selected>Choose option</option>
+                        <option>Gift</option>
+                        <option>Appliances</option>
+                    </select>
+                </div>
+                `
+                document.getElementById('dynamic-contianeredititem').style.display='block'
+            }
+
+            else if (value==='oped7') {
+                document.getElementById('dynamic-contianeredititem').style.display='none'
+            }
+            else if (value==='oped8') {
+                document.getElementById('dynamic-contianeredititem').style.display='none'
+            }
+            else if (value==='oped9') {
+                document.getElementById('dynamic-contianeredititem').style.display='none'
+            }
+
+            else if (value==='oped10') {
+                node.nextElementSibling.innerHTML=`
+                <div>
+                    <input type="text" class="form-control text-end fs-13 pad-9-16" placeholder="Enter link">
+                </div>
+                `
+                document.getElementById('dynamic-contianeredititem').style.display='block'
+            }
+
+            $('.mySelect1').select2().on('select2:open', function (e) {
+                $('.select2-container--open').css('z-index', 9999);
+            });
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="assets/css/style-ltr.css"> -->
+    <link rel="stylesheet" href="assets/css/style-rtl.css">
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  " />
+    <link rel="shortcut icon" href="./assets/images/nomu-logo.png" type="image/x-icon">
+    <title>الأحداث والمؤتمرات</title>
+</head>
+
+<body>
+    <!-- /#page-content-wrapper starts -->
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="side-bar position-relative " id="sidebar-wrapper">
+            <div class="text-center brand-logo">
+                <img src="assets/images/nomu-logo.png" class="img-fluid" width="145px" alt="">
+            </div>
+            <div class="">
+                <ul class="navbar-nav sidebar_list active">
+                    <li class="nav-item mt-1">
+                        <a href="index.html" class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/house.png" class="img-fluid mx-2" width="20" height="20">
+                            </span>
+                            <p class="m-0 text_cap">الرئيسية</p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a href="about-us.html" class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/about.png" class="img-fluid mx-2" width="20" height="20">
+                            </span>
+                            <p class="m-0 text_cap">معلومات عنا</p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a href="our-projects.html" class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/project.png" class="img-fluid mx-2" width="20"
+                                    height="20">
+                            </span>
+                            <p class="m-0 text_cap">مشاريعنا</p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a href="news.html" class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/news.png" class="img-fluid mx-2" width="20" height="20">
+                            </span>
+                            <p class="m-0 text_cap">أخبار</p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a href="events-and-conferences.html"
+                            class="text-decoration-none nav-link active d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/events.png" class="img-fluid mx-2" width="20" height="20">
+                            </span>
+                            <p class="m-0 text-nowrap text_cap">الأحداث </p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a href="gallery.html" class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/gallery.png" class="img-fluid mx-2" width="20"
+                                    height="20">
+                            </span>
+                            <p class="m-0">صالة عرض</p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a href="contact-us.html" class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/phone.png" class="img-fluid mx-2" width="20" height="20">
+                            </span>
+                            <p class="m-0 text_cap">اتصل بنا</p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a href="ticket.html" class="text-decoration-none  nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/register.svg" class="img-fluid mx-2" width="20" height="20">
+                            </span>
+                            <p class="m-0 text_cap">التذاكر</p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a href="accounts.html" class="text-decoration-none  nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/accounts.png" class="img-fluid mx-2" width="20"
+                                    height="20">
+                            </span>
+                            <p class="m-0 text_cap">حسابات</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <header class="">
+                <nav class="border-bottom custom_nav">
+
+                    <div class="d-flex justify-content-between">
+
+                        <div class="d-flex">
+                            <div class="m-auto">
+                                <div class="d-flex align-items-center text-white">
+                                    <img src="./assets/images/icons/menu-toggle.png" alt="" id="menu-toggle" width="24"
+                                        height="30">
+                                </div>
+                            </div>
+                            <div class="input-group border-1 pad-8-16 gap-8 bg-grey rounded-2 me-3">
+                                <span class="input-group-text border-0 p-0  bg-transparent" id="basic-addon1">
+                                    <img src="assets/images/icons/magnify.png" class="img-fluid" width="22px">
+                                </span>
+                                <input type="text"
+                                    class="form-control p-0 text-input fs-16 fw-400-24px border-0 bg-transparent"
+                                    placeholder="ابحث هنا ...">
+                                <button type="button"
+                                    class="nav-link fs-2 text-capitalize d-block d-md-none searchlase d-lg-none border-0 bg-transparent">
+                                    <i class="fa-solid fa-magnifying-glass glas"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-12">
+                            <div>
+                                <button type="button"
+                                    class="btncust border-c bg-transparent d-flex fw-500-24 rounded-2 justify-content-center align-items-center gap-8 fs-16 fs-16m btn-box-shadow">
+                                    <img src="./assets/images/icons/quest.png" alt="" width="24" height="24"
+                                        class="me-2">
+                                    <span class="text-nowrap text_cap">تحتاج مساعدة?</span>
+                                </button>
+
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between ">
+                                <div class="dropdown">
+                                    <button class="btn p-0 border-0 " type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="d-flex align-items-center">
+                                            <span>
+                                                <img src="assets/images/avatar/av-1.png" alt="" class="img-fluid"
+                                                    width="40" height="40" style="border-radius: 50%;">
+                                            </span>
+                                        </div>
+                                    </button>
+                                    <ul class="dropdown-menu profile-ul p-8" aria-labelledby="dropdownMenuButton1">
+                                        <li class="p-12tb">
+                                            <div
+                                                class="d-flex flex-column justify-content-center align-items-center text-decoration-none">
+                                                <div class="">
+                                                    <img src="assets/images/avatar/av-1.png" alt="" class="img-fluid  "
+                                                        width="60" height="60" style="border-radius: 50%;">
+                                                </div>
+                                                <div class="py-1 text-center">
+                                                    <span class="fw-600 text-black text_cap">سالم محمد </span>
+                                                    <p class="m-0 gray-text text-center fw-400">salem.moh@gmail.com</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <hr class="m-0 p-4tb text-grey">
+                                        <li>
+                                            <a class="dropdown-item fs-14 dropitem d-flex align-items-center pad-6-12"
+                                                href="#">
+                                                <img src="./assets/images/icons/SignOut.png" alt="" width="18"
+                                                    height="18" class="me-1">
+                                                <span class="text-danger fs-14 fw-400">
+                                                    خروج
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <section class="searchblock">
+                <div class="position-absolute top-0 end-0 m-3">
+                    <button id="closesearch" class="bg-transparent text-white fs-1 border-0">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <form>
+                                <div class="input-group mb-3">
+                                    <input type="text"
+                                        class="form-control search-nav bg-transparent fs-1 text-white border-0 border-bottom border-white"
+                                        placeholder="ابحث هنا..." aria-label="ابحث هنا..."
+                                        aria-describedby="basic-addon2">
+                                    <span class="input-group-text  bg-transparent text-white border-0 fs-1"
+                                        id="basic-addon2">
+                                        <i class="fa-solid fa-magnifying-glass fs-1"></i>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="h-500px scroll" id="page-content-wrapper">
+                <div class="container-fluid p-24">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-12">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center gap-4c">
+                                    <h4 class="fs-20 m-0 text_cap">الأحداث</h4>
+                                </div>
+                                <div>
+                                    <a href="#addProject" data-bs-toggle="modal"
+                                        class="text-decoration-none btncust bg-link fs-16 fw-500-24 d-flex align-items-center justify-content-center gap-8 text-white text-capitalize">
+                                        <span>
+                                            <img src="assets/images/icons/plus-wh.png" class="img-fluid" width="24px">
+                                        </span>
+                                        <span class="text_cap">
+                                            أضف حدثًا
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="table-responsive">
+                            <table class="table border p-0 align-middle">
+                                <thead>
+                                    <th>
+                                        <span class="text-nowrap text_cap">صورة</span>
+                                    </th>
+                                    <th>
+                                        <span class="text-nowrap text_cap">حدث</span>
+                                    </th>
+                                    <th>
+                                        <span class="text-nowrap text_cap">وصف</span>
+                                    </th>
+                                    <th>
+                                        <span class="text-nowrap text_cap">تاريخ</span>
+                                    </th>
+                                    <th class="text-center">
+                                        <span class="text-nowrap text_cap">فعل</span>
+                                    </th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="gap-16 img_hw">
+                                                <img src="./assets/images/event.webp" alt="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="fs-14 text-1 fw-500-20 custom_text text_cap">
+                                                حدث 1
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-14 text-1 fw-400-20 custom_text">
+                                                    هذا وصف المشروع...
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="fs-14 text-1 fw-400-20 text-nowrap w-100">
+                                                22-10-23
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group d-flex justify-content-center gap-2">
+                                                <button type="button"
+                                                    class="p-2 bg-transparent border-blue py-2 px-2 rounded-2 d-flex justify-content-center align-items-center "
+                                                    href="#viewProject" data-bs-toggle="modal">
+                                                    <i class="fa-solid fa-eye link-color"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="p-2 bg-transparent border-blue py-2 px-2 rounded-2 d-flex justify-content-center align-items-center "
+                                                    href="#editProject" data-bs-toggle="modal">
+                                                    <i class="fa-solid fa-pencil link-color"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="p-2 bg-transparent border-red py-2 px-2 rounded-2 d-flex justify-content-center align-items-center "
+                                                    href="#deleteProject" data-bs-toggle="modal">
+                                                    <i class="fa-solid fa-trash text-danger"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="gap-16 img_hw">
+                                                <img src="./assets/images/event.webp" alt="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="fs-14 text-1 fw-500-20 custom_text text_cap">
+                                                حدث 1
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-14 text-1 fw-400-20 custom_text">
+                                                    هذا وصف المشروع...
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="fs-14 text-1 fw-400-20">
+                                                22-10-23
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group d-flex justify-content-center gap-2">
+                                                <button type="button"
+                                                    class="p-2 bg-transparent border-blue py-2 px-2 rounded-2 d-flex justify-content-center align-items-center "
+                                                    href="#viewProject" data-bs-toggle="modal">
+                                                    <i class="fa-solid fa-eye link-color"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="p-2 bg-transparent border-blue py-2 px-2 rounded-2 d-flex justify-content-center align-items-center "
+                                                    href="#editProject" data-bs-toggle="modal">
+                                                    <i class="fa-solid fa-pencil link-color"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="p-2 bg-transparent border-red py-2 px-2 rounded-2 d-flex justify-content-center align-items-center "
+                                                    href="#deleteProject" data-bs-toggle="modal">
+                                                    <i class="fa-solid fa-trash text-danger"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="gap-16 img_hw">
+                                                <img src="./assets/images/event.webp" alt="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="fs-14 text-1 fw-500-20 custom_text text_cap">
+                                                حدث 1
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-14 text-1 fw-400-20 custom_text">
+                                                    هذا وصف المشروع...
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="fs-14 text-1 fw-400-20">
+                                                22-10-23
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group d-flex justify-content-center gap-2">
+                                                <button type="button"
+                                                    class="p-2 bg-transparent border-blue py-2 px-2 rounded-2 d-flex justify-content-center align-items-center "
+                                                    href="#viewProject" data-bs-toggle="modal">
+                                                    <i class="fa-solid fa-eye link-color"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="p-2 bg-transparent border-blue py-2 px-2 rounded-2 d-flex justify-content-center align-items-center "
+                                                    href="#editProject" data-bs-toggle="modal">
+                                                    <i class="fa-solid fa-pencil link-color"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="p-2 bg-transparent border-red py-2 px-2 rounded-2 d-flex justify-content-center align-items-center "
+                                                    href="#deleteProject" data-bs-toggle="modal">
+                                                    <i class="fa-solid fa-trash text-danger"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="gap-16 img_hw">
+                                                <img src="./assets/images/event.webp" alt="">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="fs-14 text-1 fw-500-20 custom_text text_cap">
+                                                حدث 1
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="d-flex flex-column">
+                                                <span class="fs-14 text-1 fw-400-20 custom_text">
+                                                    هذا وصف المشروع...
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="fs-14 text-1 fw-400-20">
+                                                22-10-23
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group d-flex justify-content-center gap-2">
+                                                <button type="button"
+                                                    class="p-2 bg-transparent border-blue py-2 px-2 rounded-2 d-flex justify-content-center align-items-center "
+                                                    href="#viewProject" data-bs-toggle="modal">
+                                                    <i class="fa-solid fa-eye link-color"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="p-2 bg-transparent border-blue py-2 px-2 rounded-2 d-flex justify-content-center align-items-center "
+                                                    href="#editProject" data-bs-toggle="modal">
+                                                    <i class="fa-solid fa-pencil link-color"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="p-2 bg-transparent border-red py-2 px-2 rounded-2 d-flex justify-content-center align-items-center "
+                                                    href="#deleteProject" data-bs-toggle="modal">
+                                                    <i class="fa-solid fa-trash text-danger"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- -------- MODALS --------  -->
+
+    <!-- -------- ADD EVENT MODAL --------  -->
+    <div class="modal  fade" id="addProject" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg  Home-project-card modal-dialog-scrollable">
+            <div class="modal-content ">
+                <div class="modal-header d-flex align-items-center justify-content-between">
+                    <h5 class="modal-title fw-600-24 fs-20 text-1 text_cap" id="viewModalLabel">أضف حدثًا</h5>
+                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-4">
+                    <form class="d-flex flex-column gap-24">
+                        <div class="row gap-16">
+                            <div class="col-lg-12">
+                                <div class="px-3 py-4 d-flex flex-column align-items-center border-blue-dashed rounded-2 gap-20 cursor-p"
+                                    onclick="HandleBrowseClick();">
+                                    <input type="file" id="browse" class="d-none" name="fileupload"
+                                        onChange="Handlechange();" />
+                                    <a href="" class="rounded-5">
+                                        <img src="./assets/images/icons/plus-bg.png" alt="" class="img-fluid"
+                                            width="62px" height="62px">
+                                    </a>
+                                    <div>
+                                        <p class="link-color fw-600-24 m-0 text_cap">انقر للتحميل</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1 text_cap"> عنوان الحدث</label>
+                                    <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name=""
+                                        placeholder="أدخل عنوان الأخبار">
+                                </div>
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1 text_cap">وصف الحدث</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                                </div>
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1 text_cap">تاريخ الحدث</label>
+                                    <input type="date" class="form-control fw-400-24px gray-text-2 pad-8-16" name="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 ltr">
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1">Event Title</label>
+                                    <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name=""
+                                        placeholder="Enter News Title">
+                                </div>
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1">Event Description</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                                </div>
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1">Event Date</label>
+                                    <input type="date" class="form-control fw-400-24px gray-text-2 pad-8-16" name="">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer gap-12">
+                    <button type="button" class="btncust border-c bg-transparent text_cap"
+                        data-bs-dismiss="modal">يلغي</button>
+                    <button type="button" class="btncust border-0 bg-link text-white text_cap">يضيف</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------- EDIT EVENT MODAL --------  -->
+    <div class="modal  fade" id="editProject" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg  Home-project-card ">
+            <div class="modal-content ">
+                <div class="modal-header d-flex align-items-center justify-content-between">
+                    <h5 class="modal-title fw-600-24 fs-20 text-1 text_cap" id="viewModalLabel">تحرير الحدث</h5>
+                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-4">
+                    <form class="d-flex flex-column gap-24">
+                        <div class="row gap-16">
+                            <div class="col-lg-12">
+                                <div class="px-3 py-4 d-flex flex-column align-items-center border-blue-dashed rounded-2 gap-20 cursor-p"
+                                    onclick="HandleBrowseClick();">
+                                    <input type="file" id="browse" class="d-none" name="fileupload"
+                                        onChange="Handlechange();" />
+                                    <a href="" class="rounded-5">
+                                        <img src="./assets/images/icons/plus-bg.png" alt="" class="img-fluid"
+                                            width="62px" height="62px">
+                                    </a>
+                                    <div>
+                                        <p class="link-color fw-600-24 m-0 text_cap">انقر للتحميل</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1 text_cap"> عنوان الحدث</label>
+                                    <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name=""
+                                        placeholder="أدخل عنوان الأخبار">
+                                </div>
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1 text_cap">وصف الحدث</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                                </div>
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1 text_cap">تاريخ الحدث</label>
+                                    <input type="date" class="form-control fw-400-24px gray-text-2 pad-8-16" name="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 ltr">
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1">Event Title</label>
+                                    <input type="text" class="form-control fw-400-24px gray-text-2 pad-8-16" name=""
+                                        placeholder="Enter News Title">
+                                </div>
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1">Event Description</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                                </div>
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-400-20px text-1">Event Date</label>
+                                    <input type="date" class="form-control fw-400-24px gray-text-2 pad-8-16" name="">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer gap-12">
+                    <button type="button" class="btncust border-c bg-transparent text_cap"
+                        data-bs-dismiss="modal">يلغي</button>
+                    <button type="button" class="btncust border-0 bg-link text-white text_cap">يحرر</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------- VIEW EVENT MODAL --------  -->
+    <div class="modal fade" id="viewProject" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row justify-content-center align-items-center g-3">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="card p-2 Home-project-card">
+                                <img src="./assets/images/event.webp" class=" p-3 rounded-4">
+                                <div class="card-body">
+                                    <h5 class="card-title fs-4">حدث 1</h5>
+                                    <p class="card-text fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate</p>
+                                    <div class="d-flex justify-content-end align-items-center mt-4">
+                                        <div class="d-flex align-items-center date">
+                                            <span class="fs-12 text-1">24 Oct,2023</span>
+                                            <div class="me-2">
+                                                <i class="fa-solid fa-calendar-days ms-2 fs-12 "
+                                                    style="color: #e0e0e0;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="card p-2 Home-project-card">
+                                <img src="./assets/images/event.webp" class=" p-3 rounded-4">
+                                <div class="card-body">
+                                    <h5 class="card-title fs-4">حدث 1</h5>
+                                    <p class="card-text fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Porro
+                                        sed cum voluptate</p>
+                                    <div class="d-flex justify-content-end align-items-center mt-4">
+                                        <div class="d-flex align-items-center date">
+                                            <span class="fs-12 text-1">24 Oct,2023</span>
+                                            <div class="me-2">
+                                                <i class="fa-solid fa-calendar-days ms-2 fs-12 "
+                                                    style="color: #e0e0e0;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -- delete EVENT modal --  -->
+    <div class="modal  fade" id="deleteProject" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered Home-project-card">
+            <div class="modal-content ">
+                <div class="modal-header d-flex align-items-center justify-content-between">
+                    <h5 class="modal-title fw-600-24 fs-20 text-1 text_cap" id="viewModalLabel"> حذف الحدث</h5>
+                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="d-flex flex-column gap-24">
+                        <div class="row gap-16">
+                            <div class="col-lg-12">
+                                <div class="d-flex flex-column gap-4c">
+                                    <p class="text-1 fw-400-24px fs-16 text_cap">هل أنت متأكد من حذف هذا الحدث؟</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer gap-12">
+                    <button type="button" class="btncust border-c bg-transparent text_cap"
+                        data-bs-dismiss="modal">رفض</button>
+                    <button type="button" class="btncust border-0 bg-red text-white text_cap">يمسح</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper ends-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+    <script type="text/javascript">
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <script>
+        let dropdowns = document.querySelectorAll('.project-dropdown')
+        dropdowns.forEach((dd) => {
+            dd.addEventListener('click', function (e) {
+                var el = this.nextElementSibling
+                el.style.display = el.style.display === 'block' ? 'none' : 'block'
+            })
+        })
+    </script>
+    <script>
+        function HandleBrowseClick() {
+            var fileinput = document.getElementById("browse");
+            fileinput.click();
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.searchlase').click(function () {
+                $(".searchblock").toggleClass('active')
+            });
+            $('#closesearch').click(function () {
+                $(".searchblock").toggleClass('active')
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            var el = document.getElementById("wrapper");
+            var toggleButton = document.getElementById("menu-toggle");
+
+            toggleButton.onclick = function () {
+                el.classList.toggle("toggled");
+            };
+
+        });
+
+    </script>
+    <script>
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+
+</body>
+
+</html>

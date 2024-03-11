@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style-rtl.css">
+    <!-- <link rel="stylesheet" href="assets/css/style-ltr.css"> -->
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  " />
+    <link rel="shortcut icon" href="./assets/images/nomu-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
+    <title>التذاكر</title>
+</head>
+
+<body>
+    <!-- /#page-content-wrapper starts -->
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="side-bar position-relative " id="sidebar-wrapper">
+            <div class="text-center brand-logo">
+                <img src="assets/images/nomu-logo.png" class="img-fluid" width="145px" alt="">
+            </div>
+            <div class="">
+                <ul class="navbar-nav sidebar_list active">
+                    <li class="nav-item mt-1">
+                        <a href="index.html" class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/house.png" class="img-fluid mx-2" width="20" height="20">
+                            </span>
+                            <p class="m-0 text_cap">الرئيسية</p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a href="about-us.html" class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/about.png" class="img-fluid mx-2" width="20" height="20">
+                            </span>
+                            <p class="m-0 text_cap">معلومات عنا</p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a href="our-projects.html" class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/project.png" class="img-fluid mx-2" width="20"
+                                    height="20">
+                            </span>
+                            <p class="m-0 text_cap">مشاريعنا</p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a href="news.html" class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/news.png" class="img-fluid mx-2" width="20" height="20">
+                            </span>
+                            <p class="m-0 text_cap">أخبار</p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a href="events-and-conferences.html"
+                            class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/events.png" class="img-fluid mx-2" width="20" height="20">
+                            </span>
+                            <p class="m-0 text-nowrap text_cap">الأحداث </p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a href="gallery.html" class="text-decoration-none nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/gallery.png" class="img-fluid mx-2" width="20"
+                                    height="20">
+                            </span>
+                            <p class="m-0 text_cap">صالة عرض</p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a href="contact-us.html" class="text-decoration-none  nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/phone.png" class="img-fluid mx-2" width="20" height="20">
+                            </span>
+                            <p class="m-0 text_cap">اتصل بنا</p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a href="ticket.html" class="text-decoration-none active nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/register.svg" class="img-fluid mx-2" width="20" height="20">
+                            </span>
+                            <p class="m-0 text_cap">التذاكر</p>
+                        </a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a href="accounts.html" class="text-decoration-none  nav-link d-flex align-items-center">
+                            <span class="p-0">
+                                <img src="assets/images/icons/accounts.png" class="img-fluid mx-2" width="20"
+                                    height="20">
+                            </span>
+                            <p class="m-0 text_cap">حسابات</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <!-- navbar start from here -->
+            <header class="">
+                <nav class="border-bottom custom_nav">
+
+                    <div class="d-flex justify-content-between">
+
+                        <div class="d-flex">
+                            <div class="m-auto">
+                                <div class="d-flex align-items-center text-white">
+                                    <img src="./assets/images/icons/menu-toggle.png" alt="" id="menu-toggle" width="24"
+                                        height="30">
+                                </div>
+                            </div>
+                            <div class="input-group border-1 pad-8-16 gap-8 bg-grey rounded-2 me-3">
+                                <span class="input-group-text border-0 p-0  bg-transparent" id="basic-addon1">
+                                    <img src="assets/images/icons/magnify.png" class="img-fluid" width="22px">
+                                </span>
+                                <input type="text"
+                                    class="form-control p-0 text-input fs-16 fw-400-24px border-0 bg-transparent"
+                                    placeholder="ابحث هنا ...">
+                                <button type="button"
+                                    class="nav-link fs-2 text-capitalize d-block d-md-none searchlase d-lg-none border-0 bg-transparent">
+                                    <i class="fa-solid fa-magnifying-glass glas"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-12">
+                            <div>
+                                <button type="button"
+                                    class="btncust border-c bg-transparent d-flex fw-500-24 rounded-2 justify-content-center align-items-center gap-8 fs-16 fs-16m btn-box-shadow">
+                                    <img src="./assets/images/icons/quest.png" alt="" width="24" height="24"
+                                        class="me-2">
+                                    <span class="text-nowrap text_cap">تحتاج مساعدة?</span>
+                                </button>
+
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between ">
+                                <div class="dropdown">
+                                    <button class="btn p-0 border-0 " type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="d-flex align-items-center">
+                                            <span>
+                                                <img src="assets/images/avatar/av-1.png" alt="" class="img-fluid"
+                                                    width="40" height="40" style="border-radius: 50%;">
+                                            </span>
+                                        </div>
+                                    </button>
+                                    <ul class="dropdown-menu profile-ul p-8" aria-labelledby="dropdownMenuButton1">
+                                        <li class="p-12tb">
+                                            <div
+                                                class="d-flex flex-column justify-content-center align-items-center text-decoration-none">
+                                                <div class="">
+                                                    <img src="assets/images/avatar/av-1.png" alt="" class="img-fluid  "
+                                                        width="60" height="60" style="border-radius: 50%;">
+                                                </div>
+                                                <div class="py-1 text-center">
+                                                    <span class="fw-600 text-black text_cap">سالم محمد </span>
+                                                    <p class="m-0 gray-text text-center fw-400">salem.moh@gmail.com</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <hr class="m-0 p-4tb text-grey">
+                                        <li>
+                                            <a class="dropdown-item fs-14 dropitem d-flex align-items-center pad-6-12"
+                                                href="#">
+                                                <img src="./assets/images/icons/SignOut.png" alt="" width="18"
+                                                    height="18" class="me-1">
+                                                <span class="text-danger fs-14 fw-400">
+                                                    خروج
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- navbar end here -->
+            <section class="searchblock">
+                <div class="position-absolute top-0 end-0 m-3">
+                    <button id="closesearch" class="bg-transparent text-white fs-1 border-0">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <form>
+                                <div class="input-group mb-3">
+                                    <input type="text"
+                                        class="form-control search-nav bg-transparent fs-1 text-white border-0 border-bottom border-white"
+                                        placeholder="ابحث هنا..." aria-label="ابحث هنا..."
+                                        aria-describedby="basic-addon2">
+                                    <span class="input-group-text  bg-transparent text-white border-0 fs-1"
+                                        id="basic-addon2">
+                                        <i class="fa-solid fa-magnifying-glass fs-1"></i>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="h-500px scroll" id="page-content-wrapper">
+                <div class="container-fluid p-24">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-9 col-lg-9">
+                            <h4 class="fs-20 m-0 text_cap">التذاكر</h4>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="table-responsive">
+                            <table class="table border p-0 align-middle">
+                                <thead>
+                                    <th>
+                                        <span class="text-nowrap text_cap">اسم</span>
+                                    </th>
+
+                                    <th>
+                                        <span class="text-nowrap text_cap">رقم التليفون</span>
+                                    </th>
+                                    <th>
+                                        <span class="text-nowrap text_cap">لنوع </span>
+                                    </th>
+                                    <th>
+                                        <span class="text-nowrap text_cap">رقم المبنى </span>
+                                    </th>
+                                    <th>
+                                        <span class="text-nowrap text_cap">وصف</span>
+                                    </th>
+                                    <th>
+                                        <span class="text-nowrap text_cap">حالة</span>
+                                    </th>
+                                    <th class="text-center">
+                                        <span class="text-nowrap text_cap">منظر</span>
+                                    </th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center gap-16">
+                                                <span class="fs-14 text-1 fw-500-20 text_cap">
+                                                    عبد الرحمن
+                                                </span>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <span class="fs-14 text-1 fw-400-20">
+                                                923131232123+
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="fs-14 text-1 fw-400-20 custom_text text_cap">
+                                                لنوع 1
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="fs-14 text-1 fw-400-20 custom_text text_cap">
+                                                LT1
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="fs-14 text-1 fw-400-20 custom_text text_cap">
+                                                لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة
+                                                وتمجيد الألم نشأت بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك
+                                                السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن
+                                                بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class=" fs-14 text-1 fw-400-20 pill-green pill-cust text-capitalize">
+                                                مكتمل
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group d-flex justify-content-center gap-2">
+                                                <button type="button"
+                                                    class="p-2 bg-transparent border-blue py-2 px-2 rounded-2 d-flex justify-content-center align-items-center"
+                                                    href="#viewContact" data-bs-toggle="modal">
+                                                    <i class="fa-solid fa-eye link-color"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="p-2 bg-transparent border-blue py-2 px-2 rounded-2 d-flex justify-content-center align-items-center "
+                                                    href="#editProject" data-bs-toggle="modal">
+                                                    <i class="fa-solid fa-pencil link-color"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center gap-16">
+                                                <span class="fs-14 text-1 fw-500-20 text_cap">
+                                                    عبد الرحمن
+                                                </span>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <span class="fs-14 text-1 fw-400-20">
+                                                923131232123+
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="fs-14 text-1 fw-400-20 custom_text text_cap">
+                                                لنوع 1
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="fs-14 text-1 fw-400-20 custom_text text_cap">
+                                                LT1
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="fs-14 text-1 fw-400-20 custom_text text_cap">
+                                                لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة
+                                                وتمجيد الألم نشأت بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك
+                                                السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن
+                                                بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class=" fs-14 text-1 fw-400-20 pill-green pill-cust text-capitalize">
+                                                مكتمل
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group d-flex justify-content-center gap-2">
+                                                <button type="button"
+                                                    class="p-2 bg-transparent border-blue py-2 px-2 rounded-2 d-flex justify-content-center align-items-center"
+                                                    href="#viewContact" data-bs-toggle="modal">
+                                                    <i class="fa-solid fa-eye link-color"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="p-2 bg-transparent border-blue py-2 px-2 rounded-2 d-flex justify-content-center align-items-center "
+                                                    href="#editProject" data-bs-toggle="modal">
+                                                    <i class="fa-solid fa-pencil link-color"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center gap-16">
+                                                <span class="fs-14 text-1 fw-500-20 text_cap">
+                                                    عبد الرحمن
+                                                </span>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <span class="fs-14 text-1 fw-400-20">
+                                                923131232123+
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="fs-14 text-1 fw-400-20 custom_text text_cap">
+                                                لنوع 1
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="fs-14 text-1 fw-400-20 custom_text text_cap">
+                                                LT1
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="fs-14 text-1 fw-400-20 custom_text text_cap">
+                                                لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة
+                                                وتمجيد الألم نشأت بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك
+                                                السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن
+                                                بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class=" fs-14 text-1 fw-400-20 pill-green pill-cust text-capitalize">
+                                                مكتمل
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group d-flex justify-content-center gap-2">
+                                                <button type="button"
+                                                    class="p-2 bg-transparent border-blue py-2 px-2 rounded-2 d-flex justify-content-center align-items-center"
+                                                    href="#viewContact" data-bs-toggle="modal">
+                                                    <i class="fa-solid fa-eye link-color"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="p-2 bg-transparent border-blue py-2 px-2 rounded-2 d-flex justify-content-center align-items-center "
+                                                    href="#editProject" data-bs-toggle="modal">
+                                                    <i class="fa-solid fa-pencil link-color"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="d-flex align-items-center gap-16">
+                                                <span class="fs-14 text-1 fw-500-20 text_cap">
+                                                    عبد الرحمن
+                                                </span>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <span class="fs-14 text-1 fw-400-20">
+                                                923131232123+
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="fs-14 text-1 fw-400-20 custom_text text_cap">
+                                                لنوع 1
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="fs-14 text-1 fw-400-20 custom_text text_cap">
+                                                LT1
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="fs-14 text-1 fw-400-20 custom_text text_cap">
+                                                لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة
+                                                وتمجيد الألم نشأت بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك
+                                                السعادة البشرية، فلا أحد يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن
+                                                بفضل هؤلاء الأشخاص الذين لا يدركون بأن السعادة لا بد أن
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class=" fs-14 text-1 fw-400-20 pill-green pill-cust text-capitalize">
+                                                مكتمل
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group d-flex justify-content-center gap-2">
+                                                <button type="button"
+                                                    class="p-2 bg-transparent border-blue py-2 px-2 rounded-2 d-flex justify-content-center align-items-center"
+                                                    href="#viewContact" data-bs-toggle="modal">
+                                                    <i class="fa-solid fa-eye link-color"></i>
+                                                </button>
+                                                <button type="button"
+                                                    class="p-2 bg-transparent border-blue py-2 px-2 rounded-2 d-flex justify-content-center align-items-center "
+                                                    href="#editProject" data-bs-toggle="modal">
+                                                    <i class="fa-solid fa-pencil link-color"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------- ADD NEW PROJECT MODAL --------  -->
+    <div class="modal  fade" id="viewContact" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg  Home-project-card">
+            <div class="modal-content ">
+                <div class="modal-header d-flex align-items-center justify-content-between">
+                    <h5 class="modal-title fw-600-24 fs-20 text-1 text_cap" id="viewModalLabel">بيانات المستخدم</h5>
+                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-4">
+                    <form class="d-flex flex-column gap-24">
+                        <div class="row">
+                            <div class="col-lg-6 rtl">
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-bold text-1 text_cap">اسم</label>
+                                    <p class="fw-400-24px gray-text-2">
+                                        عبد الرحمن
+                                    </p>
+                                </div>
+
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-semibold text-1 text_cap">رقم التليفون</label>
+                                    <p class="fw-400-24px gray-text-2">
+                                        923131232123+
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-bold text-1 text_cap">النوع </label>
+                                    <p class="fw-400-24px gray-text-2">
+                                        النوع 1
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-bold text-1 text_cap">رقم المبنى </label>
+                                    <p class="fw-400-24px gray-text-2">
+                                        LT1
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-bold text-1">وصف</label>
+                                    <p class="fw-400-24px gray-text-2">
+                                        لكن لا بد أن أوضح لك أن كل هذه الأفكار المغلوطة حول استنكار النشوة وتمجيد الألم
+                                        نشأت بالفعل، وسأعرض لك التفاصيل لتكتشف حقيقة وأساس تلك السعادة البشرية، فلا أحد
+                                        يرفض أو يكره أو يتجنب الشعور بالسعادة، ولكن بفضل هؤلاء الأشخاص الذين لا يدركون
+                                        بأن
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-bold text-1">حالة</label>
+                                    <p class="fw-400-24px gray-text-2">
+                                        مكتمل
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 ltr">
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-bold text-1">Name</label>
+                                    <p class="fw-400-24px gray-text-2">
+                                        Abdur Rehman
+                                    </p>
+                                </div>
+
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-bold text-1">Phone No</label>
+                                    <p class="fw-400-24px gray-text-2">
+                                        923131232123+
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-bold text-1">Type</label>
+                                    <p class="fw-400-24px gray-text-2">
+                                        Type 1
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-bold text-1">Bulding Number</label>
+                                    <p class="fw-400-24px gray-text-2">
+                                        LT1
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-bold text-1">Description</label>
+                                    <p class="fw-400-24px gray-text-2">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, quidem voluptas
+                                        harum aut natus, in voluptate eius culpa deserunt fugiat quis tempore molestiae
+                                        impedit, unde beatae repellat eligendi fuga minus.
+                                    </p>
+                                </div>
+                                <div class="d-flex flex-column gap-4c">
+                                    <label class="fs-12 fw-bold text-1">Status</label>
+                                    <p class="fw-400-24px gray-text-2 ">
+                                        Completed
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer gap-12">
+                    <button type="button" class="btncust border-c bg-transparent text_cap"
+                        data-bs-dismiss="modal">يلغي</button>
+                    <button type="button" class="btncust border-0 bg-link text-white text_cap">تمام</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- edit modal  -->
+    <div class="modal  fade" id="editProject" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered Home-project-card">
+            <div class="modal-content ">
+                <div class="modal-header d-flex align-items-center justify-content-between">
+                    <h5 class="modal-title fw-600-24 fs-20 text-1 text_cap" id="viewModalLabel">تحرير الحالة
+                    </h5>
+                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-4">
+                    <div class="d-flex flex-column gap-4c">
+                        <label class="fs-12 fw-400-20px text-1 text-capitalize "> حدد الحالة</label>
+                        <select class="form-select text-capitalize" aria-label="Default select example">
+                            <option selected hidden>حدد الحالة</option>
+                            <option value="1">قيد الانتظار</option>
+                            <option value="2">في تَقَدم</option>
+                            <option value="3">مكتمل</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer gap-12">
+                    <button type="button" class="btncust border-c bg-transparent" data-bs-dismiss="modal">يلغي</button>
+                    <button type="button" class="btncust border-0 bg-link text-white">يحرر</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper ends-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/app.js"></script>
+    <script type="text/javascript">
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <script>
+        let dropdowns = document.querySelectorAll('.project-dropdown')
+        dropdowns.forEach((dd) => {
+            dd.addEventListener('click', function (e) {
+                var el = this.nextElementSibling
+                el.style.display = el.style.display === 'block' ? 'none' : 'block'
+            })
+        })
+    </script>
+    <script>
+        function HandleBrowseClick() {
+            var fileinput = document.getElementById("browse");
+            fileinput.click();
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.searchlase').click(function () {
+                $(".searchblock").toggleClass('active')
+            });
+            $('#closesearch').click(function () {
+                $(".searchblock").toggleClass('active')
+            });
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            var el = document.getElementById("wrapper");
+            var toggleButton = document.getElementById("menu-toggle");
+
+            toggleButton.onclick = function () {
+                el.classList.toggle("toggled");
+            };
+
+        });
+
+    </script>
+    <script>
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#example-getting-started').multiselect();
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
+                removeItemButton: true,
+                maxItemCount: 5,
+                searchResultLimit: 5,
+                renderChoiceLimit: 5
+            });
+
+
+        });
+    </script>
+</body>
+
+</html>

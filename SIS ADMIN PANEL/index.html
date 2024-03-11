@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css  ">
+    <title>Dashboard</title>
+    <link rel="shortcut icon" href="./assets/images/new-logo-removebg-preview.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="primary-bg shadow border-end " id="sidebar-wrapper">
+            <div class="text-center primary-text bg-blue-color fs-4 fw-semibold text-uppercase border-bottom">
+                <img src="./assets/images/white-logo-sis.png" width="150" height="100" alt="">
+            </div>
+            <ul class="navbar-nav sidebar_list">
+                <li class="nav-item px-2 py-0 mt-1">
+                    <a href="index.html" class="text-decoration-none nav-link px-2 active">
+                        <span><i class="fas fa-tachometer-alt me-2"></i></span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item px-2 py-0 mt-1">
+                    <a class="text-decoration-none nav-link px-2 d-flex justify-content-between"
+                        data-bs-toggle="collapse" href="#collapseExample" onclick="toggleArrow()" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        <span><i class="fa-solid fa-users me-2 size"></i>All Profiles</span>
+                        <span id="myArrow1"><i class="fas fa-angle-right"></i></span>
+                    </a>
+                    <ul class="collapse navbar-nav pt-2" id="collapseExample">
+                        <li class="nav-item px-2 py-0">
+                            <a href="trade-offer-competitor.html"
+                                class="text-decoration-none text-capitalize nav-link px-2">
+                                <i class="fa-solid fa-person-chalkboard me-2 size"></i>Project Owner</a>
+                        </li>
+                        <li class="nav-item px-2 py-0">
+                            <a href="trade-audit.html" class="text-decoration-none nav-link px-2">
+                                <i class="fa-solid fa-user me-2 size"></i>Investor</a>
+                        </li>
+                        <li class="nav-item px-2 py-0">
+                            <a href="trade-chargeback.html" class="text-decoration-none nav-link px-2">
+                                <i
+                                    class="fa-solid fa-person-walking-arrow-loop-left me-2 size"></i>Incubator/Accelerator</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item px-2 py-0 mt-1">
+                    <a class="text-decoration-none nav-link px-2 d-flex justify-content-between"
+                        data-bs-toggle="collapse" href="#collapseSchedular" onclick="toggleArrow1()" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        <span><i class="fa-solid fa-clipboard-list me-2 size"></i>Overview of Projects</span>
+                        <span id="myArrow2"><i class="fas fa-angle-right"></i></span>
+                    </a>
+                    <ul class="collapse navbar-nav" id="collapseSchedular">
+                        <li class="nav-item px-2 py-0">
+                            <a href="employe.html" class="text-decoration-none nav-link px-2">
+                                <i class="fa-solid fa-file-shield me-2 size"></i>Campaign Submission</a>
+                        </li>
+                        <li class="nav-item px-2 py-0">
+                            <a href="employee-role.html" class="text-decoration-none nav-link px-2">
+                                <i class="fa-solid fa-gauge-high me-2 size"></i>Boost Campaign</a>
+                        </li>
+                        <li class="nav-item px-2 py-0">
+                            <a href="scheduler.html" class="text-decoration-none nav-link px-2">
+                                <i class="fa-solid fa-file-signature me-2 size"></i>E-Signature</a>
+                        </li>
+                        <li class="nav-item px-2 py-0">
+                            <a href="payroll.html" class="text-decoration-none nav-link px-2">
+                                <i class="fa-solid fa-money-bill-transfer me-2 size"></i>Funds Withdrawal</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item px-2 py-0 mt-1">
+                    <a class="text-decoration-none nav-link px-2 d-flex justify-content-between"
+                        data-bs-toggle="collapse" href="#collapseadmin" onclick="toggleArrow2()" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        <span><i class="fa-solid fa-credit-card me-2 size"></i>Investments</span>
+                        <span id="myArrow3"><i class="fas fa-angle-right"></i></span>
+                    </a>
+                    <ul class="collapse navbar-nav" id="collapseadmin">
+                        <li class="nav-item px-2 py-0">
+                            <a href="admin-user.html" class="text-decoration-none nav-link px-2"><i
+                                    class="fas fa-user me-2 size"></i>Debt and Equity</a>
+                        </li>
+                        <li class="nav-item px-2 py-0">
+                            <a href="transaction-history.html" class="text-decoration-none nav-link px-2">
+                                <i class="fa-solid fa-clock-rotate-left me-2 size"></i>Transaction History</a>
+                        </li>
+                        <li class="nav-item px-2 py-0">
+                            <a href="#" class="text-decoration-none nav-link px-2">
+                                <i class="fa-solid fa-wallet me-2 size"></i>Wallet</a>
+                        </li>
+                        <li class="nav-item px-2 py-0">
+                            <a href="#" class="text-decoration-none nav-link px-2">
+                                <i class="fa-solid fa-money-check-dollar me-2 size"></i>Payment Integration</a>
+                        </li>
+                        <li class="nav-item px-2 py-0">
+                            <a href="#" class="text-decoration-none nav-link px-2">
+                                <i class="fa-solid fa-file-invoice me-2 size"></i>Report</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item px-2 py-0 mt-1">
+                    <a class="text-decoration-none nav-link px-2 d-flex justify-content-between"
+                        data-bs-toggle="collapse" href="#collapseanalytics" onclick="toggleArrow3()" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        <span><i class="fa-solid fa-user me-2 size"></i>Portfolio Management</span>
+                        <span id="myArrow4"><i class="fas fa-angle-right"></i></span>
+                    </a>
+                    <ul class="collapse navbar-nav pb-5 " id="collapseanalytics">
+                        <li class="nav-item px-2 py-0">
+                            <a href="payroll-analytics.html" class="text-decoration-none nav-link px-2">
+                                <i class="fa-regular fa-credit-card me-2 size"></i>Track investments</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <!-- navbar start from here -->
+            <header class="">
+                <nav class="bg-blue-color custom_nav">
+                    <div class="container-fluid mt-1">
+                        <div class="row g-2 align-items-center justify-content-between">
+                            <div class="col-4 col-sm-4 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                                <div class="d-flex align-items-center text-white">
+                                    <i class="fas fa-sliders-h fs-4 me-3" style="color: #ffffff;" id="menu-toggle"></i>
+                                </div>
+                            </div>
+                            <div class="col-8 col-sm-8 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-end">
+                                <div class="d-flex align-items-center justify-content-end">
+                                    <div class="dropdown">
+                                          <button class="btn p-0 border-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <span><i class="fas fa-bell text-light"></i></span>
+                                            </div>
+                                      </button>
+                                      <ul class="dropdown-menu" style="width: 300px" aria-labelledby="dropdownMenuButton1">
+                                          <li>
+                                              <div class="d-flex align-items-center justify-content-between pt-2 px-3">
+                                                  <span class="mb-0 text-capitalize fs-14">notifications</span>
+                                                  <a href="" class="text-decoration-none text-capitalize fs-12">
+                                                      marked all as read
+                                                  </a>
+                                              </div>
+                                          </li>
+                                          <li>
+                                              <hr>
+                                          </li>
+                                        <li>
+                                            <div>
+                                                <span class="fs-13 text-capitalize text-secondary ps-3">today</span>
+                                                <a class="dropdown-item fs-14 dropitemone d-flex justify-content-between py-2" href="#">
+                                                    <div class="d-flex align-items-start">
+                                                        <span class="text-capitalize circlewhite bg-secondary text-white">
+                                                            amc
+                                                        </span>
+                                                        <span class="text-capitalize ps-2 fs-12 text-wrap">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        </span>
+                                                    </div>
+                                                    <p class="mb-0 fs-12 text-secondary">2 min</p>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <span class="fs-13 text-capitalize text-secondary ps-3">yesterday</span>
+                                                <a class="dropdown-item fs-14 dropitemone d-flex justify-content-between py-2" href="#">
+                                                    <div class="d-flex align-items-start">
+                                                        <span class="text-capitalize circlewhite bg-secondary text-white">
+                                                            amc
+                                                        </span>
+                                                        <span class="text-capitalize ps-2 fs-12 text-wrap">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        </span>
+                                                    </div>
+                                                    <p class="mb-0 fs-12 text-secondary">2 min</p>
+                                                </a>
+                                            </div>
+                                            <div>
+                                                <span class="fs-13 text-capitalize text-secondary ps-3">today</span>
+                                                <a class="dropdown-item fs-14 dropitemone d-flex justify-content-between py-2" href="#">
+                                                    <div class="d-flex align-items-start">
+                                                        <span class="text-capitalize circlewhite bg-secondary text-white">
+                                                            amc
+                                                        </span>
+                                                        <span class="text-capitalize ps-2 fs-12 text-wrap">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        </span>
+                                                    </div>
+                                                    <p class="mb-0 fs-12 text-secondary">2 min</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                      </ul>
+                                    </div>
+            
+            
+                                    <div class="dropdown">
+                                          <button class="btn p-0 border-0 " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <div class="d-flex align-items-center ms-3">
+                                                    <span><i class="fas fa-user-circle text-light fs-2"></i></span>
+                                        </div>
+                                      </button>
+                                      <ul class="dropdown-menu lh-sm" aria-labelledby="dropdownMenuButton1">
+                                        <li>
+                                            <a class="dropdown-item fs-14 dropitem d-flex align-items-center" href="#">
+                                                <span>
+                                                    <img src="assets/image/icons/user.png" class="img-fluid">
+                                                </span>
+                                                <span class="text-capitalize p-2">
+                                                    my profile
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-14 dropitem d-flex align-items-center" href="#">
+                                                <span>
+                                                    <img src="assets/image/icons/setting.png" class="img-fluid">
+                                                </span>
+                                                <span class="text-capitalize p-2">
+                                                    settings
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item fs-14 dropitem d-flex align-items-center" href="#">
+                                                <span>
+                                                    <img src="assets/image/icons/logout.png" class="img-fluid">
+                                                </span>
+                                                <span class="text-capitalize p-2">
+                                                    logout
+                                                </span>
+                                            </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- navbar end here -->
+            <div class="container-fluid px-4">
+                <div class="row g-3 my-3">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="card h-100 bg_orange p-3 rounded-3">
+                            <div class="card-body p-0">
+                                <div class="row g-3 justify-content-between align-items-center">
+                                    <div class="col-8">
+                                        <div>
+                                            <p class="text-capitalize fs-w-500 mb-0 fs-4 fw-bold text-light">Total Users</p>
+                                            <p class="text-capitalize fs-w-500 fs-5 fw-bold text-light">247687</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="circlewhite text-light m-auto">
+                                            <span><i class="fas fa-users fs-1"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="card h-100 bg_orange p-3 rounded-3">
+                            <div class="card-body p-0">
+                                <div class="row g-3 justify-content-between align-items-center">
+                                    <div class="col-8">
+                                        <div>
+                                            <p class="text-capitalize fs-w-500 mb-0 fs-4 fw-bold text-light">Total Projects</p>
+                                            <p class="text-capitalize fs-w-500 fs-5 fw-bold text-light">860+</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="circlewhite text-light m-auto">
+                                            <span><i class="fas fa-cart-shopping fs-1"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="card h-100 bg_orange p-3 rounded-3">
+                            <div class="card-body p-0">
+                                <div class="row g-3 justify-content-between align-items-center">
+                                    <div class="col-8">
+                                        <div>
+                                            <p class="text-capitalize fs-w-500 mb-0 fs-3 fw-bold text-light">Investments</p>
+                                            <p class="text-capitalize fs-w-500 fs-3 fw-bold text-light">$ 24,000</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="circlewhite text-light m-auto">
+                                            <span><i class="fas fa-users fs-1"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-3 mb-3">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="card h-100 bg_orange p-3 rounded-3">
+                            <div class="card-body p-0">
+                                <h5 class="card-title">Projects</h5>
+                                <canvas id="projectChart" width="400" height="200"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="card h-100 bg_orange p-3 rounded-3">
+                            <div class="card-body p-0">
+                                <div class="card-body p-0">
+                                    <h5 class="card-title">Projects</h5>
+                                    <canvas id="projectChart2" width="400" height="200"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="card h-100 bg_orange p-3 rounded-3">
+                            <div class="card-body p-0">
+                                <h6 class="text-capitalize mb-2 fw-bold">staff strength</h6>
+	                            <!-- progress 1 -->
+	                            <div class="d-flex align-items-center">
+                                    <div class="d-flex align-items-center justify-content-center">
+	                                    <span><i class="fas fa-cart-shopping"></i></span>
+	                                </div>
+	                                <div class="w-100 ms-3">
+	                                    <div class="d-flex align-items-center">
+	                                        <div class="progress w-100 rounded-5" style="height: 10px">
+	                                            <div class="progress-bar bg-secondary w-75 rounded-5" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+	                                        </div>
+	                                        <span class="fs-14 ps-3">52%</span>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <!-- progress 2 -->
+	                            <div class="d-flex align-items-center mt-3">
+	                                <div class="d-flex align-items-center justify-content-center">
+	                                    <span><i class="fas fa-cart-shopping"></i></span>
+	                                </div>
+	                                <div class="w-100 ms-3">
+	                                    <div class="d-flex align-items-center">
+	                                        <div class="progress w-100 rounded-5" style="height: 10px">
+	                                            <div class="progress-bar bg-success w-25 rounded-5" role="progressbar" aria-label="Basic example" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"></div>
+	                                        </div>
+	                                        <span class="fs-14 ps-3">32%</span>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <!-- progress 3 -->
+	                            <div class="d-flex align-items-center mt-3">
+	                                <div class="d-flex align-items-center justify-content-center">
+	                                    <span><i class="fas fa-cart-shopping"></i></span>
+	                                </div>
+	                                <div class="w-100 ms-3">
+	                                    <div class="d-flex align-items-center">
+	                                        <div class="progress w-100 rounded-5" style="height: 10px">
+	                                            <div class="progress-bar bg-dark-blue w-50 rounded-5" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="50"></div>
+	                                        </div>
+	                                        <span class="fs-14 ps-3">50%</span>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <!-- progress 3 -->
+	                            <div class="d-flex align-items-center mt-3">
+                                    <div class="d-flex align-items-center justify-content-center">
+	                                    <span><i class="fas fa-cart-shopping"></i></span>
+	                                </div>
+	                                <div class="w-100 ms-3">
+	                                    <div class="d-flex align-items-center">
+	                                        <div class="progress w-100 rounded-5" style="height: 10px">
+	                                            <div class="progress-bar bg-main w-100 rounded-5" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+	                                        </div>
+	                                        <span class="fs-14 ps-3">100%</span>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                            <!-- progress 3 -->
+	                            <div class="d-flex align-items-center mt-3">
+	                                <div class="d-flex align-items-center justify-content-center">
+	                                    <span><i class="fas fa-cart-shopping"></i></span>
+	                                </div>
+	                                <div class="w-100 ms-3">
+	                                    <div class="d-flex align-items-center">
+	                                        <div class="progress w-100 rounded-5" style="height: 10px">
+	                                            <div class="progress-bar bg-dark-blue w-75 rounded-5" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="75"></div>
+	                                        </div>
+	                                        <span class="fs-14 ps-3">75%</span>
+	                                    </div>
+	                                </div>
+	                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="card h-100 bg_orange p-3 rounded-3">
+                            <div class="card-body p-0">
+                                <h5 class="card-title">Projects</h5>
+                                <table class="table table-bordered text-light text-center">
+                                    <thead>
+                                        <tr>
+                                            <th>Project Name</th>
+                                            <th>Status</th>
+                                            <th>Start Date</th>
+                                            <th>End Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Project 1</td>
+                                            <td>In Progress</td>
+                                            <td>2023-01-15</td>
+                                            <td>2023-06-30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Project 2</td>
+                                            <td>Completed</td>
+                                            <td>2023-02-20</td>
+                                            <td>2023-05-15</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Project 1</td>
+                                            <td>In Progress</td>
+                                            <td>2023-01-15</td>
+                                            <td>2023-06-30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Project 2</td>
+                                            <td>Completed</td>
+                                            <td>2023-02-20</td>
+                                            <td>2023-05-15</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Project 1</td>
+                                            <td>In Progress</td>
+                                            <td>2023-01-15</td>
+                                            <td>2023-06-30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Project 2</td>
+                                            <td>Completed</td>
+                                            <td>2023-02-20</td>
+                                            <td>2023-05-15</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Project 1</td>
+                                            <td>In Progress</td>
+                                            <td>2023-01-15</td>
+                                            <td>2023-06-30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Project 2</td>
+                                            <td>Completed</td>
+                                            <td>2023-02-20</td>
+                                            <td>2023-05-15</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Project 1</td>
+                                            <td>In Progress</td>
+                                            <td>2023-01-15</td>
+                                            <td>2023-06-30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Project 2</td>
+                                            <td>Completed</td>
+                                            <td>2023-02-20</td>
+                                            <td>2023-05-15</td>
+                                        </tr>
+                                        <!-- Add more project rows here -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        toggleButton.onclick = function () {
+            el.classList.toggle("toggled");
+        };
+    </script>
+
+
+
+
+<script>
+    // Sample project data
+    var projectData = {
+        labels: ["January", "February", "March", "April", "May", "June"],
+        datasets: [{
+            label: 'Projects',
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1,
+            data: [5, 10, 15, 7, 20, 12] // Replace with your project data
+        }]
+    };
+
+    // Get the canvas element and create the chart
+    var ctx = document.getElementById('projectChart').getContext('2d');
+    var projectChart = new Chart(ctx, {
+        type: 'bar',
+        data: projectData,
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+    var projectData = {
+        labels: ["January", "February", "March", "April", "May", "June"],
+        datasets: [{
+            label: 'Projects',
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1,
+            data: [5, 10, 15, 7, 20, 12] // Replace with your project data
+        }]
+    };
+
+    // Get the canvas element and create the chart
+    var ctx = document.getElementById('projectChart2').getContext('2d');
+    var projectChart = new Chart(ctx, {
+        type: 'line',
+        data: projectData,
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+
+</body>
+
+</html>
