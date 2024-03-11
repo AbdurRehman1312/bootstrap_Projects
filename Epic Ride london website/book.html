@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind&family=Rajdhani:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>Epic Ride London</title>
+    <link rel="stylesheet" href="b-style.css">
+
+</head>
+
+<body>
+    <section class="sec1">
+        <nav class="navbar navbar-dark  p-0">
+            <div class="container-fluid ps-0">
+              <a class="navbar-brand ps-0" href="./home.html"><img src="../Assets/logo.png" alt="" class="nlogo ps-0"></a>
+              <div class="menu d-flex ">
+                <ul class="nav  align-self-center   pb-4">
+                  <li id="com1" class="fw-semibold "><a href="./home.html"><span class="span"><i
+                          class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i></span>Home</a></li>
+                  <li id="com2" class="fw-semibold "><a href=""><span class="span"><i class="fa-solid fa-arrow-right-long"
+                          style="color: #ffffff;"></i></span>Epic</a><i class="fa-solid fa-caret-down"
+                      style="color: #ffffff;"></i>
+                    <ul class="dp1">
+                      <li><span> <a href="./About-us.html" class="text-white ">About Us</a></span></li>
+                      <li><span>FAQs</span></li>
+                      <li><span>Get a Quote</span></li>
+                      <li><span>Drivers Registration</span></li>
+                      <li><span>Terms and Condition</span></li>
+                    </ul>
+                  </li>
+                  <li id="com3" class="fw-semibold "><a href=""><span class="span"><i class="fa-solid fa-arrow-right-long"
+                          style="color: #ffffff;"></i></span>Fleet</a><i class="fa-solid fa-caret-down"
+                      style="color: #ffffff;"></i>
+                    <ul class="dp2">
+                      <li><span> <a href="./E-class.html" class="text-white ">E Class</a></span></li>
+                      <li><span>V Class</span></li>
+                      <li><span>S Class</span></li>
+                      <li><span>Range Rover</span></li>
+                      <li><span>Rolls Royce</span></li>
+                      <li><span>Bentley</span></li>
+                    </ul>
+                  </li>
+                  <li id="com4" class="fw-semibold "><a href=""><span class="span"><i class="fa-solid fa-arrow-right-long"
+                          style="color: #ffffff;"></i></span>Chauffer Services</a><i class="fa-solid fa-caret-down"
+                      style="color: #ffffff;"></i>
+                    <ul class="dp3">
+                      <li><span>Airport Transfer</span></li>
+                      <li><span>Event Transfer</span></li>
+                      <li><span>Executive Tranfer</span></li>
+                      <li><span>Long Distance Chauffeur</span></li>
+                      <li><span>London Sightseeing</span></li>
+                      <li><span>Private Aviation</span></li>
+                      <li><span>Southampton Executive Transfer</span></li>
+                      <li><span>Wedding Tranfer</span></li>
+                    </ul>
+                  </li>
+                  <li><a href="" class="fw-semibold "><span class="span"><i class="fa-solid fa-arrow-right-long"
+                          style="color: #ffffff;"></i></span>Contact Us</a></li>
+                </ul>
+              </div>
+              <button class="navbar-toggler d-lg-none border-0 " type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class=""><img src="./Assets/hamburger.svg" alt="" width="64px" height="64px"></span>
+              </button>
+              <div class="offcanvas offcanvas-start text-bg-dark w-75" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header ">
+                  <h5></h5>
+                  <button type="button" class="btn-close btn-close-white " data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class=" nav1 d-flex flex-column justify-content-between ps-0">
+                    <li id="com1" class="fw-semibold "><a href="./home.html"><span class="span"><i
+                            class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i></span>Home</a></li>
+                    <li id="com2" class="fw-semibold nav-item dropdown"><a href=""><span class="span"><i
+                            class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i></span>Epic</a><i
+                        class="fa-solid fa-caret-down" style="color: #ffffff;"></i>
+                      <ul class="dp1 dropdown-menu">
+                        <li><span> <a href="./About-us.html" class="text-white ">About Us</a></span></li>
+                        <li><span>FAQs</span></li>
+                        <li><span>Get a Quote</span></li>
+                        <li><span>Drivers Registration</span></li>
+                        <li><span>Terms and Condition</span></li>
+                      </ul>
+                    </li>
+                    <li id="com3" class="fw-semibold dropdown"><a href=""><span class="span"><i
+                            class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i></span>Fleet</a><i
+                        class="fa-solid fa-caret-down" style="color: #ffffff;"></i>
+                      <ul class="dp2 dropdown-menu">
+                        <li><span> <a href="./E-class.html" class="text-white ">E Class</a></span></li>
+                        <li><span>V Class</span></li>
+                        <li><span>S Class</span></li>
+                        <li><span>Range Rover</span></li>
+                        <li><span>Rolls Royce</span></li>
+                        <li><span>Bentley</span></li>
+                      </ul>
+                    </li>
+                    <li id="com4" class="fw-semibold dropdown"><a href=""><span class="span"><i
+                            class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i></span>Chauffer Services</a><i
+                        class="fa-solid fa-caret-down" style="color: #ffffff;"></i>
+                      <ul class="dp3 dropdown-menu">
+                        <li><span>Airport Transfer</span></li>
+                        <li><span>Event Transfer</span></li>
+                        <li><span>Executive Tranfer</span></li>
+                        <li><span>Long Distance Chauffeur</span></li>
+                        <li><span>London Sightseeing</span></li>
+                        <li><span>Private Aviation</span></li>
+                        <li><span>Southampton Executive Transfer</span></li>
+                        <li><span>Wedding Tranfer</span></li>
+                      </ul>
+                    </li>
+                    <li><a href="" class="fw-semibold "><span class="span"><i class="fa-solid fa-arrow-right-long"
+                            style="color: #ffffff;"></i></span>Contact Us</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <div class="container ">
+            <div class="d-flex flex-column align-items-center ">
+                <h1 style="color: #C99B20;" class="fw-semibold fs-1 head-text">Book a Ride</h1>
+                <p class="text-white fw-semibold  "><span style="cursor: pointer;" class="text-white "><a
+                            href="./home.html" style="text-decoration: none;" class="text-white ">Home</a></span> /
+                    <span style="color: #C99B20;">Book a Ride</span>
+                </p>
+                <div>
+                    <button type="button" style="background-color: #C99B20;" class="btn text-white ">Book Now</button>
+                    <button type="button" style="background-color:  #143E8F;" class="btn text-white ">Contact
+                        Us</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="sec2 mt-5">
+        <div class="container progress2">
+            <div class="d-flex ">
+                <div class="align-self-end ms-lg-5">
+                    <i class="fa-solid fa-circle fa-xs" style="color: #C99B20;"></i>
+                </div>
+                <span style="border-bottom: 5px solid #C99B20; "
+                    class="mb-2 ms-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <div class="align-self-end ">
+                    <i class="fa-solid fa-circle fa-xs" style="color: #C99B20;"></i>
+                </div>
+                <span style="border-bottom: 5px solid #F0F0F0; "
+                    class="mb-2 ms-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <div class="align-self-end ">
+                    <i class="fa-solid fa-circle fa-xs" style="color: #C99B20;"></i>
+                </div>
+                <span style="border-bottom: 5px solid #F0F0F0; "
+                    class="mb-2 ms-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;</span>
+                <div class="align-self-end ">
+                    <i class="fa-solid fa-circle fa-xs" style="color: #C99B20;"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container progress2 pro-2">
+            <div class="d-flex justify-content-between ">
+                <h6 class="fw-semibold ">Enters Ride Details</h6>
+                <h6 class="fw-semibold ">Choose a Vehicle</h6>
+                <h6 class="fw-semibold ">Enter Contact Details</h6>
+                <h6 class="fw-semibold ">Checkout</h6>
+            </div>
+        </div>
+        <div class="container ">
+            <div class="d-flex progress1">
+                <ul>
+                    <li class="fw-semibold "><i class="fa-solid fa-circle fa-xs" style="color: #C99B20;"></i><span>Enters Ride Details</span></li>
+                    <li class="gold-border"></li>
+                    <li class="fw-semibold "><i class="fa-solid fa-circle fa-xs" style="color: #C99B20;"></i><span>Choose a Vehicle</span></li>
+                    <li class="bord"></li>
+                    <li class="fw-semibold "><i class="fa-solid fa-circle fa-xs" style="color: #C99B20;"></i><span>Enter Contact Details</span></li>
+                    <li class="bord"></li>
+                    <li class="fw-semibold "><i class="fa-solid fa-circle fa-xs" style="color: #C99B20;"></i><span>Checkout</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="sec3 mt-5 pb-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div  class="col-12 col-lg-2 col-sm-12 ms-lg-5 p-2 details">
+                    
+                    <div style="background-color: #F3F2F1;" class="d-flex flex-column justify-content-between p-3">
+                        <h3 class="fw-semibold fs-4 ">Summary</h3>
+                        <div style="border-bottom: 1px solid rgb(207, 201, 201);" class="mt-4">
+                            <h5 class="fw-light fs-6 detail-head">SERVICE TYPE</h5>
+                            <h4 class="mt-3 fs-5 fw-bold pb-2 detail-sub-head">Distance</h4>
+                        </div>
+                        <div style="border-bottom: 1px solid rgb(207, 201, 201);" class="mt-4">
+                            <h5 class="fw-light fs-6 detail-head">TRANSFER TYPE</h5>
+                            <h4 class="mt-3 fs-5 fw-bold pb-2 detail-sub-head">one way</h4>
+                        </div>
+                        <div style="border-bottom: 1px solid rgb(207, 201, 201);" class="mt-4">
+                            <h5 class="fw-light fs-6 detail-head">FROM</h5>
+                            <h4 class=" mt-3 fs-5 fw-bold pb-2 detail-sub-head">Asunción, Paraguay</h4>
+                        </div>
+                        <div style="border-bottom: 1px solid rgb(207, 201, 201);" class="mt-4">
+                            <h5 class="fw-light fs-6 detail-head">To</h5>
+                            <h4 class="mt-3 fs-5 fw-bold pb-2 detail-sub-head">Andros Town International Airport, North Andros, Bahamas
+                            </h4>
+                        </div>
+                        <div style="border-bottom: 1px solid rgb(207, 201, 201);" class="mt-4">
+                            <h5 class="fw-light fs-6 detail-head">PICKUP DATE, TIME</h5>
+                            <h4 class=" mt-3 fs-5 fw-bold pb-2 detail-sub-head">09-22-2023 10:06</h4>
+                        </div>
+                        <div style="border-bottom: 1px solid rgb(207, 201, 201);"
+                            class="mt-4 d-flex justify-content-between ">
+                            <div>
+                                <h5 class="fw-light fs-6 detail-head">Total distance</h5>
+                                <h4 class=" mt-3  fs-5 fw-bold pb-2 detail-sub-head">0.00 mi</h4>
+                            </div>
+                            <div>
+                                <h5 class="fw-light fs-6 text-center detail-head">Total time</h5>
+                                <h4 class="mt-3 fs-5 fw-bold pb-2 text-center  detail-sub-head">0.00</h4>
+                            </div>
+                        </div>
+                        <div class="mt-5 d-flex justify-content-between ">
+                            <h5 class="fw-light fs-6 detail-head">Total</h5>
+                            <h4 class="fs-5 fw-bold pb-2 me-1 detail-sub-head">£0.00</h4>
+                        </div>
+                        <div class="mt-1 d-flex justify-content-between">
+                            <h5 class="fw-light fs-6 detail-head">To Pay (100% deposit)</h5>
+                            <h4 class="fs-5 fw-bold pb-2 me-1 detail-sub-head">£0.00</h4>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-9 col-md-12 col-sm-12 ms-lg-3 car-options">
+                    <div class="container-fluid">
+                        <div style="border-bottom: 1px solid rgb(238, 229, 229);" class="row pb-4">
+                            <div class="col-12 col-lg-4 col-sm-12">
+                                <img src="./Assets/b-car1.png" alt=""  class="b-car1">
+                            </div>
+                            <div class="col-12 col-lg-8  col-sm-12">
+                                <div class="row ">
+                                    <div class="col-12 col-lg-8 col-md-8 col-sm-12 ">
+                                        <h3 class="fw-semibold ">MERCEDES-BENZ E-CLASS</h3>
+                                        <h3 style="color: #C99B20;">£ 85</h3>
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-md-3  col-sm-12">
+                                        <button type="button" class="btn border-1 rounded-5 px-3 py-2 b-btn rite-btn">Select
+                                            Vehicle</button>
+                                    </div>
+                                </div>
+                                <div class="mt-1">
+                                    <p class="text-center fw-semibold ">No Hidden, Waiting, Airport Parking,
+                                        Congestion/tolls Charges - & We Offer Free 60 Minute Waiting At Airport And 15
+                                        Minutes At Any Other Address.</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex justify-content-evenly properties  mt-2">
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon1.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2  ">Free water</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon2.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2  ">Meet & Greet</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon3.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2 ">WiFi available</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon4.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2 ">3 Passengers</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon5.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2 ">60 Min Airport Waiting</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon6.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2 ">2 Bags</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon7.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2 ">Newspaper</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="border-bottom: 1px solid rgb(238, 229, 229);" class="row pb-4 pt-5">
+                            <div class="col-12 col-lg-4 col-sm-12">
+                                <img src="./Assets/b-car2.png" alt="" class="b-car1">
+                            </div>
+                            <div class="col-12 col-lg-8 col-sm-12">
+                                <div class="row">
+                                    <div class="col-12 col-lg-8 col-md-8  col-sm-12 ">
+                                        <h3 class="fw-semibold ">MERCEDES-BENZ V-CLASS</h3>
+                                        <h3 style="color: #C99B20;">£ 110</h3>
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-md-3  col-sm-12 ">
+                                        <button type="button" class="btn border-1 rounded-5 px-3 py-2 b-btn rite-btn">Select
+                                            Vehicle</button>
+                                    </div>
+                                </div>
+                                <div class="mt-1">
+                                    <p class="text-center fw-semibold ">No Hidden, Waiting, Airport Parking,
+                                        Congestion/tolls Charges - & We Offer Free 60 Minute Waiting At Airport And 15
+                                        Minutes At Any Other Address.</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex justify-content-evenly properties  mt-2">
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon1.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2  ">Free water</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon2.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2  ">Meet & Greet</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon3.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2 ">WiFi available</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon4.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2 ">7 Passengers</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon6.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2 ">6 Bags</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon5.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2 ">60 Min Airport Waiting</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon7.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2 ">Newspaper</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="border-bottom: 1px solid rgb(238, 229, 229);" class="row pb-4 pt-5">
+                            <div class="col-12 col-lg-4 col-sm-12">
+                                <img src="./Assets/b-car3.png" alt="" class="b-car1">
+                            </div>
+                            <div class="col-12 col-lg-8 col-sm-12">
+                                <div class="row ">
+                                    <div class="col-12 col-lg-8 col-md-8 col-sm-12 ">
+                                        <h3 class="fw-semibold ">MERCEDES-BENZ S-CLASS</h3>
+                                        <h3 style="color: #C99B20;">£ 120</h3>
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-md-3 col-sm-12 ">
+                                        <button type="button" class="btn border-1 rounded-5 px-3 py-2 b-btn rite-btn">Select
+                                            Vehicle</button>
+                                    </div>
+                                </div>
+                                <div class="mt-1">
+                                    <p class="text-center fw-semibold ">No Hidden, Waiting, Airport Parking,
+                                        Congestion/tolls Charges - & We Offer Free 60 Minute Waiting At Airport And 15
+                                        Minutes At Any Other Address.</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex justify-content-evenly properties  mt-2">
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon1.png" alt="" >
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2  ">Free water</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon2.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2  ">Meet & Greet</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon3.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2 ">WiFi available</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon4.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2 ">3 Passengers</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon5.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2 ">60 Min Airport Waiting</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon6.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2 ">2 Bags</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon7.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2 ">Newspaper</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="border-bottom: 1px solid rgb(238, 229, 229);" class="row pb-4 pt-5">
+                            <div class="col-12 col-lg-4 col-sm-12">
+                                <img src="./Assets/b-car4.png" alt=" " class="b-car1">
+                            </div>
+                            <div class="col-12 col-lg-8 col-sm-12 ">
+                                <div class="row">
+                                    <div class="col-12 col-lg-8 col-md-8 col-sm-12 ">
+                                        <h3 class="fw-semibold ">Range Rover</h3>
+                                        <h3 style="color: #C99B20;">£ 215</h3>
+                                    </div>
+                                    <div class="col-12 col-lg-4 col-md-3 col-sm-12 ">
+                                        <button type="button" class="btn border-1 rounded-5 px-3 py-2 b-btn rite-btn">Select
+                                            Vehicle</button>
+                                    </div>
+                                </div>
+                                <div class="mt-1">
+                                    <p class="text-center fw-semibold ">No Hidden, Waiting, Airport Parking,
+                                        Congestion/tolls Charges - & We Offer Free 60 Minute Waiting At Airport And 15
+                                        Minutes At Any Other Address.</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex justify-content-evenly properties  mt-2">
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon1.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2  ">Free water</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon2.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2  ">Meet & Greet</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon3.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2 ">WiFi available</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon4.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2 ">3 Passengers</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon5.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2 ">60 Min Airport Waiting</h5>
+                                    </div>
+                                    <div class="d-flex b-icon">
+                                        <img src="./Assets/b-icon6.png" alt="">
+                                        <h5 class="ms-2 fs-6 fw-semibold my-2 ">3 Bags</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <h3 style="color: #143E8F;" class="fw-semibold ">Passenger and luggages:</h3>
+                    </div>
+                    <div style="border-bottom: 1px solid rgb(238, 229, 229);" class="row mt-3 pb-5">
+                        <div class="col-12 d-flex justify-content-between ">
+                            <h6 class="fw-semibold ">Passenger.</h6>
+                            <div class="d-flex justify-content-between ">
+                                <button disabled="disabled" style="background-color: #F5F5F5;" class="btn "><img src="./Assets/minus.svg" alt="" width="20.6px" height="30px"></button>
+                                <h6 class="ms-4 align-self-center mt-2">0</h6>
+                                <button disabled="disabled" style="background-color: #F5F5F5;" class="btn ms-4"><img src="./Assets/b-plus.svg" alt="" width="20.6px" height="30px"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="row mt-4 pb-5">
+                        <div class="col-12 d-flex justify-content-between ">
+                            <h6 class="fw-semibold ">luggages and Bags.</h6>
+                            <div class="d-flex justify-content-between ">
+                                <button disabled="disabled" style="background-color: #F5F5F5;" class="btn "><img src="./Assets/minus.svg" alt="" width="20.6px" height="30px"></button>
+                                <h6 class="ms-4 align-self-center mt-2">0</h6>
+                                <button disabled="disabled" style="background-color: #F5F5F5;" class="btn ms-4"><img src="./Assets/b-plus.svg" alt="" width="20.6px" height="30px"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-1">
+                        <h3 style="color: #143E8F;" class="fw-semibold ">Extra Options:</h3>
+                    </div>
+                    <div style="border-bottom: 1px solid rgb(238, 229, 229);" class="row mt-3 pb-3">
+                        <div class="col-12 d-flex justify-content-between ">
+                            <h6 class="fw-semibold ">Child Seat <span style="color: #C99B20;">£25</span>. Baby car seat for children aged 0-36 months</h6>
+                            <div class="d-flex justify-content-between ">
+                                <button disabled="disabled" style="background-color: #F5F5F5;" class="btn extra1-m"><img src="./Assets/minus.svg" alt="" width="20.6px" height="30px"></button>
+                                <h6 class="ms-4 align-self-center mt-2">0</h6>
+                                <button  style="background-color: #C99B20; cursor: pointer;" class="btn ms-4 extra1-p"><img src="./Assets/b-plus1.svg" alt="" width="20.6px" height="30px"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="border-bottom: 1px solid rgb(238, 229, 229);" class="row mt-3 pb-3">
+                        <div class="col-12 d-flex justify-content-between ">
+                            <h6 class="fw-semibold ">Bouquet of Flowers <span style="color: #C99B20; ">£85</span>. A bouquet of seasonal flowers prepared by a local florist</h6>
+                            <div class="d-flex justify-content-between ">
+                                <button disabled="disabled" style="background-color: #F5F5F5;" class="btn extra2-m"><img src="./Assets/minus.svg" alt="" width="20.6px" height="30px"></button>
+                                <h6 class="ms-4 align-self-center mt-2">0</h6>
+                                <button  style="background-color: #C99B20; cursor: pointer;" class="btn ms-4 extra2-p"><img src="./Assets/b-plus1.svg" alt="" width="20.6px" height="30px"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="border-bottom: 1px solid rgb(238, 229, 229);" class="row mt-3 pb-3">
+                        <div class="col-12 d-flex justify-content-between ">
+                            <h6 class="fw-semibold ">Champagne <span style="color: #C99B20;">£115</span>. French Champagne Brut 0.75l Bottle</h6>
+                            <div class="d-flex justify-content-between ">
+                                <button disabled="disabled" style="background-color: #F5F5F5;" class="btn extra3-m"><img src="./Assets/minus.svg" alt="" width="20.6px" height="30px"></button>
+                                <h6 class="ms-4 align-self-center mt-2">0</h6>
+                                <button  style="background-color: #C99B20; cursor: pointer;" class="btn ms-4 extra3-p"><img src="./Assets/b-plus1.svg" alt="" width="20.6px" height="30px"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12 d-flex justify-content-end ">
+                            <button type="button" class="btn border-1 rounded-5 px-3 py-2 b-btn">CHOOSE RIDE DETAILS</button>
+                            <button  style="background-color: #F5F5F5;" class="btn border-1 rounded-5 px-3 py-2 ms-2">CHOOSE RIDE DETAILS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #F3F2F1;" class="sec4 pb-5">
+        <div class="container pt-5 ">
+            <div class=" d-flex flex-column align-items-center pt-lg-2">
+                <div class="text-center"><img src="./Assets/trust-pilot.png" alt="" style="width: 50%;"></div>
+                <div class="text-center fw-semibold fs-3 ">Customer Reviews</div>
+            </div>
+            <div class="row pt-5">
+                <div style="background-color: white;" class="trustcard1 col-12 col-lg-3 col-md-4 col-sm-12 px-0">
+                    <div class="d-flex flex-column  justify-content-center align-items-center pt-4 pb-3 px-0">
+                        <h3 class="mb-3 fw-semibold fs-4">Excellent</h3>
+                        <img src="./Assets/stars-5.svg" alt="" style="width: 50%;">
+                        <p class="mt-3 fw-semibold ">Based on 456 reviews</p>
+                        <img src="./Assets/trust-pilot.png" alt="" style="width: 35%;">
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-9 col-md-8 col-sm-12 ">
+
+
+                    <div class="slider3 container-fluid pt-lg-2">
+                        <div class="row">
+                            <div class="swiper mySwiper2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+
+                                        <div style="background-color: white;" class=" p-2">
+                                            <div class="d-flex justify-content-between ">
+                                                <img src="./Assets/stars-5.svg" alt="" style="width: 50%;">
+                                                <strong>1 month ago</strong>
+                                            </div>
+                                            <h3 class="fs-6 fw-semibold pt-2">Comfortable luxury minivan</h3>
+                                            <p style="text-overflow: ellipsis;">We were delighted and very relieved to
+                                                be able to book t...
+                                            </p>
+                                            <strong>kate mahon</strong>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+
+                                        <div style="background-color: white;" class=" p-2">
+                                            <div class="d-flex justify-content-between ">
+                                                <img src="./Assets/stars-5.svg" alt="" style="width: 50%;">
+                                                <strong>1 month ago</strong>
+                                            </div>
+                                            <h3 class="fs-6 fw-semibold pt-2">Comfortable luxury minivan</h3>
+                                            <p style="text-overflow: ellipsis;">We were delighted and very relieved to
+                                                be able to book t...
+                                            </p>
+                                            <strong>kate mahon</strong>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+
+                                        <div style="background-color: white;" class=" p-2">
+                                            <div class="d-flex justify-content-between ">
+                                                <img src="./Assets/stars-5.svg" alt="" style="width: 50%;">
+                                                <strong>1 month ago</strong>
+                                            </div>
+                                            <h3 class="fs-6 fw-semibold pt-2">Comfortable luxury minivan</h3>
+                                            <p style="text-overflow: ellipsis;">We were delighted and very relieved to
+                                                be able to book t...
+                                            </p>
+                                            <strong>kate mahon</strong>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+
+                                        <div style="background-color: white;" class=" p-2">
+                                            <div class="d-flex justify-content-between ">
+                                                <img src="./Assets/stars-5.svg" alt="" style="width: 50%;">
+                                                <strong>1 month ago</strong>
+                                            </div>
+                                            <h3 class="fs-6 fw-semibold pt-2">Comfortable luxury minivan</h3>
+                                            <p style="text-overflow: ellipsis;">We were delighted and very relieved to
+                                                be able to book t...
+                                            </p>
+                                            <strong>kate mahon</strong>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+
+                                        <div style="background-color: white;" class=" p-2">
+                                            <div class="d-flex justify-content-between ">
+                                                <img src="./Assets/stars-5.svg" alt="" style="width: 50%;">
+                                                <strong>1 month ago</strong>
+                                            </div>
+                                            <h3 class="fs-6 fw-semibold pt-2">Comfortable luxury minivan</h3>
+                                            <p style="text-overflow: ellipsis;">We were delighted and very relieved to
+                                                be able to book t...
+                                            </p>
+                                            <strong>kate mahon</strong>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-slide">
+
+                                        <div style="background-color: white;" class=" p-2">
+                                            <div class="d-flex justify-content-between ">
+                                                <img src="./Assets/stars-5.svg" alt="" style="width: 50%;">
+                                                <strong>1 month ago</strong>
+                                            </div>
+                                            <h3 class="fs-6 fw-semibold pt-2">Comfortable luxury minivan</h3>
+                                            <p style="text-overflow: ellipsis;">We were delighted and very relieved to
+                                                be able to book t...
+                                            </p>
+                                            <strong>kate mahon</strong>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next slider3-next"></div>
+                                <div class="swiper-button-prev slider3-prev"></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sec5">
+        <footer>
+            <div class="container footer">
+                <div class="row pt-5">
+                    <div class="col-12 col-lg-3 col-md-6 col-sm-12 d-flex pt-3">
+                        <div><img src="./Assets/location-f.png" alt=""></div>
+                        <div class="ms-3">
+                            <h2 class="text-white fs-5 fw-semibold ">Location</h2>
+                            <p class="text-white fw-semibold pt-1">Regus 450 Bath Road, Longford UB7 0EB</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6 col-sm-12 d-flex pt-3">
+                        <div><img src="./Assets/call-f.png" alt=""></div>
+                        <div class="ms-3">
+                            <h2 class="text-white fs-5 fw-semibold">Lane Line</h2>
+                            <p class="text-white fw-semibold pt-1">+44 203 9300286</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6  col-sm-12 d-flex pt-3">
+                        <div><img src="./Assets/clock-f.png" alt=""></div>
+                        <div class="ms-3">
+                            <h2 class="text-white fs-5 fw-semibold">Time</h2>
+                            <p class="text-white fw-semibold pt-1">Mon - Sun (24/7)</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-6  col-sm-12 d-flex pt-3">
+                        <div><img src="./Assets/mail-f.png" alt=""></div>
+                        <div class="ms-3">
+                            <h2 class="text-white fs-5 fw-semibold">Mail</h2>
+                            <p class="text-white fw-semibold pt-1">Info@epicridelondon.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container pt-lg-5">
+                <div class="row">
+                    <div class="col-12 col-lg-2 col-md-4 col-sm-12 qlinks">
+                        <h2 style="color: #C99B20;">QUICK LINKS</h2>
+                        <div class="pb-2 f-yellow"><i class="fa-solid fa-angle-right" style="color: #C99B20;"></i> <span
+                                class=" fw-semibold ms-1 ">About us</span></div>
+                        <div class="pb-2 f-yellow"><i class="fa-solid fa-angle-right" style="color: #C99B20;"></i><span
+                                class=" fw-semibold ms-2 ">Get a Quote</span></div>
+                        <div class="pb-2 f-yellow"><i class="fa-solid fa-angle-right" style="color: #C99B20;"></i><span
+                                class=" fw-semibold ms-2 ">FAQs</span></div>
+                    </div>
+                    <div class="col-12 col-lg-2 col-md-4 col-sm-12 company">
+                        <h2 style="color: #C99B20;">COMPANY</h2>
+                        <div>
+                            <div class="pb-2 f-yellow"><i class="fa-solid fa-check" style="color: #C99B20;"></i><span
+                                    class=" fw-semibold  ms-2">Home</span></div>
+                            <div class="pb-2 f-yellow"><i class="fa-solid fa-check" style="color: #C99B20;"></i><span
+                                    class=" fw-semibold ms-2 ">About us</span></div>
+                            <div class="pb-2 f-yellow"><i class="fa-solid fa-check" style="color: #C99B20;"></i><span
+                                    class=" fw-semibold ms-2 ">Contact us</span></div>
+                            <div class="pb-2 f-yellow"><i class="fa-solid fa-angle-right"
+                                    style="color: #C99B20;"></i><span class=" fw-semibold ms-2">Services</span></div>
+                            <div class="pb-2 f-yellow"><i class="fa-solid fa-angle-right"
+                                    style="color: #C99B20;"></i><span class=" fw-semibold  ms-2">Our fleets</span></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-12 accept">
+                        <h2 style="color: #C99B20;">We Accept</h2>
+                        <div class="d-flex ">
+                            <div style="width: 100%;" class=""><img src="./Assets/visa.png" alt="visa"
+                                    style="width: 100%;"></div>
+                            <div style="width: 100%;" class="ms-2"><img src="./Assets/american-express.png"
+                                    alt="american-express" style="width: 100%;"></div>
+                            <div style="width: 100%;" class="ms-2"><img src="./Assets/paypal.png" alt="paypal"
+                                    style="width: 100%;">
+                            </div>
+                            <div style="width: 100%;" class="ms-2"><img src="./Assets/master.png" alt="master"
+                                    style="width: 100%;">
+                            </div>
+                            <div style="width: 100%;" class="ms-2"><img src="./Assets/unionpay.png" alt="unionpay"
+                                    style="width: 100%;"></div>
+                            <div style="width: 100%;" class="ms-2"><img src="./Assets/diners-club.png" alt="diners-club"
+                                    style="width: 100%;"></div>
+                            <div style="width: 100%;" class="ms-2"><img src="./Assets/jcb.png" alt="jcb"
+                                    style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5 col-md-12 col-sm-12 mapf"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.684724717527!2d-0.48624922381952923!3d51.48230111253719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876719aa710120f%3A0x37bd7ba7e559dfd6!2sRegus%20-%20Heathrow%2C%20Bath%20Road!5e0!3m2!1sen!2s!4v1695041838522!5m2!1sen!2s"
+                            width="550" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="p-0"></iframe></div>
+                </div>
+            </div>
+            <div class="container-fluid pt-4">
+                <div class="d-flex justify-content-between footer-last flex-wrap ">
+                    <div class="pt-3 ms-2">
+                        <span class="text-white">© 2023</span><a style="text-decoration: none; color: #C99B20;" href="">
+                            Epic Ride
+                            London</a>
+                    </div>
+                    <div class="d-flex justify-content-evenly footer-icons">
+                        <img src="./Assets/facebook.png" alt="" width="45px" height="45px" class="ms-2">
+                        <img src="./Assets/reddit.png" alt="" width="45px" height="45px" class="ms-2">
+                        <img src="./Assets/quora.png" alt="" width="45px" height="45px" class="ms-2">
+                        <img src="./Assets/instagram.png" alt="" width="45px" height="45px" class="ms-2">
+                        <img src="./Assets/pinterest.png" alt="" width="45px" height="45px" class="ms-2">
+                    </div>
+                    <div class="text-white footer-right pt-3 me-2">All Rights Reserved.</div>
+                </div>
+
+            </div>
+        </footer>
+    </section>
+    <section>
+        <div class="position-fixed  chat   ">
+         <img src="./Assets/chat.png" alt="" class="rounded-circle">
+        </div>
+        <div class="position-fixed  message rounded-2 ">
+          <h5 class="text-white  fs-6 ">Send Message</h5>
+        </div>
+    </section>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+      <script>
+        var swiper = new Swiper(".mySwiper2", {
+          slidesPerView: 1,
+          spaceBetween: 10,
+    
+          rewind: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints: {
+            600: {
+              slidesPerView: 1,
+              spaceBetween: 20
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 40
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 10
+            }
+    
+          }
+        });
+      </script>
+
+
+</body>
+
+</html>

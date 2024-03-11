@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind&family=Rajdhani:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>Epic Ride London</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="sec1">
+    <nav class="navbar navbar-dark  ">
+      <div class="container-fluid ">
+        <a class="navbar-brand ps-0" href="./home.html"><img src="../Assets/logo.png" alt="" class="nlogo ps-0"></a>
+        <div class="menu d-flex ">
+          <ul class="nav  align-self-center   pb-4">
+            <li id="com1" class="fw-semibold "><a href="./home.html"><span class="span"><i
+                    class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i></span>Home</a></li>
+            <li id="com2" class="fw-semibold "><a href=""><span class="span"><i class="fa-solid fa-arrow-right-long"
+                    style="color: #ffffff;"></i></span>Epic</a><i class="fa-solid fa-caret-down"
+                style="color: #ffffff;"></i>
+              <ul class="dp1">
+                <li><span> <a href="./About-us.html" class="text-white ">About Us</a></span></li>
+                <li><span>FAQs</span></li>
+                <li><span>Get a Quote</span></li>
+                <li><span>Drivers Registration</span></li>
+                <li><span>Terms and Condition</span></li>
+              </ul>
+            </li>
+            <li id="com3" class="fw-semibold "><a href=""><span class="span"><i class="fa-solid fa-arrow-right-long"
+                    style="color: #ffffff;"></i></span>Fleet</a><i class="fa-solid fa-caret-down"
+                style="color: #ffffff;"></i>
+              <ul class="dp2">
+                <li><span> <a href="./E-class.html" class="text-white ">E Class</a></span></li>
+                <li><span>V Class</span></li>
+                <li><span>S Class</span></li>
+                <li><span>Range Rover</span></li>
+                <li><span>Rolls Royce</span></li>
+                <li><span>Bentley</span></li>
+              </ul>
+            </li>
+            <li id="com4" class="fw-semibold "><a href=""><span class="span"><i class="fa-solid fa-arrow-right-long"
+                    style="color: #ffffff;"></i></span>Chauffer Services</a><i class="fa-solid fa-caret-down"
+                style="color: #ffffff;"></i>
+              <ul class="dp3">
+                <li><span>Airport Transfer</span></li>
+                <li><span>Event Transfer</span></li>
+                <li><span>Executive Tranfer</span></li>
+                <li><span>Long Distance Chauffeur</span></li>
+                <li><span>London Sightseeing</span></li>
+                <li><span>Private Aviation</span></li>
+                <li><span>Southampton Executive Transfer</span></li>
+                <li><span>Wedding Tranfer</span></li>
+              </ul>
+            </li>
+            <li><a href="" class="fw-semibold "><span class="span"><i class="fa-solid fa-arrow-right-long"
+                    style="color: #ffffff;"></i></span>Contact Us</a></li>
+          </ul>
+        </div>
+        <button class="navbar-toggler d-lg-none border-0 " type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class=""><img src="./Assets/hamburger.svg" alt="" width="64px" height="64px"></span>
+        </button>
+        <div class="offcanvas offcanvas-start text-bg-dark w-75 " tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header ">
+            <h5></h5>
+            <button type="button" class="btn-close btn-close-white " data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body  ">
+            <ul class=" nav1 d-flex flex-column justify-content-between ps-0">
+              <li id="com1" class="fw-semibold "><a href="./home.html"><span class="span"><i
+                      class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i></span>Home</a></li>
+              <li id="com2" class="fw-semibold nav-item dropdown"><a href=""><span class="span"><i
+                      class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i></span>Epic</a><i
+                  class="fa-solid fa-caret-down" style="color: #ffffff;"></i>
+                <ul class="dp1 dropdown-menu">
+                  <li><span> <a href="./About-us.html" class="text-white ">About Us</a></span></li>
+                  <li><span>FAQs</span></li>
+                  <li><span>Get a Quote</span></li>
+                  <li><span>Drivers Registration</span></li>
+                  <li><span>Terms and Condition</span></li>
+                </ul>
+              </li>
+              <li id="com3" class="fw-semibold dropdown"><a href=""><span class="span"><i
+                      class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i></span>Fleet</a><i
+                  class="fa-solid fa-caret-down" style="color: #ffffff;"></i>
+                <ul class="dp2 dropdown-menu">
+                  <li><span> <a href="./E-class.html" class="text-white ">E Class</a></span></li>
+                  <li><span>V Class</span></li>
+                  <li><span>S Class</span></li>
+                  <li><span>Range Rover</span></li>
+                  <li><span>Rolls Royce</span></li>
+                  <li><span>Bentley</span></li>
+                </ul>
+              </li>
+              <li id="com4" class="fw-semibold dropdown"><a href=""><span class="span"><i
+                      class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i></span>Chauffer Services</a><i
+                  class="fa-solid fa-caret-down" style="color: #ffffff;"></i>
+                <ul class="dp3 dropdown-menu">
+                  <li><span>Airport Transfer</span></li>
+                  <li><span>Event Transfer</span></li>
+                  <li><span>Executive Tranfer</span></li>
+                  <li><span>Long Distance Chauffeur</span></li>
+                  <li><span>London Sightseeing</span></li>
+                  <li><span>Private Aviation</span></li>
+                  <li><span>Southampton Executive Transfer</span></li>
+                  <li><span>Wedding Tranfer</span></li>
+                </ul>
+              </li>
+              <li><a href="" class="fw-semibold "><span class="span"><i class="fa-solid fa-arrow-right-long"
+                      style="color: #ffffff;"></i></span>Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid ">
+      <div class="row">
+        <div class="col-12 col-lg-6 col-sm-12 hero ps-lg-5  mt-5">
+          <h3 style="color: #C99B20;" class="fs-lg-2  fw-semibold   ">EPIC RIDE LONDON</h3>
+          <h1 class="text-white my-2  fs-1  fw-bold ">OUR LUXURY SOLUTIONS FOR YOUR TRAVELING...</h1>
+          <div class="d-flex justify-content-start google mt-4">
+            <img src="../Assets/google.png" alt="Google">
+            <div class="align-self-center google-star ms-2">
+              <img src="../Assets/star.png" alt="star">
+              <img src="../Assets/star.png" alt="star" class="ms-1">
+              <img src="../Assets/star.png" alt="star" class="ms-1">
+              <img src="../Assets/star.png" alt="star" class="ms-1">
+              <img src="../Assets/star.png" alt="star" class="ms-1">
+            </div>
+            <strong class="text-white align-self-center mt-4 ms-2">(73)</strong>
+          </div>
+          <button id="button1">Discover More Epic Chauffers</button>
+        </div>
+        <div class="col-12 col-lg-6  col-sm-12  hform">
+          <div class="d-flex  hform-head ">
+            <div class=" distance">
+              <p class="text-white  text-center mt-3 fw-semibold ">Distance</p>
+            </div>
+            <div class=" bg-white hourly">
+              <p class="text-dark  text-center mt-3 fw-semibold ">Hourly</p>
+            </div>
+            <div class="  bg-white  gquote">
+              <p class="text-dark  text-center mt-3 fw-semibold ">Get quote</p>
+            </div>
+          </div>
+          <div class=" ms-lg-1 hform-sec">
+            <div class="d-flex flex-column  bg-white p-3 mt-2 hform-sec1">
+              <div class="d-flex input ">
+                <div class=" d-flex date flex-column p-3 ">
+                  <label for="date" class="fw-semibold ">Pickup date</label>
+                  <input type="date" name="" id="" class="fw-semibold ">
+                </div>
+                <div class=" d-flex time flex-column p-3 ">
+                  <label for="" class="fw-semibold ">Pickup time</label>
+                  <input type="time" name="" id="" class="fw-semibold ">
+                </div>
+              </div>
+              <div class="d-flex ">
+                <div class=" p-3 pb-4">
+                  <label for="" class="fw-semibold ">Pickup Locations <span style="background-color: #C99B20;"  class="plus1 rounded-circle "><i
+                    class="fa-solid fa-plus plus fa-xs plus" style=" color: #ffffff;"></i></span> </label>
+                </div>
+                <div class=" p-3 pb-4">
+
+                </div>
+              </div>
+              <div class="d-flex input ">
+                <div class=" d-flex flex-column plocation p-3">
+                  <label for=" " class="fw-semibold ">Pickup location</label>
+                  <input type="text" class="fw-semibold ">
+                </div>
+                <div class=" d-flex flex-column dlocation p-3">
+                  <label for="" class="fw-semibold ">Drop-off location</label>
+                  <input type="text" class="fw-semibold ">
+                </div>
+              </div>
+              <div class="d-flex pay-btn">
+                <div class="col-4"></div>
+                <div class="col-8 ">
+                  <button type="button" style="background-color: #C99B20;"
+                    class="btn text-white float-end mt-3  calc"><a href="./book.html">Calculate & Pay</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section>
+    <div class="position-fixed  chat   ">
+     <img src="./Assets/chat.png" alt="" class="rounded-circle">
+    </div>
+    <div class="position-fixed  message rounded-2 ">
+      <h5 class="text-white  fs-6 ">Send Message</h5>
+    </div>
+</section>
+  <section style="background-color: #F3F2F1;" class="sec2  pb-5">
+    <div class="container pt-5">
+      <h5 style="color: #C99B20;" class="text-center fw-semibold ">OUR FLEETS</h5>
+      <h1 class="text-center fleet-text fw-semibold ">Our fleets includes Mercedes, Bentley and Range Rovers.</h1>
+      <div class="text-center ">
+        <span style="border-top: 3px solid #C99B20;"
+          class="text-center d-inline-block ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+          style=" border-top: 3px solid #222528;" class="text-center d-inline-block ms-2">&nbsp;&nbsp;&nbsp;</span>
+      </div>
+    </div>
+
+    <div class="container-fluid  pt-5">
+      <div class="row">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card ">
+                <img class="card-img-top ms-5" src="../Assets/benz-e.png" alt="benz-e" style="width:80.2%">
+                <div class="card-body">
+                  <h4 style="color: #C99B20;" class="card-title fs-5 fw-semibold ">BUSINESS CLASS</h4>
+                  <h3 style="letter-spacing: 1px;" class="card-title fs-4 fw-semibold ">MERCEDES-BENZ E-CLASS</h3>
+                  <div class="d-flex justify-content-between card-price">
+                    <p style="color: #143E8F;" class="card-text fw-medium mt-4 d-inline-block ">From £55.00/Hour</p>
+                    <div class="d-flex align-self-center mt-2 me-2">
+                      <span class="fw-semibold "><i class="fa-regular fa-user ms-lg-5 ms-sm-2 " style="color: #C99B20;"></i> 2
+                        Passengers</span>
+                      <span class="fw-semibold "><i class="fa-solid fa-briefcase" style="color: #C99B20;"></i> 2
+                        bags</span>
+                    </div>
+                  </div>
+                  <a href="#" style="background-color: #C99B20;" class="btn text-white float-end mt-3 me-2">Book
+                    Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img class="card-img-top ms-5 pt-2 " src="../Assets/benz-v.png" alt="benz-v" style="width:72.1%">
+                <div class="card-body">
+                  <h4 style="color: #C99B20;" class="card-title fs-5 fw-semibold ">BUSINESS CLASS</h4>
+                  <h3 style="letter-spacing: 1px;" class="card-title fs-4 fw-semibold ">MERCEDES-BENZ V-CLASS</h3>
+                  <div class="d-flex justify-content-between card-price">
+                    <p style="color: #143E8F;" class="card-text fw-medium mt-4 d-inline-block ">From £65.00/Hour</p>
+                    <div class="d-flex align-self-center mt-2 me-2">
+                      <span class="fw-semibold "><i class="fa-regular fa-user ms-lg-5 ms-sm-2" style="color: #C99B20;"></i> 2
+                        Passengers</span>
+                      <span class="fw-semibold "><i class="fa-solid fa-briefcase" style="color: #C99B20;"></i> 2
+                        bags</span>
+                    </div>
+                  </div>
+                  <a href="#" style="background-color: #C99B20;" class="btn text-white float-end mt-3 me-2">Book
+                    Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card ">
+                <img class="card-img-top ms-5 pt-4" src="../Assets/benz.png" alt="benz-s" style="width:88.5%">
+                <div class="card-body">
+                  <h4 style="color: #C99B20;" class="card-title fs-5 fw-semibold ">BUSINESS CLASS</h4>
+                  <h3 style="letter-spacing: 1px;" class="card-title fs-4 fw-semibold ">MERCEDES-BENZ S-CLASS</h3>
+                  <div class="d-flex justify-content-between card-price">
+                    <p style="color: #143E8F;" class="card-text fw-medium mt-4 d-inline-block ">From £70.00/Hour</p>
+                    <div class="d-flex align-self-center mt-2 me-2">
+                      <span class="fw-semibold "><i class="fa-regular fa-user ms-lg-5 ms-sm-2" style="color: #C99B20;"></i> 2
+                        Passengers</span>
+                      <span class="fw-semibold "><i class="fa-solid fa-briefcase" style="color: #C99B20;"></i> 2
+                        bags</span>
+                    </div>
+                  </div>
+                  <a href="#" style="background-color: #C99B20;" class="btn text-white float-end mt-3 me-2">Book
+                    Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img class="card-img-top ms-5" src="../Assets/range-rover.png" alt="range rover" style="width:79%">
+                <div class="card-body">
+                  <h4 style="color: #C99B20;" class="card-title fs-5 fw-semibold ">LUXURY CLASS</h4>
+                  <h3 style="letter-spacing: 1px;" class="card-title fs-4 fw-semibold ">RANGE ROVER</h3>
+                  <div class="d-flex justify-content-between card-price">
+                    <p style="color: #143E8F;" class="card-text fw-medium mt-4 d-inline-block ">From £130.00/Hour</p>
+                    <div class="d-flex align-self-center mt-2 me-2">
+                      <span class="fw-semibold "><i class="fa-regular fa-user ms-lg-5 ms-sm-2" style="color: #C99B20;"></i> 2
+                        Passengers</span>
+                      <span class="fw-semibold "><i class="fa-solid fa-briefcase" style="color: #C99B20;"></i> 2
+                        bags</span>
+                    </div>
+                  </div>
+                  <a href="#" style="background-color: #C99B20;" class="btn text-white float-end mt-3 me-2">Book
+                    Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img class="card-img-top ms-4" src="../Assets/rolls-royce.png" alt="rolls-royce" style="width:85.5%">
+                <div class="card-body">
+                  <h4 style="color: #C99B20;" class="card-title fs-5 fw-semibold ">ROYAL CLASS</h4>
+                  <h3 style="letter-spacing: 1px;" class="card-title fs-4 fw-semibold ">ROLLS ROYCE PHANTOM</h3>
+                  <div class="d-flex justify-content-between card-price">
+                    <p style="color: #143E8F;" class="card-text fw-medium mt-4 d-inline-block ">Contact Us</p>
+                    <div class="d-flex align-self-center mt-2 me-2">
+                      <span class="fw-semibold "><i class="fa-regular fa-user ms-lg-5 ms-sm-2" style="color: #C99B20;"></i> 2
+                        Passengers</span>
+                      <span class="fw-semibold "><i class="fa-solid fa-briefcase" style="color: #C99B20;"></i> 2
+                        bags</span>
+                    </div>
+                  </div>
+                  <a href="#" style="background-color: #C99B20;" class="btn text-white float-end mt-3 me-2">Book
+                    Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card">
+                <img class="card-img-top ms-5" src="../Assets/bentley.png" alt="bentley" style="width:74.2%">
+                <div class="card-body">
+                  <h4 style="color: #C99B20;" class="card-title fs-5 fw-semibold ">ROYAL CLASS</h4>
+                  <h3 style="letter-spacing: 1px;" class="card-title fs-4 fw-semibold bg- ">BENTLEY MULSANNE</h3>
+                  <div class="d-flex justify-content-between card-price">
+                    <p style="color: #143E8F;" class="card-text fw-medium mt-4 d-inline-block ">Contact Us</p>
+                    <div class="d-flex align-self-center mt-2 me-2">
+                      <span class="fw-semibold "><i class="fa-regular fa-user ms-lg-5 ms-sm-2" style="color: #C99B20;"></i> 2
+                        Passengers</span>
+                      <span class="fw-semibold "><i class="fa-solid fa-briefcase" style="color: #C99B20;"></i> 2
+                        bags</span>
+                    </div>
+                  </div>
+
+                  <a href="#" style="background-color: #C99B20;" class="btn text-white float-end mt-3 me-2">Book
+                    Now</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="sec3 ">
+    <div class="container pt-5 d-flex flex-column align-items-center justify-content-center ">
+      <h6 style="color: #C99B20;" class="pt-5 fs-3 fw-semibold ">Steps</h6>
+      <h3 class="fw-semibold fs-1 text-white ">HOW IT WORKS</h3>
+      <p class="text-white fs-6 fw-semibold mt-2 ">Make It Happens In 4 Steps</p>
+    </div>
+    <div class="container  position-relative top-0 pb-5">
+      <div  class="row bg-white  ">
+        <div style="background-color: #F4F6FA ;" class="col-12 col-lg-3 col-md-6 col-sm-8 step-card  pb-lg-5 pt-1 ">
+          <div class="d-flex justify-content-center mt-4">
+            <h1 style=" background-color: #143E8F;   color: white; "
+              class="text-center  d-inline  rounded-circle  fw-semibold step-numb">01</h1>
+          </div>
+          <h2 class="text-center fs-4 fw-semibold ">SELECT PLACE & DATE</h2>
+          <p class="text-center fw-medium  fs-6 ">Use our online booking system to select meeting place, date & time.
+          </p>
+        </div>
+        <div style="background-color: #F4F6FA ;" class="col-12 col-lg-3 col-md-6 col-sm-8  step-card pb-lg-5 pt-1">
+          <div class="d-flex justify-content-center mt-4">
+            <h1 style="background-color: #F4F6FA ; background-color: #143E8F;   color: white; "
+              class="text-center  d-inline  rounded-circle  fw-semibold step-numb">02</h1>
+          </div>
+          <h2 class="text-center fs-4 fw-semibold ">CHOOSE YOUR CAR</h2>
+          <p class="text-center fw-medium  fs-6 secnd-txt">Select the best luxury vehicle for your comfort.</p>
+        </div>
+        <div style="background-color: #F4F6FA ;" class=" col-12 col-lg-3 col-md-6 col-sm-8  step-card pb-lg-5 pt-1">
+          <div class="d-flex justify-content-center mt-4 ">
+            <h1 style="background-color: #F4F6FA ; background-color: #143E8F;   color: white; "
+              class="text-center  d-inline  rounded-circle fw-semibold step-numb ">03</h1>
+          </div>
+          <h2 class="text-center fs-4 fw-semibold ">PAYMENT & RECIEVE</h2>
+          <p class="text-center fw-medium  fs-6 ">Make online payment(we accept all type of credit & debit cards).</p>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6 col-sm-8  step-card pb-lg-5 pt-1 strip">
+          <div class="d-flex justify-content-center mt-4">
+            <h1 style="background-color: #C99B20;   color: black; "
+              class="text-center  d-inline  rounded-circle  fw-semibold step-numb">04</h1>
+          </div>
+          <h2 class="text-center fs-4 fw-semibold text-white">ENJOY YOUR TRIP</h2>
+          <p class="text-center fw-medium  fs-6 text-white">You will get your invoice, driver details and ride details
+            in your email.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec4  ">
+    <div class="container-fluid ">
+      <div class="row ">
+        <div class="col-12 col-lg-5 col-md-6 col-sm-12 mt-lg-5 pt-lg-5 ">
+          <div class="blog-slider mt-lg-5 ">
+            <div class="blog-slider__wrp swiper-wrapper">
+
+              <div class="blog-slider__item swiper-slide">
+
+                <div class="blog-slider__content pt-lg-4">
+                  <div class="d-flex">
+                    <div class="bg-white p-2">
+                      <img src="../Assets/quote.png" alt="quote">
+                    </div>
+                    <div class="ms-4">
+                      <div class="text-white fw-semibold fs-5 vert-name">Jhonathane Mille</div>
+                      <span class="text-white mt-2 vert-pos">Web Developer</span>
+                    </div>
+                  </div>
+
+
+                  <div class="text-white fs-5 fw-normal pt-lg-4 vert-para">I really can recommend this theme,
+                    beacuse it's coded very well and it's
+                    really easy to build your own website! I really can recommend this theme,
+                    beacuse it's coded very well and it's
+                    really easy to build your own website! </div>
+                </div>
+              </div>
+
+              <div class="blog-slider__item swiper-slide">
+
+                <div class="blog-slider__content pt-lg-4">
+                  <div class="d-flex">
+                    <div class="bg-white p-2">
+                      <img src="../Assets/quote.png" alt="quote">
+                    </div>
+                    <div class="ms-4">
+                      <div class="text-white fw-semibold fs-5 vert-name">Jhonathane Mille</div>
+                      <span class="text-white mt-2 vert-pos">Web Developer</span>
+                    </div>
+                  </div>
+
+
+                  <div class="text-white fs-5 fw-normal pt-lg-4 vert-para">I really can recommend this theme,
+                    beacuse it's coded very well and it's
+                    really easy to build your own website! I really can recommend this theme,
+                    beacuse it's coded very well and it's
+                    really easy to build your own website! </div>
+                </div>
+              </div>
+
+              <div class="blog-slider__item swiper-slide ">
+
+                <div class="blog-slider__content pt-lg-4">
+                  <div class="d-flex">
+                    <div class="bg-white p-2">
+                      <img src="../Assets/quote.png" alt="quote">
+                    </div>
+                    <div class="ms-4">
+                      <div class="text-white fw-semibold fs-5 vert-name">Jhonathane Mille</div>
+                      <span class="text-white mt-2 vert-pos">Web Developer</span>
+                    </div>
+                  </div>
+
+
+                  <div class="text-white fs-5 fw-normal pt-4 vert-para">I really can recommend this theme,
+                    beacuse it's coded very well and it's
+                    really easy to build your own website! I really can recommend this theme,
+                    beacuse it's coded very well and it's
+                    really easy to build your own website! </div>
+                </div>
+              </div>
+              <div class="blog-slider__item swiper-slide ">
+
+                <div class="blog-slider__content pt-lg-4">
+                  <div class="d-flex">
+                    <div class="bg-white p-2">
+                      <img src="../Assets/quote.png" alt="quote">
+                    </div>
+                    <div class="ms-lg-4 Mille">
+                      <div class="text-white fw-semibold fs-5 vert-name">Jhonathane Mille</div>
+                      <span class="text-white mt-2 vert-pos">Web Developer</span>
+                    </div>
+                  </div>
+
+
+                  <div class="text-white fs-5 fw-normal pt-4 vert-para">I really can recommend this theme,
+                    beacuse it's coded very well and it's
+                    really easy to build your own website! I really can recommend this theme,
+                    beacuse it's coded very well and it's
+                    really easy to build your own website! </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="blog-slider__pagination"></div>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-6 col-sm-12 mt-lg-5 pt-lg-5 text-lg-end">
+          <img src="./Assets/mercedes.png" alt="benz" style="width: 100%;" class="mt-lg-1 blog-benz">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="background-color: #F3F2F1;" class="sec5 pt-5 pb-5">
+    <div class="container-fluid ">
+      <div class="row">
+        <div class="col-12 col-lg-2 col-md-12  col-sm-12 d-flex trust ms-lg-4 ">
+          <div class="trust1 ">
+            <div class="trusted rounded ms-lg-3"></div>
+          </div>
+          <div class="d-flex flex-column trust2 ">
+            <div class="trusted2 rounded"></div>
+            <div class="trusted3 rounded"></div>
+          </div>
+        </div>
+          <div class="col-12 col-lg-6 col-md-12 col-sm-12 trust-right  ms-lg-4">
+            <h5 style="color: #C99B20;" class="mt-5 fw-semibold fs-4 mb-3">Epic Ride London</h5>
+            <h2 class="fw-semibold fs-1">We are your trusted Chauffeurs company</h2>
+            <h6 style="color: #C99B20;" class="fw-semibold   fs-5 mt-4">From the region, for the region</h6>
+            <p class="fw-medium fs-6 text-start mt-3">With our dedicated team of professional chauffeurs and a fleet of
+              luxurious vehicles, we ensure that you
+              experience the utmost comfort and convenience throughout your journey. Our chauffeurs are highly trained,
+              experienced, and familiar with the best routes to ensure timely arrivals and departures.</p>
+            <p class="fw-medium fs-6 text-start ">We have a number of business ridesharing fleet all the time for our
+              customers. Our fleet will provide you
+              an ample and snug seats where you let out all your hassle and get relaxed. It provides a best business model
+              ridesharing service. It is fantastic and highly recommended. We offer a series of luxury fleet in London.
+              With our luxury fleets you travel long distances comfortably. Our fleets are a symbol of grace and modern
+              luxury. It is super perfect for any sort of business travels and corporate events.</p>
+            <div class="row">
+              <div class="col-12 d-flex flex-wrap  mt-4">
+                <ul class="trust-list t-list-1">
+                  <li class="fw-semibold mb-4 me-2 "><span class="trust-text ms-2">Luxury Fleet.</span></li>
+                  <li class="fw-semibold mb-4 me-2"><span class="trust-text ms-2">Symbol of grace and modern
+                      luxury.</span></li>
+                </ul>
+                <ul class="trust-list t-list-2">
+                  <li class="fw-semibold ms-5 mb-4"><span class="trust-text ms-2">Professional Chauffeur.</span></li>
+                  <li class="fw-semibold ms-5 mb-4"><span class="trust-text ms-2">Pre-Booking & Online Payment.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+  <section class="sec6">
+    <div class="container-fluid  ">
+      <div class="row d-flex justify-content-evenly pt-5 flex-wrap">
+        <div class="col-12 col-lg-3 col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center pt-5 mt-4">
+          <img src="./Assets/car.png" alt="" style="width: 20%;">
+          <h4 style="color: #C99B20;" class="mt-3">Our Fleet</h4>
+          <p class="text-white fw-medium text-center mt-2 fs-6 chauffeurs-text">We have big number of Luxury cars Available all the
+            time for our valued customer.</p>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center pt-5 mt-4">
+          <img src="./Assets/chauffeur.png" alt="" style="width: 20%;">
+          <h4 style="color: #C99B20;" class="mt-3">Professional Chauffeur</h4>
+          <p class="text-white fw-medium text-center mt-2 fs-6 chauffeurs-text">We have empowered a number of professional chauffeurs to
+            get a reliable source of income.</p>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center pt-5 mt-4">
+          <img src="./Assets/booking-1.png" alt="" style="width: 20%;">
+          <h4 style="color: #C99B20;" class="mt-3">Pre-Booking</h4>
+          <p class="text-white fw-medium text-center mt-2 fs-6 chauffeurs-text">Schedule your ride by your own choice to have a
+            comfortable and memorable journey.</p>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center pt-5 mt-4">
+          <img src="./Assets/payment.png" alt="" style="width: 20%;">
+          <h4 style="color: #C99B20;" class="mt-3">Online Payment</h4>
+          <p class="text-white fw-medium text-center mt-2 fs-6 chauffeurs-text">Different payment methods are available for your comfort
+            either you can pay using card.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec7 pb-lg-5">
+    <div class="container-fluid pt-5">
+      <h5 style="color: #C99B20;" class="text-center fw-semibold ">YOUR QUESTIONS</h5>
+      <h1 class="text-center fw-semibold fleet-text">Frequently Asked Questions</h1>
+      <div class="text-center">
+        <span style="border-top: 3px solid #C99B20;"
+          class="text-center d-inline-block ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+          style=" border-top: 3px solid #222528;" class="text-center d-inline-block ms-2">&nbsp;&nbsp;&nbsp;</span>
+      </div>
+    </div>
+    <div class="container pt-5">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header " id="panelsStayOpen-headingOne">
+            <button class="accordion-button collapsed fw-semibold " type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseOne" style="color: #C99B20;">
+              How do I create an account?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body fw-semibold  fs-6 ">
+              Use a valid mobile number and e-mail address in order to create an account. Then sign up from your mobile
+              number. A verification code will be send to you via SMS. Once your mobile number is verified, you are
+              ready to use the app. In case you forgot your password then we send detail instructions via email so that
+              you can reset your password.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseTwo" style="color: #C99B20;">
+              How do I earn reward points?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse  show"
+            aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body fw-semibold  fs-6 ">
+              Reward points are earned on the basis of number of rides and cost of ride. The customer pays either online
+              payment or cash, in both cases customer gets reward points. Free rides will not earn you points.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree" style="color: #C99B20;">
+              How can I add my credit card on the app for payment?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body fw-semibold  fs-6 ">
+              Just go to the payment section, go to “Credit Card Payment” and fill in the required credentials. We send
+              an OTP for verification.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFour " style="color: #C99B20;">
+              How do I become a Chauffeur?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingFour">
+            <div class="accordion-body fw-semibold  fs-6">
+              In order to become a Chauffeur you need to register and fill in the form available on our website. Your
+              application will be reviewed. After verification you will be facilitated with a training session. After
+              the completion of training you will be ready to start working with us.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+            <button class="accordion-button collapsed fw-semibold" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFive" style="color: #C99B20;">
+              Where can I get more information, support or make a claim?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingFive">
+            <div class="accordion-body fw-semibold  fs-6">
+              If you need further information, support or claim related to London ride share 2023, then contact us on
+              our email or contact number.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec8 pb-5 pt-3">
+    <div class="container">
+      <div class="row car-group">
+      </div>
+      <div class="row">
+        <strong class="text-center  fs-6"><a href="" style="color: #C99B20; text-decoration: none;">Mercedes S
+            Class</a>, <a href="" style="color: #C99B20; text-decoration: none;">E Class</a>, <a href=""
+            style="color: #C99B20; text-decoration: none;">V Class</a>, <a href=""
+            style="color: #C99B20; text-decoration: none;">Bentley</a>, <a href=""
+            style="color: #C99B20; text-decoration: none;">Range Rover</a>, and <a href=""
+            style="color: #C99B20; text-decoration: none;">Rolls Royce</a> are just a
+          few of the luxurious vehicles we provide, so we can make sure you get the correct chauffeur and luxury car
+          to suit your demands. Before a journey begins, all of our vehicles are properly examined to ensure they
+          match our high standards throughout and are prepared to carry any essentials, such as bottled water and any
+          other particular requirements.</strong>
+      </div>
+    </div>
+  </section>
+  <section style="background-color: #F3F2F1;" class="sec9 pb-5">
+    <div class="container-fluid pt-5">
+      <h5 style="color: #C99B20;" class="text-center fw-semibold ">ALL SERVICES</h5>
+      <h1 class="text-center fw-semibold fleet-text">EPIC RIDE LONDON</h1>
+      <div class="text-center">
+        <span style="border-top: 3px solid #C99B20;"
+          class="text-center d-inline-block ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+          style=" border-top: 3px solid #222528;" class="text-center d-inline-block ms-2">&nbsp;&nbsp;&nbsp;</span>
+      </div>
+    </div>
+    <div class="container-fluid pt-3">
+      <div class="row">
+        <div class="swiper mySwiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card pb-4">
+                <p style="background-color: #143E8F;"
+                  class="position-absolute  top-3 text-white py-1 px-3 Epic-ride fw-semibold rounded ">Epic Ride</p>
+                <img src="./Assets/service1.jpg" class="card-img-top1 slider2-1" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fw-semibold fs-3">Airport Transfers</h5>
+                  <p class="card-text fw-medium ">Our chauffuers are there always to transfer you to all london
+                    airports</p>
+                  <a href="#" style="background-color: #C99B20;" class="btn text-white">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card pb-4">
+                <p style="background-color: #143E8F;"
+                  class="position-absolute  top-3 text-white py-1 px-3 Epic-ride fw-semibold rounded">Epic Ride</p>
+                <img src="./Assets/service2.png" class="card-img-top1 slider2-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fw-semibold fs-3">Event Transfers</h5>
+                  <p class="card-text fw-medium">We cover event transportation also in bulk with our luxury fleet
+                  </p>
+                  <a href="#" style="background-color: #C99B20;" class="btn text-white mt-1">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card pb-4">
+                <p style="background-color: #143E8F;"
+                  class="position-absolute  top-3 text-white py-1 px-3 Epic-ride fw-semibold rounded">Epic Ride</p>
+                <img src="./Assets/service3.jpg" class="card-img-top1 slider2-3" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fw-semibold fs-3">Executive Transfer Service</h5>
+                  <p class="card-text fw-medium">Epic Ride London provides executive and high class chauffeuring</p>
+                  <a href="#" style="background-color: #C99B20;" class="btn text-white mt-1">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card pb-4">
+                <p style="background-color: #143E8F;"
+                  class="position-absolute  top-3 text-white py-1 px-3 Epic-ride fw-semibold rounded">Epic Ride</p>
+                <img src="./Assets/service4.jpg" class="card-img-top1 slider2-4" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title fw-semibold fs-3">Long Distance Chauffeur</h5>
+                  <p class="card-text fw-medium">Our chauffuers are there always to transfer you to all UK in
+                    comfortable cars</p>
+                  <a href="#" style="background-color: #C99B20;" class="btn text-white">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <section class="sec10 pb-5">
+    <div class="container pt-5 pb-4">
+      <div class="row pt-5 moto">
+        <div class="col-12 col-lg-5 col-sm-12 d-flex flex-column justify-content-center">
+          <h2 style="color: #C99B20;" class="fw-semibold fs-4 pb-2">Epic Chauffeurs benefits</h2>
+          <h1 class="fw-semibold ">Why you should choose Epic Chauffeurs?</h1>
+          <div class="d-flex our justify-content-evenly   mt-4">
+            <div class="py-3 px-5 choose fw-medium ">Our mission</div>
+            <div style="background-color: #C99B20; " class="py-3 px-5 text-white fw-medium">Our vision</div>
+            <div class="py-3 px-5 choose fw-medium">Our history</div>
+          </div>
+          <p class="mt-5 fw-medium ">Our vision is to give luxury and secure ridesharing services to everyone.</p>
+        </div>
+        <div class="col-12 col-lg-6 col-sm-12 ms-lg-4">
+          <h2 style="color: #C99B20;" class="fw-semibold fs-3 pb-lg-3 vision-head">Our vision</h2>
+          <p class=" fw-medium vision-head1">Our vision is to give luxury and secure ridesharing services to everyone.</p>
+          <div class="d-flex flex-wrap ">
+            <div  class="vision">
+              <img src="./Assets/eclass.jpeg" alt="" style="width: 100%;">
+            </div>
+            <ul  class="vision-list  pt-4 ms-2">
+              <li class="pb-1"><span class="fw-medium ms-1">Making this first true generator</span></li>
+              <li class="pb-1"><span class="fw-medium ms-1">Many desktop publish packages</span></li>
+              <li class="pb-1"><span class="fw-medium ms-1 ">If you are going to passage</span></li>
+              <li class="pb-1"><span class="fw-medium  ms-1">It has roots in a piece</span></li>
+              <li class="pb-1"><span class="fw-medium  ms-1">It has roots in a piece</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section style="background-color: #F3F2F1;" class="sec11 pb-5">
+    <div class="container pt-5 ">
+      <div class=" d-flex flex-column align-items-center pt-2">
+        <div class="text-center"><img src="./Assets/trust-pilot.png" alt="" style="width: 50%;"></div>
+        <div class="text-center fw-semibold fs-3 ">Customer Reviews</div>
+      </div>
+      <div class="row pt-5">
+        <div style="background-color: white;" class="trustcard1 col-12 col-lg-3 col-md-4 col-sm-12">
+          <div class="d-flex flex-column  justify-content-center align-items-center pt-4 pb-lg-3">
+            <h3 class="mb-3 fw-semibold fs-4">Excellent</h3>
+            <img src="./Assets/stars-5.svg" alt="" style="width: 50%;">
+            <p class="mt-3 fw-semibold ">Based on 456 reviews</p>
+            <img src="./Assets/trust-pilot.png" alt="" style="width: 35%;">
+          </div>
+
+        </div>
+        <div class="col-12 col-lg-9 col-md-8 col-sm-12 ">
+
+        
+          <div class="slider3 container-fluid pt-lg-2">
+            <div class="row">
+              <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+
+                    <div style="background-color: white;" class=" p-2">
+                      <div class="d-flex justify-content-between ">
+                        <img src="./Assets/stars-5.svg" alt="" style="width: 50%;">
+                        <strong>1 month ago</strong>
+                      </div>
+                      <h3 class="fs-6 fw-semibold pt-2">Comfortable luxury minivan</h3>
+                      <p style="text-overflow: ellipsis;">We were delighted and very relieved to be able to book t...
+                      </p>
+                      <strong>kate mahon</strong>
+                    </div>
+                    
+                  </div>
+                  <div class="swiper-slide">
+                    
+                    <div style="background-color: white;" class=" p-2">
+                      <div class="d-flex justify-content-between ">
+                        <img src="./Assets/stars-5.svg" alt="" style="width: 50%;">
+                        <strong>1 month ago</strong>
+                      </div>
+                      <h3 class="fs-6 fw-semibold pt-2">Comfortable luxury minivan</h3>
+                      <p style="text-overflow: ellipsis;">We were delighted and very relieved to be able to book t...
+                      </p>
+                      <strong>kate mahon</strong>
+                    </div>
+   
+                  </div>
+                  <div class="swiper-slide">
+                    
+                    <div style="background-color: white;" class=" p-2">
+                      <div class="d-flex justify-content-between ">
+                        <img src="./Assets/stars-5.svg" alt="" style="width: 50%;">
+                        <strong>1 month ago</strong>
+                      </div>
+                      <h3 class="fs-6 fw-semibold pt-2">Comfortable luxury minivan</h3>
+                      <p style="text-overflow: ellipsis;">We were delighted and very relieved to be able to book t...
+                      </p>
+                      <strong>kate mahon</strong>
+                    </div>
+   
+                  </div>
+                  <div class="swiper-slide">
+                   
+                    <div style="background-color: white;" class=" p-2">
+                      <div class="d-flex justify-content-between ">
+                        <img src="./Assets/stars-5.svg" alt="" style="width: 50%;">
+                        <strong>1 month ago</strong>
+                      </div>
+                      <h3 class="fs-6 fw-semibold pt-2">Comfortable luxury minivan</h3>
+                      <p style="text-overflow: ellipsis;">We were delighted and very relieved to be able to book t...
+                      </p>
+                      <strong>kate mahon</strong>
+                    </div>
+   
+                  </div>
+                  <div class="swiper-slide">
+
+                    <div style="background-color: white;" class=" p-2">
+                      <div class="d-flex justify-content-between ">
+                        <img src="./Assets/stars-5.svg" alt="" style="width: 50%;">
+                        <strong>1 month ago</strong>
+                      </div>
+                      <h3 class="fs-6 fw-semibold pt-2">Comfortable luxury minivan</h3>
+                      <p style="text-overflow: ellipsis;">We were delighted and very relieved to be able to book t...
+                      </p>
+                      <strong>kate mahon</strong>
+                    </div>
+                    
+                  </div>
+                  <div class="swiper-slide">
+
+                    <div style="background-color: white;" class=" p-2">
+                      <div class="d-flex justify-content-between ">
+                        <img src="./Assets/stars-5.svg" alt="" style="width: 50%;">
+                        <strong>1 month ago</strong>
+                      </div>
+                      <h3 class="fs-6 fw-semibold pt-2">Comfortable luxury minivan</h3>
+                      <p style="text-overflow: ellipsis;">We were delighted and very relieved to be able to book t...
+                      </p>
+                      <strong>kate mahon</strong>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="swiper-button-next slider3-next"></div>
+                <div class="swiper-button-prev slider3-prev"></div>
+              </div>
+      
+            </div>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec12">
+    <footer>
+      <div class="container footer">
+        <div class="row pt-5">
+          <div class="col-12 col-lg-3 col-md-6 col-sm-12 d-flex pt-3">
+            <div><img src="./Assets/location-f.png" alt=""></div>
+            <div class="ms-3">
+              <h2 class="text-white fs-5 fw-semibold ">Location</h2>
+              <p class="text-white fw-semibold pt-1">Regus 450 Bath Road, Longford UB7 0EB</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 col-md-6 col-sm-12 d-flex pt-3">
+            <div><img src="./Assets/call-f.png" alt=""></div>
+            <div class="ms-3">
+              <h2 class="text-white fs-5 fw-semibold">Lane Line</h2>
+              <p class="text-white fw-semibold pt-1">+44 203 9300286</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 col-md-6  col-sm-12 d-flex pt-3">
+            <div><img src="./Assets/clock-f.png" alt=""></div>
+            <div class="ms-3">
+              <h2 class="text-white fs-5 fw-semibold">Time</h2>
+              <p class="text-white fw-semibold pt-1">Mon - Sun (24/7)</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 col-md-6  col-sm-12 d-flex pt-3">
+            <div><img src="./Assets/mail-f.png" alt=""></div>
+            <div class="ms-3">
+              <h2 class="text-white fs-5 fw-semibold">Mail</h2>
+              <p class="text-white fw-semibold pt-1">Info@epicridelondon.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container pt-lg-5 moto1">
+        <div class="row">
+          <div class="col-12 col-lg-2 col-md-4 col-sm-12 qlinks">
+            <h2 style="color: #C99B20;">QUICK LINKS</h2>
+            <div class="pb-2 f-yellow"><i class="fa-solid fa-angle-right" style="color: #C99B20;"></i> <span
+                class=" fw-semibold ms-1 ">About us</span></div>
+            <div class="pb-2 f-yellow"><i class="fa-solid fa-angle-right" style="color: #C99B20;"></i><span
+                class=" fw-semibold ms-2 ">Get a Quote</span></div>
+            <div class="pb-2 f-yellow"><i class="fa-solid fa-angle-right" style="color: #C99B20;"></i><span
+                class=" fw-semibold ms-2 ">FAQs</span></div>
+          </div>
+          <div class="col-12 col-lg-2 col-md-4 col-sm-12 company">
+            <h2 style="color: #C99B20;">COMPANY</h2>
+            <div>
+              <div class="pb-2 f-yellow"><i class="fa-solid fa-check" style="color: #C99B20;"></i><span
+                  class=" fw-semibold  ms-2">Home</span></div>
+              <div class="pb-2 f-yellow"><i class="fa-solid fa-check" style="color: #C99B20;"></i><span
+                  class=" fw-semibold ms-2 ">About us</span></div>
+              <div class="pb-2 f-yellow"><i class="fa-solid fa-check" style="color: #C99B20;"></i><span
+                  class=" fw-semibold ms-2 ">Contact us</span></div>
+              <div class="pb-2 f-yellow"><i class="fa-solid fa-angle-right" style="color: #C99B20;"></i><span
+                  class=" fw-semibold ms-2">Services</span></div>
+              <div class="pb-2 f-yellow"><i class="fa-solid fa-angle-right" style="color: #C99B20;"></i><span
+                  class=" fw-semibold  ms-2">Our fleets</span></div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 col-md-4 col-sm-12 accept">
+            <h2 style="color: #C99B20;">We Accept</h2>
+            <div class="d-flex  ">
+              <div style="width: 100%;" class=""><img src="./Assets/visa.png" alt="visa" style="width: 100%;"></div>
+              <div style="width: 100%;" class="ms-2"><img src="./Assets/american-express.png" alt="american-express"
+                  style="width: 100%;"></div>
+              <div style="width: 100%;" class="ms-2"><img src="./Assets/paypal.png" alt="paypal" style="width: 100%;">
+              </div>
+              <div style="width: 100%;" class="ms-2"><img src="./Assets/master.png" alt="master" style="width: 100%;">
+              </div>
+              <div style="width: 100%;" class="ms-2"><img src="./Assets/unionpay.png" alt="unionpay"
+                  style="width: 100%;"></div>
+              <div style="width: 100%;" class="ms-2"><img src="./Assets/diners-club.png" alt="diners-club"
+                  style="width: 100%;"></div>
+              <div style="width: 100%;" class="ms-2"><img src="./Assets/jcb.png" alt="jcb" style="width: 100%;"></div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 col-md-12 col-sm-12 mapf"><iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.684724717527!2d-0.48624922381952923!3d51.48230111253719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876719aa710120f%3A0x37bd7ba7e559dfd6!2sRegus%20-%20Heathrow%2C%20Bath%20Road!5e0!3m2!1sen!2s!4v1695041838522!5m2!1sen!2s"
+              width="550" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" class="p-0"></iframe></div>
+        </div>
+      </div>
+      <div class="container-fluid pt-4">
+        <div class="d-flex justify-content-between footer-last flex-wrap ">
+          <div class="pt-3 ms-2">
+            <span class="text-white">© 2023</span><a style="text-decoration: none; color: #C99B20;" href=""> Epic Ride
+              London</a>
+          </div>
+          <div class="d-flex justify-content-evenly footer-icons">
+            <img src="./Assets/facebook.png" alt="" width="45px" height="45px" class="ms-2">
+            <img src="./Assets/reddit.png" alt="" width="45px" height="45px" class="ms-2">
+            <img src="./Assets/quora.png" alt="" width="45px" height="45px" class="ms-2">
+            <img src="./Assets/instagram.png" alt="" width="45px" height="45px" class="ms-2">
+            <img src="./Assets/pinterest.png" alt="" width="45px" height="45px" class="ms-2">
+          </div>
+          <div class="text-white footer-right pt-3 me-2">All Rights Reserved.</div>
+        </div>
+
+      </div>
+    </footer>
+  </section>
+  
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      breakpoints: {
+        600: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50
+        }
+      }
+    });
+  </script>
+  <script>
+    var swiper = new Swiper(".mySwiper1", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      breakpoints: {
+        600: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 50
+        }
+        ,
+        1440: {
+          slidesPerView: 3,
+          spaceBetween: 50
+        }
+      }
+    });
+  </script>
+
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper2", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      
+      rewind: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        600: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 10
+        }
+        
+      }
+    });
+  </script>
+
+</body>
+
+</html>

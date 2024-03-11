@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind&family=Rajdhani:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css'>
+  <link rel="stylesheet" href="./e-style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+  <title>Epic Ride London</title>
+  <link rel="stylesheet" href="e-style.css">
+</head>
+
+<body>
+  <section class="sec1">
+    <nav class="navbar navbar-dark  p-0">
+      <div class="container-fluid ps-0">
+        <a class="navbar-brand ps-0" href="./home.html"><img src="../Assets/logo.png" alt="" class="nlogo ps-0"></a>
+        <div class="menu d-flex ">
+          <ul class="nav  align-self-center   pb-4">
+            <li id="com1" class="fw-semibold "><a href="./home.html"><span class="span"><i
+                    class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i></span>Home</a></li>
+            <li id="com2" class="fw-semibold "><a href=""><span class="span"><i class="fa-solid fa-arrow-right-long"
+                    style="color: #ffffff;"></i></span>Epic</a><i class="fa-solid fa-caret-down"
+                style="color: #ffffff;"></i>
+              <ul class="dp1">
+                <li><span> <a href="./About-us.html" class="text-white ">About Us</a></span></li>
+                <li><span>FAQs</span></li>
+                <li><span>Get a Quote</span></li>
+                <li><span>Drivers Registration</span></li>
+                <li><span>Terms and Condition</span></li>
+              </ul>
+            </li>
+            <li id="com3" class="fw-semibold "><a href=""><span class="span"><i class="fa-solid fa-arrow-right-long"
+                    style="color: #ffffff;"></i></span>Fleet</a><i class="fa-solid fa-caret-down"
+                style="color: #ffffff;"></i>
+              <ul class="dp2">
+                <li><span> <a href="./E-class.html" class="text-white ">E Class</a></span></li>
+                <li><span>V Class</span></li>
+                <li><span>S Class</span></li>
+                <li><span>Range Rover</span></li>
+                <li><span>Rolls Royce</span></li>
+                <li><span>Bentley</span></li>
+              </ul>
+            </li>
+            <li id="com4" class="fw-semibold "><a href=""><span class="span"><i class="fa-solid fa-arrow-right-long"
+                    style="color: #ffffff;"></i></span>Chauffer Services</a><i class="fa-solid fa-caret-down"
+                style="color: #ffffff;"></i>
+              <ul class="dp3">
+                <li><span>Airport Transfer</span></li>
+                <li><span>Event Transfer</span></li>
+                <li><span>Executive Tranfer</span></li>
+                <li><span>Long Distance Chauffeur</span></li>
+                <li><span>London Sightseeing</span></li>
+                <li><span>Private Aviation</span></li>
+                <li><span>Southampton Executive Transfer</span></li>
+                <li><span>Wedding Tranfer</span></li>
+              </ul>
+            </li>
+            <li><a href="" class="fw-semibold "><span class="span"><i class="fa-solid fa-arrow-right-long"
+                    style="color: #ffffff;"></i></span>Contact Us</a></li>
+          </ul>
+        </div>
+        <button class="navbar-toggler d-lg-none border-0 " type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class=""><img src="./Assets/hamburger.svg" alt="" width="64px" height="64px"></span>
+        </button>
+        <div class="offcanvas offcanvas-start text-bg-dark w-75" tabindex="-1" id="offcanvasDarkNavbar"
+          aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header ">
+            <h5></h5>
+            <button type="button" class="btn-close btn-close-white " data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class=" nav1 d-flex flex-column justify-content-between ps-0">
+              <li id="com1" class="fw-semibold "><a href="./home.html"><span class="span"><i
+                      class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i></span>Home</a></li>
+              <li id="com2" class="fw-semibold nav-item dropdown"><a href=""><span class="span"><i
+                      class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i></span>Epic</a><i
+                  class="fa-solid fa-caret-down" style="color: #ffffff;"></i>
+                <ul class="dp1 dropdown-menu">
+                  <li><span> <a href="./About-us.html" class="text-white ">About Us</a></span></li>
+                  <li><span>FAQs</span></li>
+                  <li><span>Get a Quote</span></li>
+                  <li><span>Drivers Registration</span></li>
+                  <li><span>Terms and Condition</span></li>
+                </ul>
+              </li>
+              <li id="com3" class="fw-semibold dropdown"><a href=""><span class="span"><i
+                      class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i></span>Fleet</a><i
+                  class="fa-solid fa-caret-down" style="color: #ffffff;"></i>
+                <ul class="dp2 dropdown-menu">
+                  <li><span> <a href="./E-class.html" class="text-white ">E Class</a></span></li>
+                  <li><span>V Class</span></li>
+                  <li><span>S Class</span></li>
+                  <li><span>Range Rover</span></li>
+                  <li><span>Rolls Royce</span></li>
+                  <li><span>Bentley</span></li>
+                </ul>
+              </li>
+              <li id="com4" class="fw-semibold dropdown"><a href=""><span class="span"><i
+                      class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i></span>Chauffer Services</a><i
+                  class="fa-solid fa-caret-down" style="color: #ffffff;"></i>
+                <ul class="dp3 dropdown-menu">
+                  <li><span>Airport Transfer</span></li>
+                  <li><span>Event Transfer</span></li>
+                  <li><span>Executive Tranfer</span></li>
+                  <li><span>Long Distance Chauffeur</span></li>
+                  <li><span>London Sightseeing</span></li>
+                  <li><span>Private Aviation</span></li>
+                  <li><span>Southampton Executive Transfer</span></li>
+                  <li><span>Wedding Tranfer</span></li>
+                </ul>
+              </li>
+              <li><a href="" class="fw-semibold "><span class="span"><i class="fa-solid fa-arrow-right-long"
+                      style="color: #ffffff;"></i></span>Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container ">
+      <div class="d-flex flex-column align-items-center ">
+        <h1 class="fw-semibold fs-1 head-text">Mercedes E Class</h1>
+        <p class="text-white fw-semibold  mt-2 "><span style="cursor: pointer;" class="text-white "><a
+              href="./home.html" style="text-decoration: none;" class="text-white ">Home</a></span> /
+          <span style="cursor: pointer;">fleet</span> / <span style="color: #C99B20;">Mercedes E Class</span>
+        </p>
+        <div>
+          <button type="button" style="background-color: #C99B20;" class="btn text-white ">Book Now</button>
+          <button type="button" style="background-color:  #143E8F;" class="btn text-white ">Contact
+            Us</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="sec2">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-lg-7 col-sm-12">
+
+          <div class="container mt-5">
+            <div class="carousel-container position-relative row">
+
+              <!-- Sorry! Lightbox doesn't work - yet. -->
+
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-slide-number="0">
+                    <img src="./Assets/e1.jpg" class="d-block w-100" alt="..."
+                      data-remote="https://source.unsplash.com/Pn6iimgM-wo/" data-type="image" data-toggle="lightbox"
+                      data-gallery="example-gallery">
+                  </div>
+                  <div class="carousel-item" data-slide-number="1">
+                    <img src="./Assets/e2.jpg" class="d-block w-100" alt="..."
+                      data-remote="https://source.unsplash.com/tXqVe7oO-go/" data-type="image" data-toggle="lightbox"
+                      data-gallery="example-gallery">
+                  </div>
+                  <div class="carousel-item" data-slide-number="2">
+                    <img src="./Assets/e3.jpg" class="d-block w-100" alt="..."
+                      data-remote="https://source.unsplash.com/qlYQb7B9vog/" data-type="image" data-toggle="lightbox"
+                      data-gallery="example-gallery">
+                  </div>
+                  <div class="carousel-item" data-slide-number="3">
+                    <img src="./Assets/e4.jpg" class="d-block w-100" alt="..."
+                      data-remote="https://source.unsplash.com/QfEfkWk1Uhk/" data-type="image" data-toggle="lightbox"
+                      data-gallery="example-gallery">
+                  </div>
+                  <div class="carousel-item" data-slide-number="4">
+                    <img src="./Assets/e5.jpg" class="d-block w-100" alt="..."
+                      data-remote="https://source.unsplash.com/CSIcgaLiFO0/" data-type="image" data-toggle="lightbox"
+                      data-gallery="example-gallery">
+                  </div>
+                  <div class="carousel-item" data-slide-number="5">
+                    <img src="./Assets/e8.jpg" class="d-block w-100" alt="..."
+                      data-remote="https://source.unsplash.com/a_xa7RUKzdc/" data-type="image" data-toggle="lightbox"
+                      data-gallery="example-gallery">
+                  </div>
+                  <div class="carousel-item" data-slide-number="6">
+                    <img src="./Assets/e9.png" class="d-block w-100" alt="..."
+                      data-remote="https://source.unsplash.com/uanoYn1AmPs/" data-type="image" data-toggle="lightbox"
+                      data-gallery="example-gallery">
+                  </div>
+                  <div class="carousel-item" data-slide-number="7">
+                    <img src="./Assets/e10.jpg" class="d-block w-100" alt="..."
+                      data-remote="https://source.unsplash.com/_snqARKTgoc/" data-type="image" data-toggle="lightbox"
+                      data-gallery="example-gallery">
+                  </div>
+                  <div class="carousel-item" data-slide-number="8">
+                    <img src="./Assets/e11.png" class="d-block w-100" alt="..."
+                      data-remote="https://source.unsplash.com/M9F8VR0jEPM/" data-type="image" data-toggle="lightbox"
+                      data-gallery="example-gallery">
+                  </div>
+                  <div class="carousel-item" data-slide-number="9">
+                    <img src="./Assets/e12.jpg" class="d-block w-100" alt="..."
+                      data-remote="https://source.unsplash.com/Q1p7bh3SHj8/" data-type="image" data-toggle="lightbox"
+                      data-gallery="example-gallery">
+                  </div>
+                  <div class="carousel-item" data-slide-number="10">
+                    <img src="./Assets/e13.jpg" class="d-block w-100" alt="..."
+                      data-remote="https://source.unsplash.com/Q1p7bh3SHj8/" data-type="image" data-toggle="lightbox"
+                      data-gallery="example-gallery">
+                  </div>
+                  <div class="carousel-item" data-slide-number="11">
+                    <img src="./Assets/e8.jpg" class="d-block w-100" alt="..."
+                      data-remote="https://source.unsplash.com/Q1p7bh3SHj8/" data-type="image" data-toggle="lightbox"
+                      data-gallery="example-gallery">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Carousel Navigation -->
+              <div id="carousel-thumbs" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row mx-0">
+                      <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected"
+                        data-target="#myCarousel" data-slide-to="0">
+                        <img src="./Assets/e1.jpg" class="img-fluid" alt="...">
+                      </div>
+                      <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel"
+                        data-slide-to="1">
+                        <img src="./Assets/e2.jpg" class="img-fluid" alt="...">
+                      </div>
+                      <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel"
+                        data-slide-to="2">
+                        <img src="./Assets/e3.jpg" class="img-fluid" alt="...">
+                      </div>
+                      <div id="carousel-selector-3" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel"
+                        data-slide-to="3">
+                        <img src="./Assets/e4.jpg" class="img-fluid" alt="...">
+                      </div>
+                      <div id="carousel-selector-4" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel"
+                        data-slide-to="4">
+                        <img src="./Assets/e5.jpg" class="img-fluid" alt="...">
+                      </div>
+                      <div id="carousel-selector-5" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel"
+                        data-slide-to="5">
+                        <img src="./Assets/e8.jpg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row mx-0">
+                      <div id="carousel-selector-6" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel"
+                        data-slide-to="6">
+                        <img src="./Assets/e9.png" class="img-fluid" alt="...">
+                      </div>
+                      <div id="carousel-selector-7" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel"
+                        data-slide-to="7">
+                        <img src="./Assets/e10.jpg" class="img-fluid" alt="...">
+                      </div>
+                      <div id="carousel-selector-8" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel"
+                        data-slide-to="8">
+                        <img src="./Assets/e11.png" class="img-fluid" alt="...">
+                      </div>
+                      <div id="carousel-selector-9" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel"
+                        data-slide-to="9">
+                        <img src="./Assets/e12.jpg" class="img-fluid" alt="...">
+                      </div>
+                      <div id="carousel-selector-10" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel"
+                        data-slide-to="10">
+                        <img src="./Assets/e13.jpg" class="img-fluid" alt="...">
+                      </div>
+                      <div id="carousel-selector-11" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel"
+                        data-slide-to="11">
+                        <img src="./Assets/e8.jpg" class="img-fluid" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div> <!-- /row -->
+          </div> <!-- /container -->
+
+        </div>
+        <div class="col-12 col-lg-5 col-sm-12">
+          <div class=" pt-3 mt-5 me-lg-4">
+            <div class="d-flex justify-content-between   spec">
+              <p class="fw-semibold ">Passengers</p>
+              <p class="fw-semibold ">3</p>
+            </div>
+            <div class="d-flex justify-content-between   spec">
+              <p class="fw-semibold ">Bag</p>
+              <p class="fw-semibold ">2</p>
+            </div>
+            <div class="d-flex justify-content-between   spec">
+              <p class="fw-semibold ">ENGINE</p>
+              <p class="fw-semibold ">3000</p>
+            </div>
+            <div class="d-flex justify-content-between   spec ">
+              <p class="fw-semibold ">INTERIOR COLOR</p>
+              <p class="fw-semibold ">Black</p>
+            </div>
+            <div class="d-flex justify-content-between   spec">
+              <p class="fw-semibold ">POWER</p>
+              <p class="fw-semibold ">285</p>
+            </div>
+            <div class="d-flex justify-content-between   spec">
+              <p class="fw-semibold ">FUEL TYPE</p>
+              <p class="fw-semibold ">Diesel</p>
+            </div>
+            <div class="d-flex justify-content-between   spec">
+              <p class="fw-semibold ">LENGTH</p>
+              <p class="fw-semibold ">5.1 meters</p>
+            </div>
+            <div class="d-flex justify-content-between spec">
+              <p class="fw-semibold ">TRANSMISSION</p>
+              <p class="fw-semibold ">Auto</p>
+            </div>
+            <div class="d-flex justify-content-between spec">
+              <p class="fw-semibold ">EXTRAS</p>
+              <p class="fw-semibold ">Leather Seats,LED</p>
+            </div>
+
+            <button style="background-color: #C99B20; width: 100%;" class="btn d-block   fw-semibold text-white "
+              type="button">Book Now</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="sec3 mt-5">
+    <div class="container-fluid ">
+      <div class="row">
+        <div class="col-12 col-lg-6 col-sm-12 ms-xl-5 ms-lg-2 d-flex flex-column justify-content-center  ">
+          <h2 style="color: #143E8F;" class="fw-semibold  ">Mercedes E Class</h2>
+          <h1 class="fw-semibold elegance">Embodiment of elegance, and unparalleled comfort.</h1>
+          <p class="fw-medium ">E-Class is an embodiment of elegance, sophistication, and unparalleled comfort. Designed
+            for
+            discerning executives and those who appreciate the finer things in life, this executive-level
+            vehicle redefines what it means to travel in style. With its sleek design, cutting-edge
+            technology, and attention to detail, the Mercedes E-Class is the epitome of business class
+            luxury.</p>
+          <p class="fw-medium ">Stepping inside the Mercedes E-Class is like entering a sanctuary of luxury and comfort.
+            The
+            spacious cabin is meticulously designed with premium materials, exquisite craftsmanship, and
+            ergonomic features. Sink into the plush leather seats, which provide excellent support and allow
+            you to enjoy the journey in complete relaxation. The cabin is designed to minimize noise and
+            vibrations, creating a tranquil environment that is perfect for productive conversations or
+            simply unwinding after a long day.</p>
+          <p class="fw-medium ">We take pride in providing an exceptional chauffeur service, and our fleet of Mercedes
+            E-Class
+            vehicles ensures that your journey is nothing short of extraordinary.</p>
+        </div>
+        <div style="width: 100%;" class="col-12 col-lg-5 col-sm-12 ms-lg-5  elegance-benz">
+          <img src="./Assets/e6.jpg" alt="" style="width: 100%;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec4 mt-5 pt-lg-5 pb-5">
+    <div class="container-fluid ">
+      <div class="row d-flex justify-content-evenly ">
+        <div class="col-12 col-lg-2 col-md-6 col-sm-12 d-flex flex-column align-items-center car-spec py-3">
+          <img class="mt-3" src="./Assets/icon-1-c.png" alt="">
+          <h5 class="mt-2 fw-semibold fs-4">4</h5>
+          <p class="fw-semibold ">SEATING CAPACITY</p>
+        </div>
+        <div class="col-12 col-lg-2 col-md-6 col-sm-12  d-flex flex-column align-items-center car-spec py-3">
+          <img class="mt-3" src="./Assets/icon-2-c.png" alt="">
+          <h5 class="mt-2 fw-semibold fs-4">AUTOMATIC</h5>
+          <p class="fw-semibold ">TRANSMISION</p>
+        </div>
+        <div class="col-12 col-lg-2 col-md-6 col-sm-12 d-flex flex-column align-items-center car-spec py-3">
+          <img class="mt-3" src="./Assets/icon-3-c.png" alt="">
+          <h5 class="mt-2 fw-semibold fs-4">1500 CC</h5>
+          <p class="fw-semibold ">ENGINE</p>
+        </div>
+        <div class="col-12 col-lg-2 col-md-6 col-sm-12 d-flex flex-column align-items-center car-spec py-3">
+          <img class="mt-3" src="./Assets/icon-4-c.png" alt="">
+          <h5 class="mt-2 fw-semibold fs-4">FULL AC</h5>
+          <p class="fw-semibold ">COOLER</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section style="background-color: #F3F2F1;" class="sec5 pb-5">
+    <div class="container pt-5 ">
+      <div class=" d-flex flex-column align-items-center pt-2">
+        <div class="text-center"><img src="./Assets/trust-pilot.png" alt="" style="width: 50%;"></div>
+        <div class="text-center fw-semibold fs-3 ">Customer Reviews</div>
+      </div>
+      <div class="row pt-5">
+        <div style="background-color: white;" class="trustcard1 col-12 col-lg-3 col-md-4 col-sm-12">
+          <div class="d-flex flex-column  justify-content-center align-items-center pt-4 pb-lg-3">
+            <h3 class="mb-3 fw-semibold fs-4">Excellent</h3>
+            <img src="./Assets/stars-5.svg" alt="" style="width: 50%;">
+            <p class="mt-3 fw-semibold ">Based on 456 reviews</p>
+            <img src="./Assets/trust-pilot.png" alt="" style="width: 35%;">
+          </div>
+
+        </div>
+        <div class="col-12 col-lg-9 col-md-8 col-sm-12 ">
+
+        
+          <div class="slider3 container-fluid pt-lg-2">
+            <div class="row">
+              <div class="swiper mySwiper2">
+                <div class=" swiper-wrapper ">
+                  <div class="swiper-slide">
+
+                    <div style="background-color: white;" class=" p-2">
+                      <div class="d-flex justify-content-between ">
+                        <img src="./Assets/stars-5.svg" alt="" style="width: 50%;">
+                        <strong>1 month ago</strong>
+                      </div>
+                      <h3 class="fs-6 fw-semibold pt-2">Comfortable luxury minivan</h3>
+                      <p style="text-overflow: ellipsis;">We were delighted and very relieved to be able to book t...
+                      </p>
+                      <strong>kate mahon</strong>
+                    </div>
+                    
+                  </div>
+                  <div class="swiper-slide">
+                    
+                    <div style="background-color: white;" class=" p-2">
+                      <div class="d-flex justify-content-between ">
+                        <img src="./Assets/stars-5.svg" alt="" style="width: 50%;">
+                        <strong>1 month ago</strong>
+                      </div>
+                      <h3 class="fs-6 fw-semibold pt-2">Comfortable luxury minivan</h3>
+                      <p style="text-overflow: ellipsis;">We were delighted and very relieved to be able to book t...
+                      </p>
+                      <strong>kate mahon</strong>
+                    </div>
+   
+                  </div>
+                  <div class="swiper-slide">
+                    
+                    <div style="background-color: white;" class=" p-2">
+                      <div class="d-flex justify-content-between ">
+                        <img src="./Assets/stars-5.svg" alt="" style="width: 50%;">
+                        <strong>1 month ago</strong>
+                      </div>
+                      <h3 class="fs-6 fw-semibold pt-2">Comfortable luxury minivan</h3>
+                      <p style="text-overflow: ellipsis;">We were delighted and very relieved to be able to book t...
+                      </p>
+                      <strong>kate mahon</strong>
+                    </div>
+   
+                  </div>
+                  <div class="swiper-slide">
+                   
+                    <div style="background-color: white;" class=" p-2">
+                      <div class="d-flex justify-content-between ">
+                        <img src="./Assets/stars-5.svg" alt="" style="width: 50%;">
+                        <strong>1 month ago</strong>
+                      </div>
+                      <h3 class="fs-6 fw-semibold pt-2">Comfortable luxury minivan</h3>
+                      <p style="text-overflow: ellipsis;">We were delighted and very relieved to be able to book t...
+                      </p>
+                      <strong>kate mahon</strong>
+                    </div>
+   
+                  </div>
+                  <div class="swiper-slide">
+
+                    <div style="background-color: white;" class=" p-2">
+                      <div class="d-flex justify-content-between ">
+                        <img src="./Assets/stars-5.svg" alt="" style="width: 50%;">
+                        <strong>1 month ago</strong>
+                      </div>
+                      <h3 class="fs-6 fw-semibold pt-2">Comfortable luxury minivan</h3>
+                      <p style="text-overflow: ellipsis;">We were delighted and very relieved to be able to book t...
+                      </p>
+                      <strong>kate mahon</strong>
+                    </div>
+                    
+                  </div>
+                  <div class="swiper-slide">
+
+                    <div style="background-color: white;" class=" p-2">
+                      <div class="d-flex justify-content-between ">
+                        <img src="./Assets/stars-5.svg" alt="" style="width: 50%;">
+                        <strong>1 month ago</strong>
+                      </div>
+                      <h3 class="fs-6 fw-semibold pt-2">Comfortable luxury minivan</h3>
+                      <p style="text-overflow: ellipsis;">We were delighted and very relieved to be able to book t...
+                      </p>
+                      <strong>kate mahon</strong>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="swiper-button-next slider3-next"></div>
+                <div class="swiper-button-prev slider3-prev"></div>
+              </div>
+      
+            </div>
+      
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sec6">
+    <footer>
+      <div class="container footer">
+        <div class="row pt-5">
+          <div class="col-12 col-lg-3 col-md-6 col-sm-12 d-flex pt-3">
+            <div><img src="./Assets/location-f.png" alt=""></div>
+            <div class="ms-3">
+              <h2 class="text-white fs-5 fw-semibold ">Location</h2>
+              <p class="text-white fw-semibold pt-1">Regus 450 Bath Road, Longford UB7 0EB</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 col-md-6 col-sm-12 d-flex pt-3">
+            <div><img src="./Assets/call-f.png" alt=""></div>
+            <div class="ms-3">
+              <h2 class="text-white fs-5 fw-semibold">Lane Line</h2>
+              <p class="text-white fw-semibold pt-1">+44 203 9300286</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 col-md-6  col-sm-12 d-flex pt-3">
+            <div><img src="./Assets/clock-f.png" alt=""></div>
+            <div class="ms-3">
+              <h2 class="text-white fs-5 fw-semibold">Time</h2>
+              <p class="text-white fw-semibold pt-1">Mon - Sun (24/7)</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 col-md-6  col-sm-12 d-flex pt-3">
+            <div><img src="./Assets/mail-f.png" alt=""></div>
+            <div class="ms-3">
+              <h2 class="text-white fs-5 fw-semibold">Mail</h2>
+              <p class="text-white fw-semibold pt-1">Info@epicridelondon.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container pt-lg-5">
+        <div class="row">
+          <div class="col-12 col-lg-2 col-md-4 col-sm-12 qlinks">
+            <h2 style="color: #C99B20;">QUICK LINKS</h2>
+            <div class="pb-2 f-yellow"><i class="fa-solid fa-angle-right" style="color: #C99B20;"></i> <span
+                class=" fw-semibold ms-1 ">About us</span></div>
+            <div class="pb-2 f-yellow"><i class="fa-solid fa-angle-right" style="color: #C99B20;"></i><span
+                class=" fw-semibold ms-2 ">Get a Quote</span></div>
+            <div class="pb-2 f-yellow"><i class="fa-solid fa-angle-right" style="color: #C99B20;"></i><span
+                class=" fw-semibold ms-2 ">FAQs</span></div>
+          </div>
+          <div class="col-12 col-lg-2 col-md-4 col-sm-12 company">
+            <h2 style="color: #C99B20;">COMPANY</h2>
+            <div>
+              <div class="pb-2 f-yellow"><i class="fa-solid fa-check" style="color: #C99B20;"></i><span
+                  class=" fw-semibold  ms-2">Home</span></div>
+              <div class="pb-2 f-yellow"><i class="fa-solid fa-check" style="color: #C99B20;"></i><span
+                  class=" fw-semibold ms-2 ">About us</span></div>
+              <div class="pb-2 f-yellow"><i class="fa-solid fa-check" style="color: #C99B20;"></i><span
+                  class=" fw-semibold ms-2 ">Contact us</span></div>
+              <div class="pb-2 f-yellow"><i class="fa-solid fa-angle-right" style="color: #C99B20;"></i><span
+                  class=" fw-semibold ms-2">Services</span></div>
+              <div class="pb-2 f-yellow"><i class="fa-solid fa-angle-right" style="color: #C99B20;"></i><span
+                  class=" fw-semibold  ms-2">Our fleets</span></div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-3 col-md-4 col-sm-12 accept">
+            <h2 style="color: #C99B20;">We Accept</h2>
+            <div class="d-flex ">
+              <div style="width: 100%;" class=""><img src="./Assets/visa.png" alt="visa" style="width: 100%;"></div>
+              <div style="width: 100%;" class="ms-2"><img src="./Assets/american-express.png" alt="american-express"
+                  style="width: 100%;"></div>
+              <div style="width: 100%;" class="ms-2"><img src="./Assets/paypal.png" alt="paypal" style="width: 100%;">
+              </div>
+              <div style="width: 100%;" class="ms-2"><img src="./Assets/master.png" alt="master" style="width: 100%;">
+              </div>
+              <div style="width: 100%;" class="ms-2"><img src="./Assets/unionpay.png" alt="unionpay"
+                  style="width: 100%;"></div>
+              <div style="width: 100%;" class="ms-2"><img src="./Assets/diners-club.png" alt="diners-club"
+                  style="width: 100%;"></div>
+              <div style="width: 100%;" class="ms-2"><img src="./Assets/jcb.png" alt="jcb" style="width: 100%;"></div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 col-md-12 col-sm-12 mapf"><iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.684724717527!2d-0.48624922381952923!3d51.48230111253719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876719aa710120f%3A0x37bd7ba7e559dfd6!2sRegus%20-%20Heathrow%2C%20Bath%20Road!5e0!3m2!1sen!2s!4v1695041838522!5m2!1sen!2s"
+              width="550" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" class="p-0"></iframe></div>
+        </div>
+      </div>
+      <div class="container-fluid pt-4">
+        <div class="d-flex justify-content-between footer-last flex-wrap ">
+          <div class="pt-3 ms-2">
+            <span class="text-white">© 2023</span><a style="text-decoration: none; color: #C99B20;" href=""> Epic Ride
+              London</a>
+          </div>
+          <div class="d-flex justify-content-evenly footer-icons">
+            <img src="./Assets/facebook.png" alt="" width="45px" height="45px" class="ms-2">
+            <img src="./Assets/reddit.png" alt="" width="45px" height="45px" class="ms-2">
+            <img src="./Assets/quora.png" alt="" width="45px" height="45px" class="ms-2">
+            <img src="./Assets/instagram.png" alt="" width="45px" height="45px" class="ms-2">
+            <img src="./Assets/pinterest.png" alt="" width="45px" height="45px" class="ms-2">
+          </div>
+          <div class="text-white footer-right pt-3 me-2">All Rights Reserved.</div>
+        </div>
+
+      </div>
+    </footer>
+  </section>
+  <section>
+    <div class="position-fixed  chat   ">
+     <img src="./Assets/chat.png" alt="" class="rounded-circle">
+    </div>
+    <div class="position-fixed  message rounded-2 ">
+      <h5 class="text-white  fs-6 ">Send Message</h5>
+    </div>
+</section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js'></script>
+  <script src="./slider.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper2", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+
+      rewind: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        600: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 10
+        }
+
+      }
+    });
+  </script>
+
+</body>
+
+</html>
