@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dry Roofing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Slab:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="resp.css">
+</head>
+
+<body>
+    <!-- ------------------------------ MAKING HEADER ---------------------------------  -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./Images/roof-logo.png" alt="" width="200" height="100"></a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-warning px-5" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-5 " href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white px-5" href="#">CONTACT</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white px-5  " href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            SERVICES
+                        </a>
+                    </li>
+                </ul>
+                <div class="col-md-3 bg-warning p-3 contact-banner text-center navbarText ">
+                    <h5>CALL US FOR FREE QUOTE</h5>
+                    <div class="contact-flex d-flex ">
+                        <i class="fa-solid fa-phone-volume mx-4 fs-4  "></i>
+                        <h4 class="m-0">0812-3456-7890</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ------------------------------ MAKING HERO SECTION ---------------------------------  -->
+
+    <section class="banner-1 py-5 position-relative  ">
+        <div class="container">
+            <div class="row text-center text-white ">
+                <div class="col w-100">
+                    <p class="mt-5  ">
+                        Residential Roofing <i class="fa-solid fa-circle text-warning"></i> Siding
+                        <i class="fa-solid fa-circle text-warning"></i>
+                        Gutters
+
+                        <i class="fa-solid fa-circle text-warning"></i> Roofing
+                    </p>
+                    <div class="main-heading mt-4 ">
+                        <h1>Quality Work. <strong class="text-warning">Affordable Price.</strong></h1>
+                    </div>
+                    <div class="row row-cols-2  main-heading-para w-100 m-auto mt-3 ">
+                        <p class="w-75 m-auto ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+                            molestiae quam magnam
+                            debitis inventore dolor, commodi culpa harum, ducimus unde nobis, voluptatibus velit minima
+                            distinctio doloremque deleniti laudantium reiciendis repudiandae.</p>
+                        <div class="col-12 col-sm-12 col-lg-6 col w-100 text-warning">
+                            <i class="fa-brands fa-facebook "></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="col-12 col-sm-12 col-lg-6 w-100 text-warning">
+                            <i class="fa-brands fa-google"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center text-white w-75 m-auto ">
+                <div class="contact-info-form my-5 rounded  ">
+                    <p class="fs-4 mt-2 text-start mx-2  pt-2 w-100"> Leave your contact info and we will be in
+                        touch
+                        shortly</p>
+                    <div class="contact-form pb-5 w-100">
+                        <form action="POST" class="text-white ">
+                            <input type="text" class=" bg-transparent p-1  text-white " placeholder="Name">
+                            <input type="email" class=" bg-transparent p-1  text-white " placeholder="Email">
+                            <input type="text" class="bg-transparent p-1  text-white" placeholder="Message">
+                            <button class="mt-5 ">SEND</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="back-yellow-line w-100">
+            <img src="./Images/Yellow straight line.png" class="w-100" alt="">
+        </div>
+    </section>
+
+    <div class="container-fluid text-center ">
+        <div class="row row-cols-6 banner-row ">
+            <div class="col-12 col-sm-12 col-lg-2 col-md-6 ">
+                <img src="./brands/gc.png" alt="" class="brand-icon" height="150" width="150">
+            </div>
+            <div class="col-12 col-sm-12 col-lg-2 col-md-6">
+                <img src="./brands/fb.png" alt="" class="brand-icon" height="150" width="150">
+            </div>
+            <div class="col-12 col-sm-12 col-lg-2 col-md-6">
+                <img src="./brands/cr.png" alt="" class="brand-icon" height="150" width="150" height="150" width="150">
+            </div>
+            <div class="col-12 col-sm-12 col-lg-2 col-md-6">
+                <img src="./brands/b.png" alt="" class="brand-icon" height="150" width="150">
+            </div>
+            <div class="col-12 col-sm-12 col-lg-2 col-md-6">
+                <img src="./brands/iko.png" alt="" class="brand-icon" height="150" width="150">
+            </div>
+            <div class="col-12 col-sm-12 col-lg-2 col-md-6">
+                <img src="./brands/oc.png" alt="" class="brand-icon" height="150" width="150">
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------------ MAKING ABOUT US SECTION ------------------------------  -->
+
+    <section class="about-us-section bg-color-black py-5 position-relative  ">
+        <div class="about-b-shap w-100">
+            <img src="./Images/b-shap.png" alt="b-shape" class="w-100" >
+        </div>
+        <div class="container pt-5 pb-5 ">
+            <div class="row m-auto w-100 ">
+                <div class="col-12 col-sm-12 col-lg-5 m-auto ">
+                    <div class="about-img w-100 m-auto ">
+                        <img src="./Images/about-img.jpeg" alt="about" class="w-100 m-auto   ">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-6 text-white ">
+                    <div class="about-para mt-3 w-100 ">
+                        <h1 class="pt-1 fs-1 ">
+                            About <strong class="text-warning ">Us.</strong>
+                        </h1>
+                        <p class="mt-5 p-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil hic corporis debitis vel
+                            velit
+                            quaerat aperiam sint dicta architecto vero odio magni itaque molestiae nobis, voluptatum
+                            laboriosam,
+                            quibusdam eius amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro qui
+                            molestias
+                            reprehenderit minus, exercitationem at cumque dolor debitis aspernatur quis! Repellat
+                            impedit
+                            autem
+                            culpa illum quaerat excepturi ratione dignissimos iure?
+                        </p>
+                        <p class=" mt-5 "><a href="#"
+                                class="text-decoration-none text-black bg-warning p-2 px-5 rounded   ">Get Started</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ------------------------------ WHY CHOOSE DRY ROOF ------------------------------  -->
+    <section class="why-choose-us py-5 position-relative ">
+        <div class="choose-b-shape w-100">
+            <img src="./Images/left-b-shap.png" alt="left-b-shape" class="w-100">
+        </div>
+        <div class="container pb-5 w-100">
+            <div class="row text-center ">
+                <div class="col-12   ">
+                    <div class="wcu-heading mt-5 ">
+                        <h2 class="text-white  ">Why Choose Us</h2>
+                        <h1 class="text-warning ">DRY Roofing?</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-2 m-auto  ">
+                <div class="col-lg-4 col-sm-12 mt-5 col-12 m-auto  ">
+                    <i class="fa-solid fa-medal fa-rotate-180 reason-icon bg-warning p-3 fs-2 rounded-3 "></i>
+                    <span class="text-white fs-3 mx-1  ">Our Quality</span>
+                </div>
+                <div class="col-12 col-lg-7 col-sm-12 mt-5 text-white m-auto ">
+                    <p class="px-2 choose-p ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro totam
+                        harum officia cupiditate
+                        fugiat nihil quos, quidem reprehenderit culpa doloribus architecto laboriosam quaerat mollitia
+                        quasi. Rerum ratione perferendis vero aut.</p>
+                </div>
+                <div class="col-lg-4 col-sm-12 mt-5 col-12 m-auto ">
+                    <i class="fa-solid fa-thumbs-up reason-icon bg-warning p-3 fs-2 rounded-3  "></i>
+                    <span class="text-white fs-3 mx-1 ">Our Commitment</span>
+                </div>
+                <div class="col-12 col-lg-7 col-sm-12 mt-5 text-white m-auto ">
+                    <p class="px-2 choose-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro totam harum
+                        officia cupiditate
+                        fugiat nihil quos, quidem reprehenderit culpa doloribus architecto laboriosam quaerat mollitia
+                        quasi. Rerum ratione perferendis vero aut.</p>
+                </div>
+                <div class="col-lg-4 col-sm-12 mt-5 col-12 m-auto ">
+                    <i class="fa-solid fa-money-bill-1-wave reason-icon bg-warning p-3 fs-2 rounded-3  "></i>
+                    <span class="text-white fs-3 mx-1 ">Our Prices</span>
+                </div>
+                <div class="col-12 col-lg-7 col-sm-12 mt-5 text-white m-auto ">
+                    <p class="px-2 choose-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro totam harum
+                        officia cupiditate
+                        fugiat nihil quos, quidem reprehenderit culpa doloribus architecto laboriosam quaerat mollitia
+                        quasi. Rerum ratione perferendis vero aut.</p>
+                </div>
+                <div class="col-lg-4 col-sm-12 mt-5 col-12 m-auto ">
+                    <i class="fa-solid fa-arrows-spin reason-icon bg-warning p-3 fs-2 rounded-3  "></i>
+                    <span class="text-white fs-3 mx-1 ">Our Process</span>
+                </div>
+                <div class="col-12 col-lg-7 col-sm-12 mt-5 text-white m-auto ">
+                    <p class="px-2 choose-p m-auto ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
+                        totam harum
+                        officia cupiditate
+                        fugiat nihil quos, quidem reprehenderit culpa doloribus architecto laboriosam quaerat mollitia
+                        quasi. Rerum ratione perferendis vero aut.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------------ OUR SERVICES SECTION ------------------------------  -->
+    <section class="our-services bg-color-black py-5 position-relative ">
+        <div class="service-b-shap w-100 position-absolute ">
+            <img src="./Images/b-shap.png" alt="b-shape" class="w-100" >
+        </div>
+        <div class="container pb-5 pt-5 ">
+            <div class="row text-center">
+                <div class="col">
+                    <div class="services-heading">
+                        <h1 class="text-white fs-1 ">Our <strong class="text-warning ">Services</strong></h1>
+                        <p class="text-white-50 mt-5 w-75 m-auto  ">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptate facere provident
+                            aspernatur qui
+                            incidunt earum, illo quam voluptatum laboriosam soluta porro odio pariatur laborum dolorem a
+                            nisi quo.
+                            Voluptates, aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+                            impedit
+                            laboriosam, veritatis, maiores ipsam, consequatur tenetur nulla dolorem eius illum officia
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-3 mt-5">
+                <div class="col-12 col-sm-12 col-lg-4 col-md-6">
+                    <div class="card mt-4 m-auto  " style="width: 19rem;">
+                        <img src="./Images/service-1.jpeg" class="card-img-top w-100" alt="...">
+                        <div class="card-body bg-color-black p-0">
+                            <h5 class="card-title text-white mt-4 fs-3 ">Residential <strong
+                                    class="text-warning ">Roofing</strong></h5>
+                            <p class="card-text text-white p-3 ">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Maiores rem sapiente et enim aut voluptates cum dolore, possimus vel
+                                reprehenderit.</p>
+                            <a href="#" class="btn btn-warning ">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-4 col-md-6">
+                    <div class="card mt-4 m-auto   " style="width: 19rem;">
+                        <img src="./Images/service-1.jpeg" class="card-img-top w-100" alt="...">
+                        <div class="card-body bg-color-black p-0">
+                            <h5 class="card-title text-white mt-4 fs-3 ">Residential <strong
+                                    class="text-warning ">Roofing</strong></h5>
+                            <p class="card-text text-white p-3 ">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Maiores rem sapiente et enim aut voluptates cum dolore, possimus vel
+                                reprehenderit.</p>
+                            <a href="#" class="btn btn-warning ">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-4 col-md-6">
+                    <div class="card mt-4 m-auto  " style="width: 19rem;">
+                        <img src="./Images/service-1.jpeg" class="card-img-top w-100" alt="...">
+                        <div class="card-body bg-color-black p-0">
+                            <h5 class="card-title text-white mt-4 fs-3">Residential <strong
+                                    class="text-warning ">Roofing</strong></h5>
+                            <p class="card-text text-white p-3 ">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit. Maiores rem sapiente et enim aut voluptates cum dolore, possimus vel
+                                reprehenderit.</p>
+                            <a href="#" class="btn btn-warning ">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------------ OUR PROCESS SECTIONS ------------------------------ -->
+
+    <section class="our-processes py-5 position-relative  ">
+        <div class="back-yellow-line2 position-absolute w-100">
+            <img src="./Images/Yellow straight line.png" alt="" class="w-100 ">
+        </div>
+        <div class="yellow-line position-absolute w-100">
+            <img src="./Images/Yellow straight line.png" alt="" class="w-100 ">
+        </div>
+        <div class="container p-4 ">
+            <div class="row text-center process-container ">
+                <div class="col">
+                    <div class="process-heading mt-3 ">
+                        <h1 class="text-white  ">Our <strong class="text-warning">Process</strong></h1>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row w-100 mt-5 m-auto  ">
+                <div class="col-12 col-sm-12 col-lg-3 col-md-6 position-relative mt-5">
+                    <i
+                        class="fa-solid fa-phone-volume process-icon bg-color-black text-warning text-center  m-auto w-100"></i>
+                    <div class="row m-auto  w-100">
+                        <div class="process-desc text-white text-center w-100 mt-3 pb-5 ">
+                            <h3>Contact Us</h3>
+                            <h4><strong class="text-warning ">+62 812-3456-7890</strong></h4>
+                        </div>
+                    </div>
+                    <div class="number bg-white w-50 text-center m-auto ">
+                        <h1 class="bg-white w-100 p-1">1</h1>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-3 col-md-6 position-relative mt-5 ">
+                    <i
+                        class="fa-solid fa-calendar-check process-icon bg-color-black text-warning text-center  m-auto w-100 "></i>
+                    <div class="row m-auto  w-100">
+                        <div class="process-desc text-white text-center w-100 mt-3 pb-5 ">
+                            <h3>Appointment & Free</h3>
+                            <h4><strong class="text-warning ">INSPECTION</strong></h4>
+                        </div>
+                    </div>
+                    <div class="number bg-white w-50 text-center m-auto ">
+                        <h1 class="bg-white w-100 p-1">2</h1>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-3 col-md-6 position-relative mt-5 ">
+                    <i
+                        class="fa-solid fa-file-export process-icon bg-color-black text-warning text-center  m-auto w-100 "></i>
+                    <div class="row m-auto  w-100">
+                        <div class="process-desc text-white text-center w-100 mt-3 pb-5 ">
+                            <h3>Approval &</h3>
+                            <h4><strong class="text-warning ">PROPOSAL</strong></h4>
+                        </div>
+                    </div>
+                    <div class="number bg-white w-50 text-center m-auto ">
+                        <h1 class="bg-white w-100 p-1">3</h1>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-3 col-md-6 position-relative mt-5  ">
+                    <i
+                        class="fa-solid fa-screwdriver-wrench process-icon bg-color-black text-warning text-center  m-auto w-100  "></i>
+                    <div class="row m-auto w-100">
+                        <div class="process-desc text-white text-center w-100 mt-3 pb-5 ">
+                            <h3>Build &</h3>
+                            <h4><strong class="text-warning ">NEW ROOF</strong></h4>
+                        </div>
+                    </div>
+                    <div class="number bg-white w-50 text-center m-auto ">
+                        <h1 class="bg-white w-100 p-1">4</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="position-absolute w-100 top-50 ">
+            <img src="./Images/Yellow straight line.png" alt="" class="w-100 process-backline">
+        </div> -->
+    </section>
+
+    <!-- ------------------------------ FREE ESTIMATES SECTIONS ------------------------------ -->
+    <section class="get-free-estimates bg-color-black py-5 ">
+        <div class="container pb-5 ">
+            <div class="row mt-5 pt-5 ">
+                <div class="col-12 col-sm-12 col-lg-5">
+                    <div class="banner2-heading">
+                        <h1 class="text-white fs-1">Get <p class="text-warning ">Free Estimates!</p>
+                        </h1>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-7">
+                    <div class="banner2-para text-white ">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatibus mollitia,
+                            maxime,
+                            nulla temporibus at atque, eius itaque nobis laborum quod nisi quisquam fuga sit provident
+                            recusandae nam commodi laboriosam. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Reprehenderit, necessitatibus.</p>
+                        <div class="banner2-link  pt-4 ">
+                            <a href="#" class="text-decoration-none text-black p-2 px-4 bg-warning ">GET MY FREE
+                                ESTIMATES</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------------ OUR LATEST PROJECT SECTIONS ------------------------------ -->
+    <section class="our-latest-projects bg-color-black py-5 position-relative ">
+        <div class="left-project-shape position-absolute w-100">
+            <img src="./Images/left-b-shap.png" alt="left-b-shape" class="w-100">
+        </div>
+        <div class="container pt-5 pb-5 ">
+            <div class="row text-center">
+                <div class="col">
+                    <div class="project-heading">
+                        <h1 class="text-white ">Our Latest <strong class="text-warning ">Project</strong></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-2 mt-5 ">
+                <div class="col-12 col-lg-6 col-sm-12 col-md-6">
+                    <div class="card text-bg-dark ">
+                        <img src="./Images/project-1.jpeg" class="card-img w-100 rounded-0 " alt="...">
+                        <div class="card-img-overlay  rounded-0 ">
+                            <h5 class="card-title mt-5 ">Roofing Repairs</h5>
+                            <p class="card-text border-0 mt-5 ">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                elit.
+                                Laboriosam eaque minus sapiente, autem
+                                dolorem adipisci soluta quod animi ad. Aperiam at inventore nisi, illo accusantium
+                                obcaecati
+                                placeat nobis neque fuga</p>
+                            <div class="link-project1 mt-5 ">
+                                <a href="#" class="text-black p-2 px-4 bg-warning text-decoration-none mt-5 ">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-sm-12 col-md-6">
+                    <img src="./Images/project-2.jpeg" alt="" id="project-1" class=" w-100 ">
+                    <div class="row row-cols-2 mt-5">
+                        <div class="col-12 col-lg-6 col-sm-12 col-md-6 w-50">
+                            <img src="./Images/project-3.jpeg" alt="" id="project-3" class=" w-100 ">
+                        </div>
+                        <div class="col-12 col-lg-6 col-sm-12 col-md-6 w-50">
+                            <img src="./Images/project-3.jpeg" alt="" id="project-4" class=" w-100 ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center mt-5 ">
+                <div class="col">
+                    <a href="#" class=" a-button text-black p-2 px-3 bg-warning text-decoration-none ">LOAD MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------------ OUR CUSTOMER REVIEW SECTION ------------------------------ -->
+    <section class="our-customer-reviews py-5 ">
+        <div class="container pt-5 pb-5 ">
+            <div class="row text-center">
+                <div class="col">
+                    <div class="review-heading text-white ">
+                        <h1>What Our Customer Says About</h1>
+                        <h1><strong class="text-warning ">"DRY Roofing"</strong></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper mySwiper mt-5 pt-3 ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide  ">
+                        <div class="card m-auto rounded-0 p-3 " style="width: 20rem;">
+                            <div class="card-body d-flex  ">
+                                <img src="./Images/testimonial.jpg" alt="" class=" w-25">
+                                <div class="customer-name px-4 w-100">
+                                    <h5 class="fs-6 w-100 ">Bambang Sutardji</h5>
+                                    <img src="./Images/stars.png" alt="" class="w-100 fs-2 ">
+                                </div>
+                            </div>
+                            <div class="review">
+                                <p class="card-text  border-0  mt-3  p-3 ">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Illo quasi atque ipsa aspernatur,
+                                    perferendis assumenda iste temporibus minus voluptatum eligendi! Soluta saepe,
+                                    perferendis a
+                                    expedita non laboriosam quo aut debitis?</p>
+                                <div class="fb-review mt-3  ">
+                                    <i class="fa-brands fa-facebook text-primary fs-3 p-3 " id="fb-review"></i>
+                                    <span class="fw-bold ">Facebook Reviews</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card rounded-0 p-3 " style="width: 20rem;">
+                            <div class="card-body d-flex  ">
+                                <img src="./Images/testimonial.jpg" alt="" class=" w-25">
+                                <div class="customer-name px-4 w-100">
+                                    <h5 class="fs-6 w-100 ">Bambang Sutardji</h5>
+                                    <img src="./Images/stars.png" alt="" class="w-100 fs-2 ">
+                                </div>
+                            </div>
+                            <div class="review">
+                                <p class="card-text  border-0  mt-3  p-3 ">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Illo quasi atque ipsa aspernatur,
+                                    perferendis assumenda iste temporibus minus voluptatum eligendi! Soluta saepe,
+                                    perferendis a
+                                    expedita non laboriosam quo aut debitis?</p>
+                                <div class="fb-review mt-3  ">
+                                    <i class="fa-brands fa-facebook text-primary fs-3 p-3 " id="fb-review"></i>
+                                    <span class="fw-bold ">Facebook Reviews</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card rounded-0 p-3 " style="width: 20rem;">
+                            <div class="card-body d-flex  ">
+                                <img src="./Images/testimonial.jpg" alt="" class=" w-25">
+                                <div class="customer-name px-4 w-100">
+                                    <h5 class="fs-6 w-100 ">Bambang Sutardji</h5>
+                                    <img src="./Images/stars.png" alt="" class="w-100 fs-2 ">
+                                </div>
+                            </div>
+                            <div class="review">
+                                <p class="card-text  border-0  mt-3  p-3 ">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Illo quasi atque ipsa aspernatur,
+                                    perferendis assumenda iste temporibus minus voluptatum eligendi! Soluta saepe,
+                                    perferendis a
+                                    expedita non laboriosam quo aut debitis?</p>
+                                <div class="fb-review mt-3  ">
+                                    <i class="fa-brands fa-facebook text-primary fs-3 p-3 " id="fb-review"></i>
+                                    <span class="fw-bold ">Facebook Reviews</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card rounded-0 p-3 " style="width: 20rem;">
+                            <div class="card-body d-flex  ">
+                                <img src="./Images/testimonial.jpg" alt="" class=" w-25">
+                                <div class="customer-name px-4 w-100">
+                                    <h5 class="fs-6 w-100 ">Bambang Sutardji</h5>
+                                    <img src="./Images/stars.png" alt="" class="w-100 fs-2 ">
+                                </div>
+                            </div>
+                            <div class="review">
+                                <p class="card-text  border-0  mt-3  p-3 ">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Illo quasi atque ipsa aspernatur,
+                                    perferendis assumenda iste temporibus minus voluptatum eligendi! Soluta saepe,
+                                    perferendis a
+                                    expedita non laboriosam quo aut debitis?</p>
+                                <div class="fb-review mt-3  ">
+                                    <i class="fa-brands fa-facebook text-primary fs-3 p-3 " id="fb-review"></i>
+                                    <span class="fw-bold ">Facebook Reviews</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card rounded-0 p-3 " style="width: 20rem;">
+                            <div class="card-body d-flex  ">
+                                <img src="./Images/testimonial.jpg" alt="" class=" w-25">
+                                <div class="customer-name px-4 w-100">
+                                    <h5 class="fs-6 w-100 ">Bambang Sutardji</h5>
+                                    <img src="./Images/stars.png" alt="" class="w-100 fs-2 ">
+                                </div>
+                            </div>
+                            <div class="review">
+                                <p class="card-text  border-0  mt-3  p-3 ">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Illo quasi atque ipsa aspernatur,
+                                    perferendis assumenda iste temporibus minus voluptatum eligendi! Soluta saepe,
+                                    perferendis a
+                                    expedita non laboriosam quo aut debitis?</p>
+                                <div class="fb-review mt-3  ">
+                                    <i class="fa-brands fa-facebook text-primary fs-3 p-3 " id="fb-review"></i>
+                                    <span class="fw-bold ">Facebook Reviews</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card rounded-0 p-3 " style="width: 20rem;">
+                            <div class="card-body d-flex  ">
+                                <img src="./Images/testimonial.jpg" alt="" class=" w-25">
+                                <div class="customer-name px-4 w-100">
+                                    <h5 class="fs-6 w-100 ">Bambang Sutardji</h5>
+                                    <img src="./Images/stars.png" alt="" class="w-100 fs-2 ">
+                                </div>
+                            </div>
+                            <div class="review">
+                                <p class="card-text  border-0  mt-3  p-3 ">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Illo quasi atque ipsa aspernatur,
+                                    perferendis assumenda iste temporibus minus voluptatum eligendi! Soluta saepe,
+                                    perferendis a
+                                    expedita non laboriosam quo aut debitis?</p>
+                                <div class="fb-review mt-3  ">
+                                    <i class="fa-brands fa-facebook text-primary fs-3 p-3 " id="fb-review"></i>
+                                    <span class="fw-bold ">Facebook Reviews</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 p-3">
+                    <div class="swiper-pagination text-warning "></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ------------------------------ OUR LOCATION SECTION ------------------------------ -->
+    <section class="our-location bg-color-black py-5 position-relative ">
+        <div class="b-shap position-absolute w-100">
+            <img src="./Images/b-shap.png" alt="b-shape" class="w-100">
+        </div>
+        <div class="container mt-5 pb-5 ">
+            <div class="row">
+                <div class="col">
+                    <div class="location-heading text-white ">
+                        <h1 class="fs-1 ">Our <strong class="text-warning ">Location</strong></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-9 ">
+                <div class="col pt-5 ">
+                    <a href="#" class="text-decoration-none text-white p-2 px-4 mx-3 mt-3  location-border ">Lahore</a>
+                </div>
+                <div class="col pt-5 ">
+                    <a href="#"
+                        class="text-decoration-none text-white p-2 px-4 mx-3 mt-3  location-border ">Islamabad</a>
+                </div>
+                <div class="col pt-5 ">
+                    <a href="#" class="text-decoration-none text-white p-2 px-4 mx-3 mt-3  location-border ">Lahore</a>
+                </div>
+                <div class="col pt-5 ">
+                    <a href="#"
+                        class="text-decoration-none text-white p-2 px-4 mx-3 mt-3  location-border ">Peshawar</a>
+                </div>
+                <div class="col pt-5 ">
+                    <a href="#" class="text-decoration-none text-white p-2 px-4 mx-3 mt-3  location-border ">Lahore</a>
+                </div>
+                <div class="col pt-5 ">
+                    <a href="#"
+                        class="text-decoration-none text-white p-2 px-4 mx-3 mt-3  location-border ">Peshawar</a>
+                </div>
+                <div class="col pt-5 ">
+                    <a href="#" class="text-decoration-none text-white p-2 px-4 mx-3 mt-3  location-border ">Multan</a>
+                </div>
+                <div class="col pt-5 ">
+                    <a href="#"
+                        class="text-decoration-none text-white p-2 px-4 mx-3 mt-3  location-border ">Islamabad</a>
+                </div>
+                <div class="col pt-5 ">
+                    <a href="#" class="text-decoration-none text-white p-2 px-4 mx-3 mt-3  location-border ">Lahore</a>
+                </div>
+                <div class="col pt-5 ">
+                    <a href="#"
+                        class="text-decoration-none text-white p-2 px-4 mx-3 mt-3  location-border ">Islamabad</a>
+                </div>
+                <div class="col pt-5 ">
+                    <a href="#" class="text-decoration-none text-white p-2 px-4 mx-3 mt-3  location-border ">Rawat</a>
+                </div>
+                <div class="col pt-5 ">
+                    <a href="#"
+                        class="text-decoration-none text-white p-2 px-4 mx-3 mt-3  location-border ">Islamabad</a>
+                </div>
+                <div class="col pt-5 ">
+                    <a href="#" class="text-decoration-none text-white p-2 px-4 mx-3 mt-3  location-border ">Rawat</a>
+                </div>
+            </div>
+            <div class="row mt-5 ">
+                <div class="col-12 col-sm-12 col-lg-12 col-xl-12 ">
+                    <div class="location-map ">
+                        <iframe class="w-100  "
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d425289.99953467527!2d72.75575191875862!3d33.61624911287422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6059515c3bdb02b6!2sIslamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1692439220547!5m2!1sen!2s"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" height="400px"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------------ CONTACT US SECTION ------------------------------ -->
+    <section class="contact-us py-3 ">
+        <div class="container pt-3 pb-5 ">
+            <div class="row row-cols-2 mt-5  ">
+                <div class="col-12 col-lg-6 col-sm-12">
+                    <div class="contact-img ">
+                        <img src="./Images/contact-us.jpeg" class="w-100 mt-5 pt-5 " alt="contact-us">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-sm-12 mt-5 m-auto ">
+                    <div class="form-heading text-white">
+                        <h1>Contact <strong class="text-warning">Us.</strong></h1>
+                        <span>How can we help with your project?</span>
+                    </div>
+                    <form action="POST" class="contact-us-form ">
+                        <input type="text" placeholder="Name"
+                            class="w-100 mt-3  p-2 px-1 name bg-transparent p-1 border text-white">
+                        <input type="email" placeholder="Email"
+                            class="w-100 mt-3  p-2 px-1 name bg-transparent p-1 border text-white">
+                        <input type="text" placeholder="Phone Number"
+                            class="w-100 mt-3  p-2 px-1 name bg-transparent p-1 border text-white">
+                        <input type="text" placeholder="Address(Street, City, Zip Code)"
+                            class="w-100 mt-3  p-2 px-1 name bg-transparent p-1 border text-white">
+                        <input type="text" placeholder="Message"
+                            class="w-100 mt-3  p-2 px-1name bg-transparent p-1 border text-white">
+                        <div class="button">
+                            <button type="submit" class="w-100 p-2 bg-warning text-black border-0 mt-3 ">SEND</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ------------------------------ FOOTER SECTION ------------------------------ -->
+
+    <section class="footer-section bg-color-black py-5 ">
+        <div class="container text-center ">
+            <div class="row ">
+                <div class="col-12 col-lg-3 col-sm-12 text-center ">
+                    <img src="./Images/roof-logo.png" class="w-75 mt-3 " alt="">
+                    <p class="w-100 text-center text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        Nulla, iure.</p>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-2 col-md-6">
+                    <div class="services text-white py-3 mt-3 ">
+                        <h3 class="text-warning">Services</h3>
+                        <h5 class="mt-3 ">Roofing</h5>
+                        <h5>Insurance</h5>
+                        <h5>Gutters</h5>
+                        <h5>Repairs</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-2 col-md-6">
+                    <div class="services text-white py-3 mt-3 ">
+                        <h3 class="text-warning ">Contact</h3>
+                        <h5 class="mt-3 ">+62 321 456 382</h5>
+                        <h5>abcd@gmail.com</h5>
+                        <h5>efgh@yahoo.com</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-2 col-md-6">
+                    <div class="services text-white py-3 mt-3 ">
+                        <h3 class="text-warning ">Help</h3>
+                        <h5 class="mt-3 ">Support</h5>
+                        <h5>FAQs</h5>
+                        <h5>Terms</h5>
+                        <h5>Policy</h5>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-lg-2 col-md-6">
+                    <div class="services text-white py-3 mt-3 ">
+                        <h3 class="text-warning">
+                            Social Media
+                        </h3>
+                        <div class="row row-cols-3 row-cols-sm-2  row-cols-md-5 row-cols-lg-3  mt-3
+                        text-center ">
+                            <div class="col col-sm-3 ">
+                                <a href="#"><i class="fa-brands fa-facebook text-white fs-2   "></i></a>
+                            </div>
+                            <div class="col col-sm-3 ">
+                                <a href="#"><i class="fa-brands fa-twitter text-white fs-2  "></i></a>
+                            </div>
+                            <div class="col col-sm-3 ">
+                                <a href="#"><i class="fa-brands fa-linkedin text-white fs-2  "></i></a>
+                            </div>
+                            <div class="col col-sm-3 ">
+                                <a href="#"><i class="fa-brands fa-youtube text-white fs-2 mt-1  "></i></a>
+                            </div>
+                            <div class="col col-sm-3 ">
+                                <a href="#"><i class="fa-brands fa-instagram text-white fs-2 mt-1  "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------------ CAROUSEL ------------------------------ -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 100,
+                },
+                425: {
+                    slidesPerView: 1,
+                    spaceBetween: 80,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 110,
+                },
+            },
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
