@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GROWING VISION</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/00b231478f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-xl navbar-light fixed-top w-100 px-3">
+                <a class="navbar-brand d-flex justify-content-center align-items-center" href="index.html">
+                    <img src="images/logo.png" class="img-fluid">
+                </a>
+                <div class="d-flex align-items-center justify-content-end gap-3">
+                    <button class="navbar-toggler" type="button" onclick="openNav()">
+                        <img src="images/menu.png" class="img-fluid">
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav d-flex justify-content-between align-items-center gap_30">
+                        <li class="nav-item active">
+                            <a class="nav-link text-capitalize  p-0 text_color fw-bold fw_14_400 text-nowrap"
+                                href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize p-0 text_color fw-bold fw_14_400 text-nowrap"
+                                href="index.html">
+                                Why Choose Us
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize p-0 text_color fw-bold fw_14_400 text-nowrap"
+                                href="index.html">
+                                How it works
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize text_color fw-bold fw_16_400 pad_13_20 br_20b"
+                                href="contact-us.html">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        </nav>
+        <!-- mobile menu start -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn text-white" onclick="closeNav()">&times;</a>
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="index.html" class="text-decoration-none text-white text-capitalize">Home</a>
+                <a href="index.html" class="text-decoration-none text-white text-capitalize">why choose us</a>
+                <a href="index.html" class="text-decoration-none text-white text-capitalize">how it works</a>
+                <a href="contact-us.html" class="text-decoration-none text-white text-capitalize">contact us</a>
+            </div>
+        </div>
+        <!-- mobile menu end -->
+    </header>
+    <main>
+        <section class="px-3 my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                        <p class="fw_32_700 clr-brown">
+                            Processing body goals…
+                        </p>
+                        <p class="fw_14_400 custom">
+                            According to Standford University, vision boards improve in 37% your performance in each
+                            area of your life if you stay focus in the first 12 weeks
+                        </p>
+                    </div>
+                </div>
+                <div class="row g-5 mt-3">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                        <div class="card br_20 p-3 shadow border-0">
+                            <div class="card-body d-flex gap-3 flex-column">
+                                <div>
+                                    <p class="card-title fw_24_700 text_color mb-0">Statistics</p>
+                                    <div id="curve_chart" class="chart_container w-100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <a href="" class="cust-btn">
+                                <button>
+                                    Next
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                        <img src="./images/banner_img.png" alt="" class="img-fluid w-25">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="p-5 mt-5 bg_light">
+            <div class="container-fluid my-5">
+                <div class="row justify-content-between align-items-center g-5">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-2">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <div class="footer_logo ">
+                                <img src="./images/footer-logo.png" alt="" class="img-fluid w-100">
+                            </div>
+                            <p class="fw_16_400 text-center">88/89 Peter Road, Port Harcourt, Rivers State.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                        <ul
+                            class="d-flex list-unstyled flex-column justify-content-between align-items-center gap_30 mb-0">
+                            <li class="nav-item active">
+                                <a class="nav-link text-capitalize  p-0 text_color fw_16_400 text-nowrap"
+                                    href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize p-0 text_color fw_16_400 text-nowrap"
+                                    href="index.html">
+                                    Why Choose Us
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize p-0 text_color fw_16_400 text-nowrap"
+                                    href="index.html">
+                                    How it works
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                        <ul
+                            class="d-flex list-unstyled flex-column justify-content-between align-items-center gap_30 mb-0">
+                            <li class="nav-item active">
+                                <a class="nav-link text-capitalize  p-0 text_color fw_16_400 text-nowrap"
+                                    href="contact-us.html">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize p-0 text_color fw_16_400 text-nowrap"
+                                    href="contact-us.html">
+                                    Location
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize p-0 text_color fw_16_400 text-nowrap" href="">
+                                    Privacy Policy
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 text_color">
+                        <div class="d-flex flex-column justify-content-center align-items-center gap-3 mb-lg-5 py-2">
+                            <p class="fw-16_400 mb-0">Connect With Us</p>
+                            <div class="d-flex align-items-center gap-4">
+                                <a href="" class="social_icons">
+                                    <img src="./images/twitter.png" alt="" class="w-100">
+                                </a>
+                                <a href="" class="social_icons2">
+                                    <img src="./images/insta.png" alt="" class="w-100">
+                                </a>
+                                <a href="" class="social_icons2">
+                                    <img src="./images/fb.png" alt="" class="w-100">
+                                </a>
+                                <a href="" class="social_icons2">
+                                    <img src="./images/linkedin.png" alt="" class="w-100">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- js area start -->
+    <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        /* Open when someone clicks on the span element */
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Year', 'Loyal Customers', 'New Customers', 'Unique Customer'],
+                ['2004', 1000, 400, 800],
+                ['2005', 1170, 460, 950],
+                ['2006', 660, 1120, 750],
+                ['2007', 1030, 540, 1100]
+            ]);
+
+            var options = {
+                curveType: 'function',
+                legend: { position: 'bottom' },
+                colors: ['brown', 'red', 'grey']
+            };
+            var chartContainer = document.getElementById('curve_chart');
+            var chart = new google.visualization.LineChart(chartContainer);
+            function resizeChart() {
+                chart.draw(data, options);
+            }
+            window.addEventListener('resize', resizeChart);
+            resizeChart();
+        }
+    </script>
+</body>
+</html>

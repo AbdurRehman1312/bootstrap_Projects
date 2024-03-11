@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GROWING VISION</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/00b231478f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-xl navbar-light fixed-top w-100 px-3">
+                <a class="navbar-brand d-flex justify-content-center align-items-center" href="index.html">
+                    <img src="images/logo.png" class="img-fluid">
+                </a>
+                <div class="d-flex align-items-center justify-content-end gap-3">
+                    <button class="navbar-toggler" type="button" onclick="openNav()">
+                        <img src="images/menu.png" class="img-fluid">
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav d-flex justify-content-between align-items-center gap_30">
+                        <li class="nav-item active">
+                            <a class="nav-link text-capitalize  p-0 text_color fw-bold fw_14_400 text-nowrap" href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize p-0 text_color fw-bold fw_14_400 text-nowrap"
+                                href="index.html">
+                                Why Choose Us
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize p-0 text_color fw-bold fw_14_400 text-nowrap" href="index.html">
+                                How it works
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize text_color fw-bold fw_16_400 pad_13_20 br_20b"
+                                href="contact-us.html">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        </nav>
+        <!-- mobile menu start -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn text-white" onclick="closeNav()">&times;</a>
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a href="index.html" class="text-decoration-none text-white text-capitalize">Home</a>
+                <a href="index.html" class="text-decoration-none text-white text-capitalize">why choose us</a>
+                <a href="index.html" class="text-decoration-none text-white text-capitalize">how it works</a>
+                <a href="contact-us.html" class="text-decoration-none text-white text-capitalize">contact us</a>
+            </div>
+        </div>
+        <!-- mobile menu end -->
+    </header>
+    <main>
+        <section class="px-3 my-5">
+            <div class="container-fluid">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <div class="d-flex flex-column justify-content-center gap-3 align-items-center">
+                            <p class="fw_50_700 text_color text-center">Contact Us</p>
+                            <p class="fw_16_400 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Proin consectetur justo quis </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5 mt-3">
+                    <div class="col-12 col-sm-12 col-md 12 col-lg-6 ">
+                        <div class="d-flex flex-column justify-content-center gap-4">
+                            <div class="">
+                                <input type="text" class="form-control bg_gray border-0 br_17 py-2 px-4"
+                                    id="exampleFormControlInput1" placeholder="Your Name">
+                            </div>
+                            <div class="">
+                                <input type="email" class="form-control bg_gray border-0 br_17 py-2 px-4"
+                                    id="exampleFormControlInput1" placeholder="Your Email Address">
+                            </div>
+                            <div class="">
+                                <div class="mb-3">
+                                    <textarea class="form-control bg_gray border-0 br_17 py-4 px-3"
+                                        id="exampleFormControlTextarea1" rows="7"
+                                        placeholder="Write a note about your request"></textarea>
+                                </div>
+                            </div>
+                            <div class="">
+                                <a href="" class="pad_13_20 br_20 fw_16_400 cust_btn text-white w-100">
+                                    Send
+                                </a>
+                            </div>
+                            <div>
+                                <div class="card br_8 p-3 shadow border-0">
+                                    <div class="card-body">
+                                        <div class="row justify-content-between">
+                                            <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                                                <div class="d-flex align-items-center gap-3">
+                                                    <div class="contact_card">
+                                                        <img src="./images/phone.png" alt="" class="img-fluid w-100">
+                                                    </div>
+                                                    <div>
+                                                        <p class="mb-0 fw_13_400 text_color">
+                                                            Phone
+                                                        </p>
+                                                        <p class="fw_13_400 mb-0">
+                                                            876856786
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                                                <div class="d-flex align-items-center gap-3">
+                                                    <div class="contact_card">
+                                                        <img src="./images/location.png" alt="" class="img-fluid w-100">
+                                                    </div>
+                                                    <div>
+                                                        <p class="mb-0 fw_13_400 text_color">
+                                                            Location
+                                                        </p>
+                                                        <p class="fw_13_400 mb-0">
+                                                            Newyork,USA
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                                                <div class="d-flex align-items-center gap-3">
+                                                    <div class="contact_card">
+                                                        <img src="./images/email.png" alt="" class="img-fluid w-100">
+                                                    </div>
+                                                    <div>
+                                                        <p class="mb-0 fw_13_400 text_color">
+                                                            Email
+                                                        </p>
+                                                        <p class="fw_13_400 mb-0">
+                                                            info@gv.com
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md 12 col-lg-6">
+                        <div class="w-100 h-100">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7050661.956303704!2d68.9966984!3d30.3593034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38db52d2f8fd751f%3A0x46b7a1f7e614925c!2sPakistan!5e0!3m2!1sen!2s!4v1703015274611!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="p-5 mt-5 bg_light">
+            <div class="container-fluid my-5">
+                <div class="row justify-content-between align-items-center g-5">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-2">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <div class="footer_logo ">
+                                <img src="./images/footer-logo.png" alt="" class="img-fluid w-100">
+                            </div>
+                            <p class="fw_16_400 text-center">88/89 Peter Road, Port Harcourt, Rivers State.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                        <ul
+                            class="d-flex list-unstyled flex-column justify-content-between align-items-center gap_30 mb-0">
+                            <li class="nav-item active">
+                                <a class="nav-link text-capitalize  p-0 text_color fw_16_400 text-nowrap" href="index.html">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize p-0 text_color fw_16_400 text-nowrap"
+                                    href="index.html">
+                                    Why Choose Us
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize p-0 text_color fw_16_400 text-nowrap"
+                                    href="index.html">
+                                    How it works
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                        <ul
+                            class="d-flex list-unstyled flex-column justify-content-between align-items-center gap_30 mb-0">
+                            <li class="nav-item active">
+                                <a class="nav-link text-capitalize  p-0 text_color fw_16_400 text-nowrap"
+                                    href="contact-us.html">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize p-0 text_color fw_16_400 text-nowrap"
+                                    href="contact-us.html">
+                                    Location
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-capitalize p-0 text_color fw_16_400 text-nowrap" href="">
+                                    Privacy Policy
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 text_color">
+                        <div class="d-flex flex-column justify-content-center align-items-center gap-3 mb-lg-5 py-2">
+                            <p class="fw-16_400 mb-0">Connect With Us</p>
+                            <div class="d-flex align-items-center gap-4">
+                                <a href="" class="social_icons">
+                                    <img src="./images/twitter.png" alt="" class="w-100">
+                                </a>
+                                <a href="" class="social_icons2">
+                                    <img src="./images/insta.png" alt="" class="w-100">
+                                </a>
+                                <a href="" class="social_icons2">
+                                    <img src="./images/fb.png" alt="" class="w-100">
+                                </a>
+                                <a href="" class="social_icons2">
+                                    <img src="./images/linkedin.png" alt="" class="w-100">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- js area start -->
+    <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        /* Open when someone clicks on the span element */
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+
+    </script>
+</body>
+
+</html>
